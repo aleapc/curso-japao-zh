@@ -1,0 +1,96 @@
+{
+  "id": "q-b05",
+  "nivel": "basico",
+  "titulo": "测验——Mokuteki、nannichi、doko",
+  "subtitulo": "三个答案，剩下的交给预订资料",
+  "introAudioKey": "fr-b05-q-i",
+  "introPt": "一名游客用四个简短的回答通过了入境检查柜台。",
+  "cenario": "入境检查柜台，落地后的第一个小时。",
+  "dialogo": [
+    {
+      "audioKey": "fr-b05-q01",
+      "voz": "target_fr_m",
+      "es": "こんにちは。旅行の目的は何ですか？",
+      "pt": "您好。此行的目的是什么？",
+      "tts": "こんにちは。旅行の目的は何ですか？"
+    },
+    {
+      "audioKey": "fr-b05-q02",
+      "voz": "target_fr_f",
+      "es": "観光です。",
+      "pt": "观光。",
+      "tts": "観光です。"
+    },
+    {
+      "audioKey": "fr-b05-q03",
+      "voz": "target_fr_m",
+      "es": "どこに泊まりますか？",
+      "pt": "您住在哪里？",
+      "tts": "どこに泊まりますか？"
+    },
+    {
+      "audioKey": "fr-b05-q04",
+      "voz": "target_fr_f",
+      "es": "東京の、ホテルです。はい、これです。",
+      "pt": "在东京，住酒店。有，就是这个。",
+      "tts": "東京の、ホテルです。はい、これです。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "「Ryokou no mokuteki wa nan desu ka?」问的是什么？",
+      "opcoes": [
+        "你要待多久",
+        "你为什么来",
+        "你住在哪里",
+        "你是不是一个人旅行"
+      ],
+      "correta": 1,
+      "explica": "Mokuteki 指的是目的。停留时长和住址是各自独立的问题，也各有各的答案。"
+    },
+    {
+      "pergunta": "「Kore desu」是做什么用的？",
+      "opcoes": [
+        "请求稍等一下",
+        "表示你没听懂",
+        "把文件递过去——「就是这个」",
+        "询问接下来去哪里"
+      ],
+      "correta": 2,
+      "explica": "三个音节加一只伸出去的手。它把这场交流从依靠你的记忆，转移到依靠你手里的证据上。"
+    },
+    {
+      "pergunta": "官员问了一个简短的问题。什么样的回答形式最合适？",
+      "opcoes": [
+        "讲出整个行程，以免显得有所隐瞒",
+        "只回答被问到的部分，然后停下来",
+        "一段友好而冗长的解释",
+        "沉默，只递上护照"
+      ],
+      "correta": 1,
+      "explica": "柜台正在处理一串对应好的问答。超出所问范围的回答，读起来像需要核查的材料，而不是热情。"
+    },
+    {
+      "pergunta": "你没听清对方说了什么。这时该说什么？",
+      "opcoes": [
+        "Hai",
+        "Sumimasen, wakarimasen deshita",
+        "Yoi go-ryokou o",
+        "Tooka-kan desu"
+      ],
+      "correta": 1,
+      "explica": "干脆地说一次就好。在入境柜台瞎猜，比开口问要花更多时间。"
+    },
+    {
+      "pergunta": "为什么「kankou desu」够用，而单独说「kankou」不够？",
+      "opcoes": [
+        "这是日语语法规定，每个名词都必须这样",
+        "这样能让官员更友好",
+        "-desu 词尾正是让一个词的回答显得礼貌的关键",
+        "这样能显得你会说日语"
+      ],
+      "correta": 2,
+      "explica": "礼貌体现在 -desu 词尾和轻轻一点头上，而不是靠更长的句子。单说 kankou 显得生硬；kankou desu 才完整而得体。"
+    }
+  ]
+}

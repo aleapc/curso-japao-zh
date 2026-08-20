@@ -1,0 +1,96 @@
+{
+  "id": "q-b06",
+  "nivel": "basico",
+  "titulo": "测验——Wa arimasu ka，然后不管你需要什么",
+  "subtitulo": "一个句型，应对四个柜台",
+  "introAudioKey": "fr-b06-q-i",
+  "introPt": "一名游客带着一句开场词，在到达大厅里应付了七种不同的需求。",
+  "cenario": "到达大厅，落地后的第一个小时。",
+  "dialogo": [
+    {
+      "audioKey": "fr-b06-q01",
+      "voz": "target_fr_f",
+      "es": "すみません、Wi‑Fiはありますか？",
+      "pt": "打扰了，你们这里有 Wi-Fi 吗？",
+      "tts": "すみません、ワイファイはありますか？"
+    },
+    {
+      "audioKey": "fr-b06-q02",
+      "voz": "target_fr_m",
+      "es": "はい、パスワードはレシートに書いてあります。",
+      "pt": "有的，密码写在小票上。",
+      "tts": "はい、パスワードはレシートに書いてあります。"
+    },
+    {
+      "audioKey": "fr-b06-q03",
+      "voz": "target_fr_f",
+      "es": "小銭はありますか？",
+      "pt": "你们有零钱吗？",
+      "tts": "小銭はありますか？"
+    },
+    {
+      "audioKey": "fr-b06-q04",
+      "voz": "target_fr_m",
+      "es": "いいえ、ここにはありませんが、二階にありますよ。",
+      "pt": "这里没有，不过二楼有哦。",
+      "tts": "いいえ、ここにはありませんが、二階にありますよ。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "「Wa arimasu ka」前面应该放什么？",
+      "opcoes": [
+        "一个动词原形",
+        "你希望对方拥有的那样东西",
+        "一个数字",
+        "你的名字"
+      ],
+      "correta": 1,
+      "explica": "这个句型是「名词 + wa arimasu ka」：Wi-Fi、SIM 卡、充电器、地图、零钱。其他部分完全不变。"
+    },
+    {
+      "pergunta": "为什么「wa arimasu ka」是这么划算的一个句型？",
+      "opcoes": [
+        "它在语法上是最短的可能句子",
+        "日语把「你有吗」和「这里有吗」都装进了一个词 aru——所以你不用去挑选",
+        "它只在机场管用",
+        "它比其他说法更正式"
+      ],
+      "correta": 1,
+      "explica": "英语把这两个问题分开；aru 同时覆盖了两者，所以一个句型就能应付到达大厅里大多数场合。"
+    },
+    {
+      "pergunta": "「Iie, koko ni wa arimasen ga, nikai ni arimasu yo.」——你该怎么做？",
+      "opcoes": [
+        "道谢然后转身离开",
+        "再慢一点问一次",
+        "多停一拍——「没有」后面带着「有」的地方",
+        "换一种语言试试"
+      ],
+      "correta": 2,
+      "explica": "Iie, koko ni wa arimasen ga…是标准的说法：没有，这里没有，不过……真正有用的那一半在楼上。"
+    },
+    {
+      "pergunta": "在一家贴着告示的小店，你的银行卡被拒了。这说明了什么？",
+      "opcoes": [
+        "这是违法的，你可以坚持要求",
+        "日本高度依赖现金；小店可能只收现金，贴出告示是正常的",
+        "外国银行卡在全国范围内都被禁用",
+        "银行卡只在中午之后才能用"
+      ],
+      "correta": 1,
+      "explica": "并没有一般性规定强制小商家接受刷卡。便利店和车站接受银行卡和 Suica 这类 IC 卡；随身带一点日元现金。"
+    },
+    {
+      "pergunta": "在每个柜台前，这个句型前面应该加上什么？",
+      "opcoes": [
+        "Onegaishimasu",
+        "Gomennasai",
+        "Sumimasen",
+        "Arigatou"
+      ],
+      "correta": 2,
+      "explica": "Sumimasen 是仪式性的开场。带着请求出现却不说 sumimasen，就像进屋不敲门一样，得到的回答也容易被误读。"
+    }
+  ]
+}

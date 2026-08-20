@@ -1,0 +1,340 @@
+{
+  "id": "b06",
+  "nivel": "basico",
+  "numero": 6,
+  "parte": "B06",
+  "titulo": "Wa arimasu ka——然后不管你需要什么",
+  "subtitulo": "落地后第一个小时要面对四个柜台，而它们的问句结尾全都一样",
+  "cena": "到达大厅：行李转盘已经停了，eSIM 还没连上网，而在你和能坐下休息之间，隔着四个柜台。",
+  "moldura": "ganha",
+  "frasePiso": "要问的东西，加上 wa arimasu ka。一个句型，整个到达大厅都能问出答案。",
+  "moldes": [
+    "ARIMASU-KA"
+  ],
+  "clique": {
+    "contagem": [
+      "机场咖啡厅",
+      "手机店",
+      "便利店",
+      "问讯处"
+    ],
+    "desconto": "没有人给上面这几个柜台分别准备不同的句子。你一直用同一个结尾，只是换了前面要问的东西。",
+    "piso": "下次你需要什么、又不确定这家店有没有的时候，你不会再靠比划。你会用三个词直接问出来。"
+  },
+  "fatosDatados": [
+    {
+      "id": "fr-b06-carte",
+      "afirmacao": "日本仍然高度依赖现金。很多小型和家族经营的店铺只收现金，贴出「仅收现金」的告示是很正常的事——并没有一般性规定强制小商家必须接受刷卡。便利店、车站和大型商店都接受银行卡以及 Suica、Pasmo 这类 IC 卡，这些卡在电车和大多数自动售货机上也能用。一个实用的推论是：随身带一些日元现金，再给一张 IC 卡充值，几乎能覆盖到达大厅里的每一个柜台。",
+      "fonte": "日本仍普遍以现金为主，尤其是小型和家族经营的店铺，很多只收现金；没有一般性规定强制商家接受刷卡。便利店、车站及大型商店接受银行卡和 IC 卡（Suica/Pasmo），这些卡也能用于电车和自动售货机。官方旅游指南（JNTO）的实用建议：携带日元现金，并给 IC 卡充值。",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b06-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "落地后的第一个小时是四个柜台、四个简单的问题。在日本，它们的结尾都是一样的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b06-n02",
+      "bloco": "molde",
+      "pt": "这就是这个句型：要问的东西，加上 wa arimasu ka。你们有……吗——这里到底有没有这个东西。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b06-t01",
+      "es": "すみません、Wi‑Fiはありますか？",
+      "pinyin": "soo-mee-ma-SEN, WAI-fai wa a-ri-MAS-ka",
+      "pt": "打扰了，你们这里有 Wi-Fi 吗？",
+      "tts": "すみません、ワイファイはありますか？"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "Wi‑Fi",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b06-p01",
+      "promptPt": "在机场咖啡厅，你的 eSIM 还没连上网，你需要网络。问一下。现在开口说。",
+      "audioKey": "fr-b06-t01",
+      "es": "すみません、Wi‑Fiはありますか？",
+      "pinyin": "soo-mee-ma-SEN, WAI-fai wa a-ri-MAS-ka",
+      "pt": "打扰了，你们这里有 Wi-Fi 吗？",
+      "tts": "すみません、ワイファイはありますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b06-r01",
+      "es": "はい、パスワードはレシートに書いてあります。",
+      "pt": "有的，密码写在小票上。",
+      "tts": "はい、パスワードはレシートに書いてあります。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b06-n03",
+      "bloco": "corpo",
+      "pt": "留意这个句型在问什么：不是语法问题，只是这家店有没有这个东西。助词 wa 和结尾 arimasu ka 永远不变。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao",
+        "compras/quanto"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "SIMカード",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b06-p02",
+      "promptPt": "在过了安检口的手机店，你想要一个本地电话号码用一周。问一下。现在开口说。",
+      "audioKey": "fr-b06-t02",
+      "es": "SIMカードはありますか？",
+      "pinyin": "SHEE-moo KAH-do wa a-ri-MAS-ka",
+      "pt": "你们有 SIM 卡吗？",
+      "tts": "SIMカードはありますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b06-n04",
+      "pt": "Sumimasen 永远要放在最前面。带着请求出现却不说 sumimasen，就像进屋不敲门一样。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "充電器",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b06-p03",
+      "promptPt": "又回到那家手机店，你的电池只剩百分之四，而你的充电器还在托运行李里。问一下。现在开口说。",
+      "audioKey": "fr-b06-t03",
+      "es": "充電器はありますか？",
+      "pinyin": "joo-DEN-kee wa a-ri-MAS-ka",
+      "pt": "你们有充电器吗？",
+      "tts": "充電器はありますか？"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "ICカード",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b06-p04",
+      "promptPt": "在出口附近的便利店，你想要一张搭电车用的 IC 卡，而自动售票机前排着长队。问一下。现在开口说。",
+      "audioKey": "fr-b06-t04",
+      "es": "ICカードはありますか？",
+      "pinyin": "ai-SHEE KAH-do wa a-ri-MAS-ka",
+      "pt": "你们有 IC 卡吗？",
+      "tts": "ICカードはありますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n05",
+      "bloco": "capsula",
+      "pt": "这个句型不在乎问的东西是什么。Wi-Fi、SIM 卡、充电器、IC 卡、零钱、地图都可以。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b06-n06",
+      "pt": "现金在这里仍然是王道。小店可能只收现金，而便利店和车站会接受银行卡和 Suica。"
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "小銭",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b06-p05",
+      "promptPt": "机场咖啡厅的饮料机只收硬币，你手里只有一张纸币。去便利店问一下。现在开口说。",
+      "audioKey": "fr-b06-t05",
+      "es": "小銭はありますか？",
+      "pinyin": "ko-ZE-nee wa a-ri-MAS-ka",
+      "pt": "你们有零钱吗？",
+      "tts": "小銭はありますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b06-r02",
+      "es": "いいえ、ここにはありませんが、二階にありますよ。",
+      "pt": "这里没有，不过二楼有哦。",
+      "tts": "いいえ、ここにはありませんが、二階にありますよ。",
+      "receptivo": true,
+      "acao": "别急着走，听完后半句——「没有」后面往往接着「有」的具体地点。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n07",
+      "pt": "一句「没有」通常会附带告诉你「有」的地方。在 iie 之后多停一拍再走。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "地図",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b06-p06",
+      "promptPt": "在问讯处，纸质地图不怕手机没电，而你的电池快没电了。问一下。现在开口说。",
+      "audioKey": "fr-b06-t06",
+      "es": "地図はありますか？",
+      "pinyin": "CHEE-zoo wa a-ri-MAS-ka",
+      "pt": "你们有地图吗？",
+      "tts": "地図はありますか？"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "トイレ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b06-p07",
+      "promptPt": "又回到机场咖啡厅，在上电车、开始那趟长途进城之前。问一下。现在开口说。",
+      "audioKey": "fr-b06-t07",
+      "es": "トイレはありますか？",
+      "pinyin": "TOH-ee-reh wa a-ri-MAS-ka",
+      "pt": "这里有洗手间吗？",
+      "tts": "トイレはありますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b06-r03",
+      "es": "はい、奥の右側です。",
+      "pt": "有的，在里面右手边。",
+      "tts": "はい、奥の右側です。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b06-p08",
+      "promptPt": "他们十秒钟就帮你搞定了。用这里人惯常的方式把这事收个尾。现在开口说。",
+      "audioKey": "fr-b06-t08",
+      "es": "どうもありがとうございます。",
+      "pinyin": "DOH-mo a-ri-ga-TOH go-za-i-mas",
+      "pt": "太谢谢您了。",
+      "tts": "どうもありがとうございます。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b06-s01",
+      "es": "Wi‑Fiはありますか？ SIMカードはありますか？ 小銭はありますか？",
+      "pinyin": "WAI-fai wa a-ri-MAS-ka. SHEE-moo KAH-do wa a-ri-MAS-ka. ko-ZE-nee wa a-ri-MAS-ka",
+      "pt": "把同一个结尾用在三个完全不同的柜台，跟读一遍。",
+      "tts": "ワイファイはありますか？ SIMカードはありますか？ 小銭はありますか？",
+      "molde": "ARIMASU-KA"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b06-n08",
+      "bloco": "recap",
+      "pt": "B06 完成。一个句型，四个柜台，落地后的第一个小时，用一个名词加 wa arimasu ka 就能全部问出来。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一个词尾，解决七个问题",
+    "secoes": [
+      {
+        "titulo": "要问的东西，加上 wa arimasu ka",
+        "corpo": "保留 wa arimasu ka，前面随便放一个柜台后面的人有可能实际拥有的东西。什么都不需要变位，助词 wa 位置不变，arimasu ka 在每个柜台前都完全一样——这正是它成为这门课里最便宜句型的原因。",
+        "exemplos": [
+          {
+            "es": "Wi‑Fiはありますか？",
+            "pt": "你们有 Wi-Fi 吗？"
+          },
+          {
+            "es": "小銭はありますか？",
+            "pt": "你们有零钱吗？"
+          }
+        ]
+      },
+      {
+        "titulo": "问的是「有没有」，不是语法",
+        "corpo": "英语把「你有吗」和「这里有吗」当成两个不同的问题；日语把这两者都装进了一个词，aru。在柜台前，wa arimasu ka 同时覆盖了「你们有这个吗」和「这里有没有」，所以你完全不需要去挑选。就这一个句型，就能应付到达大厅里大多数的场合，也正是这一点，让你听起来像个有经验的旅行者，而不是照本宣科的短语书。"
+      },
+      {
+        "titulo": "Sumimasen 是敲门，不是垫脚布",
+        "corpo": "Sumimasen 是一种仪式性的开场：一个词就能引起注意、为打扰道歉，甚至还能当作道谢。把它放在句型前面，句型才能发挥作用；省掉它，你得到的回答会显得生硬，很容易被误读成不情愿，而其实只是先后顺序的问题。"
+      },
+      {
+        "titulo": "现金、银行卡和 IC 卡",
+        "corpo": "日本仍然依赖现金。小型和家族经营的店铺可能只收现金，贴出这样的告示是很正常的事，不是在针对谁。便利店、车站和自动售货机都接受银行卡和 Suica、Pasmo 这类 IC 卡。随身带一点日元，再给一张 IC 卡充值，几乎每个柜台都能应付。"
+      },
+      {
+        "titulo": "带着地址的那个「没有」",
+        "corpo": "Iie, koko ni wa arimasen ga…是标准的说法：没有，这里没有，不过……如果听到第一个词就转身走开，就会把真正有用的那一半留在柜台上——楼上、另一个航站楼、能收纸币的那台机器。"
+      }
+    ]
+  },
+  "slot": "B06",
+  "permissao": "你不需要为大厅里的每一个柜台准备不同的句子，那里也没有人在给你的语法打分。Sumimasen，加上要问的东西，加上 wa arimasu ka，再配一个上扬的语调，就是一整栋楼里任何地方都通用的完整请求——而你完全可以在四个柜台前都用同一个结尾，不用费心去变换措辞让它听起来更好。",
+  "permissaoAudioKey": "fr-b06-n02",
+  "espelho": "任何在自己国家陌生机场落地过的人，早就在不自觉地做这套排查了——信号、钱、车票、能落脚的地方。唯一新鲜的地方，是这次要用三个从不改变的词来完成它。",
+  "fichasCulturais": [
+    {
+      "sinal": "你走到柜台前，直接用英语开口说出你的请求，得到的却是一句简短生硬的回答，感觉像是一扇门被关上了。",
+      "suaLeitura": "他们大概是不想跟我说英语。",
+      "oQueEAli": "在日本，sumimasen 是柜台前仪式性的开场——它能引起注意、为打扰道歉、让走进别人的空间这件事显得可以接受。直接从请求开始，就跳过了这个开场，随之而来的那种中性、克制的语气，很容易被误读成对语言的不情愿，而其实只是先后顺序没对上。",
+      "oQueVoceFaz": "先单独说一声 sumimasen，停顿半拍，然后再问——有日语说日语，没有就说英语。",
+      "oQueMelhora": "交流从一开始就走在预期的轨道上，那些确实会一点英语的员工，也更愿意在这个开场之后主动提供帮助。",
+      "ondeNaoVale": "这说的是问候仪式如何运作，不是关于态度的定论，也不能解释每一次冷淡的柜台交流。有时候，一个值了长班、身后排着长队的员工，就只是累了而已。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b06-n04"
+      ]
+    },
+    {
+      "sinal": "你拿着银行卡走到收银台，卡被拒了，或者被告知只收现金。",
+      "suaLeitura": "这不应该是允许的，或者他们是在针对我这个游客。",
+      "oQueEAli": "日本仍然高度依赖现金，很多小型或家族经营的店铺只收现金——贴出「仅收现金」的告示是正常且合法的，并没有一般性规定强制小商家必须接受刷卡。便利店、车站和大型商店都接受银行卡以及 Suica、Pasmo 这类 IC 卡。",
+      "oQueVoceFaz": "为小店准备一点日元现金作为备用，再给 Suica 或 Pasmo 充值，用来应付便利店、电车和自动售货机。付款前先看看收银台有没有银行卡或 IC 卡的标志。",
+      "oQueMelhora": "你随身留了一点现金正好应付这种时刻，也不会再把商家贴出的告示当成针对你个人的拒绝。",
+      "ondeNaoVale": "不是每家店都只收现金，在大城市，情况正在快速转向刷卡和 IC 卡为主。这是提醒你留一点现金备用，而不是让你以为银行卡永远都不管用。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b06-n06"
+      ]
+    }
+  ]
+}

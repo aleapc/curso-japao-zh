@@ -1,0 +1,427 @@
+{
+  "id": "b13",
+  "nivel": "basico",
+  "numero": 13,
+  "parte": "B13",
+  "titulo": "\"Arerugii ga arimasu\"——开口第一句话，先于一切",
+  "subtitulo": "一句万能句，一张书面卡片，还有第十二部分里那句能把几乎任何菜都变成你能吃的版本的话",
+  "cena": "服务员的点单本已经打开，你们三个人同时在点菜，而那个会让你送医院的成分，桌上没有一个人提到。",
+  "moldura": "protege",
+  "frasePiso": "你会在点单被写下之前，大声用日语说出过敏句。大多数带过敏的游客只是举起手机屏幕，祈祷对方看懂。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-112-numeros",
+      "afirmacao": "在日本，紧急电话是119（火警/救护车）和110（警察），两个号码从任何电话拨打都免费。这里没有像欧洲那样统一的112。需要英语帮助时，JNTO日本旅客热线050-3816-2787全天24小时提供多语言服务，AMDA国际医疗信息中心可以帮你找到会说英语的医生，也能协助翻译。",
+      "fonte": "Números de emergência do Japão: 119 (bombeiros/ambulância) e 110 (polícia); JNTO Japan Visitor Hotline 050-3816-2787, 24h, multilíngue; AMDA International Medical Information Center.",
+      "ano": 2026,
+      "revisarAte": "2028-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b13-n08"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b13-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "第十三部分。今天有一句话必须说得清清楚楚，毫无歧义。这里的其他一切都挂在它上面。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b13-n02",
+      "bloco": "cena",
+      "pt": "点单本打开着，你们三个人同时在点菜，而汤底或酱汁里到底有什么，没人提起。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b13-t01",
+      "es": "ピーナッツアレルギーがあります。命に関わります。",
+      "pinyin": "pee-NAT-tsu a-re-ru-GII ga a-ri-MAS. i-no-chi ni ka-ka-wa-ri-MAS",
+      "pt": "我对花生过敏，这会危及生命。",
+      "tts": "ピーナッツアレルギーがあります。命に関わります。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b13-n03",
+      "bloco": "molde",
+      "pt": "两句半：先说过敏，再说有多严重。正是后半句会让人跑去厨房确认。"
+    },
+    {
+      "consulta": [
+        "dieta/dizer",
+        "saude/minha-alergia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b13-p01",
+      "promptPt": "你刚坐下，菜单还没送来。把花生过敏的两句话都说出来。现在开口说。",
+      "audioKey": "fr-b13-t01",
+      "es": "ピーナッツアレルギーがあります。命に関わります。",
+      "pinyin": "pee-NAT-tsu a-re-ru-GII ga a-ri-MAS. i-no-chi ni ka-ka-wa-ri-MAS",
+      "pt": "我对花生过敏，这会危及生命。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b13-r01",
+      "receptivo": true,
+      "es": "厨房で確認してきます。それまで注文しないでください。",
+      "pt": "我去厨房确认一下，在那之前请先不要点菜。",
+      "tts": "厨房で確認してきます。それまで注文しないでください。",
+      "acao": "等一等。在他们带着厨房的答复回来之前，先别点菜。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b13-n04",
+      "pt": "这正是你想听到的回答。配料清单在厨房手里，前厅没有。"
+    },
+    {
+      "consulta": [
+        "dieta/nao-levam-a-serio",
+        "saude/minha-alergia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b13-p02",
+      "promptPt": "桌上有人要给你尝一小口。用一句话把界限划清楚。现在开口说。",
+      "audioKey": "fr-b13-t02",
+      "es": "アレルギーで、好き嫌いではありません。",
+      "pinyin": "a-re-ru-GII de, su-ki-ki-RAI de wa a-ri-ma-SEN",
+      "pt": "这是过敏，不是挑食。",
+      "tts": "アレルギーで、好き嫌いではありません。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b13-n05",
+      "bloco": "corpo",
+      "pt": "现在第十二部分学过的框架来完成剩下的工作：先说不能吃的东西，再加上「抜きで」。"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "ピーナッツ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b13-p03",
+      "promptPt": "服务员回来了，笔已经落在点单本上。把这句话当作你点的每一样菜都要遵守的规则，再说一遍。现在开口说。",
+      "audioKey": "fr-b13-t03",
+      "es": "ピーナッツ抜きで、とても大切です。",
+      "pinyin": "pee-NAT-tsu NU-ki de, to-te-mo tai-SE-tsu des",
+      "pt": "不要花生——这非常重要。",
+      "tts": "ピーナッツ抜きで、とても大切です。"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "小麦",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b13-p04",
+      "promptPt": "面包店柜台前，你在为外面等着的人挑选。现在开口说。",
+      "audioKey": "fr-b13-t04",
+      "es": "小麦抜きで、お願いします。",
+      "pinyin": "ko-MU-gi NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要小麦。",
+      "tts": "小麦抜きで、お願いします。"
+    },
+    {
+      "consulta": [
+        "dieta/sem",
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "魚介",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b13-p05",
+      "promptPt": "一家海鲜餐厅，菜单上一半都是贝类。在点菜之前先说清楚你的条件。现在开口说。",
+      "audioKey": "fr-b13-t05",
+      "es": "魚介抜きで、お願いします。",
+      "pinyin": "gyo-KAI NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要海鲜。",
+      "tts": "魚介抜きで、お願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b13-r02",
+      "es": "本日の定食には入っています。鶏肉のほうになさいますか？",
+      "pt": "今天的套餐里有这个成分，您要不要改成鸡肉那款？",
+      "tts": "本日の定食には入っています。鶏肉のほうになさいますか？"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "乳製品",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b13-p06",
+      "promptPt": "你想点的这道菜自带奶油。问问看有没有不加奶油的版本。现在开口说。",
+      "audioKey": "fr-b13-t06",
+      "es": "乳製品抜きはできますか？",
+      "pinyin": "nyoo-SEI-hin NU-ki wa de-ki-MAS ka",
+      "pt": "可以做成不含乳制品的吗？",
+      "tts": "乳製品抜きはできますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b13-n06",
+      "bloco": "capsula",
+      "pt": "加三个音节就能打开局面：「できますか」能把一句干脆的「不行」变成一个厨房可以想办法解决的问题。"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "バター",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b13-p07",
+      "promptPt": "蔬菜端上来油光发亮，你一看就知道为什么。问问看有没有别的做法。现在开口说。",
+      "audioKey": "fr-b13-t07",
+      "es": "バター抜きはできますか？",
+      "pinyin": "ba-TAA NU-ki wa de-ki-MAS ka",
+      "pt": "可以做成不加黄油的吗？",
+      "tts": "バター抜きはできますか？"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "卵",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b13-p08",
+      "promptPt": "你在甜品柜台前，正为待会儿挑一样东西。说清楚你的条件。现在开口说。",
+      "audioKey": "fr-b13-t08",
+      "es": "卵抜きはできますか？",
+      "pinyin": "ta-ma-GO NU-ki wa de-ki-MAS ka",
+      "pt": "可以做成不加鸡蛋的吗？",
+      "tts": "卵抜きはできますか？"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "豚肉",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b13-p09",
+      "promptPt": "车站里的三明治柜台，馅料全用日语写着。说明你不吃什么。现在开口说。",
+      "audioKey": "fr-b13-t09",
+      "es": "豚肉抜きで、お願いします。",
+      "pinyin": "bu-ta-NI-ku NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要猪肉。",
+      "tts": "豚肉抜きで、お願いします。"
+    },
+    {
+      "consulta": [
+        "dieta/o-que-tem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b13-p10",
+      "promptPt": "一块点心摆在你面前，上面那层看不出是什么。问出你唯一需要知道的那件事。现在开口说。",
+      "audioKey": "fr-b13-t10",
+      "es": "これにナッツは入っていますか？",
+      "pinyin": "ko-re ni NAT-tsu wa hait-te i-MAS ka",
+      "pt": "这里面含坚果吗？",
+      "tts": "これにナッツは入っていますか？"
+    },
+    {
+      "consulta": [
+        "dieta/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b13-p11",
+      "promptPt": "店里很吵，你已经说了两遍了。把写好的那份递过去。现在开口说。",
+      "audioKey": "fr-b13-t11",
+      "es": "アレルギーのカードです。日本語で書いてあります。",
+      "pinyin": "a-re-ru-GII no KAA-do des. ni-HON-go de kai-te a-ri-MAS",
+      "pt": "这是我的过敏卡，用日语写的。",
+      "tts": "アレルギーのカードです。日本語で書いてあります。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b13-n07",
+      "pt": "卡片是备用手段，从来不是开场白。你要先大声说出来，再把卡片递过去。"
+    },
+    {
+      "consulta": [
+        "dieta/dizer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b13-p12",
+      "promptPt": "你得到的回答只是耸耸肩。把问题送到真正做菜的人那里。现在开口说。",
+      "audioKey": "fr-b13-t12",
+      "es": "厨房で確認してもらえますか？",
+      "pinyin": "choo-BOU de ka-KU-nin shi-te mo-ra-e-MAS ka",
+      "pt": "能麻烦您去厨房确认一下吗？",
+      "tts": "厨房で確認してもらえますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b13-r03",
+      "receptivo": true,
+      "es": "料理長が確認しました。こちらは大丈夫です。",
+      "pt": "主厨确认过了，这一道你可以吃。",
+      "tts": "料理長が確認しました。こちらは大丈夫です。",
+      "acao": "这是经过确认的答案，不是猜测。这才是你可以接受的回答。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b13-n08",
+      "pt": "再说一遍这个号码，让它先记在嘴边：119接通火警和救护车，110接通警察。这里没有112。"
+    },
+    {
+      "consulta": [
+        "saude/112",
+        "apuro/112"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b13-p13",
+      "promptPt": "事情正在发生，你旁边有人手里正拿着电话。给出指示。现在开口说。",
+      "audioKey": "fr-b13-t13",
+      "es": "119番に電話してください。",
+      "pinyin": "i-chi i-chi KYUU ban ni den-wa-shi-te ku-da-sai",
+      "pt": "请拨打119。",
+      "tts": "いちいちきゅうばんに電話してください。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b13-n09",
+      "bloco": "permissao",
+      "pt": "你可以随时打断点菜来说这句话。多说一遍不花你一分钱，却能换来这顿饭的安心。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b13-s01",
+      "es": "ピーナッツアレルギーがあります。命に関わります。ピーナッツ抜きで、とても大切です。厨房で確認してもらえますか？",
+      "pinyin": "pee-NAT-tsu a-re-ru-GII ga a-ri-MAS. i-no-chi ni ka-ka-wa-ri-MAS. pee-NAT-tsu NU-ki de, to-te-mo tai-SE-tsu des. choo-BOU de ka-KU-nin shi-te mo-ra-e-MAS ka",
+      "pt": "按顺序跟读这三句话，它们能搞定全部的事。",
+      "tts": "ピーナッツアレルギーがあります。命に関わります。ピーナッツ抜きで、とても大切です。厨房で確認してもらえますか？",
+      "molde": "NUKI-DE"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b13-n10",
+      "bloco": "recap",
+      "pt": "B13完成。万能过敏句、「东西+抜きで」、问厨房的那句话、过敏卡，还有119。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "先说出口，再写下来",
+    "secoes": [
+      {
+        "titulo": "为什么后半句很重要",
+        "corpo": "「アレルギーがあります」单独说出来，可能会被听成一种个人喜好。「命に関わります」——这会危及生命——或者「アレルギーで、好き嫌いではありません」，这是过敏不是挑食，才是真正把这个问题从餐桌推到厨房的那句话。每次都要两句连着说，一口气说完。",
+        "exemplos": [
+          {
+            "es": "ピーナッツアレルギーがあります。命に関わります。",
+            "pt": "我对花生过敏，这会危及生命。"
+          },
+          {
+            "es": "アレルギーで、好き嫌いではありません。",
+            "pt": "这是过敏，不是挑食。"
+          }
+        ]
+      },
+      {
+        "titulo": "「抜きで」，然后是「できますか」",
+        "corpo": "「东西+抜きで」就是完整的请求了。加上「できますか」，就把一个要求变成了一扇门：厨房可以告诉你哪道菜行得通，而不是只告诉你哪道不行。",
+        "exemplos": [
+          {
+            "es": "乳製品抜きはできますか？",
+            "pt": "可以做成不含乳制品的吗？"
+          },
+          {
+            "es": "魚介抜きで、お願いします。",
+            "pt": "请不要海鲜。"
+          }
+        ]
+      },
+      {
+        "titulo": "卡片是备份，不是第一步",
+        "corpo": "把你的过敏信息用日语写在一张卡片上，放在一只手就能摸到的口袋里。要在说完那句话之后再递出卡片，而不是用卡片代替那句话——冷不丁递出一张卡片，只会让对方停下来干等着读；先开口说，对方就能一边读一边动手处理。另外要注意，日本强制标示过敏原的规定只覆盖预包装食品上的八种成分，并不管餐厅的菜品，所以在柜台前，开口问依然是唯一有效的办法。"
+      },
+      {
+        "titulo": "号码，说一遍就好",
+        "corpo": "119接通消防和救护车，110接通警察。两个号码从任何电话拨打都免费，这里没有像欧洲那样统一的112。需要英语帮助时，JNTO日本旅客热线050-3816-2787全天24小时开通，AMDA国际医疗信息中心可以帮你找到会说英语的医生。"
+      }
+    ]
+  },
+  "slot": "B13",
+  "permissao": "你不必等对话出现空隙。打断点菜来说过敏句，在这里是很正常的事；对着真正端盘子上桌的那个人再说一遍，也一样正常——桌上没有人在给你的流畅度打分。",
+  "permissaoAudioKey": "fr-b13-n09",
+  "espelho": "值得留在家里的那个习惯，是用同一种语气说出喜好和过敏。在家里，这两句话听起来很像，都会换来一个礼貌的点头；但在日本的厨房里，它们会引发完全不同量级的工作，而只有其中一句会换来有人真正去核实。",
+  "fichasCulturais": [
+    {
+      "sinal": "你说了自己有过敏，服务员没有回答——他转身朝厨房走去。",
+      "suaLeitura": "他连自己家的菜单都不了解，我被推给了别人处理。",
+      "oQueEAli": "能确认菜里放了什么的人，是真正做菜、装盘的那个人，所以问题会被带去厨房，而不是在餐桌上被随口回答。他走开，正是答案在路上，而不是答案被回避。",
+      "oQueVoceFaz": "停下点菜，等一等。等他回来，只点他确认过的那些。",
+      "oQueMelhora": "你得到的是一个真正被核实过的答案，而不是随口猜测的安慰，接下来这顿饭也能安心吃完。",
+      "ondeNaoVale": "但在卖预包装食品的柜台不适用——那里没人会走开，包装上的标签就是答案，你该做的是去读标签，而不是开口问。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b13-r01",
+        "fr-b13-n04"
+      ]
+    },
+    {
+      "sinal": "你在一开始说过一次「花生抜きで」，后来上来的一道菜却带着一种没人提过的酱汁。",
+      "suaLeitura": "他们忘了，或者他们根本没把我的话当回事。",
+      "oQueEAli": "你说的条件，是绑在当时正在被写下的那份点单上的。之后再点的菜，或者由另一位服务员端来的菜，从来都不在那句话的范围之内。",
+      "oQueVoceFaz": "每次新点东西都再说一遍——甜点、加点的菜、别人递给你尝的东西。每次都是「东西+抜きで」。",
+      "oQueMelhora": "这个条件会跟着整顿饭走，而不只是管头一分钟，你也不用再对着每一道端上来的菜仔细检查。",
+      "ondeNaoVale": "但如果厨房已经给过你一份核实好的可食用菜品清单，就不必这样了——再说一遍条件也没问题，但该做的工作已经做完了，那份清单才是更可靠的依据。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b13-n05"
+      ]
+    }
+  ]
+}

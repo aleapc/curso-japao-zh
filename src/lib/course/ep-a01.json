@@ -1,0 +1,373 @@
+{
+  "id": "a01",
+  "nivel": "avancado",
+  "numero": 29,
+  "parte": "A01",
+  "titulo": "不是对你说话时，他们是怎么讲的",
+  "subtitulo": "日常口语会去掉你学过的です和ます，简体形式接管一切，助词也会脱落，靠几个很小的词撑起全场",
+  "cena": "你身旁两个人正在进行一整段对话，你却连一个词的边界都找不到。",
+  "moldura": "ganha",
+  "frasePiso": "如果这部分你只带走一件事——わかりません从真实的嘴里说出来会变成わかんない——你就已经能听懂比大多数游客更多的日语了。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-ef-epi-2025",
+      "afirmacao": "在EF英语熟练度指数中，日本多年来一直处于EF所称的'低熟练度'区间，在东亚排名中接近垫底，2024年版将其排在110多个国家中的第90位左右。这项排名带有EF自己承认的局限：样本是自我选择的，且需要网络访问——EF原话是'这是一项在线调查，而非具有统计效度的人口抽样'——这会造成偏差。这足以支撑'日本整体英语水平有限且分布不均'这一说法，但不足以支撑关于日本有多大比例人口会说英语的任何断言，更不能用来预判你接下来会遇到的那个人。",
+      "fonte": "EF English Proficiency Index (Japão historicamente na faixa 'low proficiency', ~90ª posição na edição de 2024); ressalva da própria EF: «an online survey rather than a statistically valid sampling of the population»",
+      "ano": 2025,
+      "revisarAte": "2027-02-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a01-n10"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a01-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "到目前为止都是对你说的日语。这一部分讲的是对别人说的日语——完全是另一回事。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a01-n02",
+      "bloco": "corpo",
+      "pt": "规则一：です和ます会脱落。わかりません是对你说的。わかんない是他们彼此之间说的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a01-r01",
+      "receptivo": true,
+      "acao": "不要去追每个词。抓住这是一个耸肩式的回应，然后往下走。",
+      "es": "さあ、わかんないなあ。",
+      "pt": "嗯，不知道。",
+      "tts": "さあ、わかんないなあ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a01-n03",
+      "pt": "同一个意思，三种大小：わかりません、わからない、わかんない。三个都是日常口语，只有第一个是说给你听的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a01-r02",
+      "receptivo": true,
+      "acao": "みてる是みている吞掉了い之后的样子。ない把它收住。只要能认出来，不要自己去说。",
+      "es": "見てないの？何もないよ、別に。",
+      "pt": "你没看到吗？真的什么都没有。",
+      "tts": "見てないの？何もないよ、別に。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a01-n04",
+      "pt": "助词也会消失。いる变成てる，を和が就这么不见了。你只需要能听出来，不需要自己说。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a01-r03",
+      "receptivo": true,
+      "acao": "そろそろ行かなきゃ的意思是我们该走了。如果这是冲你这一桌说的，就站起来。",
+      "es": "そろそろ行かなきゃ。もう遅いし。",
+      "pt": "我们差不多该走了。已经很晚了。",
+      "tts": "そろそろ行かなきゃ。もう遅いし。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a01-n05",
+      "bloco": "capsula",
+      "pt": "规则二：几个很小的词撑起了大部分交流——ね、さ、まあ、なんか、っていうか。抓住这几个，其余的就打开了。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a01-r04",
+      "receptivo": true,
+      "acao": "三个填充词加一个实词。这就是一个完整、轻松的回答，意思是当然啦。",
+      "es": "まあね、うん。そういうこと。",
+      "pt": "嗯，是啊。就是这样。",
+      "tts": "まあね、うん。そういうこと。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a01-n06",
+      "pt": "ね是确认你还跟着。さ是占住发言权。まあ是缓和语气。なんか是口语里的嗯……，っていうか的意思是应该说、或者说。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a01-r05",
+      "receptivo": true,
+      "acao": "どうする预告了一个决定要出现。那才是你想要的部分——听它后面接的内容。",
+      "es": "で、どうする？っていうか、まだ決めてないんだけど。",
+      "pt": "那我们怎么办？或者说，我还没决定。",
+      "tts": "で、どうする？っていうか、まだ決めてないんだけど。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a01-n07",
+      "pt": "开头的で引出一个结果——那么、于是。结尾的けど会拖长、缓和语气。两个都是填充词，而且都频繁出现。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a01-r06",
+      "receptivo": true,
+      "acao": "全速报出的价格。看收银机屏幕就好；不要在他等你的时候去解码さんぜんはっぴゃく。",
+      "es": "えっと、全部で三千八百円ね。",
+      "pt": "呃，一共是三千八百日元。",
+      "tts": "えっと、全部で三千八百円ね。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a01-n08",
+      "pt": "价格会整块地报出来。看那块小屏幕，不要用第二语言做心算。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a01-r07",
+      "receptivo": true,
+      "acao": "这是关西腔——ほな相当于那么，すわりい相当于坐。同一种语言，不同的边缘。",
+      "es": "元気にしてた？ほな、こっち座りいな。",
+      "pt": "你最近怎么样？来，坐这边来。",
+      "tts": "元気にしてた？ほな、こっち座りいな。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a01-n09",
+      "pt": "地方口音不是另一种语言。在心里把它认作关西腔，你对自己耳朵的担心就会消失。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a01-r08",
+      "receptivo": true,
+      "acao": "那句很快，但里面还是有まあ、で和それで。你抓住了大致的形状——这就是本事。",
+      "es": "まあ、じゃあ行こっか。うん、それで決まりね。",
+      "pt": "好吧，那我们走吧。嗯，就这么定了。",
+      "tts": "まあ、じゃあ行こっか。うん、それで決まりね。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a01-n10",
+      "pt": "这里的英语有限且分布不均。在旅游柜台和大酒店可以指望用上英语，其他大多数地方还是要靠日语。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a01-p01",
+      "promptPt": "你完全没听懂。干净利落地说一次，不要道歉两次。现在开口说。",
+      "audioKey": "fr-a01-x01",
+      "es": "すみません、わかりませんでした。",
+      "pinyin": "soo-mee-ma-SEN, wa-ka-ri-ma-sen-DESH-ta",
+      "pt": "抱歉，我没听懂。",
+      "tts": "すみません、わかりませんでした。",
+      "molde": "SUMIMASEN",
+      "encaixe": "わかりませんでした"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a01-p02",
+      "promptPt": "请对方把整句话再说一遍，你只是需要再听一次。现在开口说。",
+      "audioKey": "fr-a01-x02",
+      "es": "もう一度お願いします。",
+      "pinyin": "moh ee-chee-DO o-ne-gai-shee-mas",
+      "pt": "请再说一次。",
+      "tts": "もう一度お願いします。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a01-p03",
+      "promptPt": "第二遍的语速和第一遍一样快。请求唯一能解决问题的那件事。现在开口说。",
+      "audioKey": "fr-a01-x03",
+      "es": "もっとゆっくりお願いします。",
+      "pinyin": "MOT-to yook-KOO-ri o-ne-gai-shee-mas",
+      "pt": "请说慢一点。",
+      "tts": "もっとゆっくりお願いします。"
+    },
+    {
+      "consulta": [
+        "reparo/como-se-diz"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a01-p04",
+      "promptPt": "中间有一个词起了关键作用，而你没听懂。指出它，问一下。现在开口说。",
+      "audioKey": "fr-a01-x04",
+      "es": "それ、どういう意味ですか？",
+      "pinyin": "so-RE, doh-yoo EE-mee des-ka",
+      "pt": "那是什么意思？",
+      "tts": "それ、どういう意味ですか？"
+    },
+    {
+      "consulta": [
+        "reparo/escreve"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a01-p05",
+      "promptPt": "那是个地名，再听第三遍也没用。请对方写下来。现在开口说。",
+      "audioKey": "fr-a01-x05",
+      "es": "書いてもらえますか？",
+      "pinyin": "kai-te mo-ra-e-mas-ka",
+      "pt": "能帮我写下来吗？",
+      "tts": "書いてもらえますか？"
+    },
+    {
+      "consulta": [
+        "reparo/devagar",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a01-p06",
+      "promptPt": "你听懂了大意，但漏掉了细节。就这么说，好让对方重复有用的那部分。现在开口说。",
+      "audioKey": "fr-a01-x06",
+      "es": "だいたいわかりましたが、全部は…",
+      "pinyin": "dai-tai wa-ka-ri-MASH-ta ga, ZEN-bu wa",
+      "pt": "我听懂了大意，但不是全部。",
+      "tts": "だいたいわかりましたが、全部は…"
+    },
+    {
+      "consulta": [
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a01-p07",
+      "promptPt": "对方为了帮你切换成了英语，队伍空着，你更想继续用日语。问一下。现在开口说。",
+      "audioKey": "fr-a01-x07",
+      "es": "日本語で続けてもいいですか？",
+      "pinyin": "ni-HON-go de tsu-zu-ke-te mo ee des-ka",
+      "pt": "我们可以继续用日语吗？",
+      "tts": "日本語で続けてもいいですか？"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a01-p08",
+      "promptPt": "这桌人刚才从对你说话变成了互相说话，你跟丢了。开开心心地说出你注意到的事。现在开口说。",
+      "audioKey": "fr-a01-x08",
+      "es": "お二人だと、ずっと速いですね！",
+      "pinyin": "o-foo-ta-ri da to, ZOOT-to ha-YAI des ne",
+      "pt": "你们俩之间说话快多了！",
+      "tts": "お二人だと、ずっと速いですね！"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a01-s01",
+      "es": "すみません、わかりませんでした。もう一度お願いします。もっとゆっくりお願いします。",
+      "pinyin": "soo-mee-ma-SEN wa-ka-ri-ma-sen-DESH-ta · moh ee-chee-DO o-ne-gai-shee-mas · MOT-to yook-KOO-ri o-ne-gai-shee-mas",
+      "pt": "跟读这三句话，它们能帮你为任何事情争取到再听一次的机会。",
+      "tts": "すみません、わかりませんでした。もう一度お願いします。もっとゆっくりお願いします。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a01-n11",
+      "bloco": "recap",
+      "pt": "A01完成。です和ます脱落，简体形式接管，几个小词承载意义，听懂房间里三分之一的内容就已经够了。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "消失的部分，和留下的部分",
+    "secoes": [
+      {
+        "titulo": "Ne, sa, maa, nanka, tte iu ka",
+        "corpo": "这五个词没有一个能干净地翻译，而且五个都频繁出现。结尾的ね确认你是否还跟得上。句中的さ用来占住发言权。まあ让接下来要说的话变得柔和一些，大致相当于嗯这个……。なんか是口语里的嗯，出现在说话人还在挑选用词的那个词前面。っていうか的意思是应该说、或者说，它引出的是一个修正——这就是为什么值得把耳朵调到这个词上，因为真正的重点常常紧跟在它后面。",
+        "exemplos": [
+          {
+            "es": "まあね、うん。",
+            "pt": "嗯，是啊。"
+          },
+          {
+            "es": "っていうか、まだ決めてない。",
+            "pt": "或者说，我还没决定。"
+          }
+        ]
+      },
+      {
+        "titulo": "词都去哪儿了",
+        "corpo": "你学过的礼貌形です和ます在日常口语里是不存在的：わかりません会变成わからない，再变成わかんない。みている会缩成みてる。を和が这两个助词直接脱落，句子结尾就是一个光秃秃的简体动词。这些都不是随意——这就是这门语言在不是对陌生人说话时的样子。全部要能认出来；一个都不要自己去用。一个第一周的游客对刚认识的人用简体形式，听起来更像是在模仿随便的语气，而不是像在说日语。"
+      },
+      {
+        "titulo": "De and kedo",
+        "corpo": "轮到某人说话时，开头的で引出一个结果——那么、于是、这样的话——在对话里它常常引出接下来的决定，所以值得留意。结尾的けど与其说是意思是但是，不如说是把话尾拖长：它让句子变得柔和，并把发言权轻轻交还回去。这两个词都太常见了，一段发言可能有一半以上是填充词，而对除了你以外的所有人来说依然完全清楚。"
+      },
+      {
+        "titulo": "英语存在，但分布不均",
+        "corpo": "日本在EF英语指数里处于较低区间，而EF自己也说明样本是自我选择且在线的，所以这个数字只能算是一幅大致的全国图景，绝不能读成人口的百分比。实际情况是，在机场、大酒店和面向游客的柜台可以指望用上一些英语，其他几乎所有地方都要靠日语应付。像关西腔这样的地方口音，是在语速之上再加了一层——同样的词，不同的边缘，而不是另一种语言。"
+      }
+    ]
+  },
+  "slot": "A01",
+  "permissao": "你被允许只听懂偷听到的大约三分之一，并把这算作一次成功。没有人能用第二语言以完全的分辨率跟上一段快速对话——判断一个房间是放松还是紧张才是真正的本事，而这远用不上你想象中那么多词。",
+  "permissaoAudioKey": "fr-a01-n01",
+  "espelho": "任何听过自己国家另一个地区的两个人说话、结果丢掉一半内容的人，都明白这不是外语的问题。语速和共享的语境造成了大部分损耗；语言只是其中一部分。",
+  "fichasCulturais": [
+    {
+      "sinal": "你用日语开口，对方毫不停顿地用英语回答你。",
+      "suaLeitura": "我的日语被拒绝了，对方宁愿不听一个游客尝试着说。",
+      "oQueEAli": "在柜台，最快能把交易办完的方式通常会胜出，而当你身后排着队时，对方切换成英语往往是在选择速度——或者只是很自豪能用上自己会的英语。这几乎和你的口音无关。",
+      "oQueVoceFaz": "队伍长的时候，就顺着用英语。队伍不长的时候，问一句日本語で続けてもいいですか是很正常的事，通常会得到肯定的回答。",
+      "oQueMelhora": "你不再把一个实际的决定读成对你的评判，而正是这种误读会让人在第三天就放弃继续尝试。",
+      "ondeNaoVale": "但如果这次交流涉及专业内容、很紧急或者有时间限制，就不适用——身后排着队的售票窗口不是练习的地方，坚持在那里练习会让你们双方都得不到本来想要的东西。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a01-n10"
+      ]
+    },
+    {
+      "sinal": "你身边的对话又快又重叠，塞满了你辨认不出的小词，而且它似乎没有一个明确的结论就结束了。",
+      "suaLeitura": "我的耳朵不行了，我的日语比我以为的还要差。",
+      "oQueEAli": "日常口语会去掉です和ます，吞掉助词，靠一小撮标记词——ね、さ、まあ、なんか、っていうか——撑起结构，内容就夹在它们中间。你学的是礼貌版；房间里说的是更短、更松散的那个版本。",
+      "oQueVoceFaz": "别再去追踪一个个词，去追踪那些标记词。で意味着一个决定要出现了；结尾的けど意味着说话人在放软语气、把发言权交还回去。",
+      "oQueMelhora": "你开始能跟上那些你没法逐字记下来的对话的轮廓，而这才是真正能告诉你自己是被邀请、被提醒还是被忽略的东西。",
+      "ondeNaoVale": "这不代表你自己也可以拿来用。わかんない和简体形式从一个游客嘴里说出来，听起来更像是在模仿日语，而不是真的在说日语，还会抵消掉你努力挣来的好感。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a01-n02",
+        "fr-a01-n05"
+      ]
+    }
+  ]
+}

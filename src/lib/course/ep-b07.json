@@ -1,0 +1,357 @@
+{
+  "id": "b07",
+  "nivel": "basico",
+  "numero": 7,
+  "parte": "B07",
+  "titulo": "Te mo ii desu ka——问了，答案就是你的",
+  "subtitulo": "一句开场解锁从枕头前的所有柜台——付款、买票、上车、坐下、给手机充电——因为规则会随着场所变化",
+  "cena": "你的行李在推车上，进城有三条路，标牌都写着，可每条路都有一个没人告诉你的条件。",
+  "moldura": "ganha",
+  "frasePiso": "先说动作的 te 形，再接 te mo ii desu ka。一句开场，从飞机到枕头之间的每一道关卡都能问出来。",
+  "moldes": [
+    "TE-MO-II"
+  ],
+  "clique": {
+    "contagem": [
+      "售票机",
+      "出租车",
+      "酒店前台"
+    ],
+    "desconto": "没人为机器、出租车和前台各准备一句不同的话。你留着同一个结尾，只换了前面的动作。",
+    "piso": "下次你不确定这里能不能做某件事，你不会靠猜靠碰运气。你会开口问，动作加上 te mo ii desu ka。"
+  },
+  "fatosDatados": [
+    {
+      "id": "fr-carte-refus",
+      "afirmacao": "在日本，商家没有法律义务必须接受刷卡，很多小型、老字号或家庭经营的店铺只收现金——通常会在门口或收银台标示出来。便利店、连锁店、百货公司、主要交通系统和大多数酒店都接受信用卡和 Suica 等 IC 卡。感应支付和二维码支付（PayPay 等）在政府推动无现金化后迅速普及，但还没有覆盖到每个地方，所以只收现金的拉面摊或神社小摊很正常，不是针对你。",
+      "fonte": "Sem obrigação legal de aceitar cartão no Japão; muitos estabelecimentos pequenos/antigos são somente-dinheiro, em geral sinalizado. Konbini, redes, lojas de departamento, transporte e maioria dos hotéis aceitam cartão e IC. Expansão do cashless (PayPay etc.) após incentivo governamental, mas não universal.",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b07-n03"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b07-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "从飞机到床之间有四道关卡，每一道都有自己的规矩，规定你在那里能做什么。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b07-n02",
+      "bloco": "molde",
+      "pt": "这个句型是：动作用 te 形，再加 te mo ii desu ka——可以吗，然后是那件事。结尾永远不变；把动词直接当成已经是 te 形的整块来记。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b07-t01",
+      "es": "カードで払ってもいいですか？",
+      "pinyin": "KAH-do de ha-RAT-te mo ii des-ka",
+      "pt": "可以刷卡吗？",
+      "tts": "カードで払ってもいいですか？"
+    },
+    {
+      "consulta": [
+        "pagar/cartao",
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "カードで払っ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b07-p01",
+      "promptPt": "你在入境大厅的售票机前，兜里只有不对的货币现钞。排队之前先问一句。现在开口说。",
+      "audioKey": "fr-b07-t01",
+      "es": "カードで払ってもいいですか？",
+      "pinyin": "KAH-do de ha-RAT-te mo ii des-ka",
+      "pt": "可以刷卡吗？",
+      "tts": "カードで払ってもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b07-r01",
+      "receptivo": true,
+      "es": "すみません、うちは現金のみなんです。",
+      "pt": "不好意思，我们这里只收现金。",
+      "tts": "すみません、うちは現金のみなんです。",
+      "acao": "留意找找看有没有写着只收现金的牌子。便利店和连锁店可以刷卡；小店和老店常常不行，这是店里的规定，不是针对你。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b07-n03",
+      "bloco": "corpo",
+      "pt": "这里没有哪家店必须收卡；很多小店只收现金。便利店、连锁店和交通系统都能刷卡和用 IC 卡；日元现金永远好使。"
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "現金で払っ",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b07-p02",
+      "promptPt": "还是那台机器，牌子上写着只收现金。你手里有硬币和纸币。换一种方式问。现在开口说。",
+      "audioKey": "fr-b07-t02",
+      "es": "現金で払ってもいいですか？",
+      "pinyin": "gen-KIN de ha-RAT-te mo ii des-ka",
+      "pt": "可以付现金吗？",
+      "tts": "現金で払ってもいいですか？"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "ここで切符を買っ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b07-p03",
+      "promptPt": "你在一个小柜台前，分不清这里是卖票的还是只提供咨询。现在开口说。",
+      "audioKey": "fr-b07-t03",
+      "es": "ここで切符を買ってもいいですか？",
+      "pinyin": "ko-ko de KIP-pu o kat-te mo ii des-ka",
+      "pt": "可以在这里买票吗？",
+      "tts": "ここで切符を買ってもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b07-r02",
+      "es": "はい、あちらの券売機でも買えますよ。",
+      "pt": "可以，那边的自动售票机也能买。",
+      "tts": "はい、あちらの券売機でも買えますよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b07-n04",
+      "pt": "同一个开场，不同的问题。你只需要换前面的动作，其他都不动。"
+    },
+    {
+      "consulta": [
+        "transporte/bagagem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "荷物を持って乗っ",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b07-p04",
+      "promptPt": "开往市区的电车停在站台上，车门很窄，你身边有个大箱子。跟工作人员确认一下。现在开口说。",
+      "audioKey": "fr-b07-t04",
+      "es": "荷物を持って乗ってもいいですか？",
+      "pinyin": "ni-MOTS o mot-te not-te mo ii des-ka",
+      "pt": "可以带着行李上车吗？",
+      "tts": "荷物を持って乗ってもいいですか？"
+    },
+    {
+      "consulta": [
+        "taxi/destino",
+        "pagar/errado"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "領収書をもらっ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b07-p05",
+      "promptPt": "出租车停在酒店门口，你刚付完钱。司机还欠你一张单据。开口要吧。现在开口说。",
+      "audioKey": "fr-b07-t05",
+      "es": "領収書をもらってもいいですか？",
+      "pinyin": "ryoh-SHOO-sho o mo-rat-te mo ii des-ka",
+      "pt": "可以给我一张收据吗？",
+      "tts": "領収書をもらってもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b07-r03",
+      "es": "はい、どうぞ。空港からは定額なんですよ。",
+      "pt": "好的，给您。从机场出发是固定车费的。",
+      "tts": "はい、どうぞ。空港からは定額なんですよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b07-n05",
+      "bloco": "capsula",
+      "pt": "有些机场路线可以问是不是固定车费；否则就是打表。不管哪种，都不用给小费，收据也可以主动要。"
+    },
+    {
+      "consulta": [
+        "quarto/mala"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "ここに荷物を置い",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b07-p06",
+      "promptPt": "你到了酒店前台，离房间能入住还有四个小时，你想把手腾出来。现在开口说。",
+      "audioKey": "fr-b07-t06",
+      "es": "ここに荷物を置いてもいいですか？",
+      "pinyin": "ko-ko ni ni-MOTS o oi-te mo ii des-ka",
+      "pt": "可以把行李放在这里吗？",
+      "tts": "ここに荷物を置いてもいいですか？"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "ここに座っ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b07-p07",
+      "promptPt": "酒店大堂里有一张空扶手椅，旁边那张椅子上放着别人的外套。先确认一下。现在开口说。",
+      "audioKey": "fr-b07-t07",
+      "es": "ここに座ってもいいですか？",
+      "pinyin": "ko-ko ni su-WAT-te mo ii des-ka",
+      "pt": "可以坐这里吗？",
+      "tts": "ここに座ってもいいですか？"
+    },
+    {
+      "consulta": [
+        "quarto/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "ここで充電し",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b07-p08",
+      "promptPt": "手机只剩百分之四的电，预订信息还在屏幕上，前台后面正好有个插座。现在开口说。",
+      "audioKey": "fr-b07-t08",
+      "es": "ここで充電してもいいですか？",
+      "pinyin": "ko-ko de JOO-den shi-te mo ii des-ka",
+      "pt": "可以在这里给手机充电吗？",
+      "tts": "ここで充電してもいいですか？"
+    },
+    {
+      "consulta": [
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "通っ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b07-p09",
+      "promptPt": "车厢挤满了人，下一站就是你要下车的地方，你和车门之间还隔着三个人。现在开口说。",
+      "audioKey": "fr-b07-t09",
+      "es": "通ってもいいですか？",
+      "pinyin": "TOH-t-te mo ii des-ka",
+      "pt": "可以借过一下吗？",
+      "tts": "通ってもいいですか？"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b07-p10",
+      "promptPt": "司机把你送到了门口，时间已经不早了。说出下车时该说的那两句话。现在开口说。",
+      "audioKey": "fr-b07-t10",
+      "es": "ありがとうございます。おやすみなさい。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mass, o-ya-su-mi-na-SAI",
+      "pt": "非常感谢，晚安。",
+      "tts": "ありがとうございます。おやすみなさい。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b07-s01",
+      "es": "カードで払ってもいいですか？ 荷物を持って乗ってもいいですか？ ここに荷物を置いてもいいですか？",
+      "pinyin": "KAH-do de ha-RAT-te mo ii des-ka · ni-MOTS o mot-te not-te mo ii des-ka · ko-ko ni ni-MOTS o oi-te mo ii des-ka",
+      "pt": "跟读同一个结尾配三个不同的动作。",
+      "tts": "カードで払ってもいいですか？ 荷物を持って乗ってもいいですか？ ここに荷物を置いてもいいですか？",
+      "molde": "TE-MO-II"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b07-n06",
+      "bloco": "recap",
+      "pt": "B07 完成。这个句型覆盖了售票机、站台、出租车、前台和座位——一个结尾，九个动作。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一句开场，进城的整条路",
+    "secoes": [
+      {
+        "titulo": "Te mo ii desu ka 加 te 形",
+        "corpo": "保留 te mo ii desu ka 不变，只换前面的动作。你把动词直接当成已经是 te 形的整块来记——haratte、suwatte、oite——在压力之下从来不用现场变形，这也正是这个句型最划算的地方。它故意用的是短版 te mo ii desu ka，而不是更长的敬语版 te mo yoroshii deshou ka：短版才是柜台前真正能脱口而出的那句。",
+        "exemplos": [
+          {
+            "es": "カードで払ってもいいですか？",
+            "pt": "可以刷卡吗？"
+          },
+          {
+            "es": "ここに荷物を置いてもいいですか？",
+            "pt": "可以把行李放在这里吗？"
+          }
+        ]
+      },
+      {
+        "titulo": "刷卡不是保证的",
+        "corpo": "日本很大程度上仍靠现金运转，收不收卡是店家自己的经营决定，不是法律义务。小店、老店和家族经营的店铺常常只收现金，一般会有牌子提示，这很正常，不是针对你的拒绝。便利店、连锁店、百货公司、酒店和主要交通系统都能刷卡和用 Suica 这类 IC 卡，非接触和二维码支付也扩张得很快——但还没覆盖到所有地方。相反，日元现金永远都收。"
+      },
+      {
+        "titulo": "机场出租车",
+        "corpo": "主要机场往返市区的一些路线可以问是不是固定车费；否则日本出租车就是打表计费。不管哪种，都不用给小费——这里根本没有这个习惯——司机应要求会给你收据。关于出租车还有一点：后座车门由司机开关，所以你只需要等着，不用自己去够门把手。"
+      },
+      {
+        "titulo": "为什么问比记规则更好",
+        "corpo": "能不能刷卡、能不能带箱子上车、能不能寄存在前台，这些都会因公司、因场所、因时段而变。死记一条规则只给你一个答案。这个句型能在任何地方给你答案，包括那些没有人写过攻略的地方。"
+      }
+    ]
+  },
+  "slot": "B07",
+  "permissao": "你不需要为机器、站台、出租车和前台各背一句不同的话。动作加上 te mo ii desu ka，再配上上扬的语气，在这条路上的任何地方都是一句完整的请求，没有人会在那里给你的措辞打分。",
+  "permissaoAudioKey": "fr-b07-n02",
+  "espelho": "任何人在自己国家一个陌生机场落地时，都会不知不觉地做这套排查——钱、票、行李、能坐的地方。唯一新鲜的是，这里你只用一个从不改变的结尾就能完成。",
+  "fichasCulturais": [
+    {
+      "sinal": "你伸手去开出租车门，司机露出不悦的神色，或者你还没碰到门它自己就开了。",
+      "suaLeitura": "门坏了，或者这个司机对自己的车过于较真。",
+      "oQueEAli": "日本出租车的后座车门由司机操作，会自动开关。你不应该去碰它——伸手够门把手才是显得奇怪的举动，而不是等着它自己开。这是这辆车的固定装置，不是在针对你。",
+      "oQueVoceFaz": "退后一步，让车门自己开合，上下车都不要去碰它。也不要给小费——计价器或价目表上的金额就是全部。",
+      "oQueMelhora": "上下车两端的小尴尬都消失了，你也不会再把一个标准配置当成司机的情绪。",
+      "ondeNaoVale": "不包括前门或后备箱，那些可能还是需要你自己动手；也不是所有的私人租车都这样——自动车门是计价出租车的特点，不是每辆你可能坐的车都有。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b07-n05"
+      ]
+    },
+    {
+      "sinal": "一家小餐馆或售票柜台摆手拒绝你的卡，指了指一张手写的牌子。",
+      "suaLeitura": "他们是因为我的卡是外国的才拒收。",
+      "oQueEAli": "日本没有法律要求商家必须收卡，很多小店或老店只收现金，通常会在门口或收银台贴出说明。他们指的那张牌子就是全部的解释——本地顾客遇到的也是同样的情况。",
+      "oQueVoceFaz": "第一天就随身带够日元现金，排队之前先看看门口有没有提示。便利店和连锁店能刷卡也能用 IC 卡；只收现金的拉面摊则不行。",
+      "oQueMelhora": "你不会再把一条张贴出来的政策当成针对个人的决定，也不会在排队最前面时才发现手里的方式都不管用。",
+      "ondeNaoVale": "不适用于日元现金，那永远都收。而且各大城市里刷卡、IC 和二维码的比例正在快速上升，所以只收现金是提醒你多带一点现金垫底，而不是让你以为卡永远不管用。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b07-n03"
+      ]
+    }
+  ]
+}

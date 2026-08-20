@@ -1,0 +1,361 @@
+{
+  "id": "a03",
+  "nivel": "avancado",
+  "numero": 31,
+  "parte": "A03",
+  "titulo": "他们眼中的自己是谁",
+  "subtitulo": "钟点、盘子里的季节，和一个由法律定义的标签——还有他们自嘲的那个笑话，讲述权是他们的，欣赏权是你的",
+  "cena": "有人刚刚很有底气地跟你讲了这里的事情是怎么做的——然后停了下来，好像轮到你该发表看法了。",
+  "moldura": "ganha",
+  "frasePiso": "问他们自己的事，说出你喜欢的地方。好奇心到哪里都受欢迎；附和一句对这个国家的定论则不然。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-insee-repas",
+      "afirmacao": "日本的用餐时间高度同步，而不是分散在一天当中。NHK的全国生活时间调查（国民生活時間調査）记录了午餐高度集中在正午前后，晚餐集中在傍晚，人群之间的差异比许多西方国家小得多。对游客来说，实际的推论很直接：午餐时段是集体性的，很多厨房在两个服务时段之间会关门，所以下午两三点到店往往意味着已经错过了饭点，而不是正赶上。",
+      "fonte": "NHK «国民生活時間調査» (pesquisa de uso do tempo): refeições fortemente concentradas — almoço em torno do meio-dia, jantar no início da noite",
+      "ano": 2026,
+      "revisarAte": "2028-08-04",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a03-n03"
+      ]
+    },
+    {
+      "id": "fr-fait-maison",
+      "afirmacao": "地理标志标章（地理的表示・GI）是一个有法律定义的标签，不是营销用语：根据《地理标志法》（地理的表示法，2014年颁布，2015年6月起施行），一种与某个地方和传统制法绑定的食品可以标注注册的GI标章，神戸ビーフ和夕張メロン这样的名字就登记在这个体系下。有两个限制对游客来说很重要：注册是自愿的，所以没有标章什么都证明不了；而且这个标章认证的是产品与产地之间的联系，而不是证明菜单上某道菜是在店里现做的。",
+      "fonte": "地理的表示法 (Lei de Indicações Geográficas), promulgada em 2014, em vigor desde junho de 2015; marca GI (登録標章); ex.: 神戸ビーフ, 夕張メロン",
+      "ano": 2026,
+      "revisarAte": "2028-08-04",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a03-n04",
+        "fr-a03-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a03-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "每个国家都会讲一个关于自己的故事。这里的很多故事就摆在餐桌上，在固定的钟点，随季节变化。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a03-r01",
+      "receptivo": true,
+      "acao": "不是冲你说的。这是在描述这里的一天是怎么安排的。",
+      "es": "うちはね、パソコンの前では食べないの。ちゃんと座ってね。",
+      "pt": "我们家不在电脑前吃饭。要好好坐下来吃。",
+      "tts": "うちはね、パソコンの前では食べないの。ちゃんと座ってね。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a03-n02",
+      "bloco": "corpo",
+      "pt": "午餐有一个固定的钟点，而不是一段弹性的时段，很多厨房在两个服务时段之间会关门。这会影响你一整天的安排。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a03-n03",
+      "bloco": "capsula",
+      "pt": "这部分是有数据支撑的。时间使用调查显示这里的用餐时间高度集中——午餐在正午前后，晚餐在傍晚，大家几乎同时进餐。"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a03-p01",
+      "promptPt": "两点一到，店里就空了，你想知道什么时候会再坐满。问问收拾桌子的人。现在开口说。",
+      "audioKey": "fr-a03-t01",
+      "es": "お昼は何時に食べますか？",
+      "pinyin": "o-hee-ru wa NAN-ji ni ta-be-mas-ka",
+      "pt": "你们几点吃午饭？",
+      "tts": "お昼は何時に食べますか？",
+      "molde": "NAN-JI",
+      "encaixe": "お昼"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a03-r02",
+      "receptivo": true,
+      "acao": "所有人都在同一个时间点到。这就是调查数字在现实里的样子。",
+      "es": "お昼は十二時ごろ、みんないっせいに来ますよ。",
+      "pt": "中午十二点左右，大家一下子都来了。",
+      "tts": "お昼は十二時ごろ、みんないっせいに来ますよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a03-n04",
+      "pt": "有一部法律定义了一个食品标签——GI标章——把一种产品和某个地方、某种制法绑在一起，还附带一个注册的标志。"
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a03-p02",
+      "promptPt": "菜单板上的一道菜看起来很不错，你想知道它是怎么做出来的。问一下。现在开口说。",
+      "audioKey": "fr-a03-t02",
+      "es": "これは手作りですか？",
+      "pinyin": "ko-re wa te-ZOOK-ri des-ka",
+      "pt": "这是自家做的吗？",
+      "tts": "これは手作りですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a03-r03",
+      "receptivo": true,
+      "acao": "回答里连例外都说清楚了。这种精确才是有意思的地方。",
+      "es": "うちは全部手作りです。お味噌だけは近所の蔵のを使ってますけど。",
+      "pt": "我们家的东西都是自己做的。只有味噌是用附近酿造坊的。",
+      "tts": "うちは全部手作りです。お味噌だけは近所の蔵のを使ってますけど。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a03-n05",
+      "pt": "GI标章是自愿申请的，所以没有标章什么都证明不了。问一句比在菜单上找标志更管用。"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a03-p03",
+      "promptPt": "你想知道这个镇子引以为傲的东西，而不是全国菜单上都有的那种。问一下。现在开口说。",
+      "audioKey": "fr-a03-t03",
+      "es": "この辺の名物は何ですか？",
+      "pinyin": "ko-no HEN no mei-BU-tsu wa nan des-ka",
+      "pt": "这一带的名产是什么？",
+      "tts": "この辺の名物は何ですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a03-r04",
+      "receptivo": true,
+      "acao": "这份自豪首先是属于本地的，然后才是全国的。跟着这个镇子走，而不是跟着整个国家走。",
+      "es": "ここはやっぱりお蕎麦ですね。よそとは出汁が違うんですよ。",
+      "pt": "这里的话真的要数荞麦面。汤头跟别的地方不一样。",
+      "tts": "ここはやっぱりお蕎麦ですね。よそとは出汁が違うんですよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a03-n06",
+      "pt": "现在是这个故事的另一半：这里的人拿自己开的那个老玩笑。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a03-r05",
+      "receptivo": true,
+      "acao": "这是他们拿自己开的玩笑，讲述权始终是他们的。跟着笑就好，别自己再加一句。",
+      "es": "日本人はね、すぐ「すみません」って謝るんですよ。癖でね。",
+      "pt": "我们日本人啊，动不动就说すみません道歉。习惯了。",
+      "tts": "日本人はね、すぐ「すみません」って謝るんですよ。癖でね。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a03-n07",
+      "pt": "以前这个镇子更安静这句话也是一样。附和这句话是唯一一个会让气氛变差的做法。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a03-r06",
+      "receptivo": true,
+      "acao": "对方不是在要求你附和，而是把一个话题递给了你。",
+      "es": "昔はもっと静かな町だったんですけどねえ。",
+      "pt": "以前这个镇子安静多了，你知道吗。",
+      "tts": "昔はもっと静かな町だったんですけどねえ。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a03-p04",
+      "promptPt": "他们刚说以前一切都更好。别附和也别反驳——问问他们。现在开口说。",
+      "audioKey": "fr-a03-t04",
+      "es": "この町、何が変わりましたか？",
+      "pinyin": "ko-no ma-CHEE, na-ni ga ka-wa-ri-MASH-ta ka",
+      "pt": "这个镇子有什么变了吗？",
+      "tts": "この町、何が変わりましたか？"
+    },
+    {
+      "consulta": [
+        "reparo/como-se-diz",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a03-p05",
+      "promptPt": "他们说出一个这里人人从小就知道、你却从没听过的东西。说出来，把话头交给他们。现在开口说。",
+      "audioKey": "fr-a03-t05",
+      "es": "知らないので、教えてください。",
+      "pinyin": "shee-ra-nai no-de, o-shee-e-te ku-da-sai",
+      "pt": "我不知道，请告诉我。",
+      "tts": "知らないので、教えてください。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a03-r07",
+      "receptivo": true,
+      "acao": "这正是你想钓出来的那句话。坐下吧，接下来的二十分钟随你听。",
+      "es": "ああ、それはね、話すと長いですよ。まあ座って。",
+      "pt": "啊，那个啊——说起来就长了。来，坐吧。",
+      "tts": "ああ、それはね、話すと長いですよ。まあ座って。"
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a03-p06",
+      "promptPt": "这顿饭比你预期的要好。把它说成你自己的体验，不要拿去跟任何地方比较。现在开口说。",
+      "audioKey": "fr-a03-t06",
+      "es": "ここで、とてもおいしくいただきました。本当に。",
+      "pinyin": "ko-ko de, to-te-mo o-ee-shee-ku ee-ta-da-ki-MASH-ta · hon-TOH ni",
+      "pt": "我在这里吃得非常好。真的。",
+      "tts": "ここで、とてもおいしくいただきました。本当に。"
+    },
+    {
+      "consulta": [
+        "reparo/como-se-diz"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a03-p07",
+      "promptPt": "他们用了一个词来形容这道菜，你想记住它。指着盘子问一下。现在开口说。",
+      "audioKey": "fr-a03-t07",
+      "es": "これ、日本語で何て言うんですか？",
+      "pinyin": "ko-re, ni-HON-go de NAN-te yoo-n des-ka",
+      "pt": "这个用日语怎么说？",
+      "tts": "これ、日本語で何て言うんですか？"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a03-p08",
+      "promptPt": "你占用了别人二十分钟的时间，听完了他们的整个话题。得体地收个尾。现在开口说。",
+      "audioKey": "fr-a03-t08",
+      "es": "ありがとうございます。とても勉強になります。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mas · to-te-mo ben-KYOH ni na-ri-mas",
+      "pt": "谢谢你，跟你聊学到了很多。",
+      "tts": "ありがとうございます。とても勉強になります。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a03-s01",
+      "es": "これは手作りですか？ この辺の名物は何ですか？ 知らないので、教えてください。",
+      "pinyin": "ko-re wa te-ZOOK-ri des-ka · ko-no HEN no mei-BU-tsu wa nan des-ka · shee-ra-nai no-de o-shee-e-te ku-da-sai",
+      "pt": "跟读这三个问题，它们能打开话题，又不需要你表明立场。",
+      "tts": "これは手作りですか？ この辺の名物は何ですか？ 知らないので、教えてください。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a03-n08",
+      "bloco": "recap",
+      "pt": "A03完成。钟点是有数据的，GI标章是有法律依据的，而他们自嘲的笑话始终是他们自己的。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "钟点、法律和一个老玩笑",
+    "secoes": [
+      {
+        "titulo": "钟点是真实存在的，而且是有数据的",
+        "corpo": "时间使用调查显示这里的用餐时间高度集中——午餐在正午前后，晚餐在傍晚——人群之间的差异比游客习惯的要小得多。实际后果很直接，忽视它代价不小：午餐时段是集体性的，很多厨房在两个服务时段之间会关门。下午两点半到店不是个人喜好的问题——那是错过了饭点。",
+        "exemplos": [
+          {
+            "es": "お昼は何時に食べますか？",
+            "pt": "你们几点吃午饭？"
+          },
+          {
+            "es": "お昼は十二時ごろ、みんないっせいに来ますよ。",
+            "pt": "中午十二点左右，大家一下子都来了。"
+          }
+        ]
+      },
+      {
+        "titulo": "GI标章是一个法律术语",
+        "corpo": "自2015年起，只有依据《地理标志法》登记、与某个地方及传统生产方式绑定的食品，才能标注地理标志标章——神戸ビーフ和夕張メロン这样的名字就在这份登记名单上。有两点比这个标章本身更重要：注册是自愿的，所以没有标章不能证明任何事；而且它认证的是产品与产地之间的联系，而不是菜单上某道菜是不是在店里现做的。要问后面这个问题，一句手作りですか比任何标志都管用。"
+      },
+      {
+        "titulo": "这份自豪首先属于本地，然后才属于全国",
+        "corpo": "问一个地方的名物是什么，你很少会得到一个关于整个国家的答案。你得到的会是一个镇子、一个山谷、一种在这里这样做、在隔了两个县的地方却是另一种做法的汤头，通常还会附带一句别处做得不对的评论。把话题往本地层面深挖，是这部分里最有收获的一个问题，而且只需要几个词。"
+      },
+      {
+        "titulo": "他们拿自己开的玩笑不是共有财产",
+        "corpo": "日本人はすぐ謝る——我们什么都爱道歉——和昔はもっと静かだった——以前更安静——这两句话人们经常轻松愉快地拿来说自己的国家和镇子。你把它们复述回去是另一回事：第一次是自嘲，第二次就变成了一个外国人下的定论。跟着笑是免费的。自己再加一句就不是了，气氛降温也会立竿见影。"
+      }
+    ]
+  },
+  "slot": "A03",
+  "permissao": "你被允许什么都不知道，也被允许大声说出来。知らないので、教えてください在这段对话里不是承认失败——它是能把一句三个词的对话变成二十分钟畅谈的句子，而且在这部分的任何话题上都管用。",
+  "permissaoAudioKey": "fr-a03-n06",
+  "espelho": "任何听过一个游客自信满满地把自己的国家解释给你听的人，都明白这部分想让你避开的正是那种感觉。这里的内容并不难；它只是要求你比本能想要的多做一句客人，再多留一句。",
+  "fichasCulturais": [
+    {
+      "sinal": "菜单或店招上，有些产品标了GI标章，有些没有。",
+      "suaLeitura": "没标章的就是工业化生产的，所以我该只从有标章的那些里选。",
+      "oQueEAli": "地理标志标章有明确的法律定义——产品与某个地方及登记在册的传统制法绑定——但注册是自愿的。一个完全按传统方式生产的商家完全可能没有任何标章。而且这个标章认证的是产品与产地的联系，不是证明菜单上某道菜是在这里现做的。",
+      "oQueVoceFaz": "别把这个标章当成打分表，改问一句：これは手作りですか。回答通常会连例外都说清楚，这比那个标志能告诉你的多得多。",
+      "oQueMelhora": "你最终会根据厨房实际做的事情来选择，而不是根据哪些商家愿意去注册。",
+      "ondeNaoVale": "但这不代表标章出现时就毫无意义——它一旦出现，背后就有明确的法律定义支撑。真正说明不了任何事的，是它的缺席。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-a03-n04",
+        "fr-a03-n05"
+      ]
+    },
+    {
+      "sinal": "有人当着你的面轻松愉快地把自己的国家或镇子数落了一通，然后停顿了一下。",
+      "suaLeitura": "我们的看法一致，跟着附和能显示出我真的懂这个地方。",
+      "oQueEAli": "一个人拿自己国家开的自嘲玩笑，和一个游客说出同样一句话，是两种不同的言语行为。那个停顿通常只是修辞性的，不是在征求第二个人的看法，而后者听起来会像是一个客人下的定论。",
+      "oQueVoceFaz": "跟着笑，把附和换成一个关于他们自己经历的问题——この町、何が変わりましたか。",
+      "oQueMelhora": "你得到的是一个故事，而不是一间气氛降温的屋子，话题也能在接下来的这顿饭里一直开着。",
+      "ondeNaoVale": "这不是要你保持沉默。说出你喜欢的地方，点名具体的地点或菜肴，都是受欢迎的，也不用付出任何代价——你拒绝的是下定论，不是这个话题本身。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a03-n06",
+        "fr-a03-n07"
+      ]
+    }
+  ]
+}

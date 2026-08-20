@@ -1,0 +1,300 @@
+{
+  "id": "i07",
+  "nivel": "intermediario",
+  "numero": 25,
+  "parte": "I07",
+  "titulo": "能传到后厨的赞美，和能换来新菜的那句平铺直叙",
+  "subtitulo": "说出菜名，赞美就传得出去；说出事实，菜就会被换掉——两句话都只要六个词左右",
+  "cena": "烤鱼真的做得极好，上一道汤端上来时是凉的，而你只有十秒钟，可以拿这两件事各做点有用的事。",
+  "moldura": "ganha",
+  "frasePiso": "把东西点名。带名词的赞美能传到后厨；带事实的句子能让人采取行动。",
+  "decisao": "赞美时点出菜名，事实用平静的语气当场说出来，而不是对什么都说“美味しい”，然后回酒店才抱怨",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i07-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "两句话，作用相反，一条规则：把东西点名。含糊的赞美只能停在桌边。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i07-n02",
+      "bloco": "corpo",
+      "pt": "先说赞美。单独一句 oishii 只是礼貌的响声。点出菜名，它就变成了会被传到后厨的一句话。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i07-t01",
+      "es": "焼き魚がとても美味しかったです。ごちそうさまでした。",
+      "pinyin": "ya-ki-za-KA-na ga to-TE-mo o-i-shi-KAT-ta des. go-chi-soh-sa-ma-DESH-ta",
+      "pt": "烤鱼真的很好吃。谢谢款待。",
+      "tts": "焼き魚がとても美味しかったです。ごちそうさまでした。"
+    },
+    {
+      "consulta": [
+        "conversa/elogiar",
+        "comer/pedido"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i07-p01",
+      "promptPt": "有一道菜比其他都出色。点出它的名字来赞美，把这句话传出去。现在开口说。",
+      "audioKey": "fr-i07-t01",
+      "es": "焼き魚がとても美味しかったです。ごちそうさまでした。",
+      "pinyin": "ya-ki-za-KA-na ga to-TE-mo o-i-shi-KAT-ta des. go-chi-soh-sa-ma-DESH-ta",
+      "pt": "烤鱼真的很好吃。谢谢款待。",
+      "tts": "焼き魚がとても美味しかったです。ごちそうさまでした。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i07-r01",
+      "receptivo": true,
+      "acao": "先别急着起身。回话很短，但赞美还是会传到后厨。",
+      "es": "ありがとうございます。板前に伝えます。喜びます。",
+      "pt": "谢谢您。我会转告厨师，他一定会很高兴。",
+      "tts": "ありがとうございます。板前に伝えます。喜びます。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i07-n03",
+      "pt": "Oishii、saiko、zeppin，这三个在这里都是很普通的词，也都比干巴巴的一句很好更有力。"
+    },
+    {
+      "consulta": [
+        "conversa/elogiar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i07-p02",
+      "promptPt": "经过柜台时，不夸单独一道菜，而是夸整间店。现在开口说。",
+      "audioKey": "fr-i07-t02",
+      "es": "ここは、本当に美味しいですね。",
+      "pinyin": "ko-KO wa, hon-TOH ni o-i-shi-i des-ne",
+      "pt": "这里的东西真的很好吃呢。",
+      "tts": "ここは、本当に美味しいですね。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i07-n04",
+      "bloco": "capsula",
+      "pt": "现在说另一种情况。先说 sumimasen，再说事实，然后就打住。不用讲故事，也不用叠加道歉。"
+    },
+    {
+      "consulta": [
+        "reparo/reclamar",
+        "comer/pedido"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "冷たいです",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i07-p03",
+      "promptPt": "这碗汤端上来是凉的。就平静地说出这一点，别的都不用说。现在开口说。",
+      "audioKey": "fr-i07-t03",
+      "es": "すみません、これ、冷たいです。",
+      "pinyin": "su-mi-ma-SEN, ko-RE, tsu-me-TA-i des",
+      "pt": "不好意思，这个是凉的。",
+      "tts": "すみません、これ、冷たいです。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i07-r02",
+      "es": "あ、失礼しました。すぐ温め直します。",
+      "pt": "啊，抱歉，我马上给您重新加热。",
+      "tts": "あ、失礼しました。すぐ温め直します。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i07-n05",
+      "pt": "这句话之所以有效，是因为里面有一个事实。堆砌道歉只会让对方无从下手。"
+    },
+    {
+      "consulta": [
+        "reparo/reclamar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "魚を頼みました",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i07-p04",
+      "promptPt": "端上来的是另一道菜。点出你真正点的那一道。现在开口说。",
+      "audioKey": "fr-i07-t04",
+      "es": "すみません、魚を頼んだんですが。",
+      "pinyin": "su-mi-ma-SEN, sa-KA-na o ta-non-da-n-des-ga",
+      "pt": "不好意思，我点的是鱼。",
+      "tts": "すみません、魚を頼んだんですが。"
+    },
+    {
+      "consulta": [
+        "reparo/reclamar",
+        "comer/pedido"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i07-p05",
+      "promptPt": "杯子有个缺口。请求换一个，不用附带解释。现在开口说。",
+      "audioKey": "fr-i07-t05",
+      "es": "これ、変えてもらえますか？",
+      "pinyin": "ko-RE, ka-e-te mo-ra-e-mas-ka",
+      "pt": "能帮我换一下这个吗？",
+      "tts": "これ、変えてもらえますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i07-n06",
+      "pt": "Sumimasen 永远放在最前面。它就像敲门声，后面接的话就会显得再自然不过。"
+    },
+    {
+      "consulta": [
+        "reparo/reclamar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "まだかかりますか",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i07-p06",
+      "promptPt": "已经过了四十分钟。问一下还要多久，不指责任何人。现在开口说。",
+      "audioKey": "fr-i07-t06",
+      "es": "すみません、まだかかりますか？",
+      "pinyin": "su-mi-ma-SEN, ma-da ka-ka-ri-mas-ka",
+      "pt": "不好意思，还要等一会儿吗？",
+      "tts": "すみません、まだかかりますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i07-r03",
+      "receptivo": true,
+      "acao": "还要两分钟，就是说菜马上就好了。留在桌边等着。",
+      "es": "もう少しで来ます、二分ほどで。今夜は少し混んでいまして。",
+      "pt": "马上就好，大概两分钟。今晚人有点多。",
+      "tts": "もう少しで来ます、二分ほどで。今夜は少し混んでいまして。"
+    },
+    {
+      "consulta": [
+        "conversa/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i07-p07",
+      "promptPt": "他们一分钟就处理好了。把这件事收个尾，让这桌的气氛保持融洽。现在开口说。",
+      "audioKey": "fr-i07-t07",
+      "es": "ありがとうございます、助かります。",
+      "pinyin": "a-ri-ga-toh go-za-i-mas, ta-su-ka-ri-mas",
+      "pt": "非常感谢，帮了大忙了。",
+      "tts": "ありがとうございます、助かります。"
+    },
+    {
+      "consulta": [
+        "conversa/elogiar",
+        "conversa/despedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i07-p08",
+      "promptPt": "临走时，说出那句最有分量的赞美。现在开口说。",
+      "audioKey": "fr-i07-t08",
+      "es": "また来ます。",
+      "pinyin": "ma-ta ki-mas",
+      "pt": "我们还会再来的。",
+      "tts": "また来ます。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i07-s01",
+      "es": "焼き魚がとても美味しかったです。すみません、これ、冷たいです。ありがとうございます、助かります。",
+      "pinyin": "ya-ki-za-KA-na ga to-TE-mo o-i-shi-KAT-ta des. su-mi-ma-SEN, ko-RE, tsu-me-TA-i des. a-ri-ga-toh go-za-i-mas, ta-su-ka-ri-mas",
+      "pt": "依次跟读赞美、事实，还有那句让气氛保持融洽的收尾。",
+      "tts": "焼き魚がとても美味しかったです。すみません、これ、冷たいです。ありがとうございます、助かります。",
+      "molde": "SUMIMASEN"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i07-n07",
+      "bloco": "recap",
+      "pt": "I07 完成。点出菜名来赞美，点出事实来换菜，不管哪种情况都以融洽的方式收尾。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "两句话都需要一个名词",
+    "secoes": [
+      {
+        "titulo": "点名的赞美传得出去",
+        "corpo": "点出菜名，才让一句赞美能被转述——没人能把「一切都很好」带进后厨，但他们能带走「烤鱼」这个词。加上 gochisosama deshita，这句话里就同时有了对象和谢意，这就足够传到厨师那里了。",
+        "exemplos": [
+          {
+            "es": "焼き魚がとても美味しかったです。",
+            "pt": "烤鱼真的很好吃。"
+          },
+          {
+            "es": "ここは、本当に美味しいですね。",
+            "pt": "这里的东西真的很好吃呢。"
+          }
+        ]
+      },
+      {
+        "titulo": "Sumimasen 加事实",
+        "corpo": "Kore, tsumetai desu。Sakana o tanonda n desu ga。Mada kakarimasu ka。三句话，没有形容词，也不讲今晚过得怎么样。句子越短，菜换得越快。"
+      },
+      {
+        "titulo": "为什么过度道歉会适得其反",
+        "corpo": "在事实上叠加道歉，会把对方真正需要的那条信息埋起来，也会让人以为你已经做好了吵一架的准备。一句平静、温和、只讲事实的话，反而会被当作单纯的信息来听。"
+      },
+      {
+        "titulo": "最有分量的赞美是回头再来",
+        "corpo": "Mata kimasu 比任何形容词都更有分量。一家每周都在喂饱同一片街坊的店，衡量自己做得好不好，靠的是回头客，而不是事后被打进手机里的那几行字。"
+      }
+    ]
+  },
+  "slot": "I07",
+  "permissao": "你可以说一道菜是凉的。Sumimasen, kore, tsumetai desu 在日本的餐桌上是一句再普通不过的话，会被当作信息来听，而不是被当作攻击；而那种就着凉菜吃完、回酒店才发牢骚的做法，帮不了任何人，尤其帮不了你自己。",
+  "permissaoAudioKey": "fr-i07-n04",
+  "espelho": "任何一个在家里吃到上错的菜也不指出来、只在车上才抱怨的人，都清楚这种本能反应。这跟日语无关——而是一种认为开口就会显得难缠的想法，而事实恰恰相反。",
+  "fichasCulturais": [
+    {
+      "sinal": "你热情地赞美了一道菜，得到的只是一句简短的「伝えます」，没有别的——没有维持的笑容，也没有追问。",
+      "suaLeitura": "这句赞美说得不太对，或者他们并不在意。",
+      "oQueEAli": "在餐桌边，对赞美的回应通常简短而职业；真正重要的部分发生在你看不见的后厨里。回应的长短并不能衡量这句话有没有被认真对待。",
+      "oQueVoceFaz": "说一次，点出菜名，让那句简短的回应就是全部的回应。不要提高音量重复，也不要再补一句。",
+      "oQueMelhora": "赞美会被转达下去，这场交流也会维持在它该有的分量上，而这恰恰也是第二天晚上还能自然再来一次的原因。",
+      "ondeNaoVale": "但如果你真正想要的是换一道菜，赞美里并不带有任何请求——请求需要自己单独的一句话，以 sumimasen 开头。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i07-n02"
+      ]
+    },
+    {
+      "sinal": "你一开口就直接说问题——「这个是凉的」——得到的回应却有点冷淡，尽管你说的是事实。",
+      "suaLeitura": "他们不满被这样指出，这里提意见不值得。",
+      "oQueEAli": "像 sumimasen 这样的开场语，在语用学里被视为一种缓和进入对方空间的仪式；跳过它，交流就少了这一步铺垫，随之而来的冷淡其实是关于开场方式的，而不是关于内容本身的。",
+      "oQueVoceFaz": "在这些句子前面都先加一句 sumimasen，再说事实，然后沉默。总共六个词，就是一个完整而得体的请求。",
+      "oQueMelhora": "同样的事实会得到不一样的回应，你也不会再把这种顺序上的空缺误读成对你的敌意。",
+      "ondeNaoVale": "但这不代表开场语能保证得到热情的回应——一家真的忙得团团转的店，会对所有人都比较利落，而 konde imashite 说的正是这个意思。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i07-n06"
+      ]
+    }
+  ]
+}

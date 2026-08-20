@@ -1,0 +1,297 @@
+{
+  "id": "b05",
+  "nivel": "basico",
+  "numero": 5,
+  "parte": "B05",
+  "titulo": "Mokuteki、nannichi、doko——三个答案，你就能过关",
+  "subtitulo": "你为什么来、待多久、住在哪里——简短、真实，剩下的交给预订资料",
+  "cena": "入境检查的队伍里，官员的视线已经飘向队伍里的下一本护照。",
+  "moldura": "ganha",
+  "frasePiso": "回答被问到的问题，然后停下来。剩下的一切交给预订资料。",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b05-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "柜台前只有三个问题，不是一场日语考试。你为什么来，待多久，住在哪里。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b05-r01",
+      "es": "こんにちは。旅行の目的は何ですか？",
+      "pt": "您好。此行的目的是什么？",
+      "tts": "こんにちは。旅行の目的は何ですか？",
+      "receptivo": true,
+      "acao": "只回答目的这一项。行程细节不用提。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b05-p01",
+      "promptPt": "你来是为了到处走走、吃点好的，然后回家。用一个词说出来。现在开口说。",
+      "audioKey": "fr-b05-t01",
+      "es": "観光です。",
+      "pinyin": "kan-KOH dess",
+      "pt": "观光。",
+      "tts": "観光です。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b05-r02",
+      "es": "何日間、滞在しますか？",
+      "pt": "您要待几天？",
+      "tts": "何日間、滞在しますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b05-n02",
+      "bloco": "corpo",
+      "pt": "用你自己实际的天数，不是这堂课里的数字。不管天数是多少，句型都同样简短。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b05-p02",
+      "promptPt": "只说出停留的天数，别的什么都不要说。两个词。现在开口说。",
+      "audioKey": "fr-b05-t02",
+      "es": "十日間です。",
+      "pinyin": "TOH-ka-kan dess",
+      "pt": "十天。",
+      "tts": "十日間です。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b05-r03",
+      "es": "どこに泊まりますか？",
+      "pt": "您住在哪里？",
+      "tts": "どこに泊まりますか？",
+      "receptivo": true,
+      "acao": "说出城市和住所的类型。到这里就停。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b05-n03",
+      "pt": "不是要讲你怎么找到那个地方的故事。城市、住所类型，说完就停。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar",
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b05-p03",
+      "promptPt": "简短地说出你住在哪里——城市和住所类型。现在开口说。",
+      "audioKey": "fr-b05-t03",
+      "es": "東京の、ホテルです。",
+      "pinyin": "TOH-kyoh no, HO-te-ru dess",
+      "pt": "在东京，住酒店。",
+      "tts": "東京の、ホテルです。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b05-r04",
+      "es": "予約はありますか？",
+      "pt": "您有预订资料吗？",
+      "tts": "予約はありますか？"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b05-p04",
+      "promptPt": "把你昨晚存好的离线副本递过去，让文件自己说话。现在开口说。",
+      "audioKey": "fr-b05-t04",
+      "es": "はい、これです。",
+      "pinyin": "HAI, ko-re dess",
+      "pt": "有，就是这个。",
+      "tts": "はい、これです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b05-n04",
+      "bloco": "capsula",
+      "pt": "Kore desu 就是完整的一句话。三个音节加一只伸出去的手，比一整段话都管用。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b05-n05",
+      "pt": "如果你没听懂问题，就干脆地说出来一次。开口问总比瞎猜要好。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "わかりませんでした",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b05-p05",
+      "promptPt": "那句话说得太快，你没听清。干脆地说出来，不用道歉两次。现在开口说。",
+      "audioKey": "fr-b05-t05",
+      "es": "すみません、わかりませんでした。",
+      "pinyin": "soo-mee-ma-SEN, wa-ka-ri-ma-sen-DESH-ta",
+      "pt": "抱歉，我没听懂。",
+      "tts": "すみません、わかりませんでした。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b05-p06",
+      "promptPt": "这趟旅行没有人陪你。用三个词说出来。现在开口说。",
+      "audioKey": "fr-b05-t06",
+      "es": "一人で旅行しています。",
+      "pinyin": "hi-TO-ri de ryo-KOH shi-te i-mass",
+      "pt": "我是一个人旅行。",
+      "tts": "一人で旅行しています。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar",
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b05-p07",
+      "promptPt": "他们问你之后还打算去别的地方吗。如实、简短地回答。现在开口说。",
+      "audioKey": "fr-b05-t07",
+      "es": "その後、京都に行きます。",
+      "pinyin": "so-no a-to, KYOH-to ni i-ki-mass",
+      "pt": "之后我会去京都。",
+      "tts": "その後、京都に行きます。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b05-r05",
+      "es": "はい、大丈夫です。良いご旅行を。",
+      "pt": "好的，都没问题。祝您旅途愉快。",
+      "tts": "はい、大丈夫です。良いご旅行を。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b05-p08",
+      "promptPt": "三个字，接过护照，往前走。现在开口说。",
+      "audioKey": "fr-b05-t08",
+      "es": "ありがとうございます。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mass",
+      "pt": "谢谢。",
+      "tts": "ありがとうございます。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b05-s01",
+      "es": "観光です。十日間です。東京の、ホテルです。はい、これです。",
+      "pinyin": "kan-KOH dess · TOH-ka-kan dess · TOH-kyoh no HO-te-ru dess · HAI ko-re dess",
+      "pt": "跟读这三个回答，每一句说完都干脆地停下来。",
+      "tts": "観光です。十日間です。東京の、ホテルです。はい、これです。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b05-n06",
+      "bloco": "recap",
+      "pt": "B05 完成。目的、天数、住处、kore desu。简短不等于回避——简短意味着答案和问题正好对上了。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "入境检查柜台，其实是一道配对题",
+    "secoes": [
+      {
+        "titulo": "真实胜过流利",
+        "corpo": "如果你自己的机票写的不是十天，就不要照搬这堂课里的数字。把数字换成真实的天数，句子长度和结构完全不变。"
+      },
+      {
+        "titulo": "一个问题，一个答案",
+        "corpo": "目的、时长和住处是三个各自独立的答案，而不是一整段发言。在还没被问到之前就把三件事一口气全说完，是三十秒的对话变成三分钟的最常见原因。"
+      },
+      {
+        "titulo": "让纸质材料替你说话",
+        "corpo": "Kore desu 把这场交流从「靠你的记忆」转移到「靠你手里的证据」。这是整个模块里最短却最有用的一句话，比你临场能拼凑出的任何解释都更管用。",
+        "exemplos": [
+          {
+            "es": "予約はありますか？",
+            "pt": "您有预订资料吗？"
+          },
+          {
+            "es": "はい、これです。",
+            "pt": "有，就是这个。"
+          }
+        ]
+      },
+      {
+        "titulo": "既礼貌又简短，两者可以同时做到",
+        "corpo": "-desu 这个词尾不是随便加上去的装饰——正是它让一个单词的回答显得礼貌。Kankou desu 完整而得体；单说 kankou 就显得生硬。你不需要用更长的句子来显得有礼貌，你需要的是这个词尾加上轻轻一点头，然后停下来。"
+      },
+      {
+        "titulo": "规则会变，出发前请就近查证",
+        "corpo": "这部分教的是柜台前的对话，不是背后的入境规定。免签条款和允许停留的时长会不断变化，一份课程文件不是查这些规则的合适地方——请在出发前不久，针对你自己的护照查询官方来源。"
+      }
+    ]
+  },
+  "slot": "B05",
+  "permissao": "你被允许用三个字回答然后停下来。简短而真实的回答不是回避；反而是过度解释、用一堆没人问的细节去填补沉默、或者刻意表现得比问题要求的更热情，才是真正拖慢入境柜台节奏的原因——你完全可以选择不这么做。",
+  "permissaoAudioKey": "fr-b05-n01",
+  "espelho": "任何在自己国家的边检官员面前答非所问、为了一个「住哪一晚」的问题就主动讲出整个行程的人，都体验过这个部分要纠正的冲动。这不是日本特有的现象——这是一种想用比问题需要的更多话去填满沉默的紧张习惯，在任何国家的边境都是一模一样的表现。",
+  "fichasCulturais": [
+    {
+      "sinal": "官员问了一个简短的问题，你却发现自己不由自主地补充了一段没人要求的解释——为什么这趟旅行、上次做了什么、多么期待这次旅程。",
+      "suaLeitura": "多说点细节显得开放友好，还能证明我没什么可隐瞒的。",
+      "oQueEAli": "柜台正在处理一整队人的短而对应的问答，而你的很多信息其实已经写在入境卡上了。一个超出所问范围的回答，读起来更像是需要核查的材料，而不是热情——你身后的队伍也是那位官员这个下午工作的一部分。",
+      "oQueVoceFaz": "只回答你实际被问到的那部分内容，然后停下来，等下一个问题。",
+      "oQueMelhora": "整个交流按照柜台原本设定好的节奏进行，你反而能更快通过，而不是更慢。",
+      "ondeNaoVale": "如果官员问的是一个复合问题，或者明确邀请你补充更多信息，这条就不适用了。那时把被问到的都答上才是对的节奏，简短的回答反而是不对的。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b05-n01"
+      ]
+    },
+    {
+      "sinal": "你走到柜台前，官员的语气平淡、公事公办，整场交流比你预期的要冷淡。",
+      "suaLeitura": "他们不想应付外国人，或者反感被用英语搭话。",
+      "oQueEAli": "日本的入境检查柜台默认就是一种中性、程序化的语气——这种平淡是这项任务本身的基调，不是针对你个人的信号。这里的礼貌体现在 -desu 词尾和轻轻一躬身上，而不是语气里的热情，工作人员对队伍里每一个人都是同样的语气。",
+      "oQueVoceFaz": "配合这种节奏：轻轻点头，回答用礼貌的词尾，不要试图刻意去暖场。说 kankou desu，说 tooka-kan desu，然后等待。",
+      "oQueMelhora": "你不再把程序性的语气误读成敌意，交流也就能保持它本该有的简洁和顺畅。",
+      "ondeNaoVale": "这只是对一种默认语气风格的解读，不是对任何人真实情绪的断言——一位值了长班、已经很疲惫的工作人员，有时候就只是疲惫而已。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b05-t01"
+      ]
+    }
+  ]
+}

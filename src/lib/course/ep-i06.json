@@ -1,0 +1,340 @@
+{
+  "id": "i06",
+  "nivel": "intermediario",
+  "numero": 24,
+  "parte": "I06",
+  "titulo": "把昨天说出来",
+  "subtitulo": "一个过去式词尾，几个你已经会的动词，还有一趟能变成故事、让主人想听下去的旅行",
+  "cena": "有人刚问你昨天做了什么，而你会的每一句话都还停在现在时。",
+  "moldura": "ganha",
+  "frasePiso": "你不需要掌握整套过去时。你需要的只是几个你已经认得的动词，词尾都一样。",
+  "decisao": "用两三句过去时讲昨天这一天，而不是用现在时回答，变成那个只会说“是”的人",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "一旦你能说出昨天做了什么，你就不再只是点单的人，而变成了一个有故事的旅行者。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i06-r01",
+      "receptivo": true,
+      "acao": "这是这一周每场对话的开场白。要用你去了哪里来回答，而不是简单地说是。",
+      "es": "昨日は何をしましたか？",
+      "pt": "那，你昨天做了什么？",
+      "tts": "昨日は何をしましたか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i06-n02",
+      "bloco": "molde",
+      "pt": "这个框架就是动词落在 -mashita 上。Ikimashita，我去了。Tabemashita，我吃了。这个 -mashita 词尾就是整个过去时。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i06-t01",
+      "es": "昨日、京都に行きました。",
+      "pinyin": "ki-NOH, KYOH-to ni i-ki-MASH-ta",
+      "pt": "我昨天去了京都。",
+      "tts": "昨日、京都に行きました。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p01",
+      "promptPt": "从这一招开始：一座城市，一句话，说前一天的事。现在开口说。",
+      "audioKey": "fr-i06-t01",
+      "es": "昨日、京都に行きました。",
+      "pinyin": "ki-NOH, KYOH-to ni i-ki-MASH-ta",
+      "pt": "我昨天去了京都。",
+      "tts": "昨日、京都に行きました。",
+      "molde": "MASHITA",
+      "encaixe": "京都に行きました"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n03",
+      "pt": "干活的是助词：ni 表示去了哪里，de 表示在哪里做的，o 表示做了什么。动词只需要以 -mashita 结尾。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa",
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i06-p02",
+      "promptPt": "说说你今天早上去了哪里，一个地方，一句话。现在开口说。",
+      "audioKey": "fr-i06-t02",
+      "es": "今朝、市場に行きました。",
+      "pinyin": "KE-sa, i-CHI-ba ni i-ki-MASH-ta",
+      "pt": "我今天早上去了市场。",
+      "tts": "今朝、市場に行きました。",
+      "molde": "MASHITA",
+      "encaixe": "市場に行きました"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p03",
+      "promptPt": "现在说这顿饭。说说你在哪里吃的，把地方说得小一点，而不是说得多有名。现在开口说。",
+      "audioKey": "fr-i06-t03",
+      "es": "小さいお店で食べました。",
+      "pinyin": "chi-i-sa-i o-MI-se de ta-be-MASH-ta",
+      "pt": "我在一家很小的店里吃的。",
+      "tts": "小さいお店で食べました。",
+      "molde": "MASHITA",
+      "encaixe": "小さいお店で食べました"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i06-r02",
+      "receptivo": true,
+      "acao": "Doo deshita ka 不是怀疑，而是邀请你再多说一个细节。",
+      "es": "へえ、どうでしたか？",
+      "pt": "是吗？那怎么样呢？",
+      "tts": "へえ、どうでしたか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i06-n04",
+      "bloco": "capsula",
+      "pt": "说感受要用 -katta desu：oishikatta（好吃）、tanoshikatta（开心）。把这些词尾整段带走，而不是自己去拼凑。"
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i06-p04",
+      "promptPt": "他们问了怎么样。用三个词回答那顿饭，重心落在中间那个词上。现在开口说。",
+      "audioKey": "fr-i06-t04",
+      "es": "とても美味しかったです。",
+      "pinyin": "to-TE-mo o-i-shi-KAT-ta des",
+      "pt": "真的很好吃。",
+      "tts": "とても美味しかったです。"
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-lugar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p05",
+      "promptPt": "用两个词概括一整天，这比任何长句都更让人感到温暖。现在开口说。",
+      "audioKey": "fr-i06-t05",
+      "es": "最高でした。",
+      "pinyin": "sai-KOH de-shi-ta",
+      "pt": "太棒了。",
+      "tts": "最高でした。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n05",
+      "pt": "一段故事不能只有一件事。两句话加一个 soshite，听起来就已经像是完整的叙述了。"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i06-p06",
+      "promptPt": "用一句简短的话说说你怎么去的、什么时候去的。现在开口说。",
+      "audioKey": "fr-i06-t06",
+      "es": "今朝、電車に乗りました。",
+      "pinyin": "KE-sa, den-SHA ni no-ri-MASH-ta",
+      "pt": "我今天早上坐了电车。",
+      "tts": "今朝、電車に乗りました。",
+      "molde": "MASHITA",
+      "encaixe": "電車に乗りました"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p07",
+      "promptPt": "把两件事连在一起——说说这一天怎么度过的，走路和吃东西。现在开口说。",
+      "audioKey": "fr-i06-t07",
+      "es": "一日中歩いて、美味しいものを食べました。",
+      "pinyin": "i-chi-ni-chi-JUU a-ru-i-te, o-i-shi-i mo-no o ta-be-MASH-ta",
+      "pt": "我们走了一整天，吃了很多好吃的。",
+      "tts": "一日中歩いて、美味しいものを食べました。",
+      "molde": "MASHITA",
+      "encaixe": "一日中歩きました"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i06-n06",
+      "pt": "有一件没那么顺心的事，会让其余部分更可信。如果一整天都完美无缺，听起来就像是编出来的。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i06-p08",
+      "promptPt": "轻描淡写地说出这一天里你没什么感觉的那部分，然后往下走。现在开口说。",
+      "audioKey": "fr-i06-t08",
+      "es": "美術館は、あまり好きじゃなかったです。",
+      "pinyin": "bi-JU-tsu-kan wa, a-ma-ri su-ki ja-na-KAT-ta des",
+      "pt": "那个美术馆，我不太喜欢。",
+      "tts": "美術館は、あまり好きじゃなかったです。",
+      "molde": "MASHITA",
+      "encaixe": "あまり好きじゃなかった"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i06-r03",
+      "es": "ああ、そう言う人、多いですよ！",
+      "pt": "啊，这么说的人可不少呢！",
+      "tts": "ああ、そう言う人、多いですよ！"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n07",
+      "pt": "以明天收尾。这样能把故事往前推，也能把一段汇报变成一场带着问题的对话。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i06-p09",
+      "promptPt": "说说你接下来要去哪里，再问问对方知不知道那个地方。现在开口说。",
+      "audioKey": "fr-i06-t09",
+      "es": "明日は大阪に行きます。ご存知ですか？",
+      "pinyin": "a-SHI-ta wa OH-sa-ka ni i-ki-mas. go-ZON-ji des-ka",
+      "pt": "我们明天要去大阪。你知道那里吗？",
+      "tts": "明日は大阪に行きます。ご存知ですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i06-r04",
+      "receptivo": true,
+      "acao": "推荐马上就要来了。准备好可以写字的东西。",
+      "es": "大阪ね！ちょっと待って、お店を教えますよ。",
+      "pt": "大阪啊！等一下，我告诉你一家店。",
+      "tts": "大阪ね！ちょっと待って、お店を教えますよ。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i06-s01",
+      "es": "昨日、京都に行きました。小さいお店で食べました。とても美味しかったです。",
+      "pinyin": "ki-NOH, KYOH-to ni i-ki-MASH-ta. chi-i-sa-i o-MI-se de ta-be-MASH-ta. to-TE-mo o-i-shi-KAT-ta des",
+      "pt": "按故事该有的顺序跟读这三句话：去了哪里、做了什么、感觉怎么样。",
+      "tts": "昨日、京都に行きました。小さいお店で食べました。とても美味しかったです。",
+      "molde": "MASHITA"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i06-n08",
+      "bloco": "recap",
+      "pt": "I06 完成。京都に行きました、食べました、美味しかったです，末尾再加一个关于明天的问题。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一个词尾，几个动词",
+    "secoes": [
+      {
+        "titulo": "-mashita 词尾",
+        "corpo": "过去时不是一条要套用的规则，而是一批你已经半熟悉的动词，每一个都整段带上 -mashita：ikimashita、tabemashita、norimashita、kaimashita、mimashita。说出动词，落在 -mashita 上，句子就进入了过去时。讲述一天，你需要的全部机制就是这个。",
+        "exemplos": [
+          {
+            "es": "昨日、京都に行きました。",
+            "pt": "我昨天去了京都。"
+          },
+          {
+            "es": "今朝、電車に乗りました。",
+            "pt": "我今天早上坐了电车。"
+          }
+        ]
+      },
+      {
+        "titulo": "助词承载意义",
+        "corpo": "Kyoto ni ikimashita，chiisai omise de tabemashita，densha ni norimashita。Ni 标记去了哪里，de 标记在哪里做的事，o 标记做了什么。只要助词大致对，动词词尾就保持不变——正是这个交换，让一个词尾能覆盖整趟旅行。"
+      },
+      {
+        "titulo": "-katta desu，整段带走",
+        "corpo": "怎么样这个问题，要用过去式的感受来回答：oishikatta desu、tanoshikatta desu、yokatta desu。把 -katta desu 当成一个小整块，而不是一个时态，你就能跳过一整章语法。它接在 doo deshita ka 的自然回答后面，而 saikou deshita 只用两个词就概括了一整天。"
+      },
+      {
+        "titulo": "有一件没那么顺心的事",
+        "corpo": "Amari suki ja nakatta desu 语气是软的——不是太喜欢，而不是抱怨——正是这一点，让其余的叙述听起来像是你亲身经历的，而不是拼凑出来的。这个委婉的否定往往也最能引出回应，因为它给了对方一个可以附和或反驳的着力点。"
+      },
+      {
+        "titulo": "以明天收尾",
+        "corpo": "Ashita wa……ni ikimasu，go-zonji desu ka 只需要几个词，却能把话头交出去。通常正是在这一刻，笔记本会被拿出来，你也能得到一个没人放在网上的地方。"
+      }
+    ]
+  },
+  "slot": "I06",
+  "permissao": "你可以把动词说得不太准。如果这一部分要等到每个词尾都说得完全稳妥才开口，那你就永远没法把自己的一天讲给任何人听，而这笔交易在任何水平上都不划算。",
+  "permissaoAudioKey": "fr-i06-n02",
+  "espelho": "任何一个因为组装出真实答案感觉太费劲，而只用一句还好来回应朋友友好的一句今天过得怎么样的人，都清楚这一部分针对的正是这种本能反应。这不是语法问题，而是组句的成本一直高于回报，直到某一刻不再如此。",
+  "fichasCulturais": [
+    {
+      "sinal": "你说了点关于这一天的事，得到的回应只是一声上扬的 hee，或者一句 soo desu ka，再没别的了。",
+      "suaLeitura": "他们怀疑我说的，或者觉得我说的很奇怪。",
+      "oQueEAli": "Hee 和 doo deshita ka 是标准的接话词：它们表示听到了你说的话，并请你再给一个细节。无论是好消息还是坏消息，它们都会出现，如果你就此打住，这场对话就只搭了一半的架子。",
+      "oQueVoceFaz": "用一个具体细节来回答——菜名、街道、时间、价格。然后在末尾加一个问题。",
+      "oQueMelhora": "你能得到交流的后半段，也就是推荐藏身之处，而不是把一段礼貌的沉默误读成不认可。",
+      "ondeNaoVale": "但如果对方一边转身回去做自己的事，一边平淡地说出这句话，那就是在结束这个话题，正确的做法是让它自然结束。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i06-n04"
+      ]
+    },
+    {
+      "sinal": "你把这一天说得样样都好，对话却安静了下来。",
+      "suaLeitura": "热情用错了地方，我表现得太过了。",
+      "oQueEAli": "一段没有低谷的叙述，不给听的人任何可以接话的地方。说出一件没让你满意的小事，会打开一扇门——附和、反驳、或者提出更好的建议——这三种反应都能让交流继续下去。",
+      "oQueVoceFaz": "先保留赞美，再加一句委婉的否定：amari suki ja nakatta desu。轻描淡写地说出来，然后直接说到明天。",
+      "oQueMelhora": "对方会开始详细地聊起自己的城市，而不是出于礼貌敷衍你，这才是你站在那里的真正意义。",
+      "ondeNaoVale": "但如果说的是眼前这个人亲手做的或选的东西——厨师、主人、推荐这个地方的店主——那这个低谷就留在心里，赞美才说出口。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i06-n06"
+      ]
+    }
+  ]
+}

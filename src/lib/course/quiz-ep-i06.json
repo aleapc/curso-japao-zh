@@ -1,0 +1,96 @@
+{
+  "id": "q-i06",
+  "nivel": "intermediario",
+  "titulo": "测验 — 把昨天说出来",
+  "subtitulo": "一个词尾，几个动词",
+  "introAudioKey": "fr-i06-q-i",
+  "introPt": "一位旅行者把一天的经历变成了对方还想听下去的叙述。",
+  "cenario": "站在柜台前，一次外出游玩后的第二天早上。",
+  "dialogo": [
+    {
+      "audioKey": "fr-i06-q01",
+      "voz": "target_fr_m",
+      "es": "昨日は何をしましたか？",
+      "pt": "那，你昨天做了什么？",
+      "tts": "昨日は何をしましたか？"
+    },
+    {
+      "audioKey": "fr-i06-q02",
+      "voz": "target_fr_f",
+      "es": "京都に行って、小さいお店で食べました。",
+      "pt": "我去了京都，在一家很小的店里吃了饭。",
+      "tts": "京都に行って、小さいお店で食べました。"
+    },
+    {
+      "audioKey": "fr-i06-q03",
+      "voz": "target_fr_m",
+      "es": "へえ、どうでしたか？",
+      "pt": "是吗？那怎么样呢？",
+      "tts": "へえ、どうでしたか？"
+    },
+    {
+      "audioKey": "fr-i06-q04",
+      "voz": "target_fr_f",
+      "es": "とても美味しかったです。明日は大阪に行きます。ご存知ですか？",
+      "pt": "真的很好吃。我们明天要去大阪。你知道那里吗？",
+      "tts": "とても美味しかったです。明日は大阪に行きます。ご存知ですか？"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "什么让一个动词变成过去时？",
+      "opcoes": [
+        "在前面加一个词",
+        "-mashita 词尾——ikimashita、tabemashita、norimashita",
+        "把整个动词换掉",
+        "什么都不用——直接用现在时"
+      ],
+      "correta": 1,
+      "explica": "说出动词，落在 -mashita 上，句子就进入了过去时。这就是全部机制。"
+    },
+    {
+      "pergunta": "在 Kyoto ni ikimashita 里，助词 ni 标记的是什么？",
+      "opcoes": [
+        "动词的时态",
+        "去了哪里——de 标记在哪里做的事，o 标记做了什么",
+        "一天中的时间",
+        "是谁做的"
+      ],
+      "correta": 1,
+      "explica": "只要助词大致对，动词词尾就保持不变——正是这样，一个词尾才能覆盖整趟旅行。"
+    },
+    {
+      "pergunta": "应该怎样处理 oishikatta desu？",
+      "opcoes": [
+        "当成一个要学习、要拼装的时态",
+        "当成一个意思是好吃的小整块，整段带走",
+        "只用于书面正式场合",
+        "当成一种疑问形式"
+      ],
+      "correta": 1,
+      "explica": "Oishikatta、tanoshikatta、yokatta、saikou deshita——整段带走，跳过一整章语法。"
+    },
+    {
+      "pergunta": "在你讲故事的过程中，对方说 hee 或 doo deshita ka，意思是：",
+      "opcoes": [
+        "他们怀疑你",
+        "继续说——再给我一个细节",
+        "话题已经结束",
+        "他们不同意"
+      ],
+      "correta": 1,
+      "explica": "用一个具体细节来回答，再在末尾加一个问题。"
+    },
+    {
+      "pergunta": "为什么要说出一件你不太喜欢的事？",
+      "opcoes": [
+        "为了显得有品味",
+        "因为一段没有低谷的叙述，不给听的人任何可以接话的地方",
+        "这是游客该做的事",
+        "为了从账单上抵掉一点钱"
+      ],
+      "correta": 1,
+      "explica": "Amari suki ja nakatta desu 语气很软，正是它把一段汇报变成了一场对话。"
+    }
+  ]
+}

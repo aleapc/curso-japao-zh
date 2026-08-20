@@ -1,0 +1,337 @@
+{
+  "id": "a07",
+  "nivel": "avancado",
+  "numero": 35,
+  "parte": "A07",
+  "titulo": "どうぞ、敬语、ちょっと、そろそろ——四个在句子说出口之前就已经到来的信号",
+  "subtitulo": "欢迎听起来像是把许可交到了你手上，放下敬语是别人主动给的，不是你自己拿的；拒绝常常以一句拖长的ちょっと出现；告别在任何人起身之前就已经开始了",
+  "cena": "在桌边坐了两个小时，盘子都已经收走，有人刚说了一句そろそろ，可还没有人真的起身。",
+  "moldura": "ganha",
+  "frasePiso": "在第一次听到そろそろ时就该走了，别等到第三次。读懂离场的信号，比你能说的任何一句话都更能换来好感。",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a07-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "在这里，一个房间告诉你的大多数事情，都发生在句子说出口之前。这部分主要靠耳朵。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a07-n02",
+      "bloco": "corpo",
+      "pt": "先从欢迎开始。它听起来像是把许可交到了你手上，而且非常简短。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a07-r01",
+      "receptivo": true,
+      "acao": "这是一个带着余地的是。动起来就好——别再问第二次去确认。",
+      "es": "どうぞ、お先に。",
+      "pt": "请，您先请。",
+      "tts": "どうぞ、お先に。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a07-n03",
+      "pt": "どうぞ、お先に、どうぞどうぞ。这些话都是在把这一刻的空间交给你。接受就好。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a07-p01",
+      "promptPt": "你和另一个人同时走到一扇窄门前，你更想让对方先走。现在开口说。",
+      "audioKey": "fr-a07-t01",
+      "es": "どうぞ、お先に。",
+      "pinyin": "DOH-zo, o-sa-ki ni",
+      "pt": "请您先请。",
+      "tts": "どうぞ、お先に。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a07-n04",
+      "pt": "第二个信号，也是游客最容易完全忽略的一个：从敬语转为随意语气。这是别人给你的，从来不是你自己拿的。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a07-r02",
+      "receptivo": true,
+      "acao": "这是一个邀请，而且只针对这一个人。热情地接受它，跟其他所有人还是继续用です和ます。",
+      "es": "もう敬語はいいですよ。楽にしましょう。",
+      "pt": "不用再讲敬语了。轻松点吧。",
+      "tts": "もう敬語はいいですよ。楽にしましょう。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a07-n05",
+      "bloco": "capsula",
+      "pt": "在这句话出现之前，对任何刚认识的成年人都用です和ます。等待它不会让你付出任何代价。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a07-p02",
+      "promptPt": "有人刚邀请你放下敬语。接受这个提议，语气要显得开心。现在开口说。",
+      "audioKey": "fr-a07-t02",
+      "es": "はい、ぜひ。嬉しいです。",
+      "pinyin": "HAI, ze-hee · u-re-shee des",
+      "pt": "好，非常乐意！我很高兴。",
+      "tts": "はい、ぜひ。嬉しいです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a07-n06",
+      "pt": "第三个信号：拒绝。它常常不是以一个干脆的不字出现，而是以一句故意没说完的ちょっと出现。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a07-r03",
+      "receptivo": true,
+      "acao": "那句拖长的ちょっと就是完整的答案。不要等一个更明确的拒绝——道谢，然后问问在哪里可以办成这件事。",
+      "es": "うーん、それはちょっと難しいですね…",
+      "pt": "嗯，那个有点困难呢……",
+      "tts": "うーん、それはちょっと難しいですね…"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a07-n07",
+      "pt": "ちょっと難しい只是关上了这一个请求，仅此而已。追问一个更明确的答案，才是真正会让柜台的人冷下脸的做法。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a07-p03",
+      "promptPt": "对方的回答拖长了，出乎你的意料。接受它，让对方继续站在你这边。现在开口说。",
+      "audioKey": "fr-a07-t03",
+      "es": "わかりました。でも、ありがとうございます。",
+      "pinyin": "wa-ka-ri-MASH-ta · de-mo, a-ri-ga-TOH go-za-i-mas",
+      "pt": "好的，我明白了。还是谢谢你。",
+      "tts": "わかりました。でも、ありがとうございます。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a07-p04",
+      "promptPt": "共用的长椅末端有空位，已经坐在那里的人没有抬头看你。现在开口说。",
+      "audioKey": "fr-a07-t04",
+      "es": "すみません、ここに座ってもいいですか？",
+      "pinyin": "soo-mee-ma-SEN, ko-ko ni su-wat-te mo ee des-ka",
+      "pt": "不好意思，我可以坐这里吗？",
+      "tts": "すみません、ここに座ってもいいですか？",
+      "molde": "SUMIMASEN",
+      "encaixe": "ここに座ってもいいですか"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a07-n08",
+      "pt": "距离和音量是这整件事安静的那一半。在室内和电车上，这里的音量基准通常比你习惯的要低一档。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a07-r04",
+      "receptivo": true,
+      "acao": "把音量降下来，不用解释。这里的房间和车厢比你习惯的那种要安静。",
+      "es": "恐れ入りますが、もう少しお静かに…",
+      "pt": "不好意思，能麻烦稍微安静一点吗……",
+      "tts": "恐れ入りますが、もう少しお静かに…"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a07-n09",
+      "pt": "跟上这个房间的音量就是全部要调整的地方，大概一个晚上就能适应。没有人要求你保持沉默。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a07-p05",
+      "promptPt": "你注意到自己这一群人已经吵了十分钟，是房间里最响的声音。轻松地承认一下。现在开口说。",
+      "audioKey": "fr-a07-t05",
+      "es": "すみません、うるさくしてしまって。",
+      "pinyin": "soo-mee-ma-SEN, u-ru-sa-ku shee-te shee-mat-te",
+      "pt": "抱歉，我们太吵了。",
+      "tts": "すみません、うるさくしてしまって。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a07-n10",
+      "pt": "最后一个信号，也是这四个里最有用的一个：离场信号。它在任何人伸手去拿外套之前很久就已经开始了。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a07-r05",
+      "receptivo": true,
+      "acao": "这是第一次そろそろ。从这里开始告别，别再开启新的话题。",
+      "es": "そろそろ、失礼しようかな。",
+      "pt": "嗯，我差不多该走了。",
+      "tts": "そろそろ、失礼しようかな。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a07-n11",
+      "pt": "そろそろ和そろそろね是收尾用的词。第一次出现就是给你的信号，不是第三次。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a07-p06",
+      "promptPt": "对方刚给这段对话发出了收尾的信号。跟上这个节奏，别再重新展开话题。现在开口说。",
+      "audioKey": "fr-a07-t06",
+      "es": "では、失礼します。",
+      "pinyin": "de-wa, shee-tsu-REI shee-mas",
+      "pt": "那，我就不打扰了。",
+      "tts": "では、失礼します。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a07-p07",
+      "promptPt": "店铺再过几分钟就要关门了，店员站在门边。现在开口说。",
+      "audioKey": "fr-a07-t07",
+      "es": "お閉めのところ、すみません。ありがとうございました。",
+      "pinyin": "o-shee-me no to-ko-ro, soo-mee-ma-sen · a-ri-ga-TOH go-za-i-mash-ta",
+      "pt": "抱歉在打烊的时候还麻烦你。谢谢。",
+      "tts": "お閉めのところ、すみません。ありがとうございました。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a07-p08",
+      "promptPt": "你不小心打断了别人说话。立刻把话头交还回去。现在开口说。",
+      "audioKey": "fr-a07-t08",
+      "es": "すみません、話をさえぎってしまって。どうぞ。",
+      "pinyin": "soo-mee-ma-SEN, ha-na-shee o sa-e-git-te shee-mat-te · DOH-zo",
+      "pt": "抱歉，我打断你了。请说。",
+      "tts": "すみません、話をさえぎってしまって。どうぞ。",
+      "molde": "SUMIMASEN",
+      "encaixe": "話をさえぎってしまって"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a07-s01",
+      "es": "どうぞ、お先に。わかりました、ありがとうございます。では、失礼します。",
+      "pinyin": "DOH-zo o-sa-ki ni · wa-ka-ri-MASH-ta a-ri-ga-TOH go-za-i-mas · de-wa shee-tsu-REI shee-mas",
+      "pt": "跟读这三句，它们回应了那些信号：欢迎、委婉的拒绝，还有离场的信号。",
+      "tts": "どうぞ、お先に。わかりました、ありがとうございます。では、失礼します。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a07-n12",
+      "bloco": "recap",
+      "pt": "A07完成。どうぞ是欢迎，随意的语气是别人给的，拒绝是一句拖长的ちょっと，而そろそろ是该开始告别的信号。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "四个信号，按顺序去读",
+    "secoes": [
+      {
+        "titulo": "欢迎听起来像是许可",
+        "corpo": "どうぞ、お先に和どうぞどうぞ意思都一样：这个空间、这个座位、这个轮次或者这扇门，此刻属于你。这些话说得又快又轻，游客常犯的错误，是把它们当成需要回应的客套话，而不是需要你动起来的绿灯。",
+        "exemplos": [
+          {
+            "es": "どうぞ、お先に。",
+            "pt": "请您先请。"
+          },
+          {
+            "es": "すみません、ここに座ってもいいですか？",
+            "pt": "不好意思，我可以坐这里吗？"
+          }
+        ]
+      },
+      {
+        "titulo": "随意的语气是别人给的，敬语不用付出任何代价",
+        "corpo": "面对任何不认识的成年人，以及任何商业场合，礼貌的です和ます永远是安全的语域。转向随意的简体形式，通常会被大声说出来提议——もう敬語はいいですよ——而且这只适用于那一段具体的关系，不适用于整个房间。想找一条精确的规则来判断什么时候该切换，注定会走进死胡同：年龄、场合、心情和交情都会左右它，这正是为什么会有这种口头提议存在。被主动提议是值得留意的小事件；自己先开口切换，才是唯一会出岔子的做法。"
+      },
+      {
+        "titulo": "委婉的拒绝，以及答案的后半部分",
+        "corpo": "这里的拒绝常常根本不会以一个干脆的不字出现：ちょっと難しいですね，话没说完，或者一声缓慢的倒吸气。那句没说完的ちょっと就是完整的答案。要把它理解成针对这个请求本身，而不是针对你这个人，接受一次就好，然后问问在哪里可以办成。等一个更明确的拒绝，或者换个说法再问一次，才是真正会破坏这场交流的做法。"
+      },
+      {
+        "titulo": "そろそろ就是那个信号",
+        "corpo": "这里的对话是分阶段结束的，第一个阶段就是一个词：そろそろ——差不多是时候了。有人说出そろそろ，眼神飘向中间的某个远方，告别就已经开始了。第一次出现就起身，会显得你是个很好相处的人；非要等到第三次，就等于让对方替你把这件事收尾。这是这部分内容里最有用的一点，因为它不管是在晚餐桌上、家门口还是店铺柜台前，形式都不会变。"
+      }
+    ]
+  },
+  "slot": "A07",
+  "permissao": "你被允许在整趟旅行中一直用です和ます。没有人会把这个理解成一个游客的冷淡，也不会有任何门因此而关上，等哪天有人想用随意的语气，他们会大声说出来——而这才是你真正需要听懂的信号。",
+  "espelho": "任何在自己国家去别人家做客、多待了二十分钟才走的人，都从另一面体会过这种不自在：主人已经开始收尾，客人却总能再找一件事说。每种文化里都存在这种拉锯；变化的只是那个信号词。",
+  "permissaoAudioKey": "fr-a07-n05",
+  "fichasCulturais": [
+    {
+      "sinal": "聊了一个小时之后，有人放下了敬语，或者邀请你也这样做。",
+      "suaLeitura": "敬语是一道屏障，现在终于撤掉了，所以从此以后我可以用随意的语气了。",
+      "oQueEAli": "です和ます是面对任何不认识的成年人、以及任何商业场合的默认语域。转向随意语气通常会被明确地提议，而且这属于那一段具体关系的特性，不是你达到的某个等级。",
+      "oQueVoceFaz": "热情地接受——はい、ぜひ——在其他所有场合，包括对方的同事、家人以及街角的商店，继续用です和ます。",
+      "oQueMelhora": "你能享受到这份提议带来的温暖，又不会尴尬地把它扩展到那些从未提出过这份提议的人身上，而后者正是游客通常会搞错的地方。",
+      "ondeNaoVale": "这不是一条可以反过来用来预测任何事情的规则：年龄、地区、场合和心情都会左右这条界线，没有一条精确的规则可循。等待别人主动提议之所以可靠，正是因为预测本身并不可靠。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a07-n04",
+        "fr-a07-n05"
+      ]
+    },
+    {
+      "sinal": "你请求一件很普通的事，得到的是一句缓慢拖长、没有明确说不的ちょっと難しいですね。",
+      "suaLeitura": "他们其实并没有真正拒绝，所以如果我说得更明确一点再问一次，可能还是有希望的。",
+      "oQueEAli": "那句拖长的ちょっと就是拒绝本身。这里的拒绝常常是通过让句子留白来传达的，而不是说出那个字，而这个信息已经是完整的：这件事，在这里，现在，是办不成的。",
+      "oQueVoceFaz": "说一句わかりました、ありがとうございます——然后问问在哪里可以办成。正是这第二个问题，才会给你带来地址、另一个柜台，或者能刷卡的机器。",
+      "oQueMelhora": "你得到的是这场交流里有用的那一半，而不是在一个委婉的拒绝上死缠烂打，对方也会继续愿意帮你。",
+      "ondeNaoVale": "但如果对方在同一句话里就给出了另一个选择，就不适用了——那是在给你指路，不是在拒绝你，把它当成回绝就等于错过了对方已经给你的答案。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a07-n06",
+        "fr-a07-n07"
+      ]
+    }
+  ]
+}

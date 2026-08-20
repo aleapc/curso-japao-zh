@@ -1,0 +1,382 @@
+{
+  "id": "b11",
+  "nivel": "basico",
+  "numero": 11,
+  "parte": "B11",
+  "titulo": "Onegai shimasu——点第一轮的那个结尾",
+  "subtitulo": "一个结尾能装下一杯咖啡、一杯水、菜单和今晚的桌位，礼貌已经内建在这个词里了",
+  "cena": "你在一家柜台很近的小店里，服务员在各桌之间快速穿梭，你大概只有三秒钟说出你要什么。",
+  "moldura": "ganha",
+  "frasePiso": "那样东西，然后 wo onegai shimasu。礼貌已经在这个词里了。",
+  "moldes": [
+    "ONEGAI-SHIMASU"
+  ],
+  "clique": {
+    "contagem": [
+      "咖啡馆柜台",
+      "餐桌",
+      "接受今晚预订的餐厅"
+    ],
+    "desconto": "没人教你为咖啡、水、菜单和今晚的桌位各背一句不同的话。你留着同一个结尾，只换了前面的内容。",
+    "piso": "下次你只有三秒钟，服务员正好从身边经过，你不会用手指再碰运气。你会说出那样东西，用 onegai shimasu 收尾。"
+  },
+  "fatosDatados": [
+    {
+      "id": "fr-b11-affichage",
+      "afirmacao": "自2021年4月起，日本要求对消费者实行含税总额标示（総額表示）：你看到的价格已经包含了消费税，所以菜单上的数字通常就是你要付的钱。有一点跟用餐相关，值得注意：外带的税率是8%，堂食是10%，所以同一样东西「带走」和「在这里吃」价格可能不一样。",
+      "fonte": "Agência Nacional de Impostos do Japão (総額表示義務, obrigatório desde abr/2021); alíquota reduzida de 8% para levar e 10% para consumir no local.",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b11-n04"
+      ]
+    },
+    {
+      "id": "fr-b11-service-compris",
+      "afirmacao": "日本没有小费习惯，服务员经常会追出来把你留在桌上的钱还给你。水（お冷や或お水）通常不用要就会免费端上来，茶也常常一样，还会附上一条湿毛巾（おしぼり）。少数店家会加收服务费（サービス料），或者在居酒屋收一笔座位费（お通し／席料）；有这项收费时，会明确标示出来，不是由你决定给多少的小费。",
+      "fonte": "Ausência de cultura de gorjeta no Japão; água/chá e おしぼり servidos gratuitamente; サービス料 e お通し, quando existem, são cobrança fixa informada, não gorjeta.",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b11-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "第一轮点单，是指着菜单指不下去的地方。一个结尾就能搞定点单，而且已经是礼貌的版本。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b11-n02",
+      "bloco": "molde",
+      "pt": "这个句型是：那样东西，然后 onegai shimasu。说出它——一杯咖啡、菜单、水——onegai shimasu 负责礼貌那部分。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b11-t01",
+      "es": "コーヒーをお願いします。",
+      "pinyin": "KOH-hee o o-ne-gai-shi-MAS",
+      "pt": "请给我一杯咖啡。",
+      "tts": "コーヒーをお願いします。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "コーヒー",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p01",
+      "promptPt": "你在柜台前，早上九点，轮到你了。现在开口说。",
+      "audioKey": "fr-b11-t01",
+      "es": "コーヒーをお願いします。",
+      "pinyin": "KOH-hee o o-ne-gai-shi-MAS",
+      "pt": "请给我一杯咖啡。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b11-r01",
+      "receptivo": true,
+      "es": "コーヒーですね。店内でお召し上がりですか？",
+      "pt": "一杯咖啡。您是在店里喝，还是带走？",
+      "tts": "コーヒーですね。店内でお召し上がりですか？",
+      "acao": "这个问题决定了税率——带走百分之八，堂食百分之十——有时候还决定用什么杯子。选好座位之前先回答这个问题。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n04",
+      "bloco": "corpo",
+      "pt": "菜单上的价格依法已经含税，所以那个数字就是你要付的数字——只不过堂食的税率比带走的要高。"
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "二人の席",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p02",
+      "promptPt": "你们两个人，这家店看起来快满了。问问有没有位子。现在开口说。",
+      "audioKey": "fr-b11-t02",
+      "es": "二人ですが、席はありますか？",
+      "pinyin": "fu-ta-RI des ga, se-ki wa a-ri-MAS ka",
+      "pt": "我们两个人——有位子吗？",
+      "tts": "二人ですが、席はありますか？"
+    },
+    {
+      "consulta": [
+        "mesa/carta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "メニュー",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p03",
+      "promptPt": "你们坐下了，还没有人递给你任何东西。现在开口说。",
+      "audioKey": "fr-b11-t03",
+      "es": "メニューをお願いします。",
+      "pinyin": "ME-nyoo o o-ne-gai-shi-MAS",
+      "pt": "请给我菜单。",
+      "tts": "メニューをお願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b11-n06",
+      "bloco": "capsula",
+      "pt": "水和茶通常是免费提供的，还会附一条湿毛巾。在任何一桌要求加水都是完全正常的事。"
+    },
+    {
+      "consulta": [
+        "mesa/agua-pao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "お水",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p04",
+      "promptPt": "天气很热，你的杯子已经空了一会儿。现在开口说。",
+      "audioKey": "fr-b11-t04",
+      "es": "お水をお願いします。",
+      "pinyin": "o-MI-zu o o-ne-gai-shi-MAS",
+      "pt": "请给我一些水。",
+      "tts": "お水をお願いします。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "赤ワイン",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p05",
+      "promptPt": "晚上，你想要一杯招牌红酒，而不是一整瓶。现在开口说。",
+      "audioKey": "fr-b11-t05",
+      "es": "赤ワインをグラスでお願いします。",
+      "pinyin": "a-ka-WA-in o gu-RA-su de o-ne-gai-shi-MAS",
+      "pt": "请给我一杯红酒。",
+      "tts": "赤ワインをグラスでお願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b11-r02",
+      "receptivo": true,
+      "es": "赤ワインですね。かしこまりました。お連れ様は？",
+      "pt": "一杯红酒，好的。那另一位客人呢？",
+      "tts": "赤ワインですね。かしこまりました。お連れ様は？",
+      "acao": "Kashikomarimashita 意思是已经记下来了。轮到跟你一起来的人点单了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n03",
+      "pt": "Onegai shimasu 也能带一个作为名词的动作：yoyaku o onegai shimasu、chumon o onegai shimasu——同一个结尾，用途更广。"
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "今夜の予約",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p06",
+      "promptPt": "中午经过一家餐厅，你想在满位之前先定下一个位子。现在开口说。",
+      "audioKey": "fr-b11-t06",
+      "es": "今夜、二人で予約をお願いします。",
+      "pinyin": "KON-ya, fu-ta-RI de yo-YA-ku o o-ne-gai-shi-MAS",
+      "pt": "请帮我预订今晚两位。",
+      "tts": "今夜、二人で予約をお願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b11-r03",
+      "receptivo": true,
+      "es": "今夜は満席です。明日の夜八時はいかがですか？",
+      "pt": "今晚已经满座了。明天晚上八点怎么样？",
+      "tts": "今夜は満席です。明日の夜八時はいかがですか？",
+      "acao": "Manseki 意思是满座，替代方案在同一口气里就给出来了。答应，或者另外问一个晚上。"
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "日替わり",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p07",
+      "promptPt": "午餐时间，你想要今天的每日套餐。现在开口说。",
+      "audioKey": "fr-b11-t07",
+      "es": "日替わりはありますか？",
+      "pinyin": "hi-ga-WA-ri wa a-ri-MAS ka",
+      "pt": "有今日套餐吗？",
+      "tts": "日替わりはありますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b11-n05",
+      "pt": "这里没有给小费的习惯；服务员常常会追出来把钱还给你。如果真有服务费，那也是明码标价的一项，不是你自己加上去的。"
+    },
+    {
+      "consulta": [
+        "mesa/carta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "注文",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p08",
+      "promptPt": "你五分钟前就决定好了，一直没人回来。趁服务员再次经过时开口。现在开口说。",
+      "audioKey": "fr-b11-t08",
+      "es": "注文をお願いします。",
+      "pinyin": "choo-MON o o-ne-gai-shi-MAS",
+      "pt": "我想点单，麻烦了。",
+      "tts": "注文をお願いします。"
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "同じもの",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b11-p09",
+      "promptPt": "跟你一起来的人刚点了一样听起来不错的菜，你也想要一份。现在开口说。",
+      "audioKey": "fr-b11-t09",
+      "es": "同じものをお願いします。",
+      "pinyin": "o-NA-ji mo-no o o-ne-gai-shi-MAS",
+      "pt": "我也要一样的，麻烦了。",
+      "tts": "同じものをお願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n07",
+      "pt": "你用 sumimasen 叫服务员，而不是举手或打响指。Sumimasen 是那扇门；点单是从这扇门走进去的。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b11-p10",
+      "promptPt": "你刚走到柜台前，需要先引起对方注意，然后点两杯咖啡。现在开口说。",
+      "audioKey": "fr-b11-t10",
+      "es": "すみません、コーヒーを二つお願いします。",
+      "pinyin": "soo-mee-ma-SEN, KOH-hee o fu-ta-TSU o-ne-gai-shi-MAS",
+      "pt": "不好意思——请给我两杯咖啡。",
+      "tts": "すみません、コーヒーを二つお願いします。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b11-s01",
+      "es": "コーヒーをお願いします。メニューをお願いします。今夜の予約をお願いします。",
+      "pinyin": "KOH-hee o o-ne-gai-shi-MAS. ME-nyoo o o-ne-gai-shi-MAS. KON-ya no yo-YA-ku o o-ne-gai-shi-MAS",
+      "pt": "跟读同一个结尾配一杯饮料、一样东西和一个动作。",
+      "tts": "コーヒーをお願いします。メニューをお願いします。今夜の予約をお願いします。",
+      "molde": "ONEGAI-SHIMASU"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b11-n08",
+      "bloco": "recap",
+      "pt": "B11 完成。Onegai shimasu 承载了一杯咖啡、一些水、一杯酒、菜单和今晚的预订。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一个结尾，整个第一轮点单",
+    "secoes": [
+      {
+        "titulo": "Onegai shimasu 可以接一样东西，也可以接名词化的动作",
+        "corpo": "在那样东西后面加上 wo onegai shimasu：koohii、o-mizu、onaji mono。当那个动作是名词时，它也能承载动作——yoyaku o onegai shimasu、chumon o onegai shimasu。没有任何东西需要变形，结尾从不改变，这也正是它能快速脱口而出的原因。",
+        "exemplos": [
+          {
+            "es": "お水をお願いします。",
+            "pt": "请给我一些水。"
+          },
+          {
+            "es": "今夜、二人で予約をお願いします。",
+            "pt": "请帮我预订今晚两位。"
+          }
+        ]
+      },
+      {
+        "titulo": "水和毛巾是免费的",
+        "corpo": "水——o-mizu 或 o-hiya——还有通常的茶，不用问就会送上来，湿毛巾 oshibori 也是。这些都不是加价推销，也不需要给小费。要求加水是很平常的事；请求背后不会藏着一瓶要收费的水。"
+      },
+      {
+        "titulo": "价格已经含税",
+        "corpo": "依法向你展示的数字已经包含消费税，所以菜单上的数字就是你要付的数字。唯一需要留意的是：堂食税率是百分之十，带走是百分之八，所以同一杯咖啡可能因为你回答的是「堂食还是带走」而有两个价格。"
+      },
+      {
+        "titulo": "不用给小费，罕见的明码标价服务费",
+        "corpo": "日本没有给小费的习惯，也没有一栏要你填。把硬币留在桌上，会有人追出来还给你。如果某家店确实加了什么——サービス料服务费，或者居酒屋的お通し——那也是明码标价的固定项目，跟小费完全是两回事，课程后面还会专门讲到。"
+      }
+    ]
+  },
+  "slot": "B11",
+  "permissao": "你完全可以慢慢用满这三秒钟。那样东西，然后 onegai shimasu，在全国任何地方都是一句完整的点单，今天已经听了四百次的服务员不会拿你的口音跟别人比较。",
+  "permissaoAudioKey": "fr-b11-n02",
+  "espelho": "任何在自己国家一个繁忙的柜台前，一边排队一边在心里预演点单的人，都清楚这种压力。唯一的不同是，这里礼貌的那部分已经内建在结尾里了，所以你要预演的内容比你担心的要短一个词。",
+  "fichasCulturais": [
+    {
+      "sinal": "你在桌上留了几枚硬币作为小费，服务员却追出来把它还给你。",
+      "suaLeitura": "我冒犯了他们，或者他们以为我忘拿零钱了。",
+      "oQueEAli": "日本没有给小费的习惯。桌上留下的钱会被理解为忘拿的零钱，而不是一种奖励，所以还给你是服务员正确又体贴的做法。账单上的数字就是你欠的全部金额，好的服务已经包含在价格里了。",
+      "oQueVoceFaz": "按账单上的数字付款，不用额外加钱。如果你确实想表达感谢，出门时说一句 gochisousama deshita——这才是这里通用的表达方式。",
+      "oQueMelhora": "你不会在门口造成那种小小的追逐场面，留下的感谢也会真正传达到位。",
+      "ondeNaoVale": "少数面向游客的地方，或者明码标注サービス料的店，做法会不一样；旅馆（ryokan）也可能有自己的习惯——但作为默认情况，不给小费是安全的判断。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b11-n05"
+      ]
+    },
+    {
+      "sinal": "你要了水，一杯自来水立刻免费送上来，没人提到瓶装水的事。",
+      "suaLeitura": "他们肯定是理解错了，误把便宜货端上来了。",
+      "oQueEAli": "在日本，桌上的水本来就是免费提供的，常常还带茶和湿毛巾，续水也不收钱。这里没有一瓶标价的水等着你去点；免费的这一杯就是常态。",
+      "oQueVoceFaz": "接受就好，续水也用同样的方式要——o-mizu o onegai shimasu。如果你特别想要气泡水或瓶装水，得明确说出来，因为那是例外，不是常规。",
+      "oQueMelhora": "你不用再提防一场根本不会发生的加价推销，想喝多少水就喝多少。",
+      "ondeNaoVale": "在没有桌边服务的柜台或外带窗口不适用，酒吧也可能只在你点酒时才附送水——但开口问依然是很正常的事。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b11-n06"
+      ]
+    }
+  ]
+}

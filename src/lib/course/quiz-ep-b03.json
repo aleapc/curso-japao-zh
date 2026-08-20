@@ -1,0 +1,96 @@
+{
+  "id": "q-b03",
+  "nivel": "basico",
+  "titulo": "测验——Sumimasen，然后说出你需要的东西",
+  "subtitulo": "一个开场词，四种不同的需求",
+  "introAudioKey": "fr-b03-q-i",
+  "introPt": "一名游客在柜台漏听了一个价格，用三步就把它找回来了。",
+  "cenario": "便利店柜台，上午，一个人服务，队伍不长。",
+  "dialogo": [
+    {
+      "audioKey": "fr-b03-q01",
+      "voz": "target_fr_f",
+      "es": "すみません、わかりませんでした。",
+      "pt": "抱歉，我没听懂。",
+      "tts": "すみません、わかりませんでした。"
+    },
+    {
+      "audioKey": "fr-b03-q02",
+      "voz": "target_fr_m",
+      "es": "あ、失礼しました。二百四十円です。",
+      "pt": "啊，不好意思——是两百四十日元。",
+      "tts": "あ、失礼しました。二百四十円です。"
+    },
+    {
+      "audioKey": "fr-b03-q03",
+      "voz": "target_fr_f",
+      "es": "すみません、ゆっくりお願いします。",
+      "pt": "抱歉，请说慢一点。",
+      "tts": "すみません、ゆっくりお願いします。"
+    },
+    {
+      "audioKey": "fr-b03-q04",
+      "voz": "target_fr_m",
+      "es": "二百、四十円です。はい、どうぞ。",
+      "pt": "两百，四十日元。给您。",
+      "tts": "二百、四十円です。はい、どうぞ。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "Sumimasen 后面应该接什么？",
+      "opcoes": [
+        "先想好一个要变位的动词",
+        "你需要从对方那里得到的东西",
+        "对方的名字",
+        "为自己的日语道歉"
+      ],
+      "correta": 1,
+      "explica": "开场词从不改变。变化的只是它后面接的内容——重复请求、说慢一点、借过等等。"
+    },
+    {
+      "pergunta": "你已经请对方重复了一遍，还是没听懂。接下来该怎么办？",
+      "opcoes": [
+        "再请求重复一次",
+        "请求说慢一点——yukkuri onegai shimasu",
+        "中途改说英语",
+        "点头，回头再琢磨"
+      ],
+      "correta": 1,
+      "explica": "Mou ichido 得到的是原样再说一遍。Yukkuri 得到的是拉长放慢的版本，这才是你需要的不同结果。"
+    },
+    {
+      "pergunta": "是一个不能靠猜的站台号码。哪种请求最有效？",
+      "opcoes": [
+        "请他们重复一遍",
+        "请他们说慢一点",
+        "请他们写下来——kaite moraemasu ka",
+        "改问别人"
+      ],
+      "correta": 2,
+      "explica": "数字和地名写在纸上才靠得住，光靠听是靠不住的。写下来一步就能解决三次重复都解决不了的问题。"
+    },
+    {
+      "pergunta": "电车很挤，你的站马上就到了。该说什么？",
+      "opcoes": [
+        "Sumimasen, toorimasu",
+        "Sumimasen, ima nanji desu ka",
+        "Sumimasen, eigo wa hanasemasu ka",
+        "Arigatou, tasukarimashita"
+      ],
+      "correta": 0,
+      "explica": "同一个开场词，不同的结尾。真正在起作用的是这个句型，而不是四句互不相关的话。"
+    },
+    {
+      "pergunta": "Sumimasen 这一个词能干几份工作？",
+      "opcoes": [
+        "只有一份——道歉",
+        "两份——道歉加提问",
+        "三份——引起注意、为打扰道歉，甚至还能当作道谢",
+        "根据对话对象不同而变化"
+      ],
+      "correta": 2,
+      "explica": "一个词干了英语里 excuse me、sorry 和 thanks 分别要做的事。不管对方是谁，你都不需要换词。"
+    }
+  ]
+}

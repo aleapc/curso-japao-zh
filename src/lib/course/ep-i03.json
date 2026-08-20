@@ -1,0 +1,328 @@
+{
+  "id": "i03",
+  "nivel": "intermediario",
+  "numero": 21,
+  "parte": "I03",
+  "titulo": "那盘你本来没打算点的菜",
+  "subtitulo": "Honjitsu no osusume 是今日推荐，卖得很快；jikasei 意思是自家制作，但本身什么都证明不了；而一个套餐里到底包含什么，全看这家店自己怎么定义",
+  "cena": "门口一块小黑板上写着两行字，店里还有一张塑封菜单，四十道菜——而真正的好东西写在黑板上。",
+  "moldura": "ganha",
+  "frasePiso": "问问今天是什么、里面有什么。两个问题，你就能点到一道塑封菜单上根本选不出来的菜。",
+  "decisao": "pedir a recomendação do dia ou a do balcão em vez do prato cujo nome eu já reconheço — e perguntar o que entra na coisa antes de pedir, porque no Japão nem origem nem alérgeno é obrigatório na carta do restaurante",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-i03-sanchi",
+      "afirmacao": "在日本，餐厅菜单上标注食材产地并不是强制性要求。消费者厅在2005年发布了一份关于餐饮业标示食材产地的自愿性指引，但对餐厅来说这只是指导意见，不是硬性规定，所以一张标出某个县名的菜单是店家主动的选择，而什么都不写的菜单也没有违反任何规定。对游客来说的推论是：一道菜的产地是你需要主动去问的事，而不是菜单能替你保证的事。",
+      "fonte": "消費者庁 (Agência de Assuntos do Consumidor) — «外食における原産地表示に関するガイドライン», de 2005 (原agência: 農林水産省); exibição voluntária no 外食",
+      "ano": 2005,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i03-n02"
+      ]
+    },
+    {
+      "id": "fr-i03-allergen",
+      "afirmacao": "过敏原标示只在预包装食品上是强制性的，餐厅不在此列。根据《食品标示法》（食品表示法，自2015年4月起施行），一份封闭清单上的指定过敏原（特定原材料）必须在包装食品上标出——这份清单在核桃（くるみ）于2023年修订中被列为强制标示项目后，共有八项，过渡期持续到2025年。餐饮业不受此义务约束：一份没有过敏原标记的餐厅菜单并不是在隐瞒什么，它只是没有被要求标示而已——这正是为什么有过敏的人应该主动开口说明，而不是指望在菜单上找到标记。",
+      "fonte": "食品表示法 (Lei de Rotulagem de Alimentos), em vigor desde abr/2015; 特定原材料 — 8 itens após くるみ tornar-se obrigatório (revisão de 2023, transição até 2025); 外食 fora da obrigação",
+      "ano": 2015,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i03-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i03-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "店里最好吃的那道菜，通常不会印在菜单上。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i03-r01",
+      "receptivo": true,
+      "acao": "这是一句带着理由的推荐。接受它，或者至少在做决定之前先问问那是什么。",
+      "es": "今日のおすすめ、よく出ますよ。",
+      "pt": "今天的推荐菜，卖得很快哦。",
+      "tts": "今日のおすすめ、よく出ますよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i03-n02",
+      "bloco": "corpo",
+      "pt": "一道菜的产地在这里不是法律要求印出来的。菜单上标产地是自愿行为，所以如果你在意，就要开口问，而不是靠看菜单。"
+    },
+    {
+      "consulta": [
+        "mesa/carta",
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "日替わり定食",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i03-p01",
+      "promptPt": "你坐下了，塑封菜单刚好摆在你面前。先找找有没有别的选择。现在开口说。",
+      "audioKey": "fr-i03-t01",
+      "es": "日替わり定食はありますか？",
+      "pinyin": "hi-ga-WA-ri tei-SHO-ku wa a-ri-MAS-ka",
+      "pt": "有今日套餐吗？",
+      "tts": "日替わり定食はありますか？"
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i03-p02",
+      "promptPt": "他们说有。现在弄清楚今天到底是什么。现在开口说。",
+      "audioKey": "fr-i03-t02",
+      "es": "本日のおすすめは何ですか？",
+      "pinyin": "HON-jitsu no o-su-su-me wa NAN des-ka",
+      "pt": "今天的推荐菜是什么？",
+      "tts": "本日のおすすめは何ですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i03-r02",
+      "es": "今日は、ぶりの照り焼きです。ご飯とお味噌汁がつきます。",
+      "pt": "今天是照烧鰤鱼，附米饭和味噌汤。",
+      "tts": "今日は、ぶりの照り焼きです。ご飯とお味噌汁がつきます。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i03-n03",
+      "pt": "你第一个小时学的句型框架在这里依然管用。先说 wa arimasu ka，再接你想让他们有的东西。"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i03-p03",
+      "promptPt": "菜单上四十道菜，你只认得六道。把选择权交给懂行的人。现在开口说。",
+      "audioKey": "fr-i03-t03",
+      "es": "何がおすすめですか？",
+      "pinyin": "NA-ni ga o-su-su-me des-ka",
+      "pt": "你推荐什么？",
+      "tts": "何がおすすめですか？"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "dieta/o-que-tem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i03-p04",
+      "promptPt": "黑板上有个名字，对你来说毫无意义。一个问题就能打开它。现在开口说。",
+      "audioKey": "fr-i03-t04",
+      "es": "これは何が入っていますか？",
+      "pinyin": "ko-RE wa NA-ni ga hait-te-i-mas-ka",
+      "pt": "这里面有什么？",
+      "tts": "これは何が入っていますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i03-n04",
+      "bloco": "capsula",
+      "pt": "Jikasei 的意思是自家制作，这是一个营销用语，不是法律术语。餐厅不需要列出过敏原，所以没标出来什么都证明不了：要开口问。"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "dieta/o-que-tem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i03-p05",
+      "promptPt": "你好奇背后那个厨房是不是真的在自己做菜。问这盘菜本身，而不是这家店。现在开口说。",
+      "audioKey": "fr-i03-t05",
+      "es": "これは手作りですか？",
+      "pinyin": "ko-RE wa te-ZU-ku-ri des-ka",
+      "pt": "这是这里现做的吗？",
+      "tts": "これは手作りですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i03-r03",
+      "receptivo": true,
+      "acao": "菜单上没标记不代表任何答案，无论是好是坏。真正的答案是你刚刚开口问出来的那句话。",
+      "es": "はい、全部うちで作っています。",
+      "pt": "是的，全部都是我们自己做的。",
+      "tts": "はい、全部うちで作っています。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i03-n05",
+      "pt": "Koosu 或 setto 并没有固定的定义。这家店怎么理解这个词，今天就是它的定义，所以你要问清楚它包含什么。"
+    },
+    {
+      "consulta": [
+        "mesa/carta",
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i03-p06",
+      "promptPt": "黑板上只写了套餐和一个数字，别的什么都没有。弄清楚这个数字买到的是什么。现在开口说。",
+      "audioKey": "fr-i03-t06",
+      "es": "このコースには何がつきますか？",
+      "pinyin": "ko-no KOH-su ni wa NA-ni ga tsu-ki-mas-ka",
+      "pt": "这个套餐都包含什么？",
+      "tts": "このコースには何がつきますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i03-r04",
+      "receptivo": true,
+      "acao": "这是这家店自己的定义，不是全国统一的标准。街边下一家店可能划的是另一条线。",
+      "es": "コースは、前菜とメインとデザートで、三千円です。",
+      "pt": "套餐是前菜、主菜和甜点，三千日元。",
+      "tts": "コースは、前菜とメインとデザートで、三千円です。"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "simpatia/elogiar-comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "この辺の名物",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i03-p07",
+      "promptPt": "你已经远离了刚落地的地方，想要一道只有这里才有的东西。现在开口说。",
+      "audioKey": "fr-i03-t07",
+      "es": "この辺の名物はありますか？",
+      "pinyin": "ko-no HEN no mei-BUTSU wa a-ri-MAS-ka",
+      "pt": "这附近有什么特色菜吗？",
+      "tts": "この辺の名物はありますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i03-n06",
+      "pt": "然后就定下来吧。Kore——你刚刚听到描述的那道菜——加上 onegai shimasu，就是一次完整的点单，这也是这一部分真正的重点。"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i03-p08",
+      "promptPt": "对方已经介绍完了，正拿着笔等你。用一句简短的话定下来。现在开口说。",
+      "audioKey": "fr-i03-t08",
+      "es": "じゃあ、これをお願いします。",
+      "pinyin": "JAA, ko-RE o o-ne-gai-shi-MAS",
+      "pt": "那就要这个吧。",
+      "tts": "じゃあ、これをお願いします。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i03-s01",
+      "es": "日替わり定食はありますか？ これは何が入っていますか？ じゃあ、これをお願いします。",
+      "pinyin": "hi-ga-WA-ri tei-SHO-ku wa a-ri-MAS-ka. ko-RE wa NA-ni ga hait-te-i-mas-ka. JAA, ko-RE o o-ne-gai-shi-MAS",
+      "pt": "跟读这三步，带你从塑封菜单走到黑板上的那道菜。",
+      "tts": "日替わり定食はありますか？ これは何が入っていますか？ じゃあ、これをお願いします。",
+      "molde": "ARIMASU-KA"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i03-n07",
+      "bloco": "recap",
+      "pt": "I03 完成。今日套餐、它里面有什么、是不是这里现做的，以及这家店的套餐到底包含什么。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "黑板上的三个词，各自的分量",
+    "secoes": [
+      {
+        "titulo": "今日套餐和今日推荐",
+        "corpo": "Nichigawari teishoku 是当天的套餐，honjitsu no osusume 是当天的推荐菜；两者每天都会变，也都不会印在塑封菜单上。问套餐用 wa arimasu ka，问推荐菜用 nan desu ka，这样才能问到菜单上根本显示不出来的两样东西——而且套餐通常会附带米饭和味噌汤，这也正是点它的意义所在。",
+        "exemplos": [
+          {
+            "es": "日替わり定食はありますか？",
+            "pt": "有今日套餐吗？"
+          },
+          {
+            "es": "本日のおすすめは何ですか？",
+            "pt": "今天的推荐菜是什么？"
+          }
+        ]
+      },
+      {
+        "titulo": "Jikasei 和 tezukuri 都是营销用语",
+        "corpo": "Jikasei（自家制作）和 tezukuri（手工制作）描述的是厨房自己的说法，它们不是有明确定义的术语，也不附带任何认证。而且餐厅菜单完全没有义务标示过敏原——《食品标示法》管的是预包装食品，不管餐饮业。所以一份没有这些标记的菜单说明不了任何问题，真正靠谱的做法是针对具体那道菜提问，而不是到处找标签。"
+      },
+      {
+        "titulo": "套餐是什么，全看店家怎么说",
+        "corpo": "Koosu 和 setto 在全国范围内并没有固定的含义。常见的用法是——套餐（setto）通常是主菜配米饭和汤，course 则是几道菜按固定价格组合——但这只是约定俗成，各家店划的界线并不一样。点单前问一句话，就能消除所有的模糊，而这也是店家早就习惯被问到的问题。"
+      },
+      {
+        "titulo": "打开一个陌生名字的那句问话",
+        "corpo": "Nani ga haitte imasu ka 几乎适用于任何情况：一个地方名菜、黑板上潦草的字迹、一个你半认得的词。它比问“这个好吃吗”更有用，因为答案是具体的，你可以据此做决定——而对有过敏的人来说，这也是真正能保护你的那句话，因为菜单本身不会告诉你。"
+      }
+    ]
+  },
+  "slot": "I03",
+  "permissao": "你完全可以点一道你想象不出来是什么样子的菜。问清楚里面有什么，然后说好，这不是你一个人在赌——这正是服务你的人所期待的那套流程，也是他们一开始就提起那道推荐菜的原因。",
+  "permissaoAudioKey": "fr-i03-n06",
+  "espelho": "任何人只要在自己国家的一家店里见过特别推荐黑板、却依然点了塑封菜单上的东西，都懂这种取舍。印刷菜单让人安心，是因为它在哪里都长一个样——而这恰恰也是它的问题所在。",
+  "fichasCulturais": [
+    {
+      "sinal": "菜单上哪里都没有过敏原标记，于是你猜厨房要么完全不含你的过敏原，要么就是在隐瞒。",
+      "suaLeitura": "没有标记就说明这里没有这方面的信息。",
+      "oQueEAli": "餐厅不在强制性过敏原标示规定的管辖范围内，那项规定管的是预包装食品。很多厨房其实清楚知道每道菜里有什么，却什么都不印，因为它们没有被要求这样做，而没有标记这件事本身，不能说明任何问题，无论好坏。",
+      "oQueVoceFaz": "主动开口说出你的过敏情况，并针对具体那道菜提问：nani ga haitte imasu ka，说出你不能吃的东西。别指望在菜单上找那些本来就没有义务出现的标签。",
+      "oQueMelhora": "你得到的是一句关于这道具体菜品的明确回答，而不是从一片空白里自己推测出来的结论——而这才是唯一真正能保证你安全的做法。",
+      "ondeNaoVale": "如果得到的回答含糊不清，也不该因此放松警惕——如果厨房确实不清楚，坚决拒绝那道菜就是正确的做法，就跟基础篇里那句“杀手锏”句子教的一样。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i03-n04"
+      ]
+    },
+    {
+      "sinal": "昨天的套餐是一个价格，附带三样东西，于是你今天点了同样的套餐，却只拿到两样。",
+      "suaLeitura": "这第二家店是从一份标准套餐里省了东西。",
+      "oQueEAli": "Setto 和 koosu 并没有固定的定义。每家店都自己定标准，那种看似普遍的惯例其实只是商业习惯，没有人被任何规定约束着。",
+      "oQueVoceFaz": "点单前先用一句话问清楚这个套餐包含什么，就像你会问黑板上其他任何东西一样。",
+      "oQueMelhora": "两家店黑板上的数字就变得可以比较了，而在你开口问之前，它们其实是不可比的。",
+      "ondeNaoVale": "但对标出来的价格本身不适用——那是店家必须遵守的，那个数字确实在告诉你一件有约束力的事，即便它买到的具体内容由店家自己描述。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i03-n05"
+      ]
+    }
+  ]
+}

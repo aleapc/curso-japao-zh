@@ -1,0 +1,327 @@
+{
+  "id": "a08",
+  "nivel": "avancado",
+  "numero": 36,
+  "parte": "A08",
+  "titulo": "和他们每个人的最后一分钟，还有你口袋里的那张卡片",
+  "subtitulo": "叫出这个人，说出他们做过的那件具体的事，说出你回来的季节——然后是撑起整趟旅行的那些开场白",
+  "cena": "最后一个早上：还是那四张脸，站在同样的柜台后面，你和他们每人大概能聊上一分钟。",
+  "moldura": "ganha",
+  "frasePiso": "道谢，说清楚是哪件事，说出时间。离开前的三句话，每人一分钟，门就这样一直开着。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-a08-dyst",
+      "afirmacao": "多年来，日本一直在观光厅（成立于2008年）的主导下建设入境旅游接待体系，其中包括面向酒店、商店和车站一线员工的おもてなし待客培训和多语言服务培训，目的是配合国家设定的访日游客数量目标。和任何这类项目一样，它面向的是柜台一侧，而不是游客本身，也无法量化任何一个具体的人实际上会怎样对待你。",
+      "fonte": "観光庁 (Agência de Turismo do Japão, criada em 2008): formação em おもてなし e atendimento multilíngue para o balcão, no esforço de turismo receptivo (inbound)",
+      "ano": 2026,
+      "revisarAte": "2027-12-31",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a08-n05",
+        "fr-a08-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "你在这趟旅行开始时，先跟人打招呼，然后才提出请求。最后一天是同样的动作，只是方向反过来了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n02",
+      "bloco": "corpo",
+      "pt": "告别有三个部分：这个人，那件具体的事，以及你什么时候回来。跳过中间那部分，剩下的就只是客套。"
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a08-p01",
+      "promptPt": "面包店的这位女士一周以来每天早上都给你递同样的东西，这是最后一次了。现在开口说。",
+      "audioKey": "fr-a08-t01",
+      "es": "いろいろ、ありがとうございました。旅で一番のパンでした。",
+      "pinyin": "ee-ro-ee-ro, a-ri-ga-TOH go-za-i-mash-ta · ta-bee de ee-chee-ban no pan desh-ta",
+      "pt": "谢谢你这段时间的照顾。这是这趟旅行里最好吃的面包。",
+      "tts": "いろいろ、ありがとうございました。旅で一番のパンでした。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a08-r01",
+      "receptivo": true,
+      "acao": "用一个季节来回答，绝不要用也许。这就是这里全部的分别所在。",
+      "es": "あら、嬉しい。またぜひ来てくださいね。",
+      "pt": "哎呀，真开心。一定要再来哦。",
+      "tts": "あら、嬉しい。またぜひ来てくださいね。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a08-p02",
+      "promptPt": "用一个季节和一个承诺回应这个邀请，不要用含糊的改天再说。现在开口说。",
+      "audioKey": "fr-a08-t02",
+      "es": "来年の春に。約束します。",
+      "pinyin": "rai-nen no ha-ru ni · ya-ku-soku shee-mas",
+      "pt": "明年春天。我保证。",
+      "tts": "来年の春に。約束します。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n03",
+      "pt": "一句含糊的たぶん会礼貌地把门关上。一个季节加上一个承诺则会把门留开，而人们是真的会记住的。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a08-p03",
+      "promptPt": "请你吃过晚饭的这家人正在门口送你。现在开口说。",
+      "audioKey": "fr-a08-t03",
+      "es": "今日の晩ごはん、忘れません。本当にお世話になりました。",
+      "pinyin": "kyoh no ban-go-han, wa-su-re-ma-sen · hon-TOH ni o-se-wa ni na-ri-mash-ta",
+      "pt": "今晚这顿饭我们不会忘记。真的非常感谢你们的照顾。",
+      "tts": "今日の晩ごはん、忘れません。本当にお世話になりました。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n04",
+      "pt": "临走前有一件事值得知道：柜台另一边的人，其实也一直在为这场交流用心。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a08-r02",
+      "receptivo": true,
+      "acao": "用一件你真正喜欢的具体事情来回答。はい、楽しかったです会把话题结束掉；一个细节能让它继续下去。",
+      "es": "良いご旅行でしたか？そう言っていただけると嬉しいです。",
+      "pt": "旅行还愉快吗？听你这么说我们很高兴。",
+      "tts": "良いご旅行でしたか？そう言っていただけると嬉しいです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n05",
+      "bloco": "capsula",
+      "pt": "多年来，日本一直在培训酒店、商店和车站的员工，教授おもてなし待客之道和多语言服务，以接待游客。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n06",
+      "pt": "这套培训是单向的，面向柜台那一侧，什么都测量不了。它能说明的是，双方其实都在努力。"
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-lugar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a08-p04",
+      "promptPt": "给他们说出那个一年后你依然会记得的具体细节，而不是一句礼貌笼统的回答。现在开口说。",
+      "audioKey": "fr-a08-t04",
+      "es": "土曜の朝市。ずっと忘れません。",
+      "pinyin": "do-YOH no a-sa-ee-chee · ZOOT-to wa-su-re-ma-sen",
+      "pt": "星期六的早市。我永远不会忘记。",
+      "tts": "土曜の朝市。ずっと忘れません。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n07",
+      "pt": "接下来是口袋里的那张卡片。几句开场白撑起了整趟旅行，而它们全都来自第一个模块。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a08-r03",
+      "receptivo": true,
+      "acao": "下次落地之前，把这些话大声说一遍。它们能应付日常大多数场景。",
+      "es": "すみません。席はありますか？カードで払ってもいいですか？出口はどこですか？コーヒーをお願いします。いくらですか？",
+      "pt": "不好意思。有位子吗？可以刷卡吗？出口在哪里？请给我一杯咖啡。多少钱？",
+      "tts": "すみません。席はありますか？カードで払ってもいいですか？出口はどこですか？コーヒーをお願いします。いくらですか？"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a08-p05",
+      "promptPt": "对方全速回答了你，你只听懂了大概三分之一。这就是能救回剩下部分的那句话。现在开口说。",
+      "audioKey": "fr-a08-t05",
+      "es": "すみません、わかりませんでした。もう一度お願いします。",
+      "pinyin": "soo-mee-ma-SEN, wa-ka-ri-ma-sen-DESH-ta · moh ee-chee-DO o-ne-gai-shee-mas",
+      "pt": "抱歉，我没听懂。请再说一次。",
+      "tts": "すみません、わかりませんでした。もう一度お願いします。",
+      "molde": "SUMIMASEN",
+      "encaixe": "もう一度お願いします"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n08",
+      "pt": "这一句才是真正的核心成果。其余的你都可以用手机查，唯独这一句必须不假思索就能脱口而出。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a08-p06",
+      "promptPt": "你正在归还房卡，前台的这位先生不管你说多长的句子，都从来没有切换成英语。现在开口说。",
+      "audioKey": "fr-a08-t06",
+      "es": "下手な日本語に、お付き合いありがとうございました。",
+      "pinyin": "he-TA na ni-HON-go ni, o-tsu-kee-ai a-ri-ga-TOH go-za-i-mash-ta",
+      "pt": "谢谢你一直耐心听我笨拙的日语。",
+      "tts": "下手な日本語に、お付き合いありがとうございました。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a08-r04",
+      "receptivo": true,
+      "acao": "不要反驳这句夸奖。接受它，然后回敬一句。",
+      "es": "いえいえ、お上手ですよ！お気をつけて。",
+      "pt": "哪里的话，你说得很好！路上小心。",
+      "tts": "いえいえ、お上手ですよ！お気をつけて。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a08-p07",
+      "promptPt": "他们刚祝你旅途顺利。真心地回敬一句。现在开口说。",
+      "audioKey": "fr-a08-t07",
+      "es": "ありがとうございます。そちらも、お元気で。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mas · so-chee-ra mo, o-GEN-ki de",
+      "pt": "谢谢，你也是。一切顺利。",
+      "tts": "ありがとうございます。そちらも、お元気で。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a08-n09",
+      "pt": "お元気で是对那些生活会在你离开后继续下去的人说的话。它很温暖，而且能干净利落地收尾。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a08-p08",
+      "promptPt": "这趟旅行的最后一句话，在门口对一个你真心打算再见的人说。现在开口说。",
+      "audioKey": "fr-a08-t08",
+      "es": "また来ます。失礼します。",
+      "pinyin": "ma-ta kee-mas · shee-tsu-REI shee-mas",
+      "pt": "我会再来的。告辞了。",
+      "tts": "また来ます。失礼します。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a08-s01",
+      "es": "いろいろ、ありがとうございました。来年の春に、約束します。また来ます。",
+      "pinyin": "ee-ro-ee-ro a-ri-ga-TOH go-za-i-mash-ta · rai-nen no ha-ru ni ya-ku-soku shee-mas · ma-ta kee-mas",
+      "pt": "跟读告别的这三个部分：道谢、季节，和下一次。",
+      "tts": "いろいろ、ありがとうございました。来年の春に、約束します。また来ます。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a08-n10",
+      "bloco": "recap",
+      "pt": "这就是整门课了。几句开场白，一句修复用的句子，还有一句带着日期的告别。祝你旅途愉快。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "口袋里的卡片",
+    "secoes": [
+      {
+        "titulo": "那些开场白",
+        "corpo": "すみません。……はありますか？……てもいいですか？……はどこですか？……をお願いします。……はいくらですか？这几句话合起来，能开启一场交流、确认一个地方有什么、请求许可、找到房间或街道、下单点单，以及保护好你的钱。这门课里的其余内容都建立在它们之上，而它们全都来自第一个模块。",
+        "exemplos": [
+          {
+            "es": "すみません、わかりませんでした。もう一度お願いします。",
+            "pt": "抱歉，我没听懂。请再说一次。"
+          },
+          {
+            "es": "また来ます。",
+            "pt": "我会再来的。"
+          }
+        ]
+      },
+      {
+        "titulo": "那句修复用的句子才是真正的成果",
+        "corpo": "わかりませんでした、もう一度お願いします这句话必须练到不假思索脱口而出，因为正是它，才能让前面所有那些开场白在对方全速回答时依然管用。一个能提问、却不会请求对方重复的游客，手里的工具只有一半。这是那句该在飞机上反复练习的话。"
+      },
+      {
+        "titulo": "三个部分，每个一分钟",
+        "corpo": "感谢这个人，说出那件具体的事——面包、星期六的市场、第二天问路时给的指引——然后说出你什么时候会回来。中间这一部分才是真正起作用的地方，因为它证明了你真的注意到了。一个季节加上一个承诺，就是足够的承诺：没有人会拿一个确切的日期来要求你，大家期待的就是这种形式。"
+      },
+      {
+        "titulo": "また的意思是再见",
+        "corpo": "这里日常的告别语，都把再见这件事内建在了词语本身里：また来ます、またね、また今度。而さようなら这个带着真正终结意味的词，在预期还会再见面的人之间，已经基本退出了日常使用。用开放式的说法来结尾，不是矫情——这只是这门语言本来就有的形状。"
+      }
+    ]
+  },
+  "slot": "A08",
+  "permissao": "你被允许承诺一次你自己也不确定的归来。说出一个季节，而不是说たぶん，这不是一份任何人会拿来要求你的合同——这只是这里告别的固有形式，也正是为什么一年后柜台后面的那个人还能认出你。",
+  "espelho": "任何挥手告别过一个自己深爱的地方、然后在回程的飞机上反复琢磨那句没说出口的话的人，都明白这最后一部分是为了什么。它每个人只需要花一分钟，而这是整趟旅行里唯一一段，你在离开的路上还能让它变得更好的部分。",
+  "permissaoAudioKey": "fr-a08-n03",
+  "fichasCulturais": [
+    {
+      "sinal": "一个你每天都会光顾的柜台的人，问你什么时候会再来，而老实说你完全不知道。",
+      "suaLeitura": "说一个我没法保证的日期就是撒了个小谎，所以たぶん才是诚实的回答。",
+      "oQueEAli": "这个问题是一场仪式收尾的那一半，不是在要求你给出一个计划，期待的答案有一个固定的形式：一个季节，有时候是一个年份，加上像約束（承诺）这样的一个词。没有人在预订任何东西，大家都心知肚明。",
+      "oQueVoceFaz": "给出一个季节和一个承诺——来年の春に、約束します——让它保持它本该有的那种松散。",
+      "oQueMelhora": "这场交流会以你们双方都想要的方式结束，而下次的相认也是真实的：柜台的人会记得那些好好回答了这个问题的人。",
+      "ondeNaoVale": "但对于只见过一次面的人不适用。同样的问题从一个陌生人嘴里说出来只是寒暄，一个完整的承诺回应过去，分量会比对方给出的更重。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a08-n03"
+      ]
+    },
+    {
+      "sinal": "店主在你第一句话还没说完之前，就小心翼翼地切换成了英语。",
+      "suaLeitura": "他们听出了我的口音，就断定我的日语不值得费心听下去。",
+      "oQueEAli": "多年来，日本一直在观光厅的主导下，培训酒店、商店和车站的一线员工おもてなし待客之道和多语言服务，配合国家设定的访日游客数量目标。这里的英语是针对他们的准备，不是针对你的评判，而且这一切都无法量化任何一个具体的人实际上会怎么做。",
+      "oQueVoceFaz": "还是用日语开口——先说すみません——然后让这场交流自然落到哪种语言更顺畅的那一边。不管结果是哪种，都是好的。",
+      "oQueMelhora": "这种切换不再被解读成拒绝，而正是这种误读，会让游客大概在第三天左右就放弃继续说这门语言。",
+      "ondeNaoVale": "这不代表任何一个具体的柜台一定接受过某个项目的培训。你遇到的大多数英语，其实只是有人在尽力帮忙，而且很多地方根本没接受过这类培训。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-a08-n05",
+        "fr-a08-n06"
+      ]
+    }
+  ]
+}

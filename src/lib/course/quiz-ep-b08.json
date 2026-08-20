@@ -1,0 +1,96 @@
+{
+  "id": "q-b08",
+  "nivel": "basico",
+  "titulo": "测验 — Doko desu ka，把答案变小",
+  "subtitulo": "先说地点，再把问题收窄",
+  "introAudioKey": "fr-b08-q-i",
+  "introPt": "一位旅行者问了一个地方，得到三十个词的回答，然后把它压缩到能装进脑子里。",
+  "cenario": "车站外，手机上有一个地名，眼前四个出口。",
+  "dialogo": [
+    {
+      "audioKey": "fr-b08-q01",
+      "voz": "target_fr_f",
+      "es": "すみません、駅はどこですか？",
+      "pt": "不好意思，车站在哪里？",
+      "tts": "すみません、駅はどこですか？"
+    },
+    {
+      "audioKey": "fr-b08-q02",
+      "voz": "target_fr_m",
+      "es": "二つ目の角を右に曲がって、まっすぐです。",
+      "pt": "第二个路口右转，然后一直走。",
+      "tts": "二つ目の角を右に曲がって、まっすぐです。"
+    },
+    {
+      "audioKey": "fr-b08-q03",
+      "voz": "target_fr_f",
+      "es": "こっちですか？遠いですか？",
+      "pt": "是这边吗？远吗？",
+      "tts": "こっちですか？遠いですか？"
+    },
+    {
+      "audioKey": "fr-b08-q04",
+      "voz": "target_fr_m",
+      "es": "いいえ、歩いて五分です。",
+      "pt": "不远，走路五分钟。",
+      "tts": "いいえ、歩いて五分です。"
+    }
+  ],
+  "perguntas": [
+    {
+      "pergunta": "在「wa doko desu ka」后面，唯一由你决定的是什么？",
+      "opcoes": [
+        "动词",
+        "地点",
+        "时态",
+        "礼貌程度"
+      ],
+      "correta": 1,
+      "explica": "结尾从不改变；地点是你唯一要决定的部分。"
+    },
+    {
+      "pergunta": "哪两个词都能指洗手间？",
+      "opcoes": [
+        "Deguchi 和 iriguchi",
+        "Eki 和 basen",
+        "Toire 和 otearai",
+        "Migi 和 hidari"
+      ],
+      "correta": 2,
+      "explica": "Toire 是日常用语，otearai 稍微礼貌一点。哪个词套进这个句型都能找到它。"
+    },
+    {
+      "pergunta": "为什么要追问一句「kocchi desu ka」？",
+      "opcoes": [
+        "更礼貌",
+        "只能用是、否或一个手势来回答",
+        "听起来更流利",
+        "是在问距离"
+      ],
+      "correta": 1,
+      "explica": "开放式问题换来开放式答案；封闭式问题换来的是你走到路口还能记住的东西。"
+    },
+    {
+      "pergunta": "在任何一段指路里，哪三个词值得抓住？",
+      "opcoes": [
+        "Sumimasen、arigatou、konnichiwa",
+        "Migi、hidari、massugu",
+        "Koko、asoko、hai",
+        "Hitotsume、eki、deguchi"
+      ],
+      "correta": 1,
+      "explica": "右、左、一直走。句子里其他部分都是垫话。"
+    },
+    {
+      "pergunta": "你一开口就用英语，结果对话很快就结束了。这大概是什么原因？",
+      "opcoes": [
+        "对方拒绝说英语",
+        "你跳过了 sumimasen，这个开场才能让对话真正开始",
+        "对方不喜欢游客",
+        "那里没人会英语"
+      ],
+      "correta": 1,
+      "explica": "Sumimasen 起到打开话头的作用。这只是关于开场如何运作的一种解读，不是经过测量的结论。"
+    }
+  ]
+}

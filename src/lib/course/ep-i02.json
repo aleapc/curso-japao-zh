@@ -1,0 +1,307 @@
+{
+  "id": "i02",
+  "nivel": "intermediario",
+  "numero": 20,
+  "parte": "I02",
+  "titulo": "先说 すみません，柜台才会打开",
+  "subtitulo": "一个词身兼打招呼、赔不是和道谢三重身份——一旦先说了它，剩下四个词就够撑起整段交易",
+  "cena": "站着喝咖啡的柜台前排了三个人，机器轰隆作响，轮到你的时候店员只给你大约两秒钟的注意力。",
+  "moldura": "ganha",
+  "frasePiso": "先说 sumimasen，再说要的东西，最后接 onegai shimasu。把这个顺序做对，句子长短就不再重要了。",
+  "decisao": "abrir com すみません antes de qualquer outra coisa, e depois pedir em quatro palavras em vez de construir uma frase longa e desculpada em inglês",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-i02-keigenzeiritsu",
+      "afirmacao": "自2019年10月1日消费税上调以来，日本对食品饮料实行两档税率：外带（mochikaeri）适用8%的优惠税率，堂食（tennai）适用10%的标准税率。这就是柜台在结账前会问 tennai de meshiagari desu ka, omochikaeri desu ka 的实际原因——你的答案会改变税率，进而改变价格，所以这既是在问你坐不坐下，也是在问钱的事。",
+      "fonte": "軽減税率制度 (taxa reduzida), em vigor desde 01/10/2019 — Agência Nacional de Tributos do Japão (国税庁): 8% para お持ち帰り, 10% para 店内",
+      "ano": 2019,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i02-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i02-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "柜台前有一套固定的操作顺序，而排在最前面的那一步并不是你的点单。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i02-r01",
+      "receptivo": true,
+      "acao": "对方已经向你打开了话头。你不需要回应いらっしゃいませ——直接用 sumimasen 接上你的点单。",
+      "es": "いらっしゃいませ！ご注文はお決まりですか？",
+      "pt": "欢迎光临！决定好点什么了吗？",
+      "tts": "いらっしゃいませ！ご注文はお決まりですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i02-n02",
+      "bloco": "corpo",
+      "pt": "Sumimasen 每次都排在最前面：在咖啡之前，在提问之前，在任何英语之前。它一个词就能起到引起注意、赔不是、道谢三个作用。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao",
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i02-p01",
+      "promptPt": "你已经排到柜台前面，轮到你了。先开口打个招呼，再说你想要的东西。现在开口说。",
+      "audioKey": "fr-i02-t01",
+      "es": "すみません、コーヒーをお願いします。",
+      "pinyin": "su-mi-ma-SEN, KOH-hii o o-ne-gai-shi-MAS",
+      "pt": "打扰一下，请给我一杯咖啡。",
+      "tts": "すみません、コーヒーをお願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i02-n03",
+      "pt": "开启一段互动就是踏进了别人的空间。Sumimasen 是在请求让路，同时也能当作不好意思用，在你的肩膀挡了别人道的时候。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "通ります",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i02-p02",
+      "promptPt": "你和收银台之间挡着一个肩膀，绕不过去。现在开口说。",
+      "audioKey": "fr-i02-t02",
+      "es": "すみません、通ります。",
+      "pinyin": "su-mi-ma-SEN, TOH-ri-mas",
+      "pt": "不好意思，借过一下。",
+      "tts": "すみません、通ります。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i02-r02",
+      "receptivo": true,
+      "acao": "这个问题决定了你会坐在哪、要付多少钱。用两个词马上回答。",
+      "es": "店内でお召し上がりですか、お持ち帰りですか？",
+      "pt": "堂食还是外带？",
+      "tts": "店内でお召し上がりですか、お持ち帰りですか？"
+    },
+    {
+      "consulta": [
+        "chegar/balcao",
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i02-p03",
+      "promptPt": "刚才听到的那个问题现在问到你了，你想坐下来吃。现在开口说。",
+      "audioKey": "fr-i02-t03",
+      "es": "店内でお願いします。",
+      "pinyin": "TEN-nai de o-ne-gai-shi-MAS",
+      "pt": "堂食，谢谢。",
+      "tts": "店内でお願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i02-n04",
+      "bloco": "capsula",
+      "pt": "在这里简短不算失礼。Sumimasen、要的东西、onegai shimasu，这就是一次完整又礼貌的对话轮次：礼貌感是靠 onegai shimasu 撑起来的。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida",
+        "mesa/agua-pao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i02-p04",
+      "promptPt": "一杯咖啡加一杯水，一口气说完，不用为哪一样加道歉。现在开口说。",
+      "audioKey": "fr-i02-t04",
+      "es": "コーヒーとお水をお願いします。",
+      "pinyin": "KOH-hii to o-MI-zu o o-ne-gai-shi-MAS",
+      "pt": "请给我一杯咖啡和一杯水。",
+      "tts": "コーヒーとお水をお願いします。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "聞き取れませんでした",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i02-p05",
+      "promptPt": "对方很快地回了一句，你一个字都没听懂。说出来，不要切到英语。现在开口说。",
+      "audioKey": "fr-i02-t05",
+      "es": "すみません、聞き取れませんでした。",
+      "pinyin": "su-mi-ma-SEN, ki-ki-to-re-ma-sen-de-shi-ta",
+      "pt": "不好意思，我没听清楚。",
+      "tts": "すみません、聞き取れませんでした。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i02-r03",
+      "es": "大丈夫ですよ。コーヒー、店内で。承知しました。",
+      "pt": "没问题。一杯咖啡，堂食。明白了。",
+      "tts": "大丈夫ですよ。コーヒー、店内で。承知しました。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i02-n05",
+      "pt": "自2019年起堂食和外带的税率不同，所以他们才会问 tennai 还是 omochikaeri。这是从上下文里读出来的判断，不是一条固定不变的事实。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "もう一度お願いします",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i02-p06",
+      "promptPt": "机器很吵，价格你没听清楚。请对方再说一遍。现在开口说。",
+      "audioKey": "fr-i02-t06",
+      "es": "すみません、もう一度お願いします。",
+      "pinyin": "su-mi-ma-SEN, moh i-CHI-do o-ne-gai-shi-MAS",
+      "pt": "不好意思，能再说一遍吗？",
+      "tts": "すみません、もう一度お願いします。"
+    },
+    {
+      "consulta": [
+        "chegar/balcao",
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i02-p07",
+      "promptPt": "有人和你同时到达柜台唯一的空位。两个词就能解决。现在开口说。",
+      "audioKey": "fr-i02-t07",
+      "es": "お先にどうぞ。",
+      "pinyin": "o-SA-ki ni DOH-zo",
+      "pt": "您先请。",
+      "tts": "お先にどうぞ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i02-n06",
+      "pt": "整个流程收尾的方式和开场一样。离开时说 gochisosama 和 arigato，是对着这个空间说的，不是对着空气说的。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer",
+        "chegar/sair"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i02-p08",
+      "promptPt": "杯子空了，托盘收了，手已经搭在门上。收尾。现在开口说。",
+      "audioKey": "fr-i02-t08",
+      "es": "ごちそうさまでした。ありがとうございました。",
+      "pinyin": "go-chi-soh-sa-ma-DESH-ta. a-ri-ga-toh go-za-i-MASH-ta",
+      "pt": "谢谢款待。非常感谢。",
+      "tts": "ごちそうさまでした。ありがとうございました。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i02-s01",
+      "es": "すみません、コーヒーをお願いします。店内でお願いします。ごちそうさまでした。",
+      "pinyin": "su-mi-ma-SEN, KOH-hii o o-ne-gai-shi-MAS. TEN-nai de o-ne-gai-shi-MAS. go-chi-soh-sa-ma-DESH-ta",
+      "pt": "跟读整个柜台流程，从开场到出门，一共三句话。",
+      "tts": "すみません、コーヒーをお願いします。店内でお願いします。ごちそうさまでした。",
+      "molde": "SUMIMASEN"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i02-n07",
+      "bloco": "recap",
+      "pt": "I02 完成。Sumimasen、要的东西、onegai shimasu、tennai，还有离开时的 gochisosama：四步就能搞定柜台。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "这套动作的顺序",
+    "secoes": [
+      {
+        "titulo": "Sumimasen，请求，道谢",
+        "corpo": "这几个动作是固定的，只有中间那一步会变化。一旦你按这个顺序走，请求本身可以短到只是一个名词加 onegai shimasu，听起来依然是完整的。",
+        "exemplos": [
+          {
+            "es": "すみません、コーヒーをお願いします。",
+            "pt": "打扰一下，请给我一杯咖啡。"
+          },
+          {
+            "es": "ごちそうさまでした。",
+            "pt": "谢谢款待。"
+          }
+        ]
+      },
+      {
+        "titulo": "一个词干三份活",
+        "corpo": "Sumimasen 用来引起注意、为闯入道歉，甚至还能表示感谢——这就是为什么它几乎能开启全日本每一次柜台对话。它是你叫住店员的方式（不用单独举手或打响指），是你请人让路的方式，也是你软化一次纠正的方式。把它放在最前面，这段对话就顺了；如果省掉它，你得到的那句平淡的回答，很容易被误读成对方不情愿，而其实只是顺序不对。"
+      },
+      {
+        "titulo": "堂食还是外带会改变账单",
+        "corpo": "自2019年10月起，外带食品适用8%的优惠税率，堂食适用10%的标准税率，所以 tennai 还是 omochikaeri 这个问题既关乎坐不坐下，也关乎钱。认真回答这个问题，而不是随口敷衍，把它当作一个日常问题来听，而不是一种施压。"
+      },
+      {
+        "titulo": "过度礼貌听起来只是噪音",
+        "corpo": "在繁忙的柜台前，一长串道歉式的英语开场白不会显得更有礼貌；它只会显得这段对话更长。礼貌感是由 sumimasen 和 onegai shimasu 承载的，而这两个词已经包含在你那四个词里了。"
+      }
+    ]
+  },
+  "slot": "I02",
+  "permissao": "你完全可以说得很简短。Sumimasen、要的东西、onegai shimasu，并不是一句完整句子的删减版——在柜台前，这就是那句完整的句子，没有人在背后等着你说出更长的一句。",
+  "permissaoAudioKey": "fr-i02-n04",
+  "espelho": "任何人只要在自己国家繁忙的收银台前经历过有人半路插进来、连声招呼都没打，就懂那种小小的不快。没人会说出口，服务照样进行，只是气氛冷了一度。这里是同一个机制，只不过修复的办法就是一个词。",
+  "fichasCulturais": [
+    {
+      "sinal": "你走上前直接用英语说出你的请求，得到的是一句简短、平淡的回答，感觉像一扇门关上了。",
+      "suaLeitura": "他们大概是不想跟我讲英语。",
+      "oQueEAli": "在日本，sumimasen 是柜台前的仪式性开场——它引起注意，也让你踏入对方空间这件事变得可以接受。直接以请求开场，跳过了这个开场步骤，接下来那种中性、克制的语气很容易被误读成对语言的不情愿，而其实只是顺序的问题。",
+      "oQueVoceFaz": "先单独说一句 sumimasen，停顿半拍，然后再提问——会日语就说日语，不会就说英语。",
+      "oQueMelhora": "对话会从一个大家都预期的起点开始，而那些确实会一点英语的店员，一旦这个开场完成了，也更愿意主动用英语接话。",
+      "ondeNaoVale": "这建立在打招呼这套仪式如何运作的基础上，而不是一项关于态度的量化结论，也不能解释每一次冷淡的柜台反应。有时候，一个刚上完一整班、后面还排着长队的店员，就只是累了而已。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i02-n02"
+      ]
+    },
+    {
+      "sinal": "你为了点一杯咖啡组织了一句又长又小心翼翼、满是道歉的句子，得到的回应却只是一个词和转身去操作机器的背影。",
+      "suaLeitura": "我已经很礼貌了，却什么都没换来，那这份礼貌是白费了，或者不受欢迎。",
+      "oQueEAli": "在柜台前，被期待的对话轮次本来就很短：sumimasen、要的东西、onegai shimasu。对方回你一个词，是交易在往前推进，不是在给你的句子打分。在这里，长度并不承载礼貌感。",
+      "oQueVoceFaz": "压缩你的句子。把力气花在 sumimasen 和 onegai shimasu 上，中间就让它是一个名词。",
+      "oQueMelhora": "你不再感到匆忙，因为你不用再赶着在两秒钟的窗口里说完一整句长句子了。",
+      "ondeNaoVale": "但如果你要求的是超出常规交易之外的事情——一个额外的帮忙、一个例外、寄放在柜台后面的一个包，那种更长、更细致的表达方式才正是发挥作用的地方。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i02-n04"
+      ]
+    }
+  ]
+}

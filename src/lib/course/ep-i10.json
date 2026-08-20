@@ -1,0 +1,372 @@
+{
+  "id": "i10",
+  "nivel": "intermediario",
+  "numero": 28,
+  "parte": "I10",
+  "titulo": "在这里付钱：现金永远行得通，有条件的是刷卡",
+  "subtitulo": "标价依法已经含税，刷卡最低消费或只收现金的告示只要贴出来就是合法的，而给小费本来就不是这里的习惯",
+  "cena": "收银台旁边有一张你径直走过、没细看的小告示，而你手里的这张卡，马上就要知道它写了什么。",
+  "moldura": "ganha",
+  "frasePiso": "点单之前就把告示看清楚，别等到点完再看。在这里，跟付钱有关的事几乎都提前贴出来了，标签上的价格本身就已经含税。",
+  "decisao": "在门口先看清告示，决定要用现金还是刷卡，而不是账单拿到手才发现条件，把它当成被坑了",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-i10-card",
+      "afirmacao": "在日本，商家没有法律义务必须接受刷卡付款。一家店可以只收现金，也可以自定接受刷卡的条件——包括设定最低消费——而无现金支付虽然扩展得很快，但在小店和传统店铺里远谈不上普及。门口或收银台贴一张「现金のみ」（只收现金）的告示，是很正常、也合法的做法。由此可推出：日元现金永远都会被接受，所以稳妥的做法是随身带够现金，并且在点单之前就看清告示，而不是点完之后才看。",
+      "fonte": "Sem obrigação legal de aceitar cartão no Japão; 現金のみ frequente em estabelecimentos pequenos; cashless em expansão mas não universal",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-i10-n04",
+        "fr-i10-n05"
+      ]
+    },
+    {
+      "id": "fr-i10-sougaku",
+      "afirmacao": "展示给消费者看的价格必须含税。根据《消费税法》，总额表示（含税总价标示）义务从2021年4月1日起再次全面强制执行，所以标签或菜单上的数字就是你要付的数字——标准税率10%，或外带食品的优惠税率8%，都已经包含在里面了。展示的价格在收银台不会再另加税。实际上的理解是：你看到的数字就是要交出去的数字，不需要自己再算。",
+      "fonte": "総額表示義務 (exibição do preço com imposto incluído), Lei do Imposto sobre o Consumo — obrigatória desde 01/04/2021",
+      "ano": 2021,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i10-n07"
+      ]
+    },
+    {
+      "id": "fr-i10-chip",
+      "afirmacao": "在日本，给小费不是习惯，也没有什么百分比的惯例。把现金递给员工，常常会被婉拒，也不会被期待多给一点凑整。真正存在的，是在一些旅馆（ryokan）和高档餐厅里，会有一项事先公开的服务费（サービス料，通常在10%到15%左右），加进账单并提前标明——这和小费是两回事，属于标示出来的价格的一部分。这里表达温暖的收尾方式是言语，不是硬币：说一句 gochisosama deshita，而不是留一笔小费。",
+      "fonte": "Ausência de cultura de gorjeta no Japão; サービス料 (taxa de serviço) divulgada em ryokan/restaurantes de alto padrão, ~10-15%, distinta de gorjeta",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i10-n02",
+        "fr-i10-n03"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i10-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "每次旅行都会遇到四个跟钱有关的问题，而这四个问题的答案都写在墙上的一张告示，或者标签上的一个数字里。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i10-n02",
+      "bloco": "corpo",
+      "pt": "第一件事：没有小费这回事。多递出去的现金通常会被婉拒，账单末尾也不会等着一个百分比。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i10-t01",
+      "es": "サービス料はかかりますか？",
+      "pinyin": "SAH-bi-su-ryo wa ka-ka-ri-mas-ka",
+      "pt": "有服务费吗？",
+      "tts": "サービス料はかかりますか？"
+    },
+    {
+      "consulta": [
+        "mesa/conta",
+        "pagar/gorjeta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i10-p01",
+      "promptPt": "账单就在你面前，你在想会不会有什么被额外加进去。不如直接开口问。现在开口说。",
+      "audioKey": "fr-i10-t01",
+      "es": "サービス料はかかりますか？",
+      "pinyin": "SAH-bi-su-ryo wa ka-ka-ri-mas-ka",
+      "pt": "有服务费吗？",
+      "tts": "サービス料はかかりますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i10-r01",
+      "receptivo": true,
+      "acao": "这是大多数地方的标准回答。价格就是价格，没有小费这一栏。",
+      "es": "いいえ、税込価格です。チップも要りませんよ。",
+      "pt": "没有，价格是含税的。也不用给小费。",
+      "tts": "いいえ、税込価格です。チップも要りませんよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i10-n03",
+      "pt": "温暖的收尾靠的是言语，不是硬币。Gochisosama deshita 起到了别处小费才起到的作用；而硬塞的小费常常会被拒收。"
+    },
+    {
+      "consulta": [
+        "pagar/gorjeta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i10-p02",
+      "promptPt": "这顿午饭吃得又久又好，你也刚好照数付了钱。用这里人惯常的方式，温暖地收个尾。现在开口说。",
+      "audioKey": "fr-i10-t02",
+      "es": "ごちそうさまでした。美味しかったです。",
+      "pinyin": "go-chi-soh-sa-ma-DESH-ta. o-i-shi-KAT-ta des",
+      "pt": "谢谢款待，真的很好吃。",
+      "tts": "ごちそうさまでした。美味しかったです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i10-n04",
+      "bloco": "capsula",
+      "pt": "第二件事：没有人一定要接受你的卡，只收现金的告示或者最低消费的规定都是合法的。无现金支付在扩展，但还没普及到每个地方。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i10-r02",
+      "receptivo": true,
+      "acao": "看收银台上的字，而不是看对方的表情。如果贴出了最低消费，那就是合法的，这个话题也就到此为止。",
+      "es": "カードは三千円からになります。",
+      "pt": "刷卡消费要满三千日元起。",
+      "tts": "カードは三千円からになります。"
+    },
+    {
+      "consulta": [
+        "pagar/cartao",
+        "compras/quanto"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "最低金額",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i10-p03",
+      "promptPt": "收银台旁边贴了一张告示，上面的数字你看不清楚。问一下具体数字。现在开口说。",
+      "audioKey": "fr-i10-t03",
+      "es": "最低金額はいくらですか？",
+      "pinyin": "sai-TEI-kin-gaku wa i-ku-ra des-ka",
+      "pt": "最低消费是多少？",
+      "tts": "最低金額はいくらですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i10-n05",
+      "pt": "条件在你点单之前就已经贴出来了：门口的告示、收银台上的告示，或者点餐机上的说明。"
+    },
+    {
+      "consulta": [
+        "pagar/cartao",
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i10-p04",
+      "promptPt": "你还站在门口，什么都还没点。现在就把这件事确认清楚。现在开口说。",
+      "audioKey": "fr-i10-t04",
+      "es": "カードで払えますか？",
+      "pinyin": "KAH-do de ha-ra-e-mas-ka",
+      "pt": "可以刷卡吗？",
+      "tts": "カードで払えますか？"
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro",
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i10-p05",
+      "promptPt": "对方刚指了指告示。给他一个简单的回答，把这顿饭继续吃下去。现在开口说。",
+      "audioKey": "fr-i10-t05",
+      "es": "じゃあ、現金で払います。",
+      "pinyin": "JAA, gen-KIN de ha-ra-i-mas",
+      "pt": "那我就付现金吧。",
+      "tts": "じゃあ、現金で払います。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i10-n06",
+      "pt": "现金是没人能拒收的那一种。日元是法定货币，这一点不由店家来决定。"
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i10-p06",
+      "promptPt": "东西是三百日元，可取款机只吐出了一万日元的钞票。在收银抽屉打开之前先说清楚。现在开口说。",
+      "audioKey": "fr-i10-t06",
+      "es": "一万円札でもいいですか？",
+      "pinyin": "i-chi-man-EN-sa-tsu de mo i-i des-ka",
+      "pt": "用一万日元的钞票可以吗？",
+      "tts": "一万円札でもいいですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i10-n07",
+      "bloco": "capsula",
+      "pt": "第三件事：标签上的价格就是你要付的价格。自2021年起，标价必须含税，所以收银台不会再另外加钱。"
+    },
+    {
+      "consulta": [
+        "pagar/pedir",
+        "compras/quanto"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "全部で",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i10-p07",
+      "promptPt": "你们三个人都点了东西，只有一个人来付账，你想先知道总数。现在开口说。",
+      "audioKey": "fr-i10-t07",
+      "es": "全部でいくらですか？",
+      "pinyin": "ZEN-bu de i-ku-ra des-ka",
+      "pt": "一共多少钱？",
+      "tts": "全部でいくらですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i10-n08",
+      "pt": "第四件事：分开付款。在收银台各付各的（betsubetsu）在这里很常见，问一句也不会有任何代价。"
+    },
+    {
+      "consulta": [
+        "pagar/rachar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i10-p08",
+      "promptPt": "你们两个人站在收银台前，两张卡都拿了出来，托盘上只有一张账单。现在开口说。",
+      "audioKey": "fr-i10-t08",
+      "es": "別々で払えますか？",
+      "pinyin": "be-TSU-be-tsu de ha-ra-e-mas-ka",
+      "pt": "可以分开付吗？",
+      "tts": "別々で払えますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i10-r03",
+      "receptivo": true,
+      "acao": "答应是靠动作表示的，不是靠说出来的。他已经在分账了。",
+      "es": "はい、別々にしますね。",
+      "pt": "好的，我帮你们分开算。",
+      "tts": "はい、別々にしますね。"
+    },
+    {
+      "consulta": [
+        "compras/pagar",
+        "mesa/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i10-p09",
+      "promptPt": "收银机响了一声，抽屉合上了，什么都没打印出来。你需要一张凭证来报销。现在开口说。",
+      "audioKey": "fr-i10-t09",
+      "es": "レシートをお願いします。",
+      "pinyin": "re-SHII-to o o-ne-gai-shi-MAS",
+      "pt": "请给我小票。",
+      "tts": "レシートをお願いします。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i10-s01",
+      "es": "カードで払えますか？ 最低金額はいくらですか？ じゃあ、現金で払います。",
+      "pinyin": "KAH-do de ha-ra-e-mas-ka · sai-TEI-kin-gaku wa i-ku-ra des-ka · JAA, gen-KIN de ha-ra-i-mas",
+      "pt": "跟读这三句话，几乎能应付日本任何一个收银台。",
+      "tts": "カードで払えますか？ 最低金額はいくらですか？ じゃあ、現金で払います。",
+      "molde": "IKURA"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i10-n09",
+      "bloco": "recap",
+      "pt": "I10 完成，中级篇也随之告一段落。没有小费，现金永远行得通，刷卡有贴出来的条件，标签价格就是最终价格。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "四个跟钱有关的问题，答案都在墙上",
+    "secoes": [
+      {
+        "titulo": "刷卡的条件由店家自己定",
+        "corpo": "在日本，商家没有义务接受刷卡付款。一家店可以只收现金，也可以设定最低消费，只要提前告知你——门口的告示、收银台上的告示、点餐机上的说明。无现金支付在城市里扩展得很快，但在小店和传统店铺里还远谈不上普及，所以一张「现金のみ」的告示只是常态，不是针对你的。带够日元，点单之前先把告示看清楚。",
+        "exemplos": [
+          {
+            "es": "カードで払えますか？",
+            "pt": "可以刷卡吗？"
+          },
+          {
+            "es": "最低金額はいくらですか？",
+            "pt": "最低消费是多少？"
+          }
+        ]
+      },
+      {
+        "titulo": "现金永远行得通",
+        "corpo": "日元是法定货币，现金是没有人可以拒收的付款方式。至于一家店愿不愿意为一笔三百日元的消费找开一张一万日元的钞票，那是另一回事，属于实际操作的习惯——有的店会很乐意，有的店更希望你带凑整的钱，先问一句 ichiman-en satsu de mo ii desu ka，比起尴尬的停顿要省事得多。在很多小餐馆，你要先在点餐机上付款，所以钱的问题出现在用餐之前，而不是之后。"
+      },
+      {
+        "titulo": "标签价格就是最终价格",
+        "corpo": "自2021年4月起，展示给消费者的价格必须含税，所以标签或菜单上的数字就是你要交出去的数字——标准的10%，或外带食品的优惠8%，都已经包含在里面了。展示出来的价格在收银台不会再另加税，你也不用自己算账。"
+      },
+      {
+        "titulo": "没有小费，服务费会提前公开",
+        "corpo": "给小费不是这里的习惯，也没有什么百分比的惯例；硬塞给员工的现金常常会被婉拒。温暖的收尾是一句 gochisosama deshita，而不是一笔小费。如果确实存在服务费——一些旅馆和高档餐厅会加收大约10%到15%——那也是提前公开、显示在账单上的，是标示好的价格的一部分，而不是需要你自己计算的小费。"
+      }
+    ]
+  },
+  "slot": "I10",
+  "permissao": "你可以在点任何东西之前，先问一句这家店是怎么收钱的。日本的收银台前，没有人会把 kaado de haraemasu ka 当作怀疑——这跟你前面那位客人问的是同一个问题，而在门口就问清楚，比等账单拿到手才问，要省事得多。",
+  "permissaoAudioKey": "fr-i10-n05",
+  "espelho": "任何一个在家附近的街角小店里，看到收银台旁边手写的「刷卡最低消费」告示的人，都对这种情形再熟悉不过。规矩并没有被藏起来，只是写得比较小，唯一需要的本事，就是先看清楚再决定，而不是决定之后才看。",
+  "fichasCulturais": [
+    {
+      "sinal": "你为一笔小额消费递出了信用卡，对方没有接，而是指了指收银台旁边的一张告示。",
+      "suaLeitura": "他们是在把我引向现金，因为不想付手续费，我被当成游客来对待了。",
+      "oQueEAli": "在日本，商家没有法律义务必须接受刷卡付款，最低消费或只收现金的政策都是合法的——前提是提前、显眼地公布出来。那张告示就是这份公布。它在你走进来之前就已经贴在那里，对排在你后面的人同样适用。",
+      "oQueVoceFaz": "点单之前先看看门口、收银台和点餐机；随身带够纸币的日元，应对那些答案是不行的地方。如果数字看不清楚，就问一句 saitei kingaku wa ikura desu ka。",
+      "oQueMelhora": "这一刻不再是一场小小的冲突，而变成了一件你已经确认过的事实，你也能继续吃这顿饭，而不用跑去找取款机。",
+      "ondeNaoVale": "但这不是随处都成立——连锁店、百货公司和市中心的店铺，越来越多不管金额大小都能刷卡，也能用交通卡。这只是提醒你要带现金，而不是让你觉得刷卡永远行不通。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i10-n04",
+        "fr-i10-n05"
+      ]
+    },
+    {
+      "sinal": "账单上没有小费那一栏，刷卡机也从没问过要不要加，你付的就是菜单上写的那个数字。",
+      "suaLeitura": "是不是漏算了什么，我是不是该自己再加一个百分比上去。",
+      "oQueEAli": "给小费不是这里的习惯，而且自2021年起，展示的价格依法就是含税总价，所以菜单上的数字就是全部的数字。没有任何资料会公布一个小费的百分比，因为根本就没有这样的惯例存在，而硬递过去的小费常常会被婉拒。",
+      "oQueVoceFaz": "照数字付钱。用 gochisosama deshita 温暖地收尾，而不是留硬币。如果账单上显示了服务费，那也是提前公开过的，已经算进总数里了。",
+      "oQueMelhora": "你不再因为不安而每顿饭都多加15%，一周下来这笔钱够再吃一顿正经的晚饭，而这份谢意，也比金钱更能传达到位。",
+      "ondeNaoVale": "但这不代表任何地方都完全不收服务费——一些旅馆和高档餐厅会加收公开说明过的服务费，所以要看清账单，它会以一个明确的项目显示出来，而不需要你自己去计算。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i10-n02",
+        "fr-i10-n03"
+      ]
+    }
+  ]
+}

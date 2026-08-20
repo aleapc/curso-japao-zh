@@ -1,0 +1,326 @@
+{
+  "id": "i08",
+  "nivel": "intermediario",
+  "numero": 26,
+  "parte": "I08",
+  "titulo": "被邀请到别人家做客",
+  "subtitulo": "该带什么去，该坐在哪里，那句只有一个词的敬酒词，还有什么时候离开才不算太早",
+  "cena": "三天前刚认识的人对你说了「nichiyobi, uchi ni gohan ni kimasen ka」，而你完全不知道这句话在实际生活里意味着什么。",
+  "moldura": "ganha",
+  "frasePiso": "先答应下来。手里带点东西上桌，等着被安排座位，用那一个词举杯，喝完茶再走。",
+  "decisao": "接受邀请，手里带着对的东西前往，而不是因为不懂日本人家里的规矩而推辞",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-i08-jikan-chosa",
+      "afirmacao": "日本人的用餐时间是有规律、相对同步的。NHK 的全国生活时间调查（国民生活時間調査，2020）记录了一天中用在吃饭上的时间，发现日常的作息集中在相当固定的时段，晚饭也集中在傍晚，而不是分散在一天里。这对客人的实际意义是：邀请里说的钟点就是真的那个钟点，而在家里吃的午饭或晚饭，本来就是按拖得比较长来安排的，而不是要塞进其他事情的空档里。",
+      "fonte": "NHK 国民生活時間調査 (Pesquisa de Uso do Tempo), 2020 — tempo e horários das refeições no Japão",
+      "ano": 2020,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i08-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i08-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "被邀请去别人家，是这趟旅行能给你的最好的事。唯一该拒绝的理由，就是不知道它长什么样子。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i08-r01",
+      "receptivo": true,
+      "acao": "现在就答应下来，细节以后再弄清楚。",
+      "es": "日曜日、うちに昼ごはんに来ませんか。一時ごろ。",
+      "pt": "周日来我们家吃午饭吧，大概一点左右。",
+      "tts": "日曜日、うちに昼ごはんに来ませんか。一時ごろ。"
+    },
+    {
+      "consulta": [
+        "conversa/convite"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i08-p01",
+      "promptPt": "热情地一口答应下来，不要有任何犹豫。现在开口说。",
+      "audioKey": "fr-i08-t01",
+      "es": "喜んで。お招きありがとうございます。",
+      "pinyin": "yo-ro-KON-de. o-MA-ne-ki a-ri-ga-toh go-za-i-mas",
+      "pt": "非常乐意。谢谢您的邀请。",
+      "tts": "喜んで。お招きありがとうございます。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i08-n02",
+      "bloco": "corpo",
+      "pt": "然后问要不要带点东西。句尾语调上扬，这就是整个问句——不需要多加别的词。"
+    },
+    {
+      "consulta": [
+        "conversa/convite"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i08-p02",
+      "promptPt": "你想抱着一盒东西出现。先问清楚，句尾语调上扬。现在开口说。",
+      "audioKey": "fr-i08-t02",
+      "es": "何か持って行きましょうか？",
+      "pinyin": "NA-ni ka mot-te i-ki-ma-SHO-ka",
+      "pt": "要我带点什么去吗？",
+      "tts": "何か持って行きましょうか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i08-r02",
+      "es": "いえいえ、手ぶらで来てくださいね！",
+      "pt": "不用不用，空手来就好啦！",
+      "tts": "いえいえ、手ぶらで来てくださいね！"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i08-n03",
+      "pt": "Teburade 不是真的指示。你照样要带一份 temiyage 去——一盒点心，或者一瓶给大家的酒。"
+    },
+    {
+      "consulta": [
+        "conversa/convite",
+        "compras/presente"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "MASHITA",
+      "encaixe": "デザートを持ってきました",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i08-p03",
+      "promptPt": "你站在门口，手里拿着甜品店的盒子。把它递过去。现在开口说。",
+      "audioKey": "fr-i08-t03",
+      "es": "デザートを持ってきました。お口に合うといいのですが。",
+      "pinyin": "de-ZAH-to o mot-te ki-MASH-ta. o-ku-chi ni a-u to i-i no des-ga",
+      "pt": "我带了甜点来，希望合你们的口味。",
+      "tts": "デザートを持ってきました。お口に合うといいのですが。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i08-n04",
+      "bloco": "capsula",
+      "pt": "一点是真的一点。这里的用餐时间有规律、相当固定，而且整顿饭本来就是按拖得长来安排的。"
+    },
+    {
+      "consulta": [
+        "conversa/convite"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i08-p04",
+      "promptPt": "大家都站在桌边，还没人坐下。开口问，而不是自己挑座位。现在开口说。",
+      "audioKey": "fr-i08-t04",
+      "es": "どこに座ればいいですか？",
+      "pinyin": "DO-ko ni su-wa-re-ba i-i des-ka",
+      "pt": "我该坐哪里呢？",
+      "tts": "どこに座ればいいですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i08-n05",
+      "pt": "敬酒只有一个词，不是一段讲话。举起杯子，说 kanpai，真的就这样结束了。"
+    },
+    {
+      "consulta": [
+        "conversa/brinde"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i08-p05",
+      "promptPt": "大家都举起了杯子，彼此对视。现在开口说。",
+      "audioKey": "fr-i08-t05",
+      "es": "乾杯！",
+      "pinyin": "kan-PAI",
+      "pt": "干杯！",
+      "tts": "乾杯！"
+    },
+    {
+      "consulta": [
+        "conversa/elogiar",
+        "comer/pedido"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i08-p06",
+      "promptPt": "指着菜本身，向做菜的人当面夸奖这道菜。现在开口说。",
+      "audioKey": "fr-i08-t06",
+      "es": "この料理、本当に美味しいですね。",
+      "pinyin": "ko-no RYOH-ri, hon-TOH ni o-i-shi-i des-ne",
+      "pt": "这道菜真的很好吃。",
+      "tts": "この料理、本当に美味しいですね。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i08-r03",
+      "receptivo": true,
+      "acao": "再添一次是一种赞美。象征性地拿一点，而不是干脆拒绝。",
+      "es": "もっと食べてください、たくさんありますから！",
+      "pt": "多吃点吧，还有很多呢！",
+      "tts": "もっと食べてください、たくさんありますから！"
+    },
+    {
+      "consulta": [
+        "comer/pedido"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i08-p07",
+      "promptPt": "你已经饱了，但这道菜又端过来一轮。象征性地拿一点。现在开口说。",
+      "audioKey": "fr-i08-t07",
+      "es": "じゃあ、少しだけ。すごく美味しいので。",
+      "pinyin": "JAA, su-KO-shi da-ke. su-GO-ku o-i-shi-i no-de",
+      "pt": "那就一点点吧，真的太好吃了。",
+      "tts": "じゃあ、少しだけ。すごく美味しいので。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i08-r04",
+      "receptivo": true,
+      "acao": "对方主动提出可以改用随意的说法，但这从来不是你自己该主动做的事。如果对方提了，就接受；如果没提，就继续用敬语。",
+      "es": "もう、敬語じゃなくていいですよ。",
+      "pt": "跟我说话不用这么客气啦。",
+      "tts": "もう、敬語じゃなくていいですよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i08-n06",
+      "pt": "茶就是信号。茶一旦端上来又喝完了，这时候离开就是正常时机，而不是太早。"
+    },
+    {
+      "consulta": [
+        "conversa/despedir",
+        "conversa/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i08-p08",
+      "promptPt": "茶杯已经空了。坐在原位，用一句话概括整个下午。现在开口说。",
+      "audioKey": "fr-i08-t08",
+      "es": "今日は本当にありがとうございました。楽しい一日でした。",
+      "pinyin": "KYOH wa hon-TOH ni a-ri-ga-toh go-za-i-MASH-ta. ta-no-SHI-i i-chi-ni-chi de-shi-ta",
+      "pt": "今天真的非常感谢。这是很愉快的一天。",
+      "tts": "今日は本当にありがとうございました。楽しい一日でした。"
+    },
+    {
+      "consulta": [
+        "conversa/despedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i08-p09",
+      "promptPt": "现在真正起身离开，用那句能让告别显得轻松的话。现在开口说。",
+      "audioKey": "fr-i08-t09",
+      "es": "そろそろ失礼します。ごちそうさまでした。",
+      "pinyin": "so-ro-so-ro shi-TSU-rei shi-mas. go-chi-soh-sa-ma-DESH-ta",
+      "pt": "我差不多该告辞了。谢谢款待。",
+      "tts": "そろそろ失礼します。ごちそうさまでした。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i08-s01",
+      "es": "何か持って行きましょうか？ どこに座ればいいですか？ 乾杯！ そろそろ失礼します。",
+      "pinyin": "NA-ni ka mot-te i-ki-ma-SHO-ka. DO-ko ni su-wa-re-ba i-i des-ka. kan-PAI. so-ro-so-ro shi-TSU-rei shi-mas",
+      "pt": "跟读这次拜访的完整弧线：提出、入座、敬酒、告辞。",
+      "tts": "何か持って行きましょうか？ どこに座ればいいですか？ 乾杯！ そろそろ失礼します。",
+      "molde": "MASHITA"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i08-n07",
+      "bloco": "recap",
+      "pt": "I08 完成。答应下来，带一份 temiyage 前往，等着被安排座位，举杯敬酒，喝完茶再走。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一顿周日午餐的样子",
+    "secoes": [
+      {
+        "titulo": "Teburade 的意思是要带东西去",
+        "corpo": "对方推辞你的提议，本身就是这套礼节的一部分，而不是真正的答案。一盒好店的点心，或者一瓶酒，都可以当作 temiyage；不管是什么，它都是拿出来给大家共享的，而像 okuchi ni au to ii no desu ga 这样一句简单的话，正好带着这份礼物该有的那种谦逊。",
+        "exemplos": [
+          {
+            "es": "何か持って行きましょうか？",
+            "pt": "要我带点什么去吗？"
+          },
+          {
+            "es": "デザートを持ってきました。",
+            "pt": "我带了甜点来。"
+          }
+        ]
+      },
+      {
+        "titulo": "一点是精确的，不是大概的",
+        "corpo": "NHK 的生活时间调查记录了一天中三餐的分布，而这个时段相当固定，各家各户也大体一致。这就是为什么邀请会说出具体的钟点，也是为什么迟到太多会让你正好赶上一道菜吃到一半，而不是赶在它开始之前。准时到达，或者提前几分钟。"
+      },
+      {
+        "titulo": "等着被安排座位",
+        "corpo": "坐在哪里不是你自己能决定的。日本的房间里有上座（kamiza）和下座（shimoza）——一个是尊位，一个是较低的位置——客人通常是被引到座位上的，而不是自己挑一个坐下。Doko ni suwareba ii desu ka 把这个决定权交还给主人，而这正是它该在的地方。"
+      },
+      {
+        "titulo": "敬语要一直用，直到被撤下为止",
+        "corpo": "面对任何不是一起长大的成年人，礼貌用语是默认的选择，而转成随意说法通常是被主动提出来的——keigo ja nakute ii desu yo。接受这个提议很容易，也是瞬间的事。真正需要付出代价的，是自己先主动这么做，所以要等对方先开口。"
+      }
+    ]
+  },
+  "slot": "I08",
+  "permissao": "你可以接受一个你还不太熟的人发出的邀请。被请去做客，正是这份邀请该起的作用，答应是理所当然的回答，而如果因为不确定礼节就推掉这次机会，这趟旅行会因此逊色不少。",
+  "permissaoAudioKey": "fr-i08-n01",
+  "espelho": "任何一个因为觉得接受邻居的邀请像是在给对方添麻烦、而拒绝过对方的人，都清楚这种本能反应。这种犹豫和日本无关——而是怀疑对方只是出于礼貌才这样说，并不是真心的。",
+  "fichasCulturais": [
+    {
+      "sinal": "你说自己已经吃饱了，可这道菜又端过来了一次——甚至好几次，还带着笑意，说着「motto tabete」。",
+      "suaLeitura": "他们没在听我说话，为了礼貌我还得继续吃。",
+      "oQueEAli": "在很多餐桌上，反复劝食正是好客之道在发挥作用，第一次的拒绝会被当作一种礼节性的客套，而不是真正的决定。这种坚持是对着整桌人的热情，而不是针对你个人的压力。",
+      "oQueVoceFaz": "拿一点点，并搭配上一句赞美——sukoshi dake，sugoku oishii node。接受一点点，能以一种干脆的拒绝做不到的方式，把这个来回收个尾。",
+      "oQueMelhora": "你不用每隔十分钟就重来一次同样的拉锯，而这份邀请也得到了它真正想要的那句回应。",
+      "ondeNaoVale": "但如果涉及过敏或真正的饮食限制，就不适用这一条。这时该用的是最基础的那句坚定的表达，而象征性地拿一点正是错误的做法——限制要清楚地说一次，不在餐桌上讨价还价。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i08-n05"
+      ]
+    },
+    {
+      "sinal": "午饭约的是一点，到了四点还没人挪窝，茶也还没端上来，而你其实还有别的安排。",
+      "suaLeitura": "这已经拖太久了，我被留住了。",
+      "oQueEAli": "这顿饭是一场完整的长时段活动，而不是一道菜吃完之后跟着自由活动。用时数据显示用餐时段相当固定，而且在家里吃饭往往会拖得比较长——这种长度本来就是设计好的，不是延误。",
+      "oQueVoceFaz": "下午不要安排任何事情。等茶端上来，这是可以离开的实际信号，然后用告别的那句话。",
+      "oQueMelhora": "你能待满这次邀请真正想给你的那部分时光，也能在一个大家都能理解的时刻离开。",
+      "ondeNaoVale": "但这不代表每家每户都准时一点开饭——家里有小孩、要倒班上班，或者长途开车赶来的家庭，什么时候坐下吃饭要看实际情况。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i08-n04",
+        "fr-i08-n06"
+      ]
+    }
+  ]
+}

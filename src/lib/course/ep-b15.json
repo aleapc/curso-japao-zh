@@ -1,0 +1,392 @@
+{
+  "id": "b15",
+  "nivel": "basico",
+  "numero": 15,
+  "parte": "B15",
+  "titulo": "「いくらですか」——在你踏进去之前先知道价格",
+  "subtitulo": "一句话就能让你在做决定之前先掌握价格——居酒屋一坐下就可能加收的座位费，市场摊位和店铺收银台也是同样的道理",
+  "cena": "你正半坐在居酒屋的凳子上，服务员已经朝你走来，一道你没点过的小菜正准备出现在你的座位上。",
+  "moldura": "ganha",
+  "frasePiso": "东西，加上「はいくらですか」。大多数在日本待一周的人，都是到最后看账单时才第一次发现有座位费这回事。",
+  "moldes": [
+    "IKURA"
+  ],
+  "clique": {
+    "contagem": [
+      "居酒屋",
+      "柜台",
+      "市场摊位",
+      "服装店"
+    ],
+    "desconto": "没人给你为居酒屋、柜台、摊位和收银台分别准备一句不同的问法。你只保留了同一个句尾，改变的只是句尾前面的那个东西。",
+    "piso": "下次遇到一个价格感觉是默认存在、却没被明说出来的时候，你不会等着被告知。你会在做决定之前先开口问，趁着问还不花钱。"
+  },
+  "fatosDatados": [
+    {
+      "id": "fr-comptoir-salle-terrasse",
+      "afirmacao": "在很多居酒屋，会有一道你没点过的小菜——お通し（也叫突き出し）——被放到你的座位上，按人头收取费用，通常是300到500日元。这是合法且正常的做法，本质上是一种座位费，即使你从没要求过这道菜，这也不是骗局。有些店铺则会明码标示「席料」或「チャージ」（座位费/开桌费）。你通常无法拒绝お通し，但可以问清楚它多少钱。",
+      "fonte": "お通し／突き出し em izakaya: pequeno prato-couvert cobrado por pessoa (tipicamente 300–500 ienes), lícito e comum; alguns locais cobram 席料/チャージ.",
+      "ano": 2026,
+      "revisarAte": "2028-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b15-n04"
+      ]
+    },
+    {
+      "id": "fr-afixacao-exterior",
+      "afirmacao": "在日本，做决定之前查价格并不难：法律规定标示的数字已经含税，很多餐厅的橱窗里会摆出逼真的食品模型（食品サンプル）和带照片的菜单，定食也会标出总价。唯独居酒屋的座位费不一定会在外面标示出来，这正是为什么值得开口问一问。",
+      "fonte": "Preços exibidos incluem imposto (総額表示); 食品サンプル e menus com foto na vitrine; 定食 com preço total. A cobrança de お通し nem sempre está afixada fora.",
+      "ano": 2026,
+      "revisarAte": "2028-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b15-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b15-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "第十五部分。今天只有一个句尾，但它能在居酒屋、柜台、摊位和收银台替你把话说清楚。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b15-n02",
+      "bloco": "cena",
+      "pt": "你正半坐在居酒屋的凳子上，服务员已经朝你走来，一道要收费的小菜正准备摆到你的座位前。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b15-n03",
+      "bloco": "molde",
+      "pt": "框架是这样的：东西，然后是「はいくらですか」。句尾不变，只有前面那部分在变。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b15-t01",
+      "es": "お通しはいくらですか？",
+      "pinyin": "o-TOO-shi wa i-ku-ra des ka",
+      "pt": "这道开胃小菜多少钱？",
+      "tts": "お通しはいくらですか？"
+    },
+    {
+      "consulta": [
+        "compras/quanto",
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "お通し",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b15-p01",
+      "promptPt": "你还有一秒钟就要在居酒屋坐下了，一道你没点过的小菜正端过来。趁凳子还没承受你的重量之前先问一句。现在开口说。",
+      "audioKey": "fr-b15-t01",
+      "es": "お通しはいくらですか？",
+      "pinyin": "o-TOO-shi wa i-ku-ra des ka",
+      "pt": "这道开胃小菜多少钱？",
+      "tts": "お通しはいくらですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b15-r01",
+      "receptivo": true,
+      "es": "お通しは、お一人様三百円です。",
+      "pt": "开胃小菜每人三百日元。",
+      "tts": "お通しは、お一人様三百円です。",
+      "acao": "现在这是你自己做的选择，而不是发生在你身上的事。这道菜要收费，你通常无法拒绝，但你在坐下之前就已经知道这个数字了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b15-n04",
+      "bloco": "corpo",
+      "pt": "お通し是放在你座位上的一道小菜，按人头收费——这是合法的座位费，不是骗局，即使你从来没点过它。"
+    },
+    {
+      "consulta": [
+        "compras/quanto",
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "席料",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b15-p02",
+      "promptPt": "门口有块小告示牌，你看不懂上面写的字。在做决定之前先问问座位费。现在开口说。",
+      "audioKey": "fr-b15-t02",
+      "es": "席料はいくらですか？",
+      "pinyin": "se-ki-RYOO wa i-ku-ra des ka",
+      "pt": "座位费多少钱？",
+      "tts": "席料はいくらですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b15-n05",
+      "pt": "价格其实很容易事先查清楚：都含税，很多橱窗摆着食品模型和照片，定食也标出了总价。"
+    },
+    {
+      "consulta": [
+        "compras/quanto",
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "日替わり定食",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b15-p03",
+      "promptPt": "你站在店外看着招牌，有一行文字旁边没标价格。现在开口说。",
+      "audioKey": "fr-b15-t03",
+      "es": "日替わり定食はいくらですか？",
+      "pinyin": "hi-ga-WA-ri tei-shoku wa i-ku-ra des ka",
+      "pt": "今日定食多少钱？",
+      "tts": "日替わり定食はいくらですか？"
+    },
+    {
+      "consulta": [
+        "compras/quanto",
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "これ",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b15-p04",
+      "promptPt": "在市场摊位前，你的手指悬在一盘橙色的东西上方，上面完全没有标价签。现在开口说。",
+      "audioKey": "fr-b15-t04",
+      "es": "これはいくらですか？",
+      "pinyin": "ko-re wa i-ku-ra des ka",
+      "pt": "这个多少钱？",
+      "tts": "これはいくらですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b15-r02",
+      "es": "一パック三百円です。いくつにしますか？",
+      "pt": "一袋三百日元。您要几袋？",
+      "tts": "一パック三百円です。いくつにしますか？"
+    },
+    {
+      "consulta": [
+        "compras/quanto"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "私のサイズ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b15-p05",
+      "promptPt": "在服装店里，你喜欢那件外套，可衣架上仅有的一件明显太小了。现在开口说。",
+      "audioKey": "fr-b15-t05",
+      "es": "私のサイズはありますか？",
+      "pinyin": "wa-ta-shi no SAI-zu wa a-ri-MAS ka",
+      "pt": "有我的尺码吗？",
+      "tts": "私のサイズはありますか？"
+    },
+    {
+      "consulta": [
+        "compras/quanto"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "試着し",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b15-p06",
+      "promptPt": "她从库房拿着合适的那件回来了。问出下一步该做的事。现在开口说。",
+      "audioKey": "fr-b15-t06",
+      "es": "試着してもいいですか？",
+      "pinyin": "shi-CHA-ku shi-te mo II des ka",
+      "pt": "可以试穿吗？",
+      "tts": "試着してもいいですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b15-n06",
+      "bloco": "capsula",
+      "pt": "在小店里，你先说「すみません」开场，然后再问问题。问价格并不失礼——那只是接下来自然该说的话。"
+    },
+    {
+      "consulta": [
+        "compras/quanto"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "こちら",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b15-p07",
+      "promptPt": "玻璃柜里有两件几乎一模一样的东西，只共用一张标价签。指着问一句。现在开口说。",
+      "audioKey": "fr-b15-t07",
+      "es": "こちらはいくらですか？",
+      "pinyin": "ko-chi-ra wa i-ku-ra des ka",
+      "pt": "这个多少钱？",
+      "tts": "こちらはいくらですか？"
+    },
+    {
+      "consulta": [
+        "compras/balcao",
+        "compras/pagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "これ",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b15-p08",
+      "promptPt": "你听到价格了，也想要这件。把这件事定下来。现在开口说。",
+      "audioKey": "fr-b15-t08",
+      "es": "これをお願いします。",
+      "pinyin": "ko-re o o-ne-gai-shi-MAS",
+      "pt": "我要这个，麻烦了。",
+      "tts": "これをお願いします。"
+    },
+    {
+      "consulta": [
+        "compras/pagar",
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "カードで払っ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b15-p09",
+      "promptPt": "收银台上没有任何刷卡标志，你手上只有几个硬币。在她包装之前先确认一下。现在开口说。",
+      "audioKey": "fr-b15-t09",
+      "es": "カードで払ってもいいですか？",
+      "pinyin": "KAA-do de ha-RAT-te mo II des ka",
+      "pt": "可以刷卡吗？",
+      "tts": "カードで払ってもいいですか？"
+    },
+    {
+      "consulta": [
+        "compras/so-olhando"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b15-p10",
+      "promptPt": "有人走过来想帮你，可你什么都还没决定。给自己争取一点空间。现在开口说。",
+      "audioKey": "fr-b15-t10",
+      "es": "見ているだけです。",
+      "pinyin": "mi-te i-ru da-ke des",
+      "pt": "我只是看看。",
+      "tts": "見ているだけです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b15-n07",
+      "bloco": "permissao",
+      "pt": "站在日本柜台后面的人，没有谁会觉得「いくらですか」这句话奇怪，也没有人在给你的措辞打分。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b15-n08",
+      "bloco": "clique",
+      "pt": "你刚刚问清了居酒屋、柜台、市场摊位和服装店的价格。没人给你准备四个不同的问题——你用的始终是同一个句尾。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b15-s01",
+      "es": "お通しはいくらですか？ 日替わり定食はいくらですか？ これはいくらですか？",
+      "pinyin": "o-TOO-shi wa i-ku-ra des ka. hi-ga-WA-ri tei-shoku wa i-ku-ra des ka. ko-re wa i-ku-ra des ka",
+      "pt": "在三种不同的场合里，跟读同一个句尾。",
+      "tts": "お通しはいくらですか？ 日替わり定食はいくらですか？ これはいくらですか？",
+      "molde": "IKURA"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b15-n09",
+      "bloco": "recap",
+      "pt": "B15完成。「いくらですか」能应付开胃小菜、定食、摊位和店铺——永远要在做决定之前问。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一个句尾，四种柜台",
+    "secoes": [
+      {
+        "titulo": "东西，加上「いくらですか」",
+        "corpo": "保留句尾，只改变前面的部分：一件商品、一项费用、一次手指的示意。在日本，最有价值的填空内容根本不是商品——而是お通し，那道座位小菜，因为那是唯一一个没人特意说、就自己出现的价格。",
+        "exemplos": [
+          {
+            "es": "お通しはいくらですか？",
+            "pt": "这道开胃小菜多少钱？"
+          },
+          {
+            "es": "これはいくらですか？",
+            "pt": "这个多少钱？"
+          }
+        ]
+      },
+      {
+        "titulo": "お通し、席料、チャージ",
+        "corpo": "在居酒屋，一道小菜——お通し，有时叫突き出し——会出现在你的座位上，按人头收费，通常是300到500日元。这是合法且常见的做法，是一种以食物形式呈现的座位费，你通常无法拒绝。有些店铺则明码标示「席料」或「チャージ」。这些都不是骗局，只是座位本身是要收费的东西，值得在坐下前问一句。"
+      },
+      {
+        "titulo": "橱窗在你开口之前就已经告诉你很多信息",
+        "corpo": "标示的价格都含税，所以那个数字就是那个数字。很多餐厅的橱窗里摆着食品模型和带照片的菜单，定食也标出了总价。唯独居酒屋的座位费不一定会标出来，所以招牌基本上已经在人行道上把大部分价格告诉了你，唯独漏掉的那一项，恰恰就是值得开口问的那一项。"
+      },
+      {
+        "titulo": "尺码、试穿，还有「只是看看」",
+        "corpo": "サイズ是尺码，試着是试穿。「見ているだけです」——只是看看——这句话能在你一进店就有人迎上来的小店里，为你争取到一点空间。这不是在打发对方，而是店家预期中的回答，通常还会换来一句友善的「どうぞ」。"
+      },
+      {
+        "titulo": "先说「すみません」，问题在后",
+        "corpo": "在小店里，「すみません」用来开启对话，问题紧跟在后面。这是一个先后顺序，不是打分系统：「すみません」是你用来引起注意、进入对方空间的方式，只花一个词。接下来直白的那句——「いくらですか」，不加任何修饰——并不是失礼的部分。"
+      }
+    ]
+  },
+  "slot": "B15",
+  "permissao": "你可以在坐下之前先问清座位的价格，也可以针对一道开胃小菜而不是商品去问。站在日本柜台后面的人，没有谁会觉得「いくらですか」这句话小气或可疑。这个时刻唯一会变得尴尬的版本，就是你没有开口问。",
+  "permissaoAudioKey": "fr-b15-n07",
+  "espelho": "值得留在家里的那个习惯，是先坐下再事后弄清楚。在座位免费的地方这样做没问题；但在这里，座位本身可能是要收费的东西，还附带一道菜，而坐下之前的那半秒钟，正是开口问还不花钱的唯一窗口。",
+  "fichasCulturais": [
+    {
+      "sinal": "你在居酒屋坐下，出现了一道你没点过的小菜，后来账单上还按人头收了这道菜的钱。",
+      "suaLeitura": "他们因为我是游客，偷偷在账单上加了一项。",
+      "oQueEAli": "那道菜就是お通し，一种以食物形式呈现的座位费，很多居酒屋都会按人头收取，完全合法。这不是针对游客，也不是算错了；这就是座位本身的价格，通常每人三到五百日元。",
+      "oQueVoceFaz": "坐下之前先问一句「お通しはいくらですか」，或者看看有没有标示「席料」或「チャージ」。然后再决定这是不是你想留下的地方。",
+      "oQueMelhora": "这项费用不再是被强加在你身上的东西，而是你事先就知道的事——这也是唯一一种你能主动应对的版本。",
+      "ondeNaoVale": "但不是每家店都有这项费用——咖啡馆、家庭餐厅和很多午餐店都没有，这更多是居酒屋才有的事，白天的餐馆很少见。决定因素是店的种类，而不是招待你的人是谁。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b15-n04",
+        "fr-b15-r01"
+      ]
+    },
+    {
+      "sinal": "你走进一家小店，径直走向货架，收银台后面的人在你逛店的整个过程中什么都没说。",
+      "suaLeitura": "他们决定不理我了，大概是因为我是外国人。",
+      "oQueEAli": "在日本的小店里，互动是从一句问候开始的——他们说「いらっしゃいませ」，你想引起注意时就说「すみません」。径直走向货架，等于没有开启这个流程，接下来的沉默不是针对你的冷淡，而是这段互动还没有正式开始。",
+      "oQueVoceFaz": "提问之前先用「すみません」引起注意，出门时点个头或说一句「ありがとうございます」。然后直接问，不用加任何修饰。",
+      "oQueMelhora": "同一家店会变得乐于帮忙，而你原本想问的问题，也会得到比预期更详细的回答。",
+      "ondeNaoVale": "但在便利店或大型连锁店不适用，那里没人期待你在门口进行这样的一来一往，这套礼节属于收银台。这只是在描述小店开场互动的运作方式，不是在衡量任何人对你的真实感受。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b15-n06"
+      ]
+    }
+  ]
+}

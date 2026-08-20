@@ -1,0 +1,315 @@
+{
+  "id": "b02",
+  "nivel": "basico",
+  "numero": 2,
+  "parte": "B02",
+  "titulo": "先打招呼，其他都是后话",
+  "subtitulo": "十个词，一口气就能说完——开场和收尾的那几句，还有那句不需要你回答的店家招呼语",
+  "cena": "你走进一家小店，你还没开口，一个声音已经喊出了 irasshaimase，接下来的半秒钟里，你要么愣住，要么继续往前走。",
+  "moldura": "ganha",
+  "frasePiso": "进门一句招呼，出门一句道谢，中间八个词就把整趟拜访覆盖了。店家的招呼语是他们的，不用你来回应。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-ef-epi-2025",
+      "afirmacao": "在 EF 2024 年英语能力指数（EF EPI）中，日本处于「低水平」区间，得分约为 454 分，排名位于所测量国家的后三分之一，低于东亚大多数国家。EF 自己说明样本是在线自选的，不具代表性，所以这个数字支持「日本的英语总体水平相对较低」这个大方向，但不能用来说明有多大比例的人会说英语，也说明不了游客实际会遇到的那些面向游客服务的员工的情况。",
+      "fonte": "EF EPI 2024——日本处于「low proficiency」区间，约 454 分，排名倒数三分之一。EF 自己承认的保留意见：在线自选样本，不具人口代表性。用途：参考方向，不是精确统计。",
+      "ano": 2024,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b02-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b02-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "十个词就能覆盖一整趟逛店。一个开场，一个收尾，还有一句不是你该回应的——那是店员对你喊的招呼语。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b02-t01",
+      "es": "こんにちは。",
+      "pinyin": "kon-ni-chi-WA",
+      "pt": "你好。进门的时候先说这句，其他什么都还没发生之前。",
+      "tts": "こんにちは。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b02-p01",
+      "promptPt": "你正走进一家小店，店主就在柜台后面。现在开口说。",
+      "audioKey": "fr-b02-t01",
+      "es": "こんにちは。",
+      "pinyin": "kon-ni-chi-WA",
+      "pt": "你好。",
+      "tts": "こんにちは。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b02-r01",
+      "receptivo": true,
+      "es": "いらっしゃいませ！",
+      "pt": "欢迎光临！——固定的店家招呼语，对每位顾客都会喊。",
+      "tts": "いらっしゃいませ！",
+      "acao": "这句是冲你喊的，不需要回应。轻轻点个头就够了。接着继续说你要说的——有日语说日语，没有就说英语。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b02-n02",
+      "bloco": "corpo",
+      "pt": "问候语会随时间变化。早晨完整而热情的说法是 ohayou gozaimasu——gozaimasu 让它变得礼貌。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b02-p02",
+      "promptPt": "清晨，在面包店，柜台后面的女士抬头看向你。现在开口说。",
+      "audioKey": "fr-b02-t02",
+      "es": "おはようございます。",
+      "pinyin": "o-ha-YOH go-za-i-mass",
+      "pt": "早上好。",
+      "tts": "おはようございます。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b02-p03",
+      "promptPt": "外面天已经黑了，你正走进一家餐厅，一位男士替你扶着门。现在开口说。",
+      "audioKey": "fr-b02-t03",
+      "es": "こんばんは。",
+      "pinyin": "kon-ban-WA",
+      "pt": "晚上好。",
+      "tts": "こんばんは。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b02-n03",
+      "pt": "konnichiwa 变成 konbanwa 并没有一个确切的时刻——它跟着天色和当下的场合走。听到哪个就跟着说哪个。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b02-p04",
+      "promptPt": "他把瓶子往你杯子的方向倾了倾，想再给你倒一杯，你也想要。现在开口说。",
+      "audioKey": "fr-b02-t04",
+      "es": "はい、お願いします。",
+      "pinyin": "HAI, o-ne-gai-shi-mass",
+      "pt": "好的，麻烦了。",
+      "tts": "はい、お願いします。"
+    },
+    {
+      "consulta": [
+        "compras/so-olhando"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b02-p05",
+      "promptPt": "你正在随便看看，有人过来问要不要帮忙。婉拒，但不要把门关死。现在开口说。",
+      "audioKey": "fr-b02-t05",
+      "es": "いいえ、結構です。",
+      "pinyin": "ii-e, KEK-koh dess",
+      "pt": "不用了，谢谢。",
+      "tts": "いいえ、結構です。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b02-r02",
+      "es": "はい、どうぞごゆっくり。",
+      "pt": "好的，您慢慢看。这句会不断听到——douzo 的意思是「请」「尽管来」。",
+      "tts": "はい、どうぞごゆっくり。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b02-n04",
+      "bloco": "capsula",
+      "pt": "这里英语能派上用场的地方有限——把它当成一个大致方向，而不是精确统计：大酒店、车站、机场会多一些，小店里会少很多。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b02-p06",
+      "promptPt": "她刚把东西包好递给了你。现在开口说。",
+      "audioKey": "fr-b02-t06",
+      "es": "ありがとうございます。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mass",
+      "pt": "非常感谢。",
+      "tts": "ありがとうございます。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b02-p07",
+      "promptPt": "过道很窄，你的包刚刚碰到了别人的手臂。现在开口说。",
+      "audioKey": "fr-b02-t07",
+      "es": "すみません。",
+      "pinyin": "soo-mee-ma-SEN",
+      "pt": "对不起。",
+      "tts": "すみません。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b02-n05",
+      "pt": "单独使用时，sumimasen 能覆盖碰撞或者挤过去这种场合。下一部分你会看到，它还能开启任何你想向陌生人开口请求的事。"
+    },
+    {
+      "consulta": [
+        "chegar/sair"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b02-p08",
+      "promptPt": "你正走到门口准备离开，他还在柜台后面。现在开口说。",
+      "audioKey": "fr-b02-t08",
+      "es": "ありがとうございました。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mash-ta",
+      "pt": "谢谢（临走时说）。",
+      "tts": "ありがとうございました。"
+    },
+    {
+      "consulta": [
+        "chegar/sair",
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b02-p09",
+      "promptPt": "你刚吃完饭，正要起身离开。说这里人吃完饭都会说的那句话。现在开口说。",
+      "audioKey": "fr-b02-t09",
+      "es": "ごちそうさまでした。",
+      "pinyin": "go-chi-SOH-sa-ma desh-ta",
+      "pt": "谢谢款待。",
+      "tts": "ごちそうさまでした。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b02-r03",
+      "es": "ありがとうございました。またお越しくださいませ。",
+      "pt": "谢谢您。欢迎再次光临。",
+      "tts": "ありがとうございました。またお越しくださいませ。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b02-s01",
+      "es": "こんにちは。はい、お願いします。ありがとうございます。ごちそうさまでした。",
+      "pinyin": "kon-ni-chi-WA · HAI o-ne-gai-shi-mass · a-ri-ga-TOH go-za-i-mass · go-chi-SOH-sa-ma desh-ta",
+      "pt": "跟读整趟拜访：进门、请求、道谢、出门。",
+      "tts": "こんにちは。はい、お願いします。ありがとうございます。ごちそうさまでした。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b02-n06",
+      "bloco": "recap",
+      "pt": "B02 完成。进门的问候，gozaimasu，hai 和 iie，arigatou，sumimasen，出门的 arigatou gozaimashita 和 gochisousama——irasshaimase 是他们的，不是你的。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "十个词，以及它们出场的顺序",
+    "secoes": [
+      {
+        "titulo": "这份清单",
+        "corpo": "Ohayou gozaimasu、konnichiwa、konbanwa、sumimasen、arigatou gozaimasu、hai、iie、onegai shimasu、gochisousama、shitsurei shimasu。十个词，每个一口气就能说完，合起来覆盖了一次普通逛店或用餐的进门、请求、答应与拒绝、道谢和离场。",
+        "exemplos": [
+          {
+            "es": "こんにちは。",
+            "pt": "你好——进门时说"
+          },
+          {
+            "es": "ごちそうさまでした。",
+            "pt": "谢谢款待——离场时说"
+          }
+        ]
+      },
+      {
+        "titulo": "Irasshaimase 是他们的，不是你的",
+        "corpo": "你一进门就响起的那句 irasshaimase，是对每位顾客都会说的固定店家招呼语，并不要求你回答。说英语的人常常因为觉得被点名而愣住，不知该说什么。轻轻点个头就是完整的回应了。真正属于你自己的开场词，是需要引起别人注意时说的 sumimasen——那个词才是打开别人空间的钥匙，下一部分会讲到。"
+      },
+      {
+        "titulo": "礼貌体现在词尾，而不是称谓",
+        "corpo": "这里没有像「先生」「女士」那样需要添加的称谓。礼貌体现在 -desu 和 -masu 这样的词尾以及 gozaimasu 上，再加上微微一躬身。你不会在陌生的店员姓氏后面加上「-san」这样的敬称，也完全不用去猜谁的身份地位——普通的礼貌体对每个人都适用。"
+      },
+      {
+        "titulo": "离场也有自己的一套词",
+        "corpo": "离开一家店时，arigatou gozaimashita——过去式——是收尾的说法。吃完饭离开时，gochisousama deshita 是向厨房道谢，用这句准没错。Shitsurei shimasu，字面意思是「打扰一下我要失礼地离开了」，适用于走出办公室或比较正式的房间。这几句无论用哪一句，说在离场的那一刻，都能像开场时那样把整趟拜访收得干干净净。"
+      },
+      {
+        "titulo": "关于英语",
+        "corpo": "日本的英语水平在国际指数上排名偏低，而这份指数本身是基于在线、自选样本得出的，所以它反映的是一个大致水平，而不是会说英语的人数统计——更说不清楚游客实际会遇到的具体员工的情况。实际来说：在大酒店、主要车站和机场，可以预期会有一些英语；在街角小店，几乎不要指望。用点手势、一份写好的地址，再加上这门课教的这些句型，能覆盖剩下的部分。"
+      }
+    ]
+  },
+  "slot": "B02",
+  "permissao": "十个词就是一整套完整的装备。在日本进一家店，你不需要一整句话——你只需要进门一句问候，出门一句道谢，中间的一切都可以用英语、用手势、或者用手指来完成。你也完全可以选择不回应 irasshaimase。",
+  "permissaoAudioKey": "fr-b02-n01",
+  "espelho": "在自己国家走进一家街角小店的人都知道，说「你好」的顾客和直接开口问「你们有没有」的顾客，感觉是不一样的。第二种人一样能被接待，但整个店里的气氛不同。日本也是同一套逻辑，只不过问候语会随时间变化，而店家的招呼语你完全可以让它过去。",
+  "fichasCulturais": [
+    {
+      "sinal": "你一进门，一个声音就喊出了 irasshaimase，你愣住了，以为自己必须回应点什么。",
+      "suaLeitura": "有人跟我说话了，我不回应就已经算失礼了。",
+      "oQueEAli": "Irasshaimase 是对每一位跨进门的顾客都会喊的固定店家招呼语。它不是一个问题，也不是等你去接的开场白——它不需要任何语言上的回应。店员常常是对着整个门口喊的，头都不抬。",
+      "oQueVoceFaz": "如果要有反应，轻轻点个头就够了，继续走向你想要的东西。需要引起注意时，你该说的词是 sumimasen，不是回应他们那句。",
+      "oQueMelhora": "你不用再在每家店的第一秒都紧张地准备一句本不欠对方的话，进店这件事也就变得平常了。",
+      "ondeNaoVale": "如果柜台那边的人明显是在直接对你说话并在等回应——一个需要是或否的问题、伸出来等着刷卡的手——这不适用，那是真正的交流，是需要回答的。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b02-n01",
+        "fr-b02-r01"
+      ]
+    },
+    {
+      "sinal": "已经是傍晚了，你分不清这个场合应该说 konnichiwa 还是 konbanwa。",
+      "suaLeitura": "肯定有一个正式的分界时刻，我八成要说错。",
+      "oQueEAli": "并没有一个固定的时刻。这个切换靠的是习惯用法，随天色和场合的不同而浮动，同一个房间里的两个人也可能各自选不同的词。Ohayou gozaimasu 更特别——有些工作场合，不管什么时候，只要有人来上班就会用这句。",
+      "oQueVoceFaz": "先听听最先传到你耳朵里的是哪一句，然后照着说回去。如果你先开口，白天用 konnichiwa 几乎在任何时间都是安全的默认选项。",
+      "oQueMelhora": "你不会再因为犹豫那半秒钟，而让整个进门显得不自在。",
+      "ondeNaoVale": "深夜在酒吧或餐厅里不适用这条——那时 konbanwa 就是唯一的说法，而且比起用哪个词，鞠躬和语气重要得多。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b02-n03"
+      ]
+    }
+  ]
+}

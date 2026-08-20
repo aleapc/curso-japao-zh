@@ -1,0 +1,306 @@
+{
+  "id": "i01",
+  "nivel": "intermediario",
+  "numero": 19,
+  "parte": "I01",
+  "titulo": "他们的时间表，厨房真正打烊的那一刻",
+  "subtitulo": "最后点餐比餐厅打烊早得多，末班电车是一堵有确切数字的墙——这两个时间点决定了你在哪里吃饭、怎么回家",
+  "cena": "现在是两点二十，你终于坐下了，服务员正在解释说最后点餐半小时前就截止了。",
+  "moldura": "ganha",
+  "frasePiso": "出发前先问清楚时间。最后点餐、末班电车——决定整个晚上走向的这两个数字，你完全可以直接开口问。",
+  "decisao": "comer nos horários deles em vez dos meus — pegar a ラストオーダー antes de a cozinha fechar e sair antes do 終電 — em vez de descobrir a cozinha fechada e o último trem já ido",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-i01-shuden",
+      "afirmacao": "日本的城市按照严格的末班电车时刻表运转。JR东日本在2021年3月的时刻表调整中，把东京地区多条线路的末班车时间提前了——这是同类调整中首次大规模的終電提前——使得市中心线路的末班发车时间通常落在午夜前后，而不再是午夜之后。对一个晚上的外出来说，这从两头卡住了时间：厨房在ラストオーダー（最后点餐）时就停止接单，通常远早于打烊时间；而終電是回家路上一堵硬墙，过了这个点唯一的选择就是打车。",
+      "fonte": "JR East, revisão de horários de mar/2021 (繰り上げ do 終電 na área de Tóquio); prática de ラストオーダー em restaurantes japoneses",
+      "ano": 2021,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-i01-n02",
+        "fr-i01-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i01-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "日本的时间表比游客想象的更紧，厨房打烊按自己的时刻表来，不看餐厅整体的情况。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i01-r01",
+      "receptivo": true,
+      "acao": "别把满座的房间当成运气好。最后点餐已经截止了——明天早点来吧。",
+      "es": "すみません、ラストオーダーが終わりました。",
+      "pt": "不好意思，最后点餐已经截止了。",
+      "tts": "すみません、ラストオーダーが終わりました。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i01-n02",
+      "bloco": "corpo",
+      "pt": "最后点餐会让厨房比餐厅本身更早打烊。用 wa nan-ji desu ka 来问：先说那件事，再问几点。这个句尾结构永远不变。"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i01-p01",
+      "promptPt": "你站在一家看起来不错的店门口，快两点了。问清楚厨房还接单多久。现在开口说。",
+      "audioKey": "fr-i01-t01",
+      "es": "ラストオーダーは何時ですか？",
+      "pinyin": "RA-su-to-OH-daa wa nan-JI des-ka",
+      "pt": "最后点餐是几点？",
+      "tts": "ラストオーダーは何時ですか？",
+      "molde": "NAN-JI",
+      "encaixe": "ラストオーダー"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i01-r02",
+      "receptivo": true,
+      "acao": "下午中间有一段休息时间。提前规划好，别一头撞上去。",
+      "es": "ランチは14時まで、夜は17時からです。",
+      "pt": "午餐到两点，晚餐五点开始。",
+      "tts": "ランチは14時まで、夜は17時からです。"
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i01-p02",
+      "promptPt": "你在门口，最后几盘菜正端出去。一句简短的问话决定你这个下午怎么过。现在开口说。",
+      "audioKey": "fr-i01-t02",
+      "es": "まだ大丈夫ですか？",
+      "pinyin": "ma-DA dai-JOH-bu des-ka",
+      "pt": "你们还在营业接单吗？",
+      "tts": "まだ大丈夫ですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i01-n03",
+      "pt": "句型框架是：先说那件事，再接 wa nan-ji desu ka。午餐和晚餐之间厨房是关着的，不是变慢——中休（naka-yasumi）是真实存在的。",
+      "bloco": "molde"
+    },
+    {
+      "consulta": [
+        "mesa/comida",
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i01-p03",
+      "promptPt": "你在规划明天的行程，想确认中午这段时间窗口的起止。开口问。现在开口说。",
+      "audioKey": "fr-i01-t03",
+      "es": "ランチは何時から何時までですか？",
+      "pinyin": "RAN-chi wa nan-JI ka-ra nan-JI ma-de des-ka",
+      "pt": "午餐是从几点到几点？",
+      "tts": "ランチは何時から何時までですか？",
+      "molde": "NAN-JI",
+      "encaixe": "ランチ"
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "今夜の予約",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i01-p04",
+      "promptPt": "下午你就站在那儿，店里几乎没别人。用一句礼貌的请求把晚上的位置定下来。现在开口说。",
+      "audioKey": "fr-i01-t04",
+      "es": "今夜の予約をお願いします。",
+      "pinyin": "KON-ya no yo-YA-ku o o-ne-gai-shi-MAS",
+      "pt": "请帮我订今晚的位置。",
+      "tts": "今夜の予約をお願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i01-r03",
+      "es": "19時と20時、どちらがよろしいですか？",
+      "pt": "七点还是八点？",
+      "tts": "19時と20時、どちらがよろしいですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i01-n04",
+      "bloco": "capsula",
+      "pt": "另一堵墙是末班电车。終電（shuden）是一个死数字：错过了就只能打车回家。把这个时间问清楚。"
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "20時の予約",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i01-p05",
+      "promptPt": "他们给了你两个时间。用一句话选晚一点的那个。现在开口说。",
+      "audioKey": "fr-i01-t05",
+      "es": "20時の予約をお願いします。",
+      "pinyin": "ni-JU-ji no yo-YA-ku o o-ne-gai-shi-MAS",
+      "pt": "请帮我订八点的位置。",
+      "tts": "20時の予約をお願いします。"
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i01-p06",
+      "promptPt": "换了一家新店，新的一个晚上。问问晚餐几点开始供应。现在开口说。",
+      "audioKey": "fr-i01-t06",
+      "es": "夜は何時からですか？",
+      "pinyin": "YO-ru wa nan-JI ka-ra des-ka",
+      "pt": "晚餐几点开始？",
+      "tts": "夜は何時からですか？",
+      "molde": "NAN-JI",
+      "encaixe": "夜"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i01-n05",
+      "pt": "要问末班电车几点，而不是问自己还有没有时间。前一种问法能给你一个确切的时间点，让你围着它安排整晚。"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete",
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i01-p07",
+      "promptPt": "夜越来越深了，你回家的那条线路今晚某个时刻就会停运。问出那个终结今晚的时间点。现在开口说。",
+      "audioKey": "fr-i01-t07",
+      "es": "終電は何時ですか？",
+      "pinyin": "SHU-den wa nan-JI des-ka",
+      "pt": "末班电车是几点？",
+      "tts": "終電は何時ですか？",
+      "molde": "NAN-JI",
+      "encaixe": "終電"
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i01-p08",
+      "promptPt": "订位是八点，但你想再多逛一个小时。问问晚一点开始是否可以。现在开口说。",
+      "audioKey": "fr-i01-t08",
+      "es": "もう少し遅くても大丈夫ですか？",
+      "pinyin": "moh su-KO-shi o-SO-ku-te-mo dai-JOH-bu des-ka",
+      "pt": "晚一点开始可以吗？",
+      "tts": "もう少し遅くても大丈夫ですか？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i01-s01",
+      "es": "ラストオーダーは何時ですか？ 終電は何時ですか？ 20時の予約をお願いします。",
+      "pinyin": "RA-su-to-OH-daa wa nan-JI des-ka. SHU-den wa nan-JI des-ka. ni-JU-ji no yo-YA-ku o o-ne-gai-shi-MAS",
+      "pt": "跟读这两个决定整晚安排的时间点，以及夹在它们中间的那个预订。",
+      "tts": "ラストオーダーは何時ですか？ 終電は何時ですか？ 20時の予約をお願いします。",
+      "molde": "NAN-JI"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i01-n06",
+      "bloco": "recap",
+      "pt": "I01 完成。最后点餐、两点这道分界线、末班电车，以及一个刚好落在两者之间的预订。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "两个数字，一段空档",
+    "secoes": [
+      {
+        "titulo": "最后点餐让厨房打烊",
+        "corpo": "ラストオーダー是厨房停止接单的时间点，通常远早于店铺真正拉下卷帘门打烊。这就是为什么房间里可能还坐着一半正在吃饭的客人，而你得到的答复却是厨房已经关了——他们都是在最后点餐之前下的单，而你没赶上。走进店门之前，先问一句 ラストオーダーは何時ですか。",
+        "exemplos": [
+          {
+            "es": "ラストオーダーは何時ですか？",
+            "pt": "最后点餐是几点？"
+          },
+          {
+            "es": "まだ大丈夫ですか？",
+            "pt": "你们还在营业接单吗？"
+          }
+        ]
+      },
+      {
+        "titulo": "厨房打烊，下午出现一段空档",
+        "corpo": "很多店铺把午餐和晚餐当作两段独立的营业时间，中间有一段中休（naka-yasumi），通常大致在下午两点到五点之间。这段空档里厨房是关着的，不是变慢。与其只问店铺是否开门，不如直接问ランチ和夜——这样才能得到真正有用的答案：你现在到底身处哪个时间窗口。"
+      },
+      {
+        "titulo": "末班电车是一堵墙",
+        "corpo": "終電是日本夜晚里最不容商量的一个数字。JR东日本在2021年的调整中把东京地区的末班车时间整体提前，过去可能开到凌晨一点才结束的夜晚，现在往往接近午夜就收尾了，过了这个点唯一的回家方式就是打车。終電は何時ですか这句话能把一种模糊的“有点晚了”变成一个具体的计划。"
+      },
+      {
+        "titulo": "这句问话的结构",
+        "corpo": "何時ですか问的是几点，得到的回答也是一个具体时间点。把它接在任何有开始、结束、开门或供应时间的事物后面——ラストオーダー、終電、開店、チェックアウト、朝ごはん——助词 wa 和句尾 nan-ji desu ka 都保持不变，变化的只是前面那个名词。"
+      }
+    ]
+  },
+  "slot": "I01",
+  "permissao": "你完全可以围着他们的时间表来安排整晚。等晚餐开始供应、赶上末班电车，这些都不是耐力测试——只是厨房什么时候开火、线路什么时候停运而已，而这两个时间点，你都可以在做任何决定之前先问清楚。",
+  "permissaoAudioKey": "fr-i01-n04",
+  "espelho": "任何人只要在陌生地方两点半才去找晚饭吃过，或者差十分钟没赶上回家的末班车，都懂这种空档的滋味。唯一新鲜的地方，是用那几个永远不变的词来问，而且是在出发之前问，不是事后才想起来问。",
+  "fichasCulturais": [
+    {
+      "sinal": "你两点二十到店，房间里还坐着一半正在吃完的客人，服务员却告诉你最后点餐已经截止了。",
+      "suaLeitura": "他们明明看得到还有人在吃，所以是在故意不接待我。",
+      "oQueEAli": "那些菜都是在时间窗口内点的。厨房到了最后点餐时间就停止接单，直到晚餐时段才重新开始；坐在那里的客人只是午餐时段的尾声，并不能证明现在还能点菜。",
+      "oQueVoceFaz": "走进店门之前先问 ラストオーダーは何時ですか，如果已经错过了，就坐下喝杯咖啡或饮料，顺便把晚上的位置订好。",
+      "oQueMelhora": "你不再把下午中段浪费在到处找热乎饭上，而是把这段时间用在它真正适合做的事情上。",
+      "ondeNaoVale": "不适用于家庭餐厅、便利店和全天候营业的连锁店，它们存在的意义就是填补这段空档——那里的厨房确实一直开着。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i01-n03"
+      ]
+    },
+    {
+      "sinal": "夜越来越深，桌子还留着余温，你突然意识到自己根本不知道回家那条线什么时候停运。",
+      "suaLeitura": "应该还会有一阵子的车吧，就像在自己家一样——我什么时候走都行。",
+      "oQueEAli": "末班电车是一个固定且不容商量的时间点，JR东日本在2021年把很多线路的末班车时间提前，市中心线路往往在午夜前后就停运了。错过之后，唯一的选择就是花上好几倍车费打车，或者等第一班车。",
+      "oQueVoceFaz": "晚上一开始就问 終電は何時ですか，别等到最后才问，把订位和回家的路线都围着这个时间点安排。",
+      "oQueMelhora": "这样一来，夜晚的最后一小时是你主动选择的，而不是手忙脚乱赶出来的；打不打车也变成一个决定，而不是一场意外。",
+      "ondeNaoVale": "并没有一个全国统一的时间——不同线路、不同城市各不相同，如果打算通宵，等第二天的首班车也是一个选择。当地问清楚，别自己想当然套一个数字。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i01-n04"
+      ]
+    }
+  ]
+}

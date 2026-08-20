@@ -1,0 +1,410 @@
+{
+  "id": "b14",
+  "nivel": "basico",
+  "numero": 14,
+  "parte": "B14",
+  "titulo": "「お会計」——你看到的数字，就是全部要付的数字",
+  "subtitulo": "日本法律规定税已经含在价格里，不用算小费，而且你通常是在出门时到收银台结账，不是在桌边付钱",
+  "cena": "碗都撤走了，你身后的柜台坐满了人，而在你开口之前，不会有人主动给你送来任何东西。",
+  "moldura": "ganha",
+  "frasePiso": "你会用日语要账单、选好付款方式、拿着收据走出去，全程都用日语完成。大多数坐在那张桌子上的人只会对着空气比划一个写字的手势。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-service-compris",
+      "afirmacao": "日本法律规定消费税必须含在标示价格内（総額表示），所以菜单上的数字通常就是你要付的数字，而且没有小费文化。少数地方会加收标明的服务费（サービス料），通常出现在酒店或高档餐厅；有这项收费时，会事先标示清楚，不是由你自行决定的小费。",
+      "fonte": "総額表示義務 (obrigatório desde abr/2021); ausência de cultura de gorjeta; サービス料, quando existe, é informada previamente.",
+      "ano": 2026,
+      "revisarAte": "2028-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b14-n03"
+      ]
+    },
+    {
+      "id": "fr-note-25-euros",
+      "afirmacao": "在大多数日本餐厅和咖啡馆，你是在出门时到收银台（レジ）付款，而不是在桌边付钱。服务员会把一张单据（伝票）留在你桌上或附近，你要把它带到收银台去结账。想在桌边付钱，或者对着空气比划要账单，往往只会换来对方指引你去前台。",
+      "fonte": "Costume japonês: pagamento na レジ (caixa) na saída, levando o 伝票, em vez de pagar na mesa.",
+      "ano": 2026,
+      "revisarAte": "2028-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b14-n04"
+      ]
+    },
+    {
+      "id": "fr-ticket-caisse-2023",
+      "afirmacao": "有两种不同的单据。レシート是普通的收银小票，自动打印出来。領収書是正式收据，需要你专门开口要，通常用于报销，服务员可能会问你抬头要写谁的名字（也可以用「上様」作为通用抬头）。开口要領収書是非常普通的事。",
+      "fonte": "Distinção entre レシート (cupom fiscal comum) e 領収書 (recibo formal para despesas), pedido pelo nome; costume comum no Japão.",
+      "ano": 2026,
+      "revisarAte": "2027-08-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b14-n05"
+      ]
+    },
+    {
+      "id": "fr-cartao-recusavel",
+      "afirmacao": "现金在日本仍然被广泛使用，很多小店或家庭经营的店只收现金，贴出「仅收现金」的告示是正常且合法的。没有任何法律强制商家一定要接受刷卡。无现金支付——信用卡、Suica这类IC卡、PayPay这类二维码——正在城市和连锁店里快速普及，但用日元现金永远能结清账单。",
+      "fonte": "Dinheiro ainda amplamente esperado, muitos estabelecimentos somente-dinheiro; sem regra que obrigue aceitar cartão; pagamento sem contato (cartão, IC, QR) cresce nas cidades.",
+      "ano": 2026,
+      "revisarAte": "2027-08-01",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b14-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "第十四部分。要说账单——好消息是，算术在你坐下之前就已经算好了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b14-n02",
+      "bloco": "cena",
+      "pt": "碗都撤走了，你身后的柜台坐满了人，接下来什么都不会发生，除非你开口。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b14-t01",
+      "es": "お会計をお願いします。",
+      "pinyin": "o-KAI-kei o o-ne-gai-shi-MAS",
+      "pt": "请给我账单。",
+      "tts": "お会計をお願いします。"
+    },
+    {
+      "consulta": [
+        "pagar/pedir",
+        "mesa/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "お会計",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p01",
+      "promptPt": "一位服务员端着两个杯子从你桌边经过，和你对视了半秒钟。现在开口说。",
+      "audioKey": "fr-b14-t01",
+      "es": "お会計をお願いします。",
+      "pinyin": "o-KAI-kei o o-ne-gai-shi-MAS",
+      "pt": "请给我账单。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b14-r01",
+      "es": "かしこまりました。お会計はあちらのレジでお願いします。",
+      "pt": "好的，请到那边的收银台付款。",
+      "tts": "かしこまりました。お会計はあちらのレジでお願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n03",
+      "bloco": "corpo",
+      "pt": "这里的税按法律规定已经含在价格里，也没有小费。如果某家店收服务费，那也是明码标示的一行，不是你自己额外加上去的。"
+    },
+    {
+      "consulta": [
+        "pagar/gorjeta",
+        "mesa/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p02",
+      "promptPt": "这家店看起来有点正式，你想知道会不会另外加收什么。现在开口说。",
+      "audioKey": "fr-b14-t02",
+      "es": "サービス料は入っていますか？",
+      "pinyin": "SAA-bi-su ryoo wa hait-te i-MAS ka",
+      "pt": "有含服务费吗？",
+      "tts": "サービス料は入っていますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b14-r02",
+      "receptivo": true,
+      "es": "うちはサービス料はありません。表示の金額だけです。",
+      "pt": "我们不收服务费，就是标示的这个金额。",
+      "tts": "うちはサービス料はありません。表示の金額だけです。",
+      "acao": "照字面理解就好。你面前的总额就是全部的总额，不需要在上面再加小费。"
+    },
+    {
+      "consulta": [
+        "pagar/rachar",
+        "mesa/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p03",
+      "promptPt": "你们四个人，一张单据，有人想大声问出总数。现在开口说。",
+      "audioKey": "fr-b14-t03",
+      "es": "全部でいくらですか？",
+      "pinyin": "ZEN-bu de i-ku-ra des ka",
+      "pt": "一共多少钱？",
+      "tts": "全部でいくらですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b14-n04",
+      "pt": "你是在收银台付款，不是在桌边付。桌上那张单据就是「伝票」——把它带到前台去结账。"
+    },
+    {
+      "consulta": [
+        "pagar/pedir",
+        "compras/pagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "領収書",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p04",
+      "promptPt": "三个人的晚餐，公司里有人会需要报销单据。开口要正式收据。现在开口说。",
+      "audioKey": "fr-b14-t04",
+      "es": "領収書をお願いします。",
+      "pinyin": "ryoo-SHOO-sho o o-ne-gai-shi-MAS",
+      "pt": "请给我一张正式收据。",
+      "tts": "領収書をお願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n05",
+      "pt": "两种单据：レシート是普通的收银小票，領収書是用于报销的正式收据。要具体点名要「領収書」。"
+    },
+    {
+      "consulta": [
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "カード",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p05",
+      "promptPt": "你在收银台前，钱包里只有卡。说出你要怎么付款。现在开口说。",
+      "audioKey": "fr-b14-t05",
+      "es": "カードでお願いします。",
+      "pinyin": "KAA-do de o-ne-gai-shi-MAS",
+      "pt": "请用卡支付。",
+      "tts": "カードでお願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b14-r03",
+      "receptivo": true,
+      "es": "申し訳ありません、当店は現金のみです。",
+      "pt": "不好意思，我们只收现金。",
+      "tts": "申し訳ありません、当店は現金のみです。",
+      "acao": "进门时先看看门口和收银台，而不是等到出门看单据才发现。小店往往只收现金，这是合法的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b14-n06",
+      "bloco": "capsula",
+      "pt": "现金永远行得通；商家没有义务一定要收卡。无现金支付在城市里正在普及，但小店可能仍然只收现金。"
+    },
+    {
+      "consulta": [
+        "pagar/cartao",
+        "compras/pagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p06",
+      "promptPt": "你站在一家小店门口，还没点菜，也没看到任何刷卡标志。现在开口说。",
+      "audioKey": "fr-b14-t06",
+      "es": "カードは使えますか？",
+      "pinyin": "KAA-do wa tsu-ka-e-MAS ka",
+      "pt": "可以刷卡吗？",
+      "tts": "カードは使えますか？"
+    },
+    {
+      "consulta": [
+        "pagar/rachar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "別々",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p07",
+      "promptPt": "你们两个人，两个钱包，一张单据。要在对方把账单合并结算之前先说出来。现在开口说。",
+      "audioKey": "fr-b14-t07",
+      "es": "別々でお願いします。",
+      "pinyin": "be-tsu-BE-tsu de o-ne-gai-shi-MAS",
+      "pt": "请分开算。",
+      "tts": "別々でお願いします。"
+    },
+    {
+      "consulta": [
+        "pagar/pedir",
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p08",
+      "promptPt": "单据上有一行数字，是你没料到的那最后一轮的费用。问问那一项是什么。现在开口说。",
+      "audioKey": "fr-b14-t08",
+      "es": "コーヒーはいくらですか？",
+      "pinyin": "KOH-hee wa i-ku-ra des ka",
+      "pt": "咖啡多少钱？",
+      "tts": "コーヒーはいくらですか？"
+    },
+    {
+      "consulta": [
+        "compras/pagar",
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b14-p09",
+      "promptPt": "刷卡机响了一声，对方正准备把小票丢掉。现在开口说。",
+      "audioKey": "fr-b14-t09",
+      "es": "レシートをお願いします。",
+      "pinyin": "re-SHEE-to o o-ne-gai-shi-MAS",
+      "pt": "请给我小票。",
+      "tts": "レシートをお願いします。",
+      "molde": "ONEGAI-SHIMASU",
+      "encaixe": "レシート"
+    },
+    {
+      "consulta": [
+        "pagar/gorjeta",
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b14-p10",
+      "promptPt": "在那张桌子坐了两个小时，吃了一顿好饭，也不需要给小费。用这里的人结束一顿饭的方式来收尾。现在开口说。",
+      "audioKey": "fr-b14-t10",
+      "es": "ごちそうさまでした。",
+      "pinyin": "go-chi-soo-sa-ma-DE-shi-ta",
+      "pt": "感谢款待，这顿饭太好了。",
+      "tts": "ごちそうさまでした。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n07",
+      "bloco": "permissao",
+      "pt": "不需要算百分比，也不欠任何额外的钱。你留下的是一句话，不是一枚硬币。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b14-s01",
+      "es": "お会計をお願いします。全部でいくらですか？ カードでお願いします。",
+      "pinyin": "o-KAI-kei o o-ne-gai-shi-MAS. ZEN-bu de i-ku-ra des ka. KAA-do de o-ne-gai-shi-MAS",
+      "pt": "按顺序跟读收尾这三步。",
+      "tts": "お会計をお願いします。全部でいくらですか？ カードでお願いします。",
+      "molde": "ONEGAI-SHIMASU"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b14-n08",
+      "bloco": "recap",
+      "pt": "B14完成。开口要账单、听清总额、说出付款方式、拿走收据——税早就含在数字里了，也不用加小费。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "总额在你坐下之前就已经算好了",
+    "secoes": [
+      {
+        "titulo": "税含在内，小费不用付",
+        "corpo": "法律规定标示的价格已经含消费税，所以菜品旁边的数字就是你要付的数字，不需要额外加小费。如果某家店收サービス料，会事先标示清楚。实际效果一句话就能说完：你看到的数字，就是你要付的数字。",
+        "exemplos": [
+          {
+            "es": "サービス料は入っていますか？",
+            "pt": "有含服务费吗？"
+          },
+          {
+            "es": "全部でいくらですか？",
+            "pt": "一共多少钱？"
+          }
+        ]
+      },
+      {
+        "titulo": "你是在收银台付款，不是在桌边",
+        "corpo": "留在你桌上的那张单据就是「伝票」。在大多数餐厅和咖啡馆，你要拿起它，带到前台的收银台，在那里结账。在桌边比划要账单，往往只会让人指引你去收银台——所以正确的做法是：起身，拿上单据，出门时顺便付款。"
+      },
+      {
+        "titulo": "两种不同的单据",
+        "corpo": "レシート是普通的收银小票，会自动打印给你。領収書是用于报销的正式收据，需要具体开口要；服务员可能会问抬头要写谁的名字，「上様」可以当作通用抬头。开口要你真正需要的那一种；两种都要也很正常，不会有任何额外花费。",
+        "exemplos": [
+          {
+            "es": "領収書をお願いします。",
+            "pt": "请给我一张正式收据。"
+          },
+          {
+            "es": "レシートをお願いします。",
+            "pt": "请给我小票。"
+          }
+        ]
+      },
+      {
+        "titulo": "刷卡、现金，还有门口的告示",
+        "corpo": "日本没有任何规定强制商家必须接受刷卡，小店或家庭经营的店往往只收现金，贴出告示是正常且合法的。无现金支付——信用卡、Suica这类IC卡、PayPay这类二维码——正在城市和连锁店里快速普及。一个实用的习惯是：进门时顺便看一眼收银台；用日元现金永远能结清账单。"
+      },
+      {
+        "titulo": "没有小费，取而代之的是一句话",
+        "corpo": "日本没有公布过小费该给多少百分比，因为根本就没有小费这回事——你在网上看到的任何数字都是编出来的，桌上留下的硬币只会被当作你忘拿的零钱追上来还给你。取而代之，用来结束一顿饭的是出门时说的那句「ごちそうさまでした」。它不花一分钱，却是最让人记住的部分。"
+      }
+    ]
+  },
+  "slot": "B14",
+  "permissao": "你随时可以在想要账单的那一刻开口要。也可以问有没有含服务费，即使大多数地方根本不收。这两个问题都不是在挑战任何人。桌子会一直是你的，直到你开口为止——也就是说，开口的时机由你掌控。",
+  "permissaoAudioKey": "fr-b14-n07",
+  "espelho": "值得注意的一个习惯，是等着账单被送到桌边。在你家乡，账单常常会随着最后的盘子一起送来；但在这里，你要自己把单据拿到收银台，所以一张看起来被冷落的桌子，往往其实是被留给你自己掌控的桌子。",
+  "fichasCulturais": [
+    {
+      "sinal": "收银台屏幕显示着精确的总额，没有小费那一行，服务员只是站在那里等你把钱递过去。",
+      "suaLeitura": "这里没有小费选项，所以我应该自己算出一个百分比，加上硬币。",
+      "oQueEAli": "法律规定税已经含在价格里，所以屏幕上的总额已经是完整的了，日本也没有小费文化。网上流传的任何百分比都是编出来的，收银台也不是在等你多给——留下的硬币只会被当作你忘拿的零钱还给你。",
+      "oQueVoceFaz": "照屏幕上的数字付款，不用多加。如果想表达感谢，出门时说一句「ごちそうさまでした」——这才是这里通行的方式。",
+      "oQueMelhora": "一顿饭的结尾不再是一道算术题，而变成一句道别，而正是这一点会让你下次再来时得到热情的欢迎。",
+      "ondeNaoVale": "但如果某些酒店或高档餐厅标明了サービス料，就不适用了——那里更高的总额是明确标示的费用，事先就写清楚了，不是小费，也不是算错了。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b14-n03",
+        "fr-b14-n07"
+      ]
+    },
+    {
+      "sinal": "你拿着卡走到收银台，被礼貌地告知这家店只收现金。",
+      "suaLeitura": "这不应该被允许，或者他们是因为我是游客才这样对待我。",
+      "oQueEAli": "日本至今仍然高度依赖现金，很多小店或家庭经营的店只收现金——贴出「仅收现金」的告示是正常且合法的，没有任何规定强制商家一定要接受刷卡。城市和连锁店越来越多地接受信用卡、IC卡和二维码支付，但小柜台往往还不行。",
+      "oQueVoceFaz": "随身带一些日元现金以备去小店时使用，在决定消费前先看一眼收银台或门口有没有刷卡标志。拿不准的话，可以在点单前先问一句「カードは使えますか」。",
+      "oQueMelhora": "你会随身留一点现金缓冲，专门应付这类时刻，也不会再把明码标示的规定当成是针对你个人的拒绝。",
+      "ondeNaoVale": "但并不是所有地方都只收现金，大城市里的支付方式正在快速转向无现金。这是让你随身带点现金的理由，而不是让你以为卡永远刷不了。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b14-n06",
+        "fr-b14-r03"
+      ]
+    }
+  ]
+}

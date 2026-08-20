@@ -1,0 +1,322 @@
+{
+  "id": "i09",
+  "nivel": "intermediario",
+  "numero": 27,
+  "parte": "I09",
+  "titulo": "闭馆日，还有那些各自记着自己日程的地方",
+  "subtitulo": "每个地方都有自己的休息日，博物馆大多周一闭馆，早市只在早上开——而一个问题就能把陌生人变成向导",
+  "cena": "今天是周一，你整个计划都围绕着的那间博物馆黑着灯，这一天看起来像是行程中间破了个洞。",
+  "moldura": "ganha",
+  "frasePiso": "一扇关着的门不代表这一天就废了，只是形状不一样而已。早点去早市，看看之后还开着的地方，再问问本地人接下来怎么安排。",
+  "decisao": "把博物馆清单换成本地人的一天——早上逛市集，看看下午还开着什么——而不是因为它的休息日而发现这座城市大门紧闭",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-i09-teikyubi",
+      "afirmacao": "在日本，各个地方都有自己的休息日。商店和餐厅会贴出定休日（固定的休息日），大多数博物馆通常周一闭馆——如果周一恰好是公共假日，通常照常开放，改在第二天闭馆。这里没有像有些国家周日统一休息那样的全国统一休息日；日程是按每家店自己定的。实际的后果是：同一条街上，同一天里可能一扇门黑着，隔壁那扇却开着，要知道答案，得去查这家店的休息日，而不是靠猜。",
+      "fonte": "定休日 (dia de folga fixo) por estabelecimento; 月曜休館 — fechamento de museus às segundas no Japão, com deslocamento quando a segunda é feriado",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-i09-n03"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i09-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "这里的一扇关着的门，背后是有逻辑的。搞懂这个逻辑，能把看起来最空的一天变成这一周最好的一天。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i09-n02",
+      "bloco": "corpo",
+      "pt": "从早市开始。那里才是整个街坊真正的样子，几句简短的交谈在那儿一分钱都不花。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i09-r01",
+      "receptivo": true,
+      "acao": "中午之前就去。摊子收得早，之后这条街就会安静下来。",
+      "es": "朝市は朝のうちですよ。お昼には終わります。",
+      "pt": "早市只在早上开，中午就收摊了。",
+      "tts": "朝市は朝のうちですよ。お昼には終わります。"
+    },
+    {
+      "consulta": [
+        "compras/mercado",
+        "cidade/evento"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "朝市",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p01",
+      "promptPt": "你想找一件今天早上肯定在发生的事。打开搜索。现在开口说。",
+      "audioKey": "fr-i09-t01",
+      "es": "朝市を探しています。",
+      "pinyin": "a-sa-i-chi o sa-ga-shi-te-i-mas",
+      "pt": "我在找早市。",
+      "tts": "朝市を探しています。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i09-n03",
+      "pt": "每个地方都有自己的休息日，博物馆大多周一闭馆。在走二十分钟去一扇黑着的门之前，先确认一下。"
+    },
+    {
+      "consulta": [
+        "cidade/evento",
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i09-p02",
+      "promptPt": "在走去一个你没把握的地方之前，先确认决定这一天走向的那件事。现在开口说。",
+      "audioKey": "fr-i09-t02",
+      "es": "今日は開いていますか？",
+      "pinyin": "KYOH wa a-i-te i-mas-ka",
+      "pt": "今天开门吗？",
+      "tts": "今日は開いていますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i09-r02",
+      "receptivo": true,
+      "acao": "把这另一个地方当成一个具体地址记下来。你的下午就在那里度过。",
+      "es": "ここは今日は休みです。でも、隣町のは開いてますよ。",
+      "pt": "这里今天休息。不过隔壁镇上的开着呢。",
+      "tts": "ここは今日は休みです。でも、隣町のは開いてますよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i09-n04",
+      "bloco": "capsula",
+      "pt": "今天要用到你已经会的两个框架：sagashite imasu 用来找这里可能没有的东西，te mo ii desu ka 用来问可能不被允许的事。"
+    },
+    {
+      "consulta": [
+        "compras/mercado",
+        "conversa/perguntar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p03",
+      "promptPt": "你站在一个摊位前，完全不知道现在当季的是什么。把选择交给卖东西的人。现在开口说。",
+      "audioKey": "fr-i09-t03",
+      "es": "何がおすすめですか？",
+      "pinyin": "NA-ni ga o-su-su-me des-ka",
+      "pt": "你推荐什么？",
+      "tts": "何がおすすめですか？"
+    },
+    {
+      "consulta": [
+        "compras/mercado",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "味見し",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i09-p04",
+      "promptPt": "摊位上有一样你从没见过的东西。在买半公斤之前先问一下。现在开口说。",
+      "audioKey": "fr-i09-t04",
+      "es": "味見してもいいですか？",
+      "pinyin": "a-ji-mi shi-te mo i-i des-ka",
+      "pt": "我可以尝一下吗？",
+      "tts": "味見してもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i09-r03",
+      "receptivo": true,
+      "acao": "不要自己动手拿农产品。让对方来拿、来切。",
+      "es": "どうぞ、味見してください。切りますね。",
+      "pt": "请尝尝看，我给你切一块。",
+      "tts": "どうぞ、味見してください。切りますね。"
+    },
+    {
+      "consulta": [
+        "compras/mercado"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p05",
+      "promptPt": "点一份小份的——今天两个人吃的午饭，不是一整周的量。现在开口说。",
+      "audioKey": "fr-i09-t05",
+      "es": "二百グラム、お願いします。",
+      "pinyin": "ni-hya-ku GU-ra-mu, o-ne-gai-shi-MAS",
+      "pt": "请给我两百克。",
+      "tts": "二百グラム、お願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i09-n05",
+      "pt": "接下来是下午。问问本地人他们休息日都做什么：得到的答案会是一份真正的计划，比旅游指南更管用。"
+    },
+    {
+      "consulta": [
+        "conversa/planos",
+        "conversa/perguntar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i09-p06",
+      "promptPt": "问摊位后面那个人他自己休息日都做什么，而不是问有什么景点。现在开口说。",
+      "audioKey": "fr-i09-t06",
+      "es": "休みの日は何をしますか？",
+      "pinyin": "ya-su-mi no hi wa NA-ni o shi-mas-ka",
+      "pt": "你休息的时候都做什么？",
+      "tts": "休みの日は何をしますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i09-r04",
+      "receptivo": true,
+      "acao": "这就是你的下午了。一座公园，一顿悠闲的午饭，什么都不用预约。",
+      "es": "私は、昼を食べて、公園を散歩します。それだけ。",
+      "pt": "我就是吃个午饭，然后去公园散散步。就这样。",
+      "tts": "私は、昼を食べて、公園を散歩します。それだけ。"
+    },
+    {
+      "consulta": [
+        "cidade/passeio",
+        "chegar/lugar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "静かな場所",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p07",
+      "promptPt": "你手里有从市集买的食物，还有几个小时的空闲时间。打开搜索，找个地方安顿下来。现在开口说。",
+      "audioKey": "fr-i09-t07",
+      "es": "静かな場所を探しています。",
+      "pinyin": "shi-zu-ka na ba-SHO o sa-ga-shi-te-i-mas",
+      "pt": "我在找一个安静的地方。",
+      "tts": "静かな場所を探しています。"
+    },
+    {
+      "consulta": [
+        "cidade/passeio",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "ここに座っ",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i09-p08",
+      "promptPt": "只剩一张空长椅，旁边那张放着别人的包。开口问一下。现在开口说。",
+      "audioKey": "fr-i09-t08",
+      "es": "ここに座ってもいいですか？",
+      "pinyin": "ko-KO ni su-wat-te mo i-i des-ka",
+      "pt": "我可以坐这里吗？",
+      "tts": "ここに座ってもいいですか？"
+    },
+    {
+      "consulta": [
+        "cidade/evento",
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NAN-JI",
+      "encaixe": "閉店",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i09-p09",
+      "promptPt": "这家店今天开着，但你不知道会开到多晚。在围绕它做计划之前先问一下。现在开口说。",
+      "audioKey": "fr-i09-t09",
+      "es": "今日は何時に閉まりますか？",
+      "pinyin": "KYOH wa nan-JI ni shi-ma-ri-mas-ka",
+      "pt": "今天几点关门？",
+      "tts": "今日は何時に閉まりますか？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i09-s01",
+      "es": "朝市を探しています。今日は開いていますか？ 味見してもいいですか？ 休みの日は何をしますか？",
+      "pinyin": "a-sa-i-chi o sa-ga-shi-te-i-mas. KYOH wa a-i-te i-mas-ka. a-ji-mi shi-te mo i-i des-ka. ya-su-mi no hi wa NA-ni o shi-mas-ka",
+      "pt": "跟读这一整天：找到它、确认它开着、尝一尝、问问对方平时都做什么。",
+      "tts": "朝市を探しています。今日は開いていますか？ 味見してもいいですか？ 休みの日は何をしますか？",
+      "molde": "SAGASHITE-IMASU"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i09-n06",
+      "bloco": "recap",
+      "pt": "I09 完成。中午前逛市集，看看之后还开着的地方，再用一个问题把陌生人变成向导。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "有自己日程的一天",
+    "secoes": [
+      {
+        "titulo": "休息日是按每家店定的",
+        "corpo": "这里没有全国统一的休息日。商店和餐厅会贴出定休日，也就是每周固定的休息日，博物馆大多周一闭馆——如果周一是公共假日，就顺延到第二天。所以一扇黑着的门通常是排好的休息，不是运气不好，而它周围哪些地方开着，也都各自遵循着自己的日程。",
+        "exemplos": [
+          {
+            "es": "今日は開いていますか？",
+            "pt": "今天开门吗？"
+          },
+          {
+            "es": "今日は何時に閉まりますか？",
+            "pt": "今天几点关门？"
+          }
+        ]
+      },
+      {
+        "titulo": "起作用的两个框架",
+        "corpo": "Sagashite imasu 打开一次搜索，去找这里可能不存在的东西——一个早市、一个安静的地方、一家还在营业的店。Te mo ii desu ka 问的是在这个具体地方，某件事是不是被允许。两者结合起来，几乎能覆盖一个没有计划的下午，而不需要再学一种新的句型。"
+      },
+      {
+        "titulo": "在摊位前，让对方来处理农产品",
+        "corpo": "卖东西的人来挑、来切。Ajimi shite mo ii desu ka 是一个再正常不过的请求，而 nani ga osusume desu ka 把一个他们乐在其中的差事交给了他们——两者都能让你带回一篮更好的东西，比起默默自己动手要好得多，何况在摊位前自己动手本来也不是惯例。"
+      },
+      {
+        "titulo": "这个模块里最好的一句问话",
+        "corpo": "Yasumi no hi wa nani o shimasu ka 问的是他们自己的一天，而不是你的行程，正因如此，得到的回答里才会有具体的地点和时间。换成别的日子框架——工作日、节庆日——这个句型照样管用。"
+      }
+    ]
+  },
+  "slot": "I09",
+  "permissao": "你可以让整整一天都不排任何景点。一个早市、一顿悠闲的午饭、一座公园，正是这样一天该有的样子，而这也会是五年后你依然能讲得出细节的那部分旅程。",
+  "espelho": "任何一个回家后，记得最清楚的反而是某个普通下午、而不是排了九十分钟队才看到的那座纪念碑的人，都懂这个道理。行程表更容易向自己交代，但真正留下来的，往往不是它。",
+  "permissaoAudioKey": "fr-i09-n01",
+  "fichasCulturais": [
+    {
+      "sinal": "你在周一走去一间博物馆，它黑着灯，而你想去的一家店门口贴着一张你看不懂的小告示。",
+      "suaLeitura": "这里的店关门是随机的，我这一天算是废了。",
+      "oQueEAli": "休息日是排好的，不是随机的。大多数博物馆通常周一闭馆，商店则贴出定休日——各自固定的休息日。你眼前这扇黑着的门，正在按它自己的日程走；那张你看不懂的告示，通常写的就是这份日程。",
+      "oQueVoceFaz": "在决定走那段路之前，先查一下休息日；不确定的时候就问一句 kyo wa aite imasu ka。把早上留给市集，下午留给休息日不一样的地方。",
+      "oQueMelhora": "你不再因为遇到关着的门就白白浪费掉一天，各处的开门时间也开始看起来像一份日程，而不是运气。",
+      "ondeNaoVale": "但这不是一条能原样套用的规则——周一博物馆闭馆这个规律，会在周一是假日时顺延，而每家店也都自己定各自的定休日，所以要就地打听，而不是假设只有一个统一的休息日。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-i09-n03"
+      ]
+    }
+  ]
+}

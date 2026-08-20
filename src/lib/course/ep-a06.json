@@ -1,0 +1,359 @@
+{
+  "id": "a06",
+  "nivel": "avancado",
+  "numero": 34,
+  "parte": "A06",
+  "titulo": "十六个法定假日，以及真正让街道空无一人的那几天",
+  "subtitulo": "日历上的红色日期在这里不会让店铺关门；便利店在所有这些日子里都亮着灯，前一天晚上问一句，比背下任何清单都管用",
+  "cena": "一个假日的星期四：酒店开着，便利店开着，而你特意穿过半座城市去找的那家小店，门上贴着一张手写的卡片。",
+  "moldura": "ganha",
+  "frasePiso": "问那扇门，别问日历。前一天晚上问一句明日は開いてますか，比印出来的任何假日清单都更有用。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-a06-feries",
+      "afirmacao": "日本法律在《国民节假日相关法律》（国民の祝日に関する法律）中列出了法定节假日（截至2026年共十六个）。根据2000年引入的快乐星期一制度（ハッピーマンデー制度），其中几个被固定在星期一，以形成三天的连休。对游客来说最关键的一点是：节假日并不强制商家关门——便利店、车站、百货公司和许多餐厅在法定节假日照常营业，所以歇业与否是各家商户自己决定的，往往取决于各家自己的每周固定休息日（定休日），而不是这个节假日本身。",
+      "fonte": "国民の祝日に関する法律 (16 feriados nacionais em 2026); ハッピーマンデー制度 (2000) fixou alguns numa segunda-feira; feriado não obriga o comércio a fechar",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a06-n02",
+        "fr-a06-n04"
+      ]
+    },
+    {
+      "id": "fr-a06-dimanche",
+      "afirmacao": "有两个时段确实会让整个国家慢下来：年末年始（年末和新年）和お盆（八月中旬）。银行依规定在12月31日到1月3日之间关闭，许多政府机关和小商户也遵循同样的安排；相当一部分普通零售业至少会在年末这段时间内歇业一部分。お盆大约在8月13日到16日，人们返乡探亲，让大城市变得空荡荡的，而车站、机场和度假地区恰恰是在这几天最繁忙。",
+      "fonte": "年末年始 (fim de ano/Ano-Novo) e お盆 (meados de agosto): bancos fechados por lei de 31/12 a 3/1; grande parte do comércio e repartições também; お盆 esvazia as cidades grandes",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-a06-n07",
+        "fr-a06-n08"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "这里的假日不是一个全国性的关闭开关。一共有十六个假日，而便利店在每一个假日里都亮着灯。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n02",
+      "bloco": "corpo",
+      "pt": "法定节假日不会强制商家关门。便利店、车站和百货公司大多照常营业。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a06-r01",
+      "receptivo": true,
+      "acao": "把这句话当成只针对这一家店的答案。隔壁那家是单独决定的，所以要单独问一次。",
+      "es": "明日は祝日ですけど、うちは普通に営業してますよ。",
+      "pt": "明天是假日，不过我们照常营业。",
+      "tts": "明日は祝日ですけど、うちは普通に営業してますよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n03",
+      "pt": "所以有用的问题从来不是日历上写了什么。而是眼前这扇门明天会怎么做。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a06-p01",
+      "promptPt": "你在一个红色日期的前一晚，站在面包店柜台前，想知道第二天早上的情况。现在开口说。",
+      "audioKey": "fr-a06-t01",
+      "es": "明日は開いてますか？",
+      "pinyin": "a-shee-ta wa a-i-te-mas-ka",
+      "pt": "明天开门吗？",
+      "tts": "明日は開いてますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a06-r02",
+      "receptivo": true,
+      "acao": "这是长假期。问问什么时候重新开门，把这件事挪到别的日子办。",
+      "es": "うちは連休で、月曜までお休みなんです。",
+      "pt": "我们放连休，一直到星期一都休息。",
+      "tts": "うちは連休で、月曜までお休みなんです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n04",
+      "bloco": "capsula",
+      "pt": "快乐星期一制度把几个假日固定在星期一，于是形成了一段连休（連休）。要不要休这段连休，是每家店自己的决定。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a06-p02",
+      "promptPt": "他们刚告诉你长假期里店门一直关着。问问什么时候重新开门。现在开口说。",
+      "audioKey": "fr-a06-t02",
+      "es": "いつから営業ですか？",
+      "pinyin": "ee-tsu ka-ra ei-GYOH des-ka",
+      "pt": "什么时候重新开业？",
+      "tts": "いつから営業ですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n05",
+      "pt": "有两个时段的表现，才真正符合旅游指南里说的那种假日样子。那就是年末到新年，以及八月中旬的お盆。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a06-r03",
+      "receptivo": true,
+      "acao": "提前一天买好食物。在新年这段时间，就当作几乎没有店会开门来做打算。",
+      "es": "元日は、どこも閉まってますよ。パン屋さんもね。",
+      "pt": "元旦这天，哪里都关门。连面包店也是。",
+      "tts": "元日は、どこも閉まってますよ。パン屋さんもね。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n06",
+      "pt": "在年末这段时间开始之前先把东西买好。这是日本日历上唯一值得专门为它安排一天的时段。"
+    },
+    {
+      "consulta": [
+        "quarto/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a06-p03",
+      "promptPt": "现在是12月29日，你在酒店前台，想为接下来几天做打算。现在开口说。",
+      "audioKey": "fr-a06-t03",
+      "es": "元日は営業してますか？",
+      "pinyin": "gan-JI-tsu wa ei-GYOH shee-te-mas-ka",
+      "pt": "元旦那天营业吗？",
+      "tts": "元日は営業してますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n07",
+      "pt": "另一种规律是每周固定休息日。休息与否由每家店自己决定，写在门边的一块牌子上。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a06-r04",
+      "receptivo": true,
+      "acao": "定休日是这家店固定的休息日。看牌子就知道，隔两家的那家店休息的日子不一样。",
+      "es": "うちは水曜が定休日なんですよ。",
+      "pt": "我们固定星期三休息。",
+      "tts": "うちは水曜が定休日なんですよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n08",
+      "pt": "年末和お盆是范围较大的时段。定休日则是范围很窄的那种——一家店，一个固定的星期几，自己决定的。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a06-p04",
+      "promptPt": "星期六傍晚，你想知道这家店第二天怎么安排。问一下具体时间。现在开口说。",
+      "audioKey": "fr-a06-t04",
+      "es": "日曜は何時からですか？",
+      "pinyin": "nee-chee-YOH wa NAN-ji ka-ra des-ka",
+      "pt": "星期天几点开门？",
+      "tts": "日曜は何時からですか？",
+      "molde": "NAN-JI",
+      "encaixe": "日曜"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a06-p05",
+      "promptPt": "同一条街上连着三家店都关着门，你还是想吃早餐。问问路人。现在开口说。",
+      "audioKey": "fr-a06-t05",
+      "es": "開いてるパン屋を探しているんですが。",
+      "pinyin": "a-i-te-ru pan-ya o sa-ga-SHEE-te-ee-run des ga",
+      "pt": "我在找一家开着门的面包店。",
+      "tts": "開いてるパン屋を探しているんですが。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a06-r05",
+      "receptivo": true,
+      "acao": "那张卡片说的是这家店自己的年末休息，不是整个国家的。看清重新开业的日期，继续往前走就好。",
+      "es": "年末年始は十二月三十日から一月四日までお休みです。",
+      "pt": "为迎新年，12月30日到1月4日休息。",
+      "tts": "年末年始は十二月三十日から一月四日までお休みです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a06-n09",
+      "pt": "在八月お盆期间的市中心，街道会变得空荡荡。而在海边和山区，同样这几周却是一年中最热闹的。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a06-p06",
+      "promptPt": "你想去逛小吃摊，却完全不知道它们是哪天早上占据广场的。问一下。现在开口说。",
+      "audioKey": "fr-a06-t06",
+      "es": "朝市はどこですか？",
+      "pinyin": "a-sa-ee-chee wa DO-ko des-ka",
+      "pt": "早市在哪里？",
+      "tts": "朝市はどこですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n10",
+      "pt": "早市有自己的日程表，而且往往正好在店铺关门的那几个早上开张。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a06-p07",
+      "promptPt": "红色日期的傍晚，还剩一件事要办，你不想白跑一趟穿过整座城。现在开口说。",
+      "audioKey": "fr-a06-t07",
+      "es": "何時まで開いてますか？",
+      "pinyin": "NAN-ji ma-de a-i-te-mas-ka",
+      "pt": "开到几点？",
+      "tts": "何時まで開いてますか？",
+      "molde": "NAN-JI",
+      "encaixe": "何時まで開いて"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a06-p08",
+      "promptPt": "一个陌生人刚帮你省下了一趟白跑的路。热情地道个谢。现在开口说。",
+      "audioKey": "fr-a06-t08",
+      "es": "教えてくれて、ありがとうございます。",
+      "pinyin": "o-shee-e-te ku-re-te, a-ri-ga-TOH go-za-i-mas",
+      "pt": "谢谢你告诉我。",
+      "tts": "教えてくれて、ありがとうございます。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a06-s01",
+      "es": "明日は開いてますか？ いつから営業ですか？ 何時まで開いてますか？",
+      "pinyin": "a-shee-ta wa a-i-te-mas-ka · ee-tsu ka-ra ei-GYOH des-ka · NAN-ji ma-de a-i-te-mas-ka",
+      "pt": "跟读这三句，它们涵盖了整个日程：明天、再开门的时候，和开到几点。",
+      "tts": "明日は開いてますか？ いつから営業ですか？ 何時まで開いてますか？",
+      "molde": "NAN-JI"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a06-n11",
+      "bloco": "recap",
+      "pt": "A06完成。十六个日期，两个真正会让一切停下来的时段，一个可选的长假期，一块门边的固定休息日牌子。前一天晚上，去问那扇门。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "十六个日期、两个时段和一块门边的牌子",
+    "secoes": [
+      {
+        "titulo": "十六个，没有一个会强制店铺关门",
+        "corpo": "《国民节假日相关法律》列出了十六个法定节假日。一个节假日只是标记了这个日期，但并不强制咖啡馆、便利店或面包店拉下卷帘门——便利店和车站照常运转，百货公司往往还会把假日当成生意繁忙的一天。这正是让游客困惑的地方，因为在许多国家，假日和歇业是绑在一起的。",
+        "exemplos": [
+          {
+            "es": "明日は開いてますか？",
+            "pt": "明天开门吗？"
+          },
+          {
+            "es": "いつから営業ですか？",
+            "pt": "什么时候重新开业？"
+          }
+        ]
+      },
+      {
+        "titulo": "快乐星期一和长假期",
+        "corpo": "快乐星期一制度把几个假日固定在星期一，于是围绕它们形成了一段連休——连续几天的休息。个别商家要不要休完整个连休，是自己的决定，所以在假日周，同一条街的这边可能关着门，那边却照常营业。没有人前后矛盾：只是很多小小的决定，被以许多不同的方式做出而已。"
+      },
+      {
+        "titulo": "年末和お盆才是真正会停摆的时段",
+        "corpo": "有两个时段确实会让整个国家慢下来。在年末年始期间，银行依规定在12月31日到1月3日之间关闭，相当一部分零售业和政府部门也遵循同样的安排；这几天就当作几乎没什么店会开门来打算。お盆在八月中旬，人们返乡探亲，让大城市变得空荡荡的——而车站、机场和度假小镇则是一年中最忙碌的时候。这个规律会朝相反的方向发展，取决于你站在哪里。"
+      },
+      {
+        "titulo": "定休日是一块牌子，不是一条规则",
+        "corpo": "除了这两个大的时段之外，日常的歇业就是定休日——一家店固定的每周休息日，写在门边的一块牌子上。这家店星期三休息，下一家可能是星期一。新年期间橱窗里贴的那张卡片，说的是店主个人的休息安排以及重新开业的日期，不是什么全国性的大事。前一天晚上，去看一眼那扇门，一切就都清楚了。"
+      }
+    ]
+  },
+  "slot": "A06",
+  "permissao": "你被允许随时用最简单的话反复询问营业时间。明日は開いてますか是一句在柜台前很正常的问话，当地人自己也在不断这样问，正因为答案因店而异，也没有人指望你能靠自己搞清楚。",
+  "espelho": "任何在自己国家银行假日开车去园艺中心、结果发现停车场空无一人的人，都已经体会过这种感觉了。唯一的区别是，这里每家店都是自己决定的，所以你能省下的那趟白跑，就是你前一天晚上问过的那趟。",
+  "permissaoAudioKey": "fr-a06-n03",
+  "fichasCulturais": [
+    {
+      "sinal": "日历上写明明天是法定节假日，楼下的咖啡馆却开着门，桌子都已经摆出来了。",
+      "suaLeitura": "要么是我的日历错了，要么是这家店违反了什么规定。",
+      "oQueEAli": "《国民节假日相关法律》列出了十六个法定节假日，没有一个会强制店铺关门。这个日期只是被标记出来，并不强制任何人停止营业，所以咖啡馆、便利店和小商店往往照常运转。",
+      "oQueVoceFaz": "别再去解读那个日期，改问那扇门。前一天晚上问一句——明日は開いてますか——就能为你真正需要去的那家店解决问题。",
+      "oQueMelhora": "你不会再把整天都当成浪费掉了，也不会再对一家小店在一个普通工作日关门——也就是它自己的定休日——感到意外。",
+      "ondeNaoVale": "但在年末这段时间不适用，那时候规律正好相反，对银行、政府机关和大部分零售业来说，假设它们会关门才是稳妥的做法。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-a06-n02",
+        "fr-a06-n05"
+      ]
+    },
+    {
+      "sinal": "一家店的橱窗里贴着一张卡片，写着新年歇业的日期区间和重新开业的日子，整条街感觉有点半睡半醒。",
+      "suaLeitura": "整个国家都停摆了，我这趟旅行的时间选得很不好。",
+      "oQueEAli": "确实有两个时段会让一切慢下来：年末这段时间，银行依规定在12月31日到1月3日之间关闭，大部分零售业也跟着如此；还有八月中旬的お盆。这两个都是真实存在、值得为之做计划的，但具体到每一家店，情况都不一样，卡片上通常都会写明重新开业的日子。",
+      "oQueVoceFaz": "看一眼重新开业的那行字，多走一个街区，让便利店和早市而不是那些小商店来撑起你这一天。",
+      "oQueMelhora": "这些时段不再是一堵墙，而变成了一种重新分布：市中心变得更安静，而其他一切都在别的地方热闹地发生着。",
+      "ondeNaoVale": "在お盆期间的海边和山区，情况正好完全相反，那里是一年中最热闹的几周，你要面对的问题是找不到位子，而不是找不到开着的门。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a06-n09"
+      ]
+    }
+  ]
+}

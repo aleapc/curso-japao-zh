@@ -1,0 +1,317 @@
+{
+  "id": "a04",
+  "nivel": "avancado",
+  "numero": 32,
+  "parte": "A04",
+  "titulo": "那个老争论",
+  "subtitulo": "东京对其他所有地方，是贯穿很多事情底下的那条线——而唯一能让你留在这场对话里的立场，是好奇心",
+  "cena": "有人刚刚很有感情地跟你讲了东京是什么样子，然后留出一个空档，等着你发表意见。",
+  "moldura": "ganha",
+  "frasePiso": "问，听，永远别去排名。从这里看是什么样子能让你留在饭桌上；哪一方是对的会让这顿饭提前结束。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-zti-dimanche",
+      "afirmacao": "人口、就业和决策权向东京及周边地区集中——東京一極集中，即向首都过度集中的现象——是有据可查的，不只是一种感觉：大东京地区占据了全国人口和经济中相当大的份额，并且多年来持续保持净流入。这个问题本身就是一项政策目标：2014年的地方创生法（まち・ひと・しごと創生法）就是明确为了对抗这个趋势而制定的。这种失衡的存在是事实；它意味着什么、该不该被纠正，则是一个争论得很激烈的问题。",
+      "fonte": "東京一極集中: concentração populacional/econômica na Grande Tóquio e saldo migratório positivo sustentado; まち・ひと・しごと創生法 (2014), criada para conter a concentração na capital",
+      "ano": 2026,
+      "revisarAte": "2027-08-04",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-a04-n03"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a04-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "每个国家底下都有一场贯穿一切的争论。在这里，很大一部分就是东京和其他所有地方之间的这场争论。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a04-r01",
+      "receptivo": true,
+      "acao": "不要附和，也不要反对。问点什么，让他们继续说下去。",
+      "es": "東京は日本じゃないですよ。それは覚えといたほうがいい。",
+      "pt": "东京不是日本。这一点你该知道。",
+      "tts": "東京は日本じゃないですよ。それは覚えといたほうがいい。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a04-n02",
+      "bloco": "corpo",
+      "pt": "你会在电车、工作、决策地点、谁的话有人听这些话题上都听到这场争论。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a04-n03",
+      "bloco": "capsula",
+      "pt": "这场争论有一部分是有数据支撑的。东京的这种集中是真实存在且可以量化的，而且2014年有一部法律专门为了对抗这个趋势而制定。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a04-p01",
+      "promptPt": "先别急着别的，把眼前这个人定个位——是在这里长大的，还是从别处回来的？问问他们。现在开口说。",
+      "audioKey": "fr-a04-t01",
+      "es": "ご出身はこちらですか？",
+      "pinyin": "go-shus-SHIN wa ko-chi-ra des-ka",
+      "pt": "你是这里人吗？",
+      "tts": "ご出身はこちらですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a04-r02",
+      "receptivo": true,
+      "acao": "这是一段人生经历，不是一个政治立场。要当作前者去听。",
+      "es": "私？二十歳で上京して、四十で地元に戻ってきました。",
+      "pt": "我吗？二十岁去东京打拼，四十岁回了老家。",
+      "tts": "私？二十歳で上京して、四十で地元に戻ってきました。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a04-n04",
+      "pt": "上京——去东京打拼——和回老家。这几个词承载着整场争论，而且大多数家庭都有自己的一个版本。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a04-p02",
+      "promptPt": "他们刚用一句话浓缩了自己二十年的人生。问问那段日子是怎么过的，而不是背后的政治。现在开口说。",
+      "audioKey": "fr-a04-t02",
+      "es": "ご自身は、どう感じましたか？",
+      "pinyin": "go-JI-shin wa, doh kan-JI-mash-ta ka",
+      "pt": "那你自己呢，是什么感受？",
+      "tts": "ご自身は、どう感じましたか？"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a04-p03",
+      "promptPt": "你想听的是这个镇子自己的故事，而不是全国性的那个。问问这几年这里的变化。现在开口说。",
+      "audioKey": "fr-a04-t03",
+      "es": "この辺は、ここ数年で変わりましたか？",
+      "pinyin": "ko-no HEN wa, ko-ko soo-nen de ka-wa-ri-MASH-ta ka",
+      "pt": "这一带这几年有变化吗？",
+      "tts": "この辺は、ここ数年で変わりましたか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a04-r03",
+      "receptivo": true,
+      "acao": "这是一句抱怨，但背后有真实的失衡支撑。接受这个信息就好，别去下定论。",
+      "es": "ここは終電が早いんですよ。東京とは違ってね。",
+      "pt": "这里的末班车很早。不像东京。",
+      "tts": "ここは終電が早いんですよ。東京とは違ってね。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a04-n05",
+      "pt": "错误的做法是下定论。任何一句给两边排出高下的话，都会让你失去接下来的整场对话。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a04-p04",
+      "promptPt": "桌上的人转过来想让你对他们自己的争论做个裁决。老实说出你在这件事上的立场。现在开口说。",
+      "audioKey": "fr-a04-t04",
+      "es": "まだよく知らないので、何とも言えません。",
+      "pinyin": "ma-da yo-ku shee-ra-nai no-de, nan-to-mo ee-e-ma-sen",
+      "pt": "我还不够了解，说不好。",
+      "tts": "まだよく知らないので、何とも言えません。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a04-p05",
+      "promptPt": "他们还是笑着追问你。把话头递回去，而不是选边站。现在开口说。",
+      "audioKey": "fr-a04-t05",
+      "es": "私は聞くほうがいいです。",
+      "pinyin": "wa-ta-shi wa kee-ku hoh ga ee des",
+      "pt": "我更想听你们说。",
+      "tts": "私は聞くほうがいいです。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a04-r04",
+      "receptivo": true,
+      "acao": "这招管用了。在这里，拒绝下定论会被看作是明智，而不是回避。",
+      "es": "ああ、慎重ですね。まあ、賢明ですよ。",
+      "pt": "啊，你挺谨慎的。这样挺明智的，说真的。",
+      "tts": "ああ、慎重ですね。まあ、賢明ですよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a04-n06",
+      "pt": "永远可以说的是你自己的旅程。经历是对你这一周的叙述；比较则是对他们国家下的定论。"
+    },
+    {
+      "consulta": [
+        "simpatia/elogiar-lugar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a04-p06",
+      "promptPt": "说说你在这个具体的镇子上受到了怎样的对待，不要提到任何其他地方。现在开口说。",
+      "audioKey": "fr-a04-t06",
+      "es": "ここでは、とてもよくしてもらいました。",
+      "pinyin": "ko-ko de wa, to-te-mo yo-ku shee-te mo-rai-MASH-ta",
+      "pt": "在这里，我受到了很好的对待。",
+      "tts": "ここでは、とてもよくしてもらいました。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a04-r05",
+      "receptivo": true,
+      "acao": "这是被允许说的经历。换成一句比较，在同样的位置就不会被允许了。",
+      "es": "そうでしょう。こっちはのんびりしてますからね。",
+      "pt": "是吧？我们这边生活节奏比较慢。",
+      "tts": "そうでしょう。こっちはのんびりしてますからね。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a04-p07",
+      "promptPt": "三周的旅行让你有话可说，而且不是对谁下定论。把它说成你自己的旅程。现在开口说。",
+      "audioKey": "fr-a04-t07",
+      "es": "三週間で、いろんな所を見ました。",
+      "pinyin": "san-shoo-kan de, ee-ron-na to-ko-ro o mee-MASH-ta",
+      "pt": "这三周里，我去了很多不同的地方。",
+      "tts": "三週間で、いろんな所を見ました。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa",
+        "simpatia/elogiar-lugar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a04-p08",
+      "promptPt": "把整场争论转化成对你有用的东西：问问他们接下来该去哪里。现在开口说。",
+      "audioKey": "fr-a04-t08",
+      "es": "次はどこがおすすめですか？",
+      "pinyin": "tsu-gee wa DO-ko ga o-su-su-me des-ka",
+      "pt": "那你推荐我接下来去哪里？",
+      "tts": "次はどこがおすすめですか？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a04-s01",
+      "es": "まだよく知らないので、何とも言えません。私は聞くほうがいいです。次はどこがおすすめですか？",
+      "pinyin": "ma-da yo-ku shee-ra-nai no-de nan-to-mo ee-e-ma-sen · wa-ta-shi wa kee-ku hoh ga ee des · tsu-gee wa DO-ko ga o-su-su-me des-ka",
+      "pt": "跟读这三句，它们能拒绝下定论，同时让对话继续下去。",
+      "tts": "まだよく知らないので、何とも言えません。私は聞くほうがいいです。次はどこがおすすめですか？"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a04-n07",
+      "bloco": "recap",
+      "pt": "A04完成。这种失衡有一部分是有据可查的，它的意义则众说纷纭，而你要做的就是提问。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一条线，贯穿一切",
+    "secoes": [
+      {
+        "titulo": "事实和解读是两码事",
+        "corpo": "人口、就业和决策权向东京及周边集中，这是有据可查的，不只是一种感觉——大东京地区占据全国人口和经济中相当大的份额，而且多年来净流入一直是正数。这个问题严重到需要一部2014年的法律专门去对抗它。至于这个国家为什么会变成这样、该不该纠正，则是一个争论得很激烈的问题，而正是这后半部分，不需要游客的意见。",
+        "exemplos": [
+          {
+            "es": "ご出身はこちらですか？",
+            "pt": "你是这里人吗？"
+          },
+          {
+            "es": "まだよく知らないので、何とも言えません。",
+            "pt": "我还不够了解，说不好。"
+          }
+        ]
+      },
+      {
+        "titulo": "上京和回老家",
+        "corpo": "人们去东京打拼——上京——然后回老家，不管地图上怎么标注这些地方。这几个词很普通，却承载着整个话题：一份职业、一笔房租、留在老家的家人、一次回归。当有人跟你讲他们对首都的看法时，你听到的往往是他们自己二十多岁那段岁月的叙述，而不是对地方政策的立场。"
+      },
+      {
+        "titulo": "那个始终管用的问题",
+        "corpo": "この辺は変わりましたか这句话能把对话从你没有立场可言的全国性争论，转移到本地层面的话题上——在那里，眼前这个人就是唯一现成的专家。这和问人生经历是同一个套路，而且从来不会被当成冒犯。"
+      },
+      {
+        "titulo": "亲身经历胜过比较",
+        "corpo": "ここではとてもよくしてもらいました是对你这一周的叙述，走到哪里都受欢迎。而把两个地方拿来排高下的那种说法，则是一个只待了九天的客人对别人国家下的定论。前者能为你换来一整晚的好气氛；后者会让你付出代价，而且降温来得又快又安静。"
+      }
+    ]
+  },
+  "slot": "A04",
+  "permissao": "你被允许没有意见，也被允许用一句话说出来。まだよく知らないので、何とも言えません在这段对话里不是回避——在一个国家待了三周之后，这就是准确的答案，在这里会被当作明智，而不是拘谨。",
+  "permissaoAudioKey": "fr-a04-n05",
+  "espelho": "每个国家都有一场外人该敬而远之的争论，每个人都体会过听一个游客自信满满地替自己国家下定论的那种感觉。在这里认出它的样子其实并不难，因为你在自己家乡就已经见过了。",
+  "fichasCulturais": [
+    {
+      "sinal": "有人当着你的面批评首都，然后停顿了一下，好像在等你发表看法。",
+      "suaLeitura": "他们想听我的意见，有自己的看法能显示出我一直在认真关注。",
+      "oQueEAli": "这个停顿通常只是修辞性的，不是在征求一个外人的裁决。这个话题是一场由来已久的内部争论，而且常常牵涉个人的切身利害——一份工作、一笔房租、一次去东京打拼、一次回归老家。",
+      "oQueVoceFaz": "把定论换成一个关于他们自身经历的问题：ご自身は、どう感じましたか。或者干脆坦白说你还不够了解，说不好。",
+      "oQueMelhora": "你得到的是真实的故事，几乎总是比那个立场本身更有意思，对话也会继续下去，而不是停下来给你定位。",
+      "ondeNaoVale": "这不是要你对自己的旅程保持沉默。说出你喜欢的一个地方是受欢迎的；只有当它变成把这个国家的一部分和另一部分拿来排高下时，才会出问题。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a04-n05",
+        "fr-a04-n06"
+      ]
+    },
+    {
+      "sinal": "有人告诉你这里的末班车很早，东京的车却开得很晚，并把这当作某个更大问题的例证。",
+      "suaLeitura": "这是夸张的说法，或者只是一句没什么根据的地方抱怨。",
+      "oQueEAli": "这背后确实有依据。人口、就业、服务和深夜基础设施向东京及周边集中，这是真实存在且有据可查的，严重到需要一部2014年的法律专门针对它。这种不对称是真实的；争论的是它意味着什么、该怎么解决。",
+      "oQueVoceFaz": "把它当作和你这一周有关的信息就好——查一下当地的末班车时间，别照搬东京的作息——问问这个镇子的情况，而不是去评判政策。",
+      "oQueMelhora": "你不会再按只在大城市才有的班次去安排一晚的行程，也避免了在别人的饭桌上去裁决一个还在争论中的问题。",
+      "ondeNaoVale": "这不代表东京以外的一切都很早关门——地方上的大城市有自己的深夜班次，这种失衡是一种趋势，不是一堵墙。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-a04-n03"
+      ]
+    }
+  ]
+}

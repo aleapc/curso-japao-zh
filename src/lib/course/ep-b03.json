@@ -1,0 +1,349 @@
+{
+  "id": "b03",
+  "nivel": "basico",
+  "numero": 3,
+  "parte": "B03",
+  "titulo": "Sumimasen，然后说出你需要的东西",
+  "subtitulo": "面对每一个陌生人都能用的一句开场——一个词能干三份工作，把一个你没听懂的瞬间变成一个你还能挽回的瞬间",
+  "cena": "对方已经用正常语速回答完了，你只听懂了一个词，而对方的视线已经转向排在你后面的人。",
+  "moldura": "ganha",
+  "frasePiso": "先说 sumimasen，再说出你需要的东西。一个开场词，任何陌生人都变成了你可以求助的对象。",
+  "moldes": [
+    "SUMIMASEN"
+  ],
+  "clique": {
+    "contagem": [
+      "便利店柜台",
+      "售票窗口",
+      "拥挤的电车",
+      "外面的街道"
+    ],
+    "desconto": "没有人给店员、车站工作人员、车上的乘客和街上的陌生人分别准备不同的开场词。你一直用同一个词，只是换了后面接的内容。",
+    "piso": "下次一句话从你耳边飞过时，你不会只是笑笑点头。你会先说 sumimasen，然后问出你没听懂的那一半。"
+  },
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b03-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "你第一天就会漏听一句话。这不是需要避免的事——而是一个用一个开场词就能补救的瞬间。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b03-n02",
+      "bloco": "molde",
+      "pt": "这个句型是：sumimasen，然后是你需要的东西。对店员、对车站工作人员、对门口的人，用的都是同一个开场词。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b03-t01",
+      "es": "すみません、わかりませんでした。",
+      "pinyin": "soo-mee-ma-SEN, wa-ka-ri-ma-sen-DESH-ta",
+      "pt": "抱歉，我没听懂。",
+      "tts": "すみません、わかりませんでした。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "わかりませんでした",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p01",
+      "promptPt": "在便利店柜台，她刚说了一个数字，可你完全没听清。现在开口说。",
+      "audioKey": "fr-b03-t01",
+      "es": "すみません、わかりませんでした。",
+      "pinyin": "soo-mee-ma-SEN, wa-ka-ri-ma-sen-DESH-ta",
+      "pt": "抱歉，我没听懂。",
+      "tts": "すみません、わかりませんでした。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b03-r01",
+      "receptivo": true,
+      "es": "あ、失礼しました。二百四十円です。",
+      "pt": "啊，不好意思——是两百四十日元。",
+      "tts": "あ、失礼しました。二百四十円です。",
+      "acao": "重复的时候通常会更慢一些，并且只保留数字部分。等那个数字出现——那才是你需要的部分。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b03-n03",
+      "bloco": "corpo",
+      "pt": "句型本身不变，只有结尾会变化：请对方再说一遍，请对方说慢一点，或者请对方写下来。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "もう一度お願いします",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p02",
+      "promptPt": "同一个柜台，再听一遍就能把一切都搞清楚。现在开口说。",
+      "audioKey": "fr-b03-t02",
+      "es": "すみません、もう一度お願いします。",
+      "pinyin": "soo-mee-ma-SEN, MOH i-chi-do o-ne-gai-shi-mass",
+      "pt": "抱歉，请再说一遍。",
+      "tts": "すみません、もう一度お願いします。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "ゆっくりお願いします",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p03",
+      "promptPt": "在售票窗口，重复的那一遍语速还是一样快。改问别的。现在开口说。",
+      "audioKey": "fr-b03-t03",
+      "es": "すみません、ゆっくりお願いします。",
+      "pinyin": "soo-mee-ma-SEN, YUK-ku-ri o-ne-gai-shi-mass",
+      "pt": "抱歉，请说慢一点。",
+      "tts": "すみません、ゆっくりお願いします。"
+    },
+    {
+      "consulta": [
+        "reparo/escreve"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "書いてもらえますか",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p04",
+      "promptPt": "还是在售票窗口，是一个站台号码，你不能靠猜。现在开口说。",
+      "audioKey": "fr-b03-t04",
+      "es": "すみません、書いてもらえますか？",
+      "pinyin": "soo-mee-ma-SEN, KAI-te mo-ra-e-mass-ka",
+      "pt": "抱歉，能帮我写下来吗？",
+      "tts": "すみません、書いてもらえますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b03-n04",
+      "pt": "一个词能干三份工作：sumimasen 能引起注意、能表示歉意，甚至还能当作道谢。不管对方是谁，你都不需要换词。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "通ります",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p05",
+      "promptPt": "电车很挤，你的站马上就到了。现在开口说。",
+      "audioKey": "fr-b03-t05",
+      "es": "すみません、通ります。",
+      "pinyin": "soo-mee-ma-SEN, TOH-ri-mass",
+      "pt": "抱歉，借过一下。",
+      "tts": "すみません、通ります。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b03-r02",
+      "es": "あ、はい、どうぞ。",
+      "pt": "啊，好的，请。",
+      "tts": "あ、はい、どうぞ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b03-n05",
+      "bloco": "capsula",
+      "pt": "再给这个句型加两种结尾，都是街上会用到的：问时间，问对方会不会英语。"
+    },
+    {
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "今何時ですか",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p06",
+      "promptPt": "在外面的街上，手机没电了，有人正在路口等着过马路。现在开口说。",
+      "audioKey": "fr-b03-t06",
+      "es": "すみません、今何時ですか？",
+      "pinyin": "soo-mee-ma-SEN, i-ma NAN-ji des-ka",
+      "pt": "抱歉，请问现在几点了？",
+      "tts": "すみません、今何時ですか？"
+    },
+    {
+      "consulta": [
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "英語は話せますか",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p07",
+      "promptPt": "还是那条街，你接下来要说的话比你的日语能力要复杂。先规规矩矩地开个场。现在开口说。",
+      "audioKey": "fr-b03-t07",
+      "es": "すみません、英語は話せますか？",
+      "pinyin": "soo-mee-ma-SEN, EE-go wa ha-na-se-mass-ka",
+      "pt": "打扰了，请问您会说英语吗？",
+      "tts": "すみません、英語は話せますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b03-r03",
+      "receptivo": true,
+      "es": "少しなら。何をお探しですか？",
+      "pt": "会一点点。您在找什么？",
+      "tts": "少しなら。何をお探しですか？",
+      "acao": "用一个名词来回答，而不是一整句话。在这里，一个词加一个手势，比一整句问句更管用。"
+    },
+    {
+      "consulta": [
+        "reparo/como-se-diz"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "日本語で何と言いますか",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p08",
+      "promptPt": "又回到便利店柜台，手里举着那样你想学会说名字的东西。现在开口说。",
+      "audioKey": "fr-b03-t08",
+      "es": "すみません、これは日本語で何と言いますか？",
+      "pinyin": "soo-mee-ma-SEN, ko-re wa ni-HON-go de NAN to i-i-mass-ka",
+      "pt": "打扰了，这个用日语怎么说？",
+      "tts": "すみません、これは日本語で何と言いますか？"
+    },
+    {
+      "consulta": [
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "これは何ですか",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b03-p09",
+      "promptPt": "同一个柜台，你指着一个认不出来的托盘。现在开口说。",
+      "audioKey": "fr-b03-t09",
+      "es": "すみません、これは何ですか？",
+      "pinyin": "soo-mee-ma-SEN, ko-re wa NAN des-ka",
+      "pt": "打扰了，这是什么？",
+      "tts": "すみません、これは何ですか？"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b03-p10",
+      "promptPt": "他们放慢了语速，又重复了一遍，还把数字写在了小票上。热情地把这事收个尾。现在开口说。",
+      "audioKey": "fr-b03-t10",
+      "es": "ありがとうございます。助かりました。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mass, tas-ka-ri-MASH-ta",
+      "pt": "谢谢，真是帮了大忙。",
+      "tts": "ありがとうございます。助かりました。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b03-s01",
+      "es": "すみません、わかりませんでした。すみません、もう一度お願いします。すみません、ゆっくりお願いします。すみません、通ります。",
+      "pinyin": "soo-mee-ma-SEN wa-ka-ri-ma-sen-DESH-ta · soo-mee-ma-SEN MOH i-chi-do o-ne-gai-shi-mass · soo-mee-ma-SEN YUK-ku-ri o-ne-gai-shi-mass · soo-mee-ma-SEN TOH-ri-mass",
+      "pt": "跟读同一个开场词应对四种不同的需求。",
+      "tts": "すみません、わかりませんでした。すみません、もう一度お願いします。すみません、ゆっくりお願いします。すみません、通ります。",
+      "molde": "SUMIMASEN"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b03-n06",
+      "bloco": "recap",
+      "pt": "B03 完成。Sumimasen 加上需求，就能覆盖再说一遍、说慢一点、写下来、借过、以及问时间。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一个开场词，应对每一个陌生人",
+    "secoes": [
+      {
+        "titulo": "开放式句型",
+        "corpo": "保留 sumimasen，只改变它后面的内容。开场词本身不会变化：你从不需要变位它，也不需要根据对话对象来调整，站着、坐着、排队时或者隔着窗口都能用。",
+        "exemplos": [
+          {
+            "es": "すみません、もう一度お願いします。",
+            "pt": "抱歉，请再说一遍。"
+          },
+          {
+            "es": "すみません、通ります。",
+            "pt": "抱歉，借过一下。"
+          }
+        ]
+      },
+      {
+        "titulo": "一个词，三份工作",
+        "corpo": "Sumimasen 能引起注意、能为打扰道歉，甚至可以当作道谢——一个词干了英语里 excuse me、sorry 和 thanks 分别要做的事。它也是招呼店员过来的方式：你不会单独举手或打响指，而是说 sumimasen。这一个词，几乎是让大多数交流得以开始的前提条件。"
+      },
+      {
+        "titulo": "请求你能用得上的那个版本",
+        "corpo": "「我没听懂」背后其实藏着三种不同的请求，得到的结果也各不相同。Mou ichido 得到的是原样再说一遍。Yukkuri 得到的是拉长放慢的版本。Kaite moraemasu ka 得到的是写在纸上的版本——也是唯一能扛住站台号码或地名的那个。"
+      },
+      {
+        "titulo": "让它奏效的那半秒钟",
+        "corpo": "说完 sumimasen，然后停顿一下。这个停顿，往往伴随着轻轻一点头，正是把你的话从一句打断变成一个请求的关键，也给了对方转向你的时间。把 sumimasen 直接连着问题一口气说完，就丢掉了这个词本该发挥的大部分作用。"
+      },
+      {
+        "titulo": "补救排在词汇之前",
+        "corpo": "这一部分被特意安排在课程的第三位。之后的每一部分都默认你会漏听点什么，而一旦你掌握了这个能换来再听一次机会的开场词，漏听的代价就几乎降到了零。这是这个模块里最便宜的保险，也是你会用得最多的一句。"
+      }
+    ]
+  },
+  "slot": "B03",
+  "permissao": "你被允许大声说出「我没听懂」，需要说多少次就说多少次。在日本柜台前请求说慢一点，是一件很正常的事，那里没有人会觉得开口问的人比点头走开、却拿错了答案的人更差。",
+  "permissaoAudioKey": "fr-b03-n01",
+  "espelho": "你在自己的语言里，每次打不好的电话或嘈杂的酒吧里都会这么做——抱歉，再说一遍，抱歉，慢一点。这个动作本身没有任何新意。唯一新的地方，是这里的开场词是固定的一个，你甚至都不用去挑。",
+  "fichasCulturais": [
+    {
+      "sinal": "你请对方重复一遍，第二遍回答变得更短更简化，只剩下数字或方向，去掉了所有的修饰。",
+      "suaLeitura": "他们因为我让他们说了两遍而不耐烦了。",
+      "oQueEAli": "在日本柜台，重复通常会被削减到只保留承载信息的那部分——数字、是否、地点——把客套去掉。变短是在帮你，不是不耐烦，而语速反而是人们最不容易注意到、也最后才会调整的部分。",
+      "oQueVoceFaz": "如果还是没听懂，具体地请求慢一点的版本，而不是再要求重复一次：yukkuri onegai shimasu。",
+      "oQueMelhora": "你得到的正是你漏掉的那一个词，而不是整句话再来一遍。",
+      "ondeNaoVale": "如果漏掉的是数字、站台或地址，这条不适用——这时请对方写下来，一步就能解决三次重复都解决不了的问题。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b03-r01",
+        "fr-b03-n03"
+      ]
+    },
+    {
+      "sinal": "你问对方会不会说英语，对方摆摆手，说了句 chotto，然后转开了视线。",
+      "suaLeitura": "他们其实会，只是不愿意，或者觉得我很麻烦。",
+      "oQueEAli": "这里的 chotto 配上摆手，通常意思是「只会一点点，我没什么信心」，既不是「不会」，也不是「走开」。刻意低估自己的能力，在这里是礼貌的默认做法，所以就算是学过一些实用英语的人，也常常会先自谦一番。这种保留是对语言能力的谦虚，不是对你的判断。",
+      "oQueVoceFaz": "稍等一会儿，改用单个词加手势或手机屏幕，让对方顺着这个节奏来——大多数摆手说 chotto 的人，最后还是能帮你找到站台。",
+      "oQueMelhora": "你不再把一句羞涩的自谦读成拒绝，交流也能继续用两种语言磕磕绊绊地进行下去——而这恰恰是真正管用的方式。",
+      "ondeNaoVale": "如果对方明显赶着去搭车，或者确实完全不会英语，这条就不适用——这时诚实的做法是指着写好的地址，或者去问别人，而不是继续追问。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b03-n04"
+      ]
+    }
+  ]
+}

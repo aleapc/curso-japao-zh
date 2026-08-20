@@ -1,0 +1,342 @@
+{
+  "id": "b01",
+  "nivel": "basico",
+  "numero": 1,
+  "parte": "B01",
+  "titulo": "假名一拍一个，保持平调",
+  "subtitulo": "日语每个假名长度相同，靠音高而非重音——六个诀窍让你半懂的词真正听懂",
+  "cena": "便利店队伍走得很快，你只准备好了一个词，而那个你在英语里会拉长的元音，恰恰必须保持短促。",
+  "moldura": "ganha",
+  "frasePiso": "给每个假名同样短促的一拍，保持语调平稳，长元音和促音「っ」都要停满一拍。这样在第一天就足以让人听懂你。",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "日语每个假名的长度都相等，靠音高而不是重音来表达。掌握六个诀窍，你那些半懂的词就开始能听懂了。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b01-n02",
+      "gesto": 1,
+      "bloco": "corpo",
+      "pt": "你的手可以这样做：每个假名打一下均匀的拍子，力度一样，平滑滑过。英语会突出一个音节；日语从不这样。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n03",
+      "pt": "诀窍一：每个假名都是一拍，长度相等。コーヒー是 ko-o-hi-i，四拍，不是 KOFF-ee 那样的读法。说的时候把每一拍打得一样平。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b01-t01",
+      "es": "すみません、コーヒーをお願いします。",
+      "pinyin": "soo-mee-ma-SEN, KOH-hee o o-ne-gai-shi-mass",
+      "pt": "打扰了，请给我一杯咖啡。Koohii 是四个均匀的拍子，shimasu 结尾的 u 几乎不发音。",
+      "tts": "すみません、コーヒーをお願いします。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar",
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p01",
+      "promptPt": "在柜台前，先说 sumimasen 开场，然后点一杯咖啡。现在开口说。",
+      "audioKey": "fr-b01-t01",
+      "es": "すみません、コーヒーをお願いします。",
+      "pinyin": "soo-mee-ma-SEN, KOH-hee o o-ne-gai-shi-mass",
+      "pt": "打扰了，请给我一杯咖啡。",
+      "tts": "すみません、コーヒーをお願いします。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b01-p02",
+      "promptPt": "她把咖啡递给你了。谢谢她，结尾的 u 几乎不要发出声音。现在开口说。",
+      "audioKey": "fr-b01-t02",
+      "es": "ありがとうございます。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mass",
+      "pt": "非常感谢。",
+      "tts": "ありがとうございます。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b01-n04",
+      "pt": "诀窍二：五个元音都是纯元音，从不滑动。a 是「啊」，i 是「衣」，u 是「乌」，e 是「诶」，o 是「喔」——每次都一样。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b01-t03",
+      "es": "ホテルまでお願いします。",
+      "pinyin": "ho-TE-roo ma-de o-ne-gai-shi-mass",
+      "pt": "请去酒店。Hoteru 是 ho-te-ru，三个干净的元音，不是英语里 hoh-TELL 那种读法。",
+      "tts": "ホテルまでお願いします。"
+    },
+    {
+      "consulta": [
+        "taxi/destino"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_m",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p03",
+      "promptPt": "你上了出租车，手机里已经存好了地址。告诉司机去哪里。现在开口说。",
+      "audioKey": "fr-b01-t03",
+      "es": "ホテルまでお願いします。",
+      "pinyin": "ho-TE-roo ma-de o-ne-gai-shi-mass",
+      "pt": "请去酒店。",
+      "tts": "ホテルまでお願いします。"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b01-p04",
+      "promptPt": "显示板刚刚更新了，你需要知道新的发车时间。现在开口说。",
+      "audioKey": "fr-b01-t04",
+      "es": "何時ですか？",
+      "pinyin": "NAN-ji des-ka",
+      "pt": "几点？",
+      "tts": "何時ですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n05",
+      "pt": "诀窍三：长元音是真正多出的第二拍，会改变整个词的意思。Biru 是大楼，biiru 是啤酒——就多了一拍。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b01-r01",
+      "receptivo": true,
+      "es": "ビル — ビール · おばさん — おばあさん",
+      "pinyin": "BEE-roo — BEE-roo (long) · o-BA-san — o-BAA-san",
+      "pt": "两对词。英语会把每一对都读成一个词；日语靠多停一拍把它们分开，它们是完全不同的词——大楼/啤酒，阿姨/奶奶。",
+      "tts": "ビル、ビール。おばさん、おばあさん。",
+      "acao": "先听两遍再跟读。每对里第二个词只是把元音多停一拍——其他什么都没变。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p05",
+      "promptPt": "在面包店，要一个面包。每个假名都要给足自己的一拍。现在开口说。",
+      "audioKey": "fr-b01-t05",
+      "es": "パンをください。",
+      "pinyin": "PAN o ku-da-SAI",
+      "pt": "请给我面包。",
+      "tts": "パンをください。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b01-n06",
+      "bloco": "capsula",
+      "pt": "诀窍四：促音「っ」是一个停顿的无声拍。在 kitte 或 kippu 里，先停一拍不出声，再释放出来。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b01-t06",
+      "es": "切符を二枚お願いします。",
+      "pinyin": "KIP-pu o ni-mai o-ne-gai-shi-mass",
+      "pt": "请给我两张票。Kippu 中间有一个停顿——ki，无声一拍，再 pu。",
+      "tts": "切符を二枚お願いします。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_m",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b01-p06",
+      "promptPt": "同一个柜台，售票窗口。点两张，kippu 中间的停顿要停住。现在开口说。",
+      "audioKey": "fr-b01-t06",
+      "es": "切符を二枚お願いします。",
+      "pinyin": "KIP-pu o ni-mai o-ne-gai-shi-mass",
+      "pt": "请给我两张票。",
+      "tts": "切符を二枚お願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n07",
+      "pt": "诀窍五：i 和 u 夹在轻辅音之间时几乎不发音。Desu 听起来像 dess，sukiyaki 开头听起来像 skiyaki。写出来是这样，读出来不这样。"
+    },
+    {
+      "consulta": [
+        "compras/balcao",
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p07",
+      "promptPt": "她问你还要别的吗。结束这单——就这些了。现在开口说。",
+      "audioKey": "fr-b01-t07",
+      "es": "以上です。ありがとうございます。",
+      "pinyin": "i-JOH dess, a-ri-ga-TOH go-za-i-mass",
+      "pt": "就这些了，谢谢。",
+      "tts": "以上です。ありがとうございます。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b01-p08",
+      "promptPt": "你在咖啡馆里，需要去里面的洗手间。问一下。现在开口说。",
+      "audioKey": "fr-b01-t08",
+      "es": "トイレはどこですか？",
+      "pinyin": "TOH-i-re wa DO-ko des-ka",
+      "pt": "洗手间在哪里？",
+      "tts": "トイレはどこですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b01-r02",
+      "es": "奥の右側です。",
+      "pt": "在里面，右手边。",
+      "tts": "奥の右側です。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b01-n08",
+      "pt": "诀窍六：r 是轻轻一弹，介于英语的 r、l 和 d 之间；重音靠音高下降，不靠音量——词与词之间没有明显的边界，滑过去就好。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b01-p09",
+      "promptPt": "卷帘门只拉起了一半，里面有人在走动。进去之前先问一句。现在开口说。",
+      "audioKey": "fr-b01-t09",
+      "es": "すみません、開いていますか？",
+      "pinyin": "soo-mee-ma-SEN, a-i-te i-mass-ka",
+      "pt": "打扰了，你们开门了吗？",
+      "tts": "すみません、開いていますか？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b01-s01",
+      "es": "すみません、コーヒーをお願いします。パンをください。トイレはどこですか？ ありがとうございます。",
+      "pinyin": "soo-mee-ma-SEN KOH-hee o o-ne-gai-shi-mass · PAN o ku-da-SAI · TOH-i-re wa DO-ko des-ka · a-ri-ga-TOH go-za-i-mass",
+      "pt": "把六个诀窍连起来跟读一遍。手保持平稳，每个假名一拍均匀，长元音和促音都停满一拍。",
+      "tts": "すみません、コーヒーをお願いします。パンをください。トイレはどこですか？ ありがとうございます。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b01-n09",
+      "bloco": "recap",
+      "pt": "B01 完成。每个假名一拍，五个纯元音，长元音要停住，促音无声，i 和 u 会省略，靠音高不靠重音。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "本课程使用的发音模型",
+    "secoes": [
+      {
+        "titulo": "拍子才是单位，不是音节",
+        "corpo": "日语以「拍」（mora）为节奏单位：每个假名都是同样短的长度，整体节奏就是一串等长的拍子。这正是这对语言最大的难点。有几百个词是从英语借入日语的，眼睛一看就认出来，于是自然而然套用英语的节奏，可耳朵并不接受。解决办法是节拍要均匀，而不是更用力——每一拍大小都一样。",
+        "exemplos": [
+          {
+            "es": "コーヒー",
+            "pt": "ko-o-hi-i——四个均匀的拍子，不是 KOFF-ee"
+          },
+          {
+            "es": "ホテル",
+            "pt": "ho-te-ru——三个干净的元音，不是 hoh-TELL"
+          }
+        ]
+      },
+      {
+        "titulo": "长元音是完整多出的一拍",
+        "corpo": "重复的元音不是被重读的元音——而是同一个音多出的第二拍，而且它承载意义。Biru 是大楼，biiru 是啤酒；obasan 是阿姨，obaasan 是奶奶。英语没有靠延长元音来改变词义的习惯，所以这一拍最容易被漏掉。",
+        "exemplos": [
+          {
+            "es": "ビル / ビール",
+            "pt": "biru / biiru——大楼 / 啤酒"
+          },
+          {
+            "es": "おばさん / おばあさん",
+            "pt": "obasan / obaasan——阿姨 / 奶奶"
+          }
+        ]
+      },
+      {
+        "titulo": "促音「っ」是无声的一拍",
+        "corpo": "在 kitte 或 kippu 里，写出来的小さい「っ」是一个指示，而不是一个声音：停下来，空出一拍什么都不发，再释放下一个辅音。说英语的人往往直接冲过这个空隙，结果词就变短、变成了别的东西。停顿本身就是那个音。"
+      },
+      {
+        "titulo": "轻化的元音和轻弹的 r",
+        "corpo": "在清辅音之间，i 和 u 常常几乎完全消失：desu 听起来是 dess，sukiyaki 开头听起来是 skiyaki，礼貌的 -mashita 结尾也会丢掉那个 i。而 r 只是轻轻一弹，更接近柔和的 d，而不是英语的 r 或 l。这两点都不是说话马虎——这就是标准语的实际读法。"
+      },
+      {
+        "titulo": "允许自己带点外国口音",
+        "corpo": "你暂时掌握不好完美的音高重音，这不是旅行中的问题。给每个假名足够的一拍，长元音和促音都停住，语调保持平稳——这比刻意模仿口音更能让人听懂你。目标是第一次就被听懂，而不是被误认成本地人。"
+      }
+    ]
+  },
+  "slot": "B01",
+  "permissao": "你被允许带着外国口音说话。柜台前没有人在给你的音高重音打分，也没有人在等一个完美的 r。给每个假名足够的一拍，长元音停住，句子就能传达到位——这就是第一天全部的任务。",
+  "permissaoAudioKey": "fr-b01-n07",
+  "espelho": "英语也在反方向玩同样的把戏：没人会把 Wednesday、Leicester 或 comfortable 里的每个字母都念出来，也没人觉得这很难。你早就习惯了让发音和拼写对着来——这一部分只是把这个习惯换到另一套拍子上而已。",
+  "fichasCulturais": [
+    {
+      "sinal": "你说了一个你完全确定的词——咖啡、啤酒、酒店、出租车——对方却愣了一下，或者没听懂。",
+      "suaLeitura": "我的口音太差了，连我们共有的这些词都不管用。",
+      "oQueEAli": "这些词进入日语时，每个元音都被给予了自己的一拍，重音被拉平，有些元音还被拉长——koohii、biiru、hoteru、takushii。如果用英语的方式说，重读一个音节、吞掉结尾，对听者来说，这听起来是一个他们没见过的词，而不是他们熟悉的词带着口音。",
+      "oQueVoceFaz": "用均匀的拍子、不带英语重音再说一遍：ko-o-hi-i，而不是 KOFF-ee；bi-i-ru，而不是 BEER。",
+      "oQueMelhora": "你原本半懂的那几百个外来词，不再是最先卡壳的那部分，对话也能在日语里多维持一会儿。",
+      "ondeNaoVale": "在机场柜台、大车站或习惯接待外国客人的酒店前台不适用这条——那里的员工整天都在解读带口音的日语，不管怎样第一次就能听懂你。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b01-n03",
+        "fr-b01-n06"
+      ]
+    },
+    {
+      "sinal": "在店里你能听懂单个的词，可一旦有人说出一整句话，你就找不到任何一个词的开头在哪里。",
+      "suaLeitura": "他们说得太快了，我跟不上。",
+      "oQueEAli": "语速只是一部分原因。日语是一串等长的拍子连续流动，wa、o、no、desu 这些小的语法词都模糊地夹在中间，没有重音的突起来标记每个词从哪里开始。你在寻找的那个间隙，根本就不存在于这段语音信号里。",
+      "oQueVoceFaz": "别再去找词与词的边界，转而去听内容词本身，以及句尾附近那个细小的音高下降。请对方重复一次，让第二遍帮你听出整体的形状，而不是接缝在哪里。",
+      "oQueMelhora": "你开始能抓住承载答案的那个名词——地点、价格、站台——而不是试图解析整串语音。",
+      "ondeNaoVale": "对数字和地址不适用这条——这些信息本来就是分开的，请对方写下来比再听一遍更有效。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b01-n08"
+      ]
+    }
+  ]
+}

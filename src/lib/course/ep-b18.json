@@ -1,0 +1,339 @@
+{
+  "id": "b18",
+  "nivel": "basico",
+  "numero": 18,
+  "parte": "B18",
+  "titulo": "最后一天——结清账单，寄存行李，说一句他们会记住的话",
+  "subtitulo": "退房只是走个流程，真正决定你下次进门会被怎样迎接的，是道别那一刻",
+  "cena": "钥匙放在前台上，你的航班是今晚九点，从现在到机场之间还有十一个小时，中间还夹着一个行李箱。",
+  "moldura": "ganha",
+  "frasePiso": "付款，寄存行李，然后花一句话谢谢这一周一直在帮你解决问题的那个人。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-b18-note",
+      "afirmacao": "在日本，酒店账单本来就会打印给你，如果要报销，可以要求开一张正式的「領収書」；工作人员可能会问你抬头要写什么名字。有一项常常让游客意外：不少城市会征收「宿泊税」（住宿税），东京、大阪、京都、福冈都在其中，按每人每晚收取，而且办理入住时往往不会主动提起。",
+      "fonte": "Contas de hotel impressas normalmente; 領収書 (recibo formal) a pedido; imposto de hospedagem (宿泊税) cobrado por pessoa/noite em cidades como Tóquio, Osaka, Quioto e Fukuoka.",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b18-n03"
+      ]
+    },
+    {
+      "id": "fr-b18-especes",
+      "afirmacao": "在日本，现金永远能结账，小店有时仍然只收现金。最后一天有两件事能帮上忙：在有资质的「免税」店，游客凭护照，当天消费满五千日元起就能免消费税购物；另外，「宅配便」（宅急便）行李配送服务可以把行李箱从酒店直接送到机场，第二天再取，这样你就不用整天拖着箱子在城里跑。",
+      "fonte": "Dinheiro sempre liquida a conta; compras isentas (免税) para turistas a partir de 5.000 ienes no mesmo dia com passaporte; serviço de encomenda de bagagem (宅配便) do hotel ao aeroporto.",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b18-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b18-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "最后一天的早上分两部分：手续，还有那句话。只有其中一部分会被记住。"
+    },
+    {
+      "consulta": [
+        "quarto/mala",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "五時まで荷物を預け",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p01",
+      "promptPt": "房间十一点就要退了，你的航班在今晚。把中间这段时间安排好。现在开口说。",
+      "audioKey": "fr-b18-t01",
+      "es": "五時まで荷物を預けてもいいですか？",
+      "pinyin": "go-JI ma-de ni-MO-tsu o a-zu-ke-te mo II des ka",
+      "pt": "可以把行李寄存到五点吗？",
+      "tts": "五時まで荷物を預けてもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b18-r01",
+      "es": "もちろんです。番号札をお渡ししますので、お持ちください。",
+      "pt": "当然可以。我给您一张号码牌，请收好。",
+      "tts": "もちろんです。番号札をお渡ししますので、お持ちください。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b18-n02",
+      "bloco": "corpo",
+      "pt": "在东西交给你之前，先问清楚总价。这跟你买东西时用的是同一个框架。"
+    },
+    {
+      "consulta": [
+        "pagar/conta",
+        "quarto/checkout"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "全部で",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b18-p02",
+      "promptPt": "住了四晚，两顿早餐，还有一项办理入住时没人提过的住宿税。现在开口说。",
+      "audioKey": "fr-b18-t02",
+      "es": "全部でいくらですか？",
+      "pinyin": "ZEN-bu de i-ku-ra des ka",
+      "pt": "一共多少钱？",
+      "tts": "全部でいくらですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b18-n03",
+      "pt": "酒店账单会打印给你；如果需要正式发票，就要一张「領収書」。留意住宿税——有些城市会按晚加收。"
+    },
+    {
+      "consulta": [
+        "pagar/cartao",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "カードで払っ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p03",
+      "promptPt": "前台贴着支付方式的标志，但没写最低消费金额。趁总价还没算出来之前先问一句。现在开口说。",
+      "audioKey": "fr-b18-t03",
+      "es": "カードで払ってもいいですか？",
+      "pinyin": "KAA-do de ha-RAT-te mo II des ka",
+      "pt": "可以刷卡吗？",
+      "tts": "カードで払ってもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b18-r02",
+      "receptivo": true,
+      "es": "カードは大丈夫ですが、五千円からになります。",
+      "pt": "可以刷卡，不过要满五千日元才行。",
+      "tts": "カードは大丈夫ですが、五千円からになります。",
+      "acao": "低于这个金额的话，就用现金付——小店设刷卡最低消费很常见，现金永远能结账。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b18-n04",
+      "bloco": "capsula",
+      "pt": "在这里现金永远好用。最后一天还有两个帮手：凭护照免税购物，还有用「宅急便」把行李箱送到机场。"
+    },
+    {
+      "consulta": [
+        "pagar/conta",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "領収書をもらっ",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b18-p04",
+      "promptPt": "你的公司要报销凭证，可机器只是「哔」了一声就完事了。在走开之前先要一张正式发票。现在开口说。",
+      "audioKey": "fr-b18-t04",
+      "es": "領収書をもらってもいいですか？",
+      "pinyin": "ryoo-SHOO-sho o mo-rat-te mo II des ka",
+      "pt": "可以给我一张正式发票吗？",
+      "tts": "領収書をもらってもいいですか？"
+    },
+    {
+      "consulta": [
+        "taxi/destino",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "ここからタクシーを呼ん",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p05",
+      "promptPt": "五点了，行李箱又拿回了你手上，手机上的App却一直转圈加载不出来。现在开口说。",
+      "audioKey": "fr-b18-t05",
+      "es": "ここからタクシーを呼んでもいいですか？",
+      "pinyin": "ko-ko ka-ra tak-SHEE o yon-de mo II des ka",
+      "pt": "可以在这里帮我叫辆出租车吗？",
+      "tts": "ここからタクシーを呼んでもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b18-r03",
+      "es": "空港までですか？ 定額料金になりますよ。",
+      "pt": "去机场吗？这是固定车费。",
+      "tts": "空港までですか？ 定額料金になりますよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b18-n05",
+      "pt": "有些城市的机场出租车是固定车费，司机会给你开收据——不过火车往往比出租车更便宜也更快。"
+    },
+    {
+      "consulta": [
+        "taxi/destino",
+        "pagar/conta"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "IKURA",
+      "encaixe": "空港まで",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b18-p06",
+      "promptPt": "后备箱开着，行李箱还没放进去。先把价格问出口。现在开口说。",
+      "audioKey": "fr-b18-t06",
+      "es": "空港までいくらですか？",
+      "pinyin": "koo-KOO ma-de i-ku-ra des ka",
+      "pt": "到机场多少钱？",
+      "tts": "空港までいくらですか？"
+    },
+    {
+      "consulta": [
+        "conversa/elogiar",
+        "conversa/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p07",
+      "promptPt": "就是第一晚帮你换房间、今天又帮你存行李的那个人。说出你真心的话，而不是场面话。现在开口说。",
+      "audioKey": "fr-b18-t07",
+      "es": "いろいろお世話になりました。",
+      "pinyin": "i-ro-i-ro o-SE-wa ni na-ri-MA-shi-ta",
+      "pt": "谢谢您这些天为我做的一切。",
+      "tts": "いろいろお世話になりました。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b18-r04",
+      "es": "こちらこそ、ありがとうございました。またお越しください。",
+      "pt": "也谢谢您，真心的。欢迎再来。",
+      "tts": "こちらこそ、ありがとうございました。またお越しください。"
+    },
+    {
+      "consulta": [
+        "conversa/despedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b18-p08",
+      "promptPt": "他刚刚为你把门留开了。用一个打算来回应，而不是一句客套话。现在开口说。",
+      "audioKey": "fr-b18-t08",
+      "es": "また必ず来ます。",
+      "pinyin": "ma-ta ka-na-ra-zu ki-MAS",
+      "pt": "我一定会再来的。",
+      "tts": "また必ず来ます。"
+    },
+    {
+      "consulta": [
+        "conversa/despedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b18-p09",
+      "promptPt": "行李箱拿在手上，一只脚已经跨出了门外。把这段交流好好收尾。现在开口说。",
+      "audioKey": "fr-b18-t09",
+      "es": "ありがとうございました。失礼します。",
+      "pinyin": "a-ri-ga-toh go-za-i-ma-shi-ta. shi-tsu-REI shi-mas",
+      "pt": "非常感谢，告辞了。",
+      "tts": "ありがとうございました。失礼します。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b18-s01",
+      "es": "全部でいくらですか？ 五時まで荷物を預けてもいいですか？ いろいろお世話になりました。",
+      "pinyin": "ZEN-bu de i-ku-ra des ka. go-JI ma-de ni-MO-tsu o a-zu-ke-te mo II des ka. i-ro-i-ro o-SE-wa ni na-ri-MA-shi-ta",
+      "pt": "跟读构成最后这个早晨的这三句话。",
+      "tts": "全部でいくらですか？ 五時まで荷物を預けてもいいですか？ いろいろお世話になりました。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b18-n06",
+      "bloco": "recap",
+      "pt": "B18完成。行李寄存好了，总价问清楚了，车费定好了，还在门口留下了一句真心话。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "先是手续，然后是留得住的那部分",
+    "secoes": [
+      {
+        "titulo": "两个框架收尾整趟旅程",
+        "corpo": "「てもいいですか」负责处理最后这个早上要问的许可——行李、刷卡、发票、出租车。「いくらですか」负责问清两个关键数字——总价和车费。最后一天不需要学任何新东西，用的还是你从机场那天起就一直在用的这两个开头。",
+        "exemplos": [
+          {
+            "es": "五時まで荷物を預けてもいいですか？",
+            "pt": "可以把行李寄存到五点吗？"
+          },
+          {
+            "es": "全部でいくらですか？",
+            "pt": "一共多少钱？"
+          }
+        ]
+      },
+      {
+        "titulo": "账单、发票和城市住宿税",
+        "corpo": "酒店账单本来就会打印给你。如果要报销需要正式发票，直接点名要「領収書」，并准备好告诉对方抬头要写的名字。留意住宿税——东京、大阪、京都、福冈等城市都会按每人每晚加收，而且因为办理入住时很少主动提起，很容易被忽略。"
+      },
+      {
+        "titulo": "现金、刷卡，还有最后一天的两个帮手",
+        "corpo": "现金永远能结账，小店可能会设刷卡最低消费，也可能只收现金。有两件事能让最后一天更顺畅：在有资质的「免税」店，凭护照当天消费满五千日元起就能免税购物；「宅急便」行李配送服务能把行李箱从酒店送到机场，第二天再取，这样你最后这几个小时就能腾出手来，不用一直拖着箱子。"
+      },
+      {
+        "titulo": "门口的那句话",
+        "corpo": "先说「いろいろお世話になりました」，再说「ありがとうございました」和「失礼します」。这只需要几秒钟，却是前台真正会记住的那部分，而且完全不花一分钱——这也是整个模块里回报最高的一句话。这里没有小费这回事，这句话本身就是感谢。"
+      }
+    ]
+  },
+  "slot": "B18",
+  "permissao": "你完全可以用一句话而不是小费来结束这一周。前台没有人会觉得道谢是多余的，这个简短的告别问候在这里就是收尾一段交流的正常方式，不是你额外加上去的东西。",
+  "permissaoAudioKey": "fr-b18-n01",
+  "espelho": "但凡去过同一家餐厅第二次的人都懂这个道理：第二次被怎样欢迎，取决于第一次是怎么结束的，而不是怎么开始的。最后那几秒钟，恰恰是你完全能掌控的部分。",
+  "fichasCulturais": [
+    {
+      "sinal": "司机为整趟机场行程报出一个固定数字，而不是打表计价。",
+      "suaLeitura": "他因为我是带着两个行李箱的游客，随口编了个价钱。",
+      "oQueEAli": "有几个城市的机场出租车实行固定车费——这段路程的价格是事先定好的——所以计价器不打表，反而是正确的做法，而不是抄近路，结束时也应该给你开收据。不过很多时候，机场特快列车会比任何出租车都更便宜、更快。",
+      "oQueVoceFaz": "在行李放进后备箱之前先把车费问清楚，问对方要收据，在决定之前心里再对比一下火车的价格。",
+      "oQueMelhora": "你上车前就知道要花多少钱，而且常常会发现火车其实是更好的选择。",
+      "ondeNaoVale": "机场固定车费是各个城市自行安排的做法，不是全国统一的规定，市内的普通行程还是按计价器打表。公布的数字会变化：以司机当场报的数字为准，不要相信几个月前写好的课程里的数字。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b18-n05"
+      ]
+    },
+    {
+      "sinal": "你结完账，拿起行李箱，什么都没说就走了出去。",
+      "suaLeitura": "交易已经结束了，没什么好再说的了。",
+      "oQueEAli": "在日本，开场和收尾是一对成对的小仪式：问候语让你走进这段交流，而「お世話になりました」「ありがとうございました」「失礼します」则把它交还回去。少了后半段就走，会让这段交流停在一个没收完的节拍上，就像没打招呼就闯进去，也会让开场停在一个没收完的节拍上一样。",
+      "oQueVoceFaz": "说一句「ありがとうございました」，再加一句——住宿之后加「お世話になりました」，离开时加「失礼します」。",
+      "oQueMelhora": "这段交流会在该结束的地方结束，你下次在这栋楼里的交流也会从更温暖的地方开始。",
+      "ondeNaoVale": "这说的是一套惯例，不是任何人的真实感受。如果对方正在打电话，或者已经在招呼别的客人，这条就不适用——这时点个头，小声说一句「ありがとう」就是完整的收尾了。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b18-n06"
+      ]
+    }
+  ]
+}

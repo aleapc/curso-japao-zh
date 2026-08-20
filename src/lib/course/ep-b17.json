@@ -1,0 +1,388 @@
+{
+  "id": "b17",
+  "nivel": "basico",
+  "numero": 17,
+  "parte": "B17",
+  "titulo": "药房、疼痛，还有任何电话都能拨通的号码",
+  "subtitulo": "说出哪里疼，让柜台的人帮你挑药盒，记住能拨打的号码：119和110",
+  "cena": "周日傍晚，离你最近的药房已经拉下卷帘门，两条街外车站旁的药妆店却还亮着灯。",
+  "moldura": "protege",
+  "frasePiso": "说出哪里疼，让柜台的人帮你挑。离你最近的药妆店通常比小药房营业到更晚。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-b17-112",
+      "afirmacao": "在日本，119接通消防/救护车，110接通警察；两个号码从任何电话拨打都免费，这里没有像欧洲那样统一的112。需要非紧急的医疗建议时，很多地区可以拨打#7119（救急安心センター），帮你判断要不要去医院、去哪家医院。需要英语帮助时，JNTO日本旅客热线050-3816-2787全天24小时提供服务。",
+      "fonte": "Números de emergência do Japão: 119 (bombeiros/ambulância), 110 (polícia); #7119 (救急安心センター) para orientação médica não urgente em muitas regiões; JNTO Japan Visitor Hotline 050-3816-2787.",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b17-n05"
+      ]
+    },
+    {
+      "id": "fr-b17-garde",
+      "afirmacao": "在营业时间之外，日本有几条路可走：城市里的大型连锁药妆店常常营业到很晚甚至24小时，当地的「休日夜間急患センター」（节假日夜间急诊中心）能应付紧急情况，在有开通服务的地区，#7119还能提供电话医疗建议。传统的「調剤薬局」（配药药房）营业时间较短，所以夜里想买非处方药，药妆店通常是更好的选择。",
+      "fonte": "Drogarias de rede abertas até tarde/24h nas cidades; 休日夜間急患センター para urgências fora do horário; #7119 para orientação; 調剤薬局 (farmácia de manipulação/receita) com horário mais curto.",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b17-n04"
+      ]
+    },
+    {
+      "id": "fr-b17-ghic",
+      "afirmacao": "日本和英国、欧盟都没有互惠医疗协议，所以在这里GHIC或EHIC都不管用：游客要支付全额医疗费用，医院通常要求提前用现金或银行卡付款。费用可能很高，救护车本身虽然免费，但送到医院后账单还是要你自己承担。覆盖日本、并包含遣返条款的旅行保险是必需品，不是可选项。",
+      "fonte": "Japão não tem acordo recíproco de saúde com Reino Unido/UE; visitante paga o custo integral, muitas vezes adiantado; seguro-viagem com cobertura no Japão e repatriação é essencial.",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b17-n06"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b17-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "这部分讲的是万一今天出岔子该怎么办。趁现在什么都还没发生，先读一遍。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b17-n02",
+      "bloco": "molde",
+      "pt": "不用翻译病情。说出哪里疼、疼了多久，剩下的交给柜台的人帮你挑药盒。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b17-t01",
+      "es": "開いている薬局を探しています。",
+      "pinyin": "ai-te i-ru yak-KYO-ku o sa-ga-shi-te i-MAS",
+      "pt": "我在找一家还开着的药房。",
+      "tts": "開いている薬局を探しています。"
+    },
+    {
+      "consulta": [
+        "saude/farmacia",
+        "cidade/onde"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "開いている薬局",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p01",
+      "promptPt": "周日晚上八点半，卷帘门已经拉下，一个男人正牵着狗从你身边走过。现在开口说。",
+      "audioKey": "fr-b17-t01",
+      "es": "開いている薬局を探しています。",
+      "pinyin": "ai-te i-ru yak-KYO-ku o sa-ga-shi-te i-MAS",
+      "pt": "我在找一家还开着的药房。"
+    },
+    {
+      "consulta": [
+        "saude/farmacia",
+        "cidade/onde"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "夜間の薬局",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p02",
+      "promptPt": "他点点头，说附近总有一家会营业到很晚。问问他是哪一家。现在开口说。",
+      "audioKey": "fr-b17-t02",
+      "es": "夜間の薬局はどこですか？",
+      "pinyin": "ya-KAN no yak-KYO-ku wa DO-ko des ka",
+      "pt": "夜间药房在哪里？",
+      "tts": "夜間の薬局はどこですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b17-r01",
+      "receptivo": true,
+      "es": "この辺だと、駅前のドラッグストアが遅くまで開いていますよ。",
+      "pt": "这附近，车站前的药妆店会开到很晚。",
+      "tts": "この辺だと、駅前のドラッグストアが遅くまで開いていますよ。",
+      "acao": "直接去车站旁那家营业到很晚的药妆店，别再一家接一家地找已经关门的药房。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b17-n04",
+      "bloco": "corpo",
+      "pt": "深夜时分，连锁药妆店或夜间急诊中心就是你的出路，很多地区还能拨打#7119获取该去哪里的电话建议。"
+    },
+    {
+      "consulta": [
+        "saude/sintoma",
+        "saude/farmacia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "咳の薬",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p03",
+      "promptPt": "你站在这家夜间营业的药妆店柜台前，从下飞机开始就一直在咳嗽。现在开口说。",
+      "audioKey": "fr-b17-t03",
+      "es": "咳の薬を探しています。",
+      "pinyin": "se-ki no ku-SU-ri o sa-ga-shi-te i-MAS",
+      "pt": "我在找止咳的药。",
+      "tts": "咳の薬を探しています。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b17-r02",
+      "es": "いつからですか？ 夜も咳が出ますか？",
+      "pt": "从什么时候开始的？晚上也会咳吗？",
+      "tts": "いつからですか？ 夜も咳が出ますか？"
+    },
+    {
+      "consulta": [
+        "saude/sintoma"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p04",
+      "promptPt": "她一口气问了好几件事。先回答那个需要数字的问题，说出不舒服的地方。现在开口说。",
+      "audioKey": "fr-b17-t04",
+      "es": "二日前から喉が痛いです。",
+      "pinyin": "fu-tsu-ka MAE ka-ra no-do ga i-TAI des",
+      "pt": "我喉咙痛两天了。",
+      "tts": "二日前から喉が痛いです。"
+    },
+    {
+      "consulta": [
+        "saude/sintoma",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p05",
+      "promptPt": "你不知道疼的那个部位用日语怎么说。把手放上去，说这三个字。现在开口说。",
+      "audioKey": "fr-b17-t05",
+      "es": "ここが痛いです。",
+      "pinyin": "ko-ko ga i-TAI des",
+      "pt": "这里疼。",
+      "tts": "ここが痛いです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b17-n03",
+      "bloco": "capsula",
+      "pt": "「抜きで」和你在食物那里用的是同一个框架。在这里，它能把不该出现的成分挡在药盒之外。"
+    },
+    {
+      "consulta": [
+        "saude/alergia",
+        "saude/farmacia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "イブプロフェン",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p06",
+      "promptPt": "她伸手去拿一盒药。里面有一种成分是你家的医生叮嘱过要避开的。现在开口说。",
+      "audioKey": "fr-b17-t06",
+      "es": "イブプロフェン抜きで、お願いします。",
+      "pinyin": "i-bu-pu-ro-FEN NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要含布洛芬的。",
+      "tts": "イブプロフェン抜きで、お願いします。"
+    },
+    {
+      "consulta": [
+        "saude/receita",
+        "saude/farmacia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p07",
+      "promptPt": "她在柜台上摆了两盒药，而你手上没有任何医生开的处方。趁她结账之前先确认一下。现在开口说。",
+      "audioKey": "fr-b17-t07",
+      "es": "これは処方箋なしで買えますか？",
+      "pinyin": "ko-re wa sho-HOU-sen na-shi de ka-e-MAS ka",
+      "pt": "这个不用处方也能买吗？",
+      "tts": "これは処方箋なしで買えますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b17-r03",
+      "es": "こちらは大丈夫です。もう一つは処方箋が必要です。",
+      "pt": "这个没问题，另一个需要处方。",
+      "tts": "こちらは大丈夫です。もう一つは処方箋が必要です。"
+    },
+    {
+      "consulta": [
+        "saude/alergia",
+        "comer/restricao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p08",
+      "promptPt": "在东西装进袋子之前，把必须记录在案的那件事说出来。这就在你钱包里的卡片上。现在开口说。",
+      "audioKey": "fr-b17-t08",
+      "es": "ペニシリンアレルギーがあります。",
+      "pinyin": "pe-ni-shi-rin a-re-ru-GII ga a-ri-MAS",
+      "pt": "我对青霉素过敏。",
+      "tts": "ペニシリンアレルギーがあります。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b17-n06",
+      "pt": "这里没有互惠医疗保障。游客要支付全额费用，通常还得提前付款，所以一份覆盖日本的旅行保险才是真正管用的东西。"
+    },
+    {
+      "consulta": [
+        "saude/medico",
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "英語が話せる医者",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p09",
+      "promptPt": "药剂师说这个超出了她柜台能处理的范围，你需要去看医生。说出你要找的是什么样的医生。现在开口说。",
+      "audioKey": "fr-b17-t09",
+      "es": "英語が話せる医者を探しています。",
+      "pinyin": "ei-go ga ha-na-se-ru i-SHA o sa-ga-shi-te i-MAS",
+      "pt": "我在找一位会说英语的医生。",
+      "tts": "英語が話せる医者を探しています。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b17-n05",
+      "pt": "记住两个号码：119接通消防和救护车，110接通警察。任何电话都能拨通，这里没有112。"
+    },
+    {
+      "consulta": [
+        "saude/emergencia"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b17-p10",
+      "promptPt": "大堂里有人倒在地上，离电话最近的那个人却愣住了。给出指示。现在开口说。",
+      "audioKey": "fr-b17-t10",
+      "es": "119番に電話してください。",
+      "pinyin": "i-chi i-chi KYUU ban ni den-wa-shi-te ku-da-sai",
+      "pt": "请拨打119。",
+      "tts": "いちいちきゅうばんに電話してください。"
+    },
+    {
+      "consulta": [
+        "saude/emergencia",
+        "cidade/onde"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "一番近い病院",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b17-p11",
+      "promptPt": "你在出租车上，需要让司机改变目的地。一句简短的问话。现在开口说。",
+      "audioKey": "fr-b17-t11",
+      "es": "一番近い病院はどこですか？",
+      "pinyin": "i-chi-ban chi-KAI byoo-in wa DO-ko des ka",
+      "pt": "最近的医院在哪里？",
+      "tts": "一番近い病院はどこですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b17-r04",
+      "receptivo": true,
+      "es": "そのまま切らずにお待ちください。今、どちらにいますか？",
+      "pt": "别挂电话，请留在线上。你现在在哪里？",
+      "tts": "そのまま切らずにお待ちください。今、どちらにいますか？",
+      "acao": "别挂电话，说出街道名，或者最近那栋建筑的名字和门牌号。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b17-s01",
+      "es": "咳の薬を探しています。ここが痛いです。夜間の薬局はどこですか？",
+      "pinyin": "se-ki no ku-SU-ri o sa-ga-shi-te i-MAS. ko-ko ga i-TAI des. ya-KAN no yak-KYO-ku wa DO-ko des ka",
+      "pt": "跟读这三句在柜台前最管用的话。",
+      "tts": "咳の薬を探しています。ここが痛いです。夜間の薬局はどこですか？"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b17-n07",
+      "bloco": "recap",
+      "pt": "B17完成。「どこですか」「探しています」「抜きで」「ここが痛い」，还有119——即使语言不通，这些也足够让你得到诊治。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "会替你判断病情的柜台，还有那盏一直亮着的药妆店灯",
+    "secoes": [
+      {
+        "titulo": "「痛い」加上部位",
+        "corpo": "描述疼痛的语法其实很简单：一个词加一个身体部位，比如「喉が痛い」「頭が痛い」「お腹が痛い」。如果想不起那个词，说「ここが痛いです」，用手指一指也一样管用——在日本的柜台前，没有人会觉得用手指是件丢脸的事。",
+        "exemplos": [
+          {
+            "es": "二日前から喉が痛いです。",
+            "pt": "我喉咙痛两天了。"
+          },
+          {
+            "es": "ここが痛いです。",
+            "pt": "这里疼。"
+          }
+        ]
+      },
+      {
+        "titulo": "药妆店、急诊中心，还有#7119",
+        "corpo": "到了晚上，城市里的连锁药妆店常常营业到很晚甚至24小时，是买非处方药的好去处。遇到紧急情况，可以去「休日夜間急患センター」（节假日夜间急诊中心），在开通服务的地区，#7119还能通过电话告诉你要不要去、该去哪里。传统的「調剤薬局」（配药药房）营业时间较短。"
+      },
+      {
+        "titulo": "119，还有紧挨着它的那个号码",
+        "corpo": "119接通消防和救护车，110接通警察。两个号码从任何电话拨打都免费，这里没有像欧洲那样统一的112。打电话时对方会问你在哪里——提前想好街道名，或者最近那栋建筑的名字和门牌号，随时能说出来。"
+      },
+      {
+        "titulo": "这里没有GHIC",
+        "corpo": "日本和英国、欧盟都没有互惠医疗协议，所以没有任何一张卡能让你按当地标准免费就医。游客要支付全额费用，医院通常要求提前付款，账单可能相当高——救护车本身免费，但送到之后的治疗费用还是要你承担。覆盖日本、并包含遣返条款的旅行保险才能扛住这一切，这是必需品，不是可选项。"
+      }
+    ]
+  },
+  "slot": "B17",
+  "permissao": "你不需要懂医学检查用的词汇。一个身体部位、几天的时长，再加上一只手按在疼的地方，在日本的药房柜台前就是一份完整的说明，柜台后的人受过训练，接下来的事交给他们就行。",
+  "permissaoAudioKey": "fr-b17-n02",
+  "espelho": "在家乡的药房里，谁都有过描述症状而不是直接说药名的经历，这个动作你其实早就会了。唯一不同的是，在这里药妆店习惯了当第一站，而不是最后一站。",
+  "fichasCulturais": [
+    {
+      "sinal": "离你最近的药房卷帘门已经拉下，橱窗上也没有贴着告诉你该去哪儿的值班表。",
+      "suaLeitura": "这家关门了，我只能到处走，直到找到一家还开着的。",
+      "oQueEAli": "日本不像欧洲那样有一份「哪家药房今晚值班」的告示。取而代之的是，营业到很晚的连锁药妆店（通常在车站附近）才是夜里的常规答案，而在很多地区，拨打#7119还能获得电话医疗建议，告诉你要不要去、该去哪里。",
+      "oQueVoceFaz": "向路人或酒店前台打听最近一家营业到很晚的药妆店，或者在到处走之前先拨打#7119问问建议。遇到紧急情况，「休日夜間急患センター」就是夜间急诊中心。",
+      "oQueMelhora": "你只需要走一趟，直接去一家真正开着的地方，而不是在一扇扇拉下的卷帘门之间来回折腾。",
+      "ondeNaoVale": "但服务覆盖范围因地区而异——#7119并不是在所有地方都能用，小城镇夜间可选的地方也远比大城市少。如果情况紧急，该拨打的是119，而不是去找药妆店。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b17-n04"
+      ]
+    }
+  ]
+}

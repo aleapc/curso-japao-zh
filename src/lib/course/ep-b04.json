@@ -1,0 +1,323 @@
+{
+  "id": "b04",
+  "nivel": "basico",
+  "numero": 4,
+  "parte": "B04",
+  "titulo": "四件出发前就会过期的事",
+  "subtitulo": "旅行保险、你不能再随手就能办的交通卡、你真正会用到的现金，以及一份即便手机没电也能撑住的预订",
+  "cena": "出发前十天，厨房餐桌旁——这是这一切还能免费搞定的最后时机。",
+  "moldura": "protege",
+  "frasePiso": "今晚在家里搞定，到了日本柜台前就不会出岔子。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-b04-ghic",
+      "afirmacao": "日本与英国或欧盟之间没有互惠医疗协议，所以游客不在任何公费医保体系的覆盖范围内，需要自付全部治疗费用，通常还要预先支付——医院有权、也确实会在治疗前要求付款或刷卡。带医疗保障的旅行保险，正是填补这个缺口的东西，也是这份清单上唯一不能省略的一项。这一点和欧洲不同：日本没有类似 GHIC 或 EHIC 那样能用得上的东西。",
+      "fonte": "日本与英国/欧盟之间没有互惠医疗协议；游客需自付全额费用，通常需预先支付（英国 FCDO 官方建议：前往日本务必购买带医疗保障的旅行保险）。GHIC/EHIC 在日本无效。",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b04-n02"
+      ]
+    },
+    {
+      "id": "fr-b04-carnet",
+      "afirmacao": "由于芯片短缺，JR 东日本等运营商自 2023 年起暂停发售普通未记名版本的 Suica 和 Pasmo，所以你不能再指望一到日本就能在自动售票机上随手买到一张。游客可以改为购买 Welcome Suica——有效期 28 天，无需押金——在机场就能买到，或者把 Suica 加进手机里。IC 卡在全国大多数电车、公交、便利店和自动售货机上都能用，十种地区性 IC 卡在大多数网络中也能互通使用。",
+      "fonte": "芯片短缺导致 JR 东日本等公司自 2023 年起暂停发售普通未记名版 Suica/Pasmo；游客替代方案：在机场购买 Welcome Suica（28 天有效，无需押金），或在手机中开通 Suica。十种地区 IC 卡在大多数网络中可互通。",
+      "ano": 2025,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b04-n03"
+      ]
+    },
+    {
+      "id": "fr-b04-especie",
+      "afirmacao": "日本高度依赖现金，外国发行的银行卡并不是在每台自动取款机上都能用：比较可靠的是 7-Eleven（Seven Bank）和日本邮政（Yucho）的取款机，这两家全天候都接受境外银行卡。很多普通银行的自动取款机会拒绝境外卡，或者夜间关闭。这里值得注意的一点是：这并不是法律上对现金的限制，而是能取到现金的地点有限，所以最好提前大致决定要带多少现金或提前取好，而不是假设随便一台机器都能满足你。",
+      "fonte": "日本高度依赖现金；能可靠接受境外卡的取款机：7-Eleven（Seven Bank）和日本邮政（Yucho），24 小时开放。许多普通银行 ATM 拒绝外卡或夜间关闭。这不是法定现金上限，而是取款地点的限制。",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b04-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b04-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "今晚要做的清单很短，而且会过期。四件事，全都在家里搞定比在日本柜台前解决要便宜得多。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b04-n02",
+      "bloco": "corpo",
+      "pt": "第一：带医疗保障的旅行保险。日本没有互惠医保体系，游客需要自付全额账单。任何欧洲的医保卡都帮不上忙。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b04-n03",
+      "pt": "第二：交通卡。芯片短缺导致普通版 Suica 停售——在机场买一张 Welcome Suica，或者在手机上开通 Suica。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b04-n04",
+      "pt": "第三：现金。现在就决定好金额——外国银行卡在这里只能在部分自动取款机上使用，比较靠谱的是 7-Eleven 和日本邮政的机器。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b04-n05",
+      "bloco": "capsula",
+      "pt": "第四：预订信息，存在一个不需要信号也能打开的地方。日文全地址、电话号码、往返机票。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b04-r01",
+      "es": "はい、ホテルさくら、でございます。",
+      "pt": "您好，这里是樱花酒店。",
+      "tts": "はい、ホテルさくら、でございます。"
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b04-p01",
+      "promptPt": "你在起飞前一周打电话给酒店。用一句话直接说明来意。现在开口说。",
+      "audioKey": "fr-b04-t01",
+      "es": "予約の確認をお願いしたいのですが。",
+      "pinyin": "yo-ya-ku no ka-KU-nin o o-ne-gai shi-tai no des ga",
+      "pt": "我想确认一下我的预订。",
+      "tts": "予約の確認をお願いしたいのですが。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b04-n06",
+      "pt": "酒店名字不算目的地。司机和离线地图都需要地址——日本的地址是按街区来编号的，不是按街道。"
+    },
+    {
+      "consulta": [
+        "taxi/destino",
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b04-p02",
+      "promptPt": "预订页面只显示了品牌名和大致区域。问出司机真正能导航到的东西。现在开口说。",
+      "audioKey": "fr-b04-t02",
+      "es": "住所を教えてもらえますか？",
+      "pinyin": "JOO-sho o o-shi-e-te mo-ra-e-mass-ka",
+      "pt": "能告诉我地址吗？",
+      "tts": "住所を教えてもらえますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b04-r02",
+      "es": "中央区銀座一丁目二番三号です。",
+      "pt": "中央区银座一丁目二番三号。",
+      "tts": "中央区銀座一丁目二番三号です。"
+    },
+    {
+      "consulta": [
+        "reparo/escreve"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b04-p03",
+      "promptPt": "这个你记不住，应用里的一个绿色对勾也不算证据。换个方式再要一次。现在开口说。",
+      "audioKey": "fr-b04-t03",
+      "es": "メールで送ってもらえますか？",
+      "pinyin": "MEH-ru de o-KUT-te mo-ra-e-mass-ka",
+      "pt": "能通过邮件发给我吗？",
+      "tts": "メールで送ってもらえますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b04-n07",
+      "pt": "晚到是唯一值得提前说清楚的细节。小型前台不一定夜间都有人值班。"
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b04-p04",
+      "promptPt": "你的航班九点落地，坐电车还要一个小时。告诉他们大概几点到。现在开口说。",
+      "audioKey": "fr-b04-t04",
+      "es": "夜の十時ごろ着きます。",
+      "pinyin": "yo-ru no JOO-ji go-ro tsu-ki-mass",
+      "pt": "我大概晚上十点到。",
+      "tts": "夜の十時ごろ着きます。"
+    },
+    {
+      "consulta": [
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b04-p05",
+      "promptPt": "现在确认一下到时候会有人在门口迎接你。现在开口说。",
+      "audioKey": "fr-b04-t05",
+      "es": "その時間、フロントは開いていますか？",
+      "pinyin": "so-no ji-KAN, FU-ron-to wa a-i-te i-mass-ka",
+      "pt": "那个时间前台开着吗？",
+      "tts": "その時間、フロントは開いていますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b04-r03",
+      "es": "はい、フロントは二十四時間開いております。",
+      "pt": "是的，前台二十四小时开放。",
+      "tts": "はい、フロントは二十四時間開いております。",
+      "receptivo": true,
+      "acao": "把这个答案写在同一份离线笔记里，就写在地址旁边。"
+    },
+    {
+      "consulta": [
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b04-p06",
+      "promptPt": "在决定要带多少现金之前，先搞清楚这个地方接受什么付款方式。现在开口说。",
+      "audioKey": "fr-b04-t06",
+      "es": "カードは使えますか？",
+      "pinyin": "KAH-do wa tsu-ka-e-mass-ka",
+      "pt": "可以刷卡吗？",
+      "tts": "カードは使えますか？"
+    },
+    {
+      "consulta": [
+        "quarto/checkin",
+        "reparo/escreve"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b04-p07",
+      "promptPt": "拿到一个万一手机没电，在到达大厅公用电话也能拨出去的号码。现在开口说。",
+      "audioKey": "fr-b04-t07",
+      "es": "ホテルの電話番号を教えてください。",
+      "pinyin": "HO-te-ru no den-wa-ban-goh o o-shi-e-te ku-da-sai",
+      "pt": "请告诉我酒店的电话号码。",
+      "tts": "ホテルの電話番号を教えてください。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b04-p08",
+      "promptPt": "像开场时一样，热情且干脆地收尾。现在开口说。",
+      "audioKey": "fr-b04-t08",
+      "es": "わかりました。ありがとうございます。よろしくお願いします。",
+      "pinyin": "wa-ka-ri-MASH-ta, a-ri-ga-TOH go-za-i-mass, yo-ro-shi-ku o-ne-gai-shi-mass",
+      "pt": "明白了，非常感谢。到时候请多关照。",
+      "tts": "わかりました。ありがとうございます。よろしくお願いします。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b04-s01",
+      "es": "予約の確認をお願いしたいのですが。住所を教えてもらえますか？ メールで送ってもらえますか？",
+      "pinyin": "yo-ya-ku no ka-KU-nin o o-ne-gai shi-tai no des ga · JOO-sho o o-shi-e-te mo-ra-e-mass-ka · MEH-ru de o-KUT-te mo-ra-e-mass-ka",
+      "pt": "把整通出发前的电话一口气跟读一遍。",
+      "tts": "予約の確認をお願いしたいのですが。住所を教えてもらえますか？ メールで送ってもらえますか？"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b04-n08",
+      "bloco": "recap",
+      "pt": "B04 完成。保险已买，交通卡已计划好，现金金额已决定，预订已确认，地址也已到手。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一份不再便宜的清单",
+    "secoes": [
+      {
+        "titulo": "保险，因为没有安全网",
+        "corpo": "日本与英国或欧盟之间没有互惠医疗协议，所以游客不在任何公费医保体系之内，需要自付全部医疗费用，通常还要预先支付——医院可能会在治疗前就要求付款或刷卡。带医疗保障的旅行保险，取代了你在欧洲会随身携带的那张医保卡的作用，也是这份清单上唯一不能省的一项。出发前买好，并把保单号码存在离线也能查到的地方。"
+      },
+      {
+        "titulo": "你不能再随手买到的交通卡",
+        "corpo": "半导体短缺导致 JR 东日本等运营商自 2023 年起暂停发售普通未记名版 Suica 和 Pasmo，所以「到了再在机器上买一张」这个老办法已经不靠谱了。游客可以改为购买 Welcome Suica——有效期 28 天，无需押金——在机场车站就能买到，或者在出发前就在手机里开通 Suica。充值之后，一张 IC 卡在全国大多数电车、公交、便利店和自动售货机上都能用，十种地区性 IC 卡在大多数网络中也能互通。"
+      },
+      {
+        "titulo": "要带多少现金，为什么有一个具体数字",
+        "corpo": "日本仍然高度依赖现金，外国发行的银行卡并不是每台自动取款机都能用。比较可靠的是 7-Eleven 旗下的 Seven Bank，以及日本邮政——这两家全天候都接受境外银行卡。很多普通银行的机器会拒绝外国卡，或者夜间关闭。这不是法律上对现金的限制，而是能取到现金的地点有限——正因如此，在自己家里先决定好金额，比假设随便一台机器都能满足你要靠谱得多。"
+      },
+      {
+        "titulo": "这通电话只需要四个问题",
+        "corpo": "这里的日语不是要背的清单。它是趁一通电话还能修补预订中脆弱的漏洞时，一步步补上去的：确认预订，问清楚确切地址，要求书面确认，说明到达的时间。",
+        "exemplos": [
+          {
+            "es": "予約の確認をお願いしたいのですが。",
+            "pt": "我想确认一下我的预订。"
+          },
+          {
+            "es": "住所を教えてもらえますか？",
+            "pt": "能告诉我地址吗？"
+          }
+        ]
+      }
+    ]
+  },
+  "slot": "B04",
+  "permissao": "在这件事上，你被允许多准备一点。确认一份你早就订好的预订，或者存下一个你大概率永远用不到的地址，这不是焦虑——这是整趟旅程中唯一一段能靠在自己家的餐桌前花五分钟，就换来实打实保障的时间，防的是手机没电、前台没人这类状况。",
+  "permissaoAudioKey": "fr-b04-n01",
+  "espelho": "任何为了以防万一而把登机牌截图存下来的人，其实早就在这么做了，只是只用在了一份文件上。B04 只是把同样的离线习惯，延伸到另外三件事上——是熟悉的谨慎，只是范围更广了一点，不是什么新东西。",
+  "fichasCulturais": [
+    {
+      "sinal": "你落地了，打开地图想找酒店，却没有信号，除了一个品牌名字什么都没存下来。",
+      "suaLeitura": "我应该开通漫游的，这趟旅程一开始就不顺利。",
+      "oQueEAli": "酒店名字是没法导航的，而日本的地址也不是街道加门牌号那样按顺序排列的——而是区、街区、地块的组合，光靠记忆很难说清楚交给司机。出租车司机通常会直接把酒店的电话号码输进车载导航，所以电话号码和地址一样有用。",
+      "oQueVoceFaz": "出发前，拿到日文的地址和书面的电话号码，并存放在没有网络也能打开的地方——不要只存在预订应用里。",
+      "oQueMelhora": "司机能把电话号码输进导航就出发，而不是你站在到达大厅，手里拿着一个谁都导航不到的品牌名字发愁。",
+      "ondeNaoVale": "这不能替代确认预订本身——一个完美的地址配上一份从未被真正确认过的预订，照样是没有房间过夜的一晚。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b04-n06"
+      ]
+    },
+    {
+      "sinal": "你需要看医生或去医院，本以为会像在家里一样，结果被要求当场支付全部费用。",
+      "suaLeitura": "肯定是哪里出错了，或者他们是在多收外国人的钱。",
+      "oQueEAli": "什么都没出错。日本与英国或欧盟之间没有互惠医疗协议，所以游客不在任何公费医保体系之内，通常需要预先支付全部费用——欧洲的医保卡或银行卡在这里都不管用。",
+      "oQueVoceFaz": "带上有医疗保障的旅行保险，把保单信息存在离线可查的地方，保留好每一张收据以便回国后申请理赔。",
+      "oQueMelhora": "账单变成了一笔能报销回来的理赔，而不是一笔损失，你也不会再把欧洲的本能反应当成能跟着你跨越国界的东西。",
+      "ondeNaoVale": "这不是省掉保险、抱一丝侥幸的理由——在日本没有保险住院，只会是同一个下午更贵的版本。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b04-n02"
+      ]
+    }
+  ]
+}

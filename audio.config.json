@@ -1,0 +1,33 @@
+{
+  "_comentario": "ZH → Japão: voz-guia MANDARIM (Susan f + Zack m), fala-alvo JAPONESA (Rina f + Taro m, sotaque padrão/Tóquio) — 100% REUSADA do curso-japao (EN→Japão), mesmos voiceId em target_fr_*. INV-5: guia nunca fala japonês, nativa nunca fala mandarim. Guia flash, alvo multilingual_v2. DERIVAÇÃO: só a camada de guia é nova; o áudio-alvo é herdado sem regravar.",
+  "_casting": "Susan e Zack são as vozes de mandarim já usadas em curso-italia-zh e curso-espanha-zh — reuso de casting entre corredores, mesmo par em toda a coluna ZH do catálogo.",
+  "_fonetica_do_par": "Mandarim → japonês: par com forte herança lexical sino-japonesa (kanji/漢字 compartilhado, mas leitura ON completamente diferente da leitura mandarim) e ordem de frase SVO×SOV distinta — o mandarim NÃO tem partícula pós-posicional nem marca caso, então a gramática japonesa (は/が/を/に) é aprendizado novo, não transferência. CHEGA COM: reconhecimento visual de kanji (vantagem real de leitura sobre qualquer outro comprador do catálogo) e tons que não existem em japonês. PRECISA APRENDER: (1) japonês não é tonal — o pitch-accent japonês é outro sistema, mais sutil, e o erro do falante de mandarim costuma ser aplicar contorno tonal demais; (2) mora-timing japonês (sílabas de duração igual) contra o ritmo silábico do mandarim; (3) cuidado com falsos cognatos de kanji — mesma grafia, sentido divergente (手紙 é 'carta' em japonês, não a palavra chinesa para o mesmo caractere).",
+  "guideModel": "eleven_flash_v2_5",
+  "targetModel": "eleven_multilingual_v2",
+  "roles": {
+    "guide_en_us_f": {
+      "voiceId": "0H4ruoQ81Ei2FCwjW5j1",
+      "languageCode": "zh",
+      "name": "Susan"
+    },
+    "guide_en_us_m": {
+      "voiceId": "DSyEP4HEaCKur8rFFOri",
+      "languageCode": "zh",
+      "name": "Zack"
+    },
+    "target_fr_f": {
+      "voiceId": "lxNssjs8lZzgD44uVifH",
+      "languageCode": "ja",
+      "name": "Rina"
+    },
+    "target_fr_m": {
+      "voiceId": "ku6tlRNlVa98Jhz5xz1B",
+      "languageCode": "ja",
+      "name": "Taro"
+    }
+  },
+  "_g14": {
+    "guiaLingua": "zh",
+    "alvoLingua": "ja"
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "id": "b12",
+  "nivel": "basico",
+  "numero": 12,
+  "parte": "B12",
+  "titulo": "Nuki de——让一道菜变得可以修改的那两个音节",
+  "subtitulo": "去掉芥末、去掉冰块、酱汁放旁边：菜会按你想要的方式端上来，你只需要多说一句 nuki de",
+  "cena": "菜单上这道菜就是厨房写的那样，服务员拿着点单本站在那儿，而里面有一样食材你宁愿不要遇到。",
+  "moldura": "ganha",
+  "frasePiso": "你不想要的东西，然后 nuki de——在点单的时候说，而不是菜端上来之后。",
+  "moldes": [
+    "NUKI-DE"
+  ],
+  "clique": {
+    "contagem": [
+      "拉面柜台",
+      "寿司店",
+      "早餐咖啡馆"
+    ],
+    "desconto": "没人为你想改的每道菜各准备一句话。你把 nuki de 放在那样食材后面，其余的点单内容照旧不变。",
+    "piso": "下次一道菜差一点就完美，你不会绕开它硬吃下去。你会在它被做出来之前先说出那个词。"
+  },
+  "fatosDatados": [
+    {
+      "id": "fr-b12-fait-maison",
+      "afirmacao": "出汁——用鲣鱼花（かつおだし）和海带熬成的高汤——是日本料理里极大一部分菜肴的底味，包括那些看起来纯素的菜：味噌汤、炖煮蔬菜、很多酱汁和调味汁。对游客来说，这带来两点提示：「不吃肉」不等于「不吃鱼」，因为鲣鱼出汁本质上是鱼；比起用眼睛找有没有看得见的肉，更可靠的做法是直接问「出汁は魚ですか」（高汤是鱼做的吗）。",
+      "fonte": "O dashi de かつお (bonito) e 昆布 (kombu) é base ampla da culinária japonesa, presente em pratos aparentemente vegetais (missoshiru, legumes cozidos, molhos); 'sem carne' não implica 'sem peixe'.",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b12-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "你已经会点单了。这一课要学的是能真正改变端上来的菜的那句话。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b12-n02",
+      "bloco": "molde",
+      "pt": "这个句型是：你不想要的东西，然后 nuki de。芥末、冰块、酱汁、糖——先说食材，再接 nuki de。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b12-t01",
+      "es": "わさび抜きで、お願いします。",
+      "pinyin": "wa-SA-bi NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要放芥末。",
+      "tts": "わさび抜きで、お願いします。"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "わさび",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p01",
+      "promptPt": "在寿司柜台你刚点完单，芥末默认会放在鱼和米饭之间。现在开口说。",
+      "audioKey": "fr-b12-t01",
+      "es": "わさび抜きで、お願いします。",
+      "pinyin": "wa-SA-bi NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要放芥末。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b12-r01",
+      "receptivo": true,
+      "es": "わさび抜きですね。承知しました。",
+      "pt": "不放芥末，明白了。",
+      "tts": "わさび抜きですね。承知しました。",
+      "acao": "Shouchi shimashita 意思是已经记进单子里了。你不需要再说别的。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n03",
+      "bloco": "corpo",
+      "pt": "Nuki de 放在点单的最后，也可以单独成句。Wasabi nuki de 在柜台前就是一句完整的话。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "氷",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p02",
+      "promptPt": "在早餐咖啡馆你点了一杯可乐，知道杯子里会装半杯冰块。现在开口说。",
+      "audioKey": "fr-b12-t02",
+      "es": "コーラを氷抜きで、お願いします。",
+      "pinyin": "KOH-ra o koo-ri NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请给我可乐，不要冰块。",
+      "tts": "コーラを氷抜きで、お願いします。"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "マヨネーズ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p03",
+      "promptPt": "柜台的人正准备伸手拿蛋黄酱，这里几乎所有东西都会加它。现在开口说。",
+      "audioKey": "fr-b12-t03",
+      "es": "マヨネーズ抜きで、お願いします。",
+      "pinyin": "ma-yo-NEE-zu NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要放蛋黄酱。",
+      "tts": "マヨネーズ抜きで、お願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b12-n04",
+      "pt": "点单的时候就说出来。一道菜一旦做好，厨房只能挪动里面的东西，没法再拿掉了。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b12-r02",
+      "receptivo": true,
+      "es": "ソースはもう入っています。別のお皿にしましょうか？",
+      "pt": "酱汁已经拌进去了。要不要另外用一个小碟子给您装一份？",
+      "tts": "ソースはもう入っています。別のお皿にしましょうか？",
+      "acao": "这不是拒绝，是一种提议。可以选择要放旁边的版本，也可以说不用了谢谢。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n06",
+      "bloco": "capsula",
+      "pt": "Betsu de 是另一半的技巧。酱汁 betsu de 是放在旁边而不是完全去掉；sukuname 是少放一点。"
+    },
+    {
+      "consulta": [
+        "mesa/comida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p04",
+      "promptPt": "对方刚提出把酱汁分开放的办法，你想接受。现在开口说。",
+      "audioKey": "fr-b12-t04",
+      "es": "ソースは別でお願いします。",
+      "pinyin": "SOH-su wa BE-tsu de o-ne-gai-shi-MAS",
+      "pt": "请把酱汁放在旁边。",
+      "tts": "ソースは別でお願いします。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "砂糖",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p05",
+      "promptPt": "早上，早餐咖啡馆里，你喝茶习惯不加糖。现在开口说。",
+      "audioKey": "fr-b12-t05",
+      "es": "紅茶を砂糖抜きで、お願いします。",
+      "pinyin": "koo-CHA o sa-TOH NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请给我红茶，不要加糖。",
+      "tts": "紅茶を砂糖抜きで、お願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b12-n05",
+      "pt": "留意高汤。出汁里有鱼，它会藏在看起来纯素的菜里，所以不吃肉不等于不吃鱼。"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "ねぎ",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p06",
+      "promptPt": "又回到了拉面柜台，碗里堆满了你宁愿不要的葱花。现在开口说。",
+      "audioKey": "fr-b12-t06",
+      "es": "ねぎ抜きで、お願いします。",
+      "pinyin": "ne-gi NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要放葱花。",
+      "tts": "ねぎ抜きで、お願いします。"
+    },
+    {
+      "consulta": [
+        "dieta/sem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "豚肉",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p07",
+      "promptPt": "你在看一整块套餐菜单，其中一整类你都不能吃。现在开口说。",
+      "audioKey": "fr-b12-t07",
+      "es": "豚肉抜きで、お願いします。",
+      "pinyin": "bu-ta-NI-ku NU-ki de, o-ne-gai-shi-MAS",
+      "pt": "请不要放猪肉。",
+      "tts": "豚肉抜きで、お願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b12-r03",
+      "receptivo": true,
+      "es": "それでしたら、鶏肉の定食はいかがですか？",
+      "pt": "那样的话，鸡肉套餐怎么样？",
+      "tts": "それでしたら、鶏肉の定食はいかがですか？",
+      "acao": "对方给你的是一个替代方案，不是拒绝。可以接受，或者问问菜单上还有什么。"
+    },
+    {
+      "consulta": [
+        "dieta/o-que-tem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "グルテン",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p08",
+      "promptPt": "你不能吃小麦。你指着一道菜，点单之前需要先确认。现在开口说。",
+      "audioKey": "fr-b12-t08",
+      "es": "グルテン抜きはできますか？",
+      "pinyin": "gu-RU-ten NU-ki wa de-ki-MAS ka",
+      "pt": "可以做成不含麸质的吗？",
+      "tts": "グルテン抜きはできますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n07",
+      "pt": "Okawari 意思是续一份。不用另外组一句新话就能再要一份米饭，而且常常是免费的。"
+    },
+    {
+      "consulta": [
+        "mesa/agua-pao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b12-p09",
+      "promptPt": "你的饭碗空了，盘子里还有菜。现在开口说。",
+      "audioKey": "fr-b12-t09",
+      "es": "ご飯のおかわり、お願いします。",
+      "pinyin": "go-HAN no o-KA-wa-ri, o-ne-gai-shi-MAS",
+      "pt": "请再给我一碗米饭。",
+      "tts": "ご飯のおかわり、お願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b12-n08",
+      "pt": "这属于口味偏好，不是过敏。过敏需要用另一句话，还要配上一张写好的卡片，下一部分会讲到。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "NUKI-DE",
+      "encaixe": "乳製品",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b12-p10",
+      "promptPt": "在咖啡馆柜台你想要那种奶香浓郁的饮品，但不想加乳制品。问问能不能做到。现在开口说。",
+      "audioKey": "fr-b12-t10",
+      "es": "乳製品抜きはできますか？",
+      "pinyin": "nyoo-SEI-hin NU-ki wa de-ki-MAS ka",
+      "pt": "可以做成不含乳制品的吗？",
+      "tts": "乳製品抜きはできますか？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b12-s01",
+      "es": "わさび抜きで、お願いします。コーラを氷抜きで。紅茶を砂糖抜きで。",
+      "pinyin": "wa-SA-bi NU-ki de, o-ne-gai-shi-MAS. KOH-ra o koo-ri NU-ki de. koo-CHA o sa-TOH NU-ki de",
+      "pt": "跟读同一句话配三种不同的食材。",
+      "tts": "わさび抜きで、お願いします。コーラを氷抜きで。紅茶を砂糖抜きで。",
+      "molde": "NUKI-DE"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b12-n09",
+      "bloco": "recap",
+      "pt": "B12 完成。Nuki de 去掉了芥末、冰块、蛋黄酱、糖和葱花——每次都是同样的两个音节。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "做减法，而不是描述",
+    "secoes": [
+      {
+        "titulo": "食材加上 nuki de",
+        "corpo": "食材原样说出来，nuki de 紧跟在后面，不用变化：wasabi nuki de、koori nuki de、satou nuki de。它可以直接接在点单后面，也可以单独作为一句回答，还能加上 dekimasu ka 变成一个问句——「可以做成不含……的吗？」。",
+        "exemplos": [
+          {
+            "es": "コーラを氷抜きで、お願いします。",
+            "pt": "请给我可乐，不要冰块。"
+          },
+          {
+            "es": "グルテン抜きはできますか？",
+            "pt": "可以做成不含麸质的吗？"
+          }
+        ]
+      },
+      {
+        "titulo": "Betsu de、sukuname、okawari",
+        "corpo": "这是 nuki de 的三个搭档。Betsu de 把东西挪到盘子旁边，而不是完全去掉；sukuname 要求少放一点，而不是完全不放；okawari 要求续一份已经有的东西，最常见的是米饭，而且常常是免费的。三者加在一起，几乎能覆盖旅行者想做的所有调整。"
+      },
+      {
+        "titulo": "时机比措辞更重要",
+        "corpo": "同样的要求，在点单的那一刻很容易，菜端上来之后就很尴尬了。按单现做的厨房可以省掉一样食材；已经做好端上来的菜，通常只能挪动里面的东西，没法再去掉了。在寿司柜台，捏之前说 wasabi nuki de 毫不费力；捏好之后再挑出来就不行了。"
+      },
+      {
+        "titulo": "藏在蔬菜里的鱼高汤",
+        "corpo": "出汁，用鲣鱼片和昆布熬成的高汤，是日本料理中一大部分的基础——味噌汤、炖蔬菜、调味汁、蘸酱——包括那些看起来完全是素菜的菜肴。所以「不吃肉」不等于「不吃鱼」。可靠的问法是直接问高汤本身：出汁は魚ですか，高汤是鱼做的吗？"
+      }
+    ]
+  },
+  "slot": "B12",
+  "permissao": "你完全可以改动这道菜。说 nuki de 是点单里再普通不过的一部分，不是要求，也不是麻烦，记单子的那个人这周已经不假思索地写下这句话五十次了。",
+  "espelho": "任何在自己国家的柜台前说过不要腌黄瓜、酱汁放旁边、不要冰的人，其实已经用自己的语言做过完全一样的事。唯一新鲜的是，这里整个修改只需要放在食材后面的两个音节就能完成。",
+  "permissaoAudioKey": "fr-b12-n02",
+  "fichasCulturais": [
+    {
+      "sinal": "你要求某道菜去掉一样食材，得到的是干脆利落的一句 dekimasen，没有任何缓冲的语气。",
+      "suaLeitura": "他懒得理我，或者他决定要故意为难我。",
+      "oQueEAli": "这个词通常说的是厨房的情况，而不是对你的评价。按单现做的菜可以省掉一样食材；已经做好或者整份加热的菜，物理上就是没法去掉了。语气的直接，反映的是一个正在忙碌运转的服务体系，而不是对这个要求的评判。",
+      "oQueVoceFaz": "在点单的那一刻就开口问，随身带着备选方案：betsu de。如果去掉不行，放旁边往往可以，主动提出这个方案能把一个「不行」变成一种安排。",
+      "oQueMelhora": "你能吃到想要的菜，或者一份更好的替代品，而不是陷入僵局。",
+      "ondeNaoVale": "这一点不适用于过敏。过敏不是口味偏好，容不得半点侥幸，也不是单靠 nuki de 就能解决的事——那是另一种对话，需要配一张写好的卡片，是课程的下一部分。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b12-n04"
+      ]
+    },
+    {
+      "sinal": "你为了避开肉点了一道看起来像纯素菜的菜，后来才知道它是用鱼高汤炖的。",
+      "suaLeitura": "他们偷偷在素菜里加了肉，或者根本没听我说。",
+      "oQueEAli": "没有人偷偷加了什么。出汁——鲣鱼和昆布熬的高汤——是日本料理中极大一部分的基础，包括那些完全看不到肉或鱼的菜。对日本厨房来说，这是一种背景风味，不是任何人会想到要特意提及的食材，所以一道带着鱼高汤的蔬菜菜肴很正常，不是故意欺骗。",
+      "oQueVoceFaz": "问高汤，而不是问配料：出汁は魚ですか。如果你完全不吃鱼，就明确说出来，问问有没有不含鱼的版本。",
+      "oQueMelhora": "你能在这样看不见的食材上桌之前就先发现它，也不会再单靠表面看到的东西去判断一道菜。",
+      "ondeNaoVale": "不是每道菜都用鱼高汤——只用昆布的高汤和素食寺庙料理（精進料理）都存在——但作为默认假设，把高汤当成鱼来对待能让你更安全。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b12-n05"
+      ]
+    }
+  ]
+}

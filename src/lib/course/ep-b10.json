@@ -1,0 +1,386 @@
+{
+  "id": "b10",
+  "nivel": "basico",
+  "numero": 10,
+  "parte": "B10",
+  "titulo": "看起来像英语的片假名——サービス、マンション、コンセント",
+  "subtitulo": "用片假名写的招牌乍一看像是借来的英语单词，正因为如此，有几个词会把你带到完全不是你想去的地方",
+  "cena": "你面前有一块牌子，上面三行片假名，每一个看起来都像你认识的英语单词，接下来一个小时会怎么走，取决于你到底信了哪一个。",
+  "moldura": "ganha",
+  "frasePiso": "读这个词本身，而不是它听起来像的那个英语词。不确定这里有没有的时候，就用〜を探しています开头。",
+  "moldes": [
+    "SAGASHITE-IMASU"
+  ],
+  "fatosDatados": [
+    {
+      "id": "fr-b10-midi",
+      "afirmacao": "日本靠便利店运转。光是七-十一、全家和罗森这三大连锁品牌，全国门店就超过5.5万家，大多数24小时营业，还兼具取现、缴费、买票、寄包裹等功能。对游客来说，有用的结论是：「找不到」几乎从来不是问题——遇到各种小麻烦，便利店往往就是默认答案。",
+      "fonte": "Japan Franchise Association (JFA), estatística de lojas de conveniência: as três maiores redes somam mais de 55 mil lojas no Japão, a maioria 24h, funcionando também como ponto de saque, pagamento de contas e retirada de encomendas.",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b10-n05"
+      ]
+    },
+    {
+      "id": "fr-b10-dimanche",
+      "afirmacao": "你要找的取款机通常就在便利店里。七-十一店内的 Seven Bank ATM，以及日本邮政银行的 ATM，全天候接受许多境外发行的银行卡，屏幕还有英文界面；而普通银行分行自己的 ATM 常常根本不认境外卡。实用的原则是：要取现金，去找便利店或邮局，别指望银行。",
+      "fonte": "Seven Bank e Japan Post Bank: caixas eletrônicos que aceitam cartões estrangeiros 24h com menu em inglês; ATMs de agências bancárias comuns frequentemente recusam cartões emitidos fora do Japão.",
+      "ano": 2026,
+      "revisarAte": "2028-08-05",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "fr-b10-n08"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b10-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "日本很多招牌用片假名书写，写的词你以为自己认识。大部分都很友好，只有少数几个会把你带错地方。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b10-n02",
+      "bloco": "molde",
+      "pt": "这个句型是：那样东西，然后 wo sagashite imasu——我在找。陷阱在于：マンション不是豪宅，只是普通的公寓楼。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b10-t01",
+      "es": "薬局を探しています。",
+      "pinyin": "yak-KYO-ku o sa-ga-shi-te i-MAS",
+      "pt": "我在找药店。",
+      "tts": "薬局を探しています。"
+    },
+    {
+      "consulta": [
+        "compras/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "薬局",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b10-p01",
+      "promptPt": "你需要一家真正能配处方药的药店，而不是只是一排卖饮料的货架。说出你要找的东西。现在开口说。",
+      "audioKey": "fr-b10-t01",
+      "es": "薬局を探しています。",
+      "pinyin": "yak-KYO-ku o sa-ga-shi-te i-MAS",
+      "pt": "我在找药店。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b10-r01",
+      "receptivo": true,
+      "es": "薬局ですか？ この先のドラッグストアにもありますよ。",
+      "pt": "药店吗？前面还有一家药妆店也有卖。",
+      "tts": "薬局ですか？ この先のドラッグストアにもありますよ。",
+      "acao": "刚才提到了两种不同的店。薬局能配处方药；ドラッグストア是日常那种药妆店。走向那个和你需求相符的词。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b10-n03",
+      "bloco": "corpo",
+      "pt": "保留句型，换掉那样东西。留意サービス：从店主嘴里说出来或写在小票上，它的意思是免费、店家请客——不是要收费。"
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "ATM",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b10-p02",
+      "promptPt": "你的钱包空了，刚经过的那台机器拒绝了你的外国卡。在柜台开口找。现在开口说。",
+      "audioKey": "fr-b10-t02",
+      "es": "ATMを探しています。",
+      "pinyin": "ee-tee-EE-moo o sa-ga-shi-te i-MAS",
+      "pt": "我在找取款机。",
+      "tts": "エーティーエムを探しています。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b10-r02",
+      "receptivo": true,
+      "es": "コンビニのATMなら海外のカードも使えますよ。すぐそこです。",
+      "pt": "便利店的取款机也能用外国卡。就在那边。",
+      "tts": "コンビニのエーティーエムなら海外のカードも使えますよ。すぐそこです。",
+      "acao": "这说的是便利店里的机器，不是银行网点。往便利店走，不要往银行大门走。"
+    },
+    {
+      "consulta": [
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b10-p03",
+      "promptPt": "刷卡成功了，你想确认没有隐藏手续费。老老实实说出你手头的情况。现在开口说。",
+      "audioKey": "fr-b10-t03",
+      "es": "すみません、現金しかないんです。",
+      "pinyin": "soo-mee-ma-SEN, gen-KIN shi-ka NAI-n des",
+      "pt": "不好意思，我只有现金。",
+      "tts": "すみません、現金しかないんです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b10-n04",
+      "pt": "コンセント是电源插座，不是同意。问コンセント在哪里，意思就是哪里能插电，仅此而已。"
+    },
+    {
+      "consulta": [
+        "transporte/placas"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "入口",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b10-p04",
+      "promptPt": "这栋楼这一侧的每扇门都写着出口。问另一扇门。现在开口说。",
+      "audioKey": "fr-b10-t04",
+      "es": "入口はどこですか？",
+      "pinyin": "i-ri-GU-chi wa DO-ko des ka",
+      "pt": "入口在哪里？",
+      "tts": "入口はどこですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b10-n05",
+      "pt": "便利店能解决这些搜寻中的一半。三大连锁店加起来超过五万五千家分店，大部分全天营业。"
+    },
+    {
+      "consulta": [
+        "transporte/placas"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b10-p05",
+      "promptPt": "这家小餐馆看起来开着，但灯光暗了一半，现在是下午三点。问问营业时间是不是有个空档。现在开口说。",
+      "audioKey": "fr-b10-t05",
+      "es": "お昼は休憩ですか？",
+      "pinyin": "o-HI-ru wa kyoo-KEI des ka",
+      "pt": "你们下午会休息吗？",
+      "tts": "お昼は休憩ですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b10-r03",
+      "receptivo": true,
+      "es": "はい、二時から五時まで休憩です。夜は五時からです。",
+      "pt": "对，两点到五点休息。晚上五点开始重新营业。",
+      "tts": "はい、二時から五時まで休憩です。夜は五時からです。",
+      "acao": "记下重新营业的时间，到时候再来，或者现在去别的开着的地方吃点东西。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b10-n06",
+      "bloco": "capsula",
+      "pt": "ビル是建筑物，不是账单。餐馆招牌上的バイキング是自助餐，跟维京人一点关系都没有。"
+    },
+    {
+      "consulta": [
+        "saude/algo-para"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "咳の薬",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b10-p06",
+      "promptPt": "在药妆店柜台，你有点干咳，完全不知道那种药盒叫什么名字。现在开口说。",
+      "audioKey": "fr-b10-t06",
+      "es": "咳の薬を探しています。",
+      "pinyin": "se-ki no ku-SU-ri o sa-ga-shi-te i-MAS",
+      "pt": "我在找治咳嗽的药。",
+      "tts": "咳の薬を探しています。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b10-n07",
+      "pt": "クレーム是投诉，不是奶油。如果牌子指向クレーム柜台，那是处理问题的地方，不是甜品柜台。"
+    },
+    {
+      "consulta": [
+        "taxi/locadora"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "ここで充電し",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b10-p07",
+      "promptPt": "你桌子旁边的墙上有个插座，手机电量只剩百分之四。问一下能不能用。现在开口说。",
+      "audioKey": "fr-b10-t07",
+      "es": "ここで充電してもいいですか？",
+      "pinyin": "ko-ko de joo-DEN shi-te mo II des ka",
+      "pt": "可以在这里给手机充电吗？",
+      "tts": "ここで充電してもいいですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b10-n08",
+      "pt": "取现金去便利店或邮局，不要去银行。它们的机器全天候用英语菜单接受外国卡；银行常常不行。"
+    },
+    {
+      "consulta": [
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "何時に開きますか",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b10-p08",
+      "promptPt": "店里有人在，灯也亮着，卷帘门却还没拉起来。礼貌地开口问问几点开门。现在开口说。",
+      "audioKey": "fr-b10-t08",
+      "es": "すみません、何時に開きますか？",
+      "pinyin": "soo-mee-ma-SEN, NAN-ji ni a-ki-MAS ka",
+      "pt": "不好意思，请问几点开门？",
+      "tts": "すみません、何時に開きますか？"
+    },
+    {
+      "consulta": [
+        "compras/pagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "レジ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b10-p09",
+      "promptPt": "你手里拿着挑好的东西，眼前有三个柜台，没有一个明显是结账用的。现在开口说。",
+      "audioKey": "fr-b10-t09",
+      "es": "レジはどこですか？",
+      "pinyin": "RE-ji wa DO-ko des ka",
+      "pt": "收银台在哪里？",
+      "tts": "レジはどこですか？"
+    },
+    {
+      "consulta": [
+        "compras/so-olhando"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "見",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b10-p10",
+      "promptPt": "你刚一进门就有人朝你走来，而你什么都还没决定。现在开口说。",
+      "audioKey": "fr-b10-t10",
+      "es": "ちょっと見てもいいですか？",
+      "pinyin": "chot-to MI-te mo II des ka",
+      "pt": "可以随便看看吗？",
+      "tts": "ちょっと見てもいいですか？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b10-s01",
+      "es": "薬局を探しています。入口はどこですか？ お昼は休憩ですか？",
+      "pinyin": "yak-KYO-ku o sa-ga-shi-te i-MAS. i-ri-GU-chi wa DO-ko des ka. o-HI-ru wa kyoo-KEI des ka",
+      "pt": "跟读这三句，能帮你搞定一块写满字的招牌。",
+      "tts": "薬局を探しています。入口はどこですか？ お昼は休憩ですか？",
+      "molde": "SAGASHITE-IMASU"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b10-n09",
+      "bloco": "recap",
+      "pt": "B10 完成。マンション、サービス、コンセント、ビル、バイキング——五个片假名词现在说的就是它们本来的意思了。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "五个片假名词，不是看起来的那个意思",
+    "secoes": [
+      {
+        "titulo": "让你损失一整个下午的五个词",
+        "corpo": "マンション是普通的公寓楼，不是豪宅。サービス从店主嘴里说出来，意思是免费、店家请客。コンセント是电源插座。ビル是建筑物。バイキング是自助餐。当你不确定附近有没有这样东西的时候，用〜を探しています开头，而不是直接问一个地方在哪里。",
+        "exemplos": [
+          {
+            "es": "薬局を探しています。",
+            "pt": "我在找药店。"
+          },
+          {
+            "es": "ATMを探しています。",
+            "pt": "我在找取款机。"
+          }
+        ]
+      },
+      {
+        "titulo": "探しています打开一场搜寻，どこですか问一个地点",
+        "corpo": "〜はどこですか问的是你已经确定存在的东西——出口、トイレ、駅。〜を探しています打开的是一场可能一无所获的搜寻，这才是当你根本不知道这条街上有没有药店时诚实的问法。助词を和结尾的探しています保持不变；只有前面那样东西会变。"
+      },
+      {
+        "titulo": "薬局、ドラッグストア和咳嗽",
+        "corpo": "薬局配有药剂师，能配处方药；ドラッグストア是那种大型日常商店，卖化妆品、零食和非处方药。对付咳嗽或感冒，两者都行，柜台的人会帮你挑对的药盒——你只需要说出症状，咳の薬或者風邪薬，而不是药名。"
+      },
+      {
+        "titulo": "取现金，就去便利店和邮局",
+        "corpo": "日本仍然很大程度上靠现金运转，能接受你外国卡的机器通常在便利店或邮局里，而不是银行网点。Seven Bank 和 Japan Post Bank 的取款机全天候提供英语菜单。银行自己网点的取款机常常直接拒绝境外发行的卡，这是机器本身的问题，不是你的卡有什么问题。"
+      }
+    ]
+  },
+  "slot": "B10",
+  "permissao": "你可以看错一块牌子。任何学第二语言的人都会先通过母语来理解它，解决办法不是背单词表——而是记住那几个会说谎的片假名词，然后大声地用〜を探しています问出下一个。",
+  "permissaoAudioKey": "fr-b10-n01",
+  "espelho": "任何在自己国家的一个下午，站在一扇拉下的卷帘门前，手里拿着手机，琢磨这家店是暂时休息还是永久关门的人，都懂这种感觉。唯一新鲜的是，这里的招牌会告诉你答案，只是用了一些看起来像是从英语借来的词。",
+  "fichasCulturais": [
+    {
+      "sinal": "你问哪里有薬局，对方却指向一家明亮的大店，里面全是化妆品和零食，后面才有一小排药架。",
+      "suaLeitura": "我的口音出了问题，他们理解错了。",
+      "oQueEAli": "这个词其实传达到了。薬局配有药剂师和处方柜台；ドラッグストア是那种日常商店，也卖非处方药。除了你选用的词不同之外，没出任何差错，而对付咳嗽，药妆店往往本来就是对的地方。",
+      "oQueVoceFaz": "根据你需要的东西选词：要配处方药就说薬局，要买非处方药就说ドラッグストア或者直接说咳の薬を探しています。如果不确定附近有没有，就用探しています开头。",
+      "oQueMelhora": "你不会再把一个正确的回答当成失败，也能第一次就走到对的柜台前。",
+      "ondeNaoVale": "这不是一条绝对的界线——很多药妆店内部也设有薬局柜台，不少小型薬局也卖日常用品。这个词告诉你的是有没有药剂师值班，而不是他们卖不卖创可贴。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b10-n02"
+      ]
+    },
+    {
+      "sinal": "你去取现金，路口银行的取款机拒绝了你的卡，但便利店里那台却正常用。",
+      "suaLeitura": "我的卡出问题了，或者是因为我是外国人。",
+      "oQueEAli": "日本仍然很依赖现金，专门为外国卡设置的机器是便利店里的那些——七仔（Seven-Eleven）里的 Seven Bank，还有 Japan Post Bank——它们全天候运作，配有英语菜单。银行自己网点的取款机常常根本不接受境外发行的卡。这是机器之间的差别，不是对你个人的评判。",
+      "oQueVoceFaz": "取现金去便利店或邮局，不要去银行。趁着在那儿，多取一点，因为有些小店只收现金。",
+      "oQueMelhora": "你会随身留一点现金备用，正是为了这种时刻，也不会再把一台机器的拒绝当成针对个人的事。",
+      "ondeNaoVale": "不是每家银行的取款机都拒绝外国卡，而且在大城市里无现金支付正在快速普及。这只是提醒你要知道便利店的机器在哪里，而不是让你以为银行永远不管用。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b10-n08"
+      ]
+    }
+  ],
+  "clique": {
+    "contagem": [
+      "药店",
+      "药妆店",
+      "取款机"
+    ],
+    "desconto": "没人为你要找的每样东西各准备一个词。你留着同一个开场，只换了后面要找的东西——这个开场也扛住了那些会骗人的片假名词。",
+    "piso": "下次一块招牌看起来像英语，你不会轻信这种相似。你会说出你在找什么，让对方来纠正那个词。"
+  }
+}

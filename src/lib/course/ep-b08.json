@@ -1,0 +1,325 @@
+{
+  "id": "b08",
+  "nivel": "basico",
+  "numero": 8,
+  "parte": "B08",
+  "titulo": "Doko desu ka——一个答案能装进脑子里的问题",
+  "subtitulo": "先说地点，再设计追问，好让回答落在一个能听懂的是、否或者一个手指的方向",
+  "cena": "你走出车站，手机上存着一个地名，眼前有四个出口，第一个你开口问的人会用飞快的语速回答你。",
+  "moldura": "ganha",
+  "frasePiso": "地点，然后 wa doko desu ka。再追加一句，只能用是、否或一个手势来回答。",
+  "moldes": [
+    "DOKO-DESU-KA"
+  ],
+  "clique": {
+    "contagem": [
+      "车站大厅",
+      "车站外的街道",
+      "咖啡馆柜台",
+      "博物馆入口"
+    ],
+    "desconto": "你没有为车站学一句、为街道学一句、为博物馆再学一句。你留着同一个结尾，只是把前面的地点换掉。",
+    "piso": "下次你站在四个出口前，手里只有一个地名，你不会打开地图碰运气。你会开口问，然后把答案压缩到你能带着走的大小。"
+  },
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b08-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "问出口很简单，难的是后半段——拿到一个短到走到街角还记得住的答案。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b08-n02",
+      "bloco": "molde",
+      "pt": "这个句型是：地点，然后 wa doko desu ka。你只需要选地点，结尾从不改变。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b08-t01",
+      "es": "すみません、駅はどこですか？",
+      "pinyin": "soo-mee-ma-SEN, E-ki wa DO-ko des-ka",
+      "pt": "不好意思，车站在哪里？",
+      "tts": "すみません、駅はどこですか？"
+    },
+    {
+      "consulta": [
+        "transporte/placas",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "駅",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p01",
+      "promptPt": "离发车还有二十分钟，你完全不知道站台在哪个方向。先打招呼，再开口问。现在开口说。",
+      "audioKey": "fr-b08-t01",
+      "es": "すみません、駅はどこですか？",
+      "pinyin": "soo-mee-ma-SEN, E-ki wa DO-ko des-ka",
+      "pt": "不好意思，车站在哪里？",
+      "tts": "すみません、駅はどこですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b08-r01",
+      "receptivo": true,
+      "es": "二つ目の角を右に曲がって、まっすぐです。ここから五分くらいですよ。",
+      "pt": "第二个路口右转，然后一直走。从这里大概五分钟。",
+      "tts": "二つ目の角を右に曲がって、まっすぐです。ここから五分くらいですよ。",
+      "acao": "抓住三个词，其他都放掉：futatsume、migi、massugu——第二个、右、一直走。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b08-n03",
+      "bloco": "corpo",
+      "pt": "刚才那句回答的速度超过了你能记住的极限。所以再问一次，问成一个只能回答是、否或一个手势的形状。"
+    },
+    {
+      "consulta": [
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b08-p02",
+      "promptPt": "你大概只听懂了一半。指着一条街，让对方确认或纠正你。现在开口说。",
+      "audioKey": "fr-b08-t02",
+      "es": "こっちですか？",
+      "pinyin": "KOT-chi des-ka",
+      "pt": "是这边吗？",
+      "tts": "こっちですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b08-r02",
+      "es": "はい、そうです。まっすぐです。",
+      "pt": "对，没错。一直走就到。",
+      "tts": "はい、そうです。まっすぐです。"
+    },
+    {
+      "consulta": [
+        "transporte/placas"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "出口",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p03",
+      "promptPt": "你在地下的车站大厅里，四条走廊各奔一个方向，看不到一点日光。现在开口说。",
+      "audioKey": "fr-b08-t03",
+      "es": "出口はどこですか？",
+      "pinyin": "de-GUCHI wa DO-ko des-ka",
+      "pt": "出口在哪里？",
+      "tts": "出口はどこですか？"
+    },
+    {
+      "consulta": [
+        "taxi/parar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "タクシー乗り場",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b08-p04",
+      "promptPt": "外面下着雨，你站在车站外，出租车一辆接一辆开过去不停，因为它们都在一个固定地点上下客。现在开口说。",
+      "audioKey": "fr-b08-t04",
+      "es": "タクシー乗り場はどこですか？",
+      "pinyin": "ta-ku-SHII no-ri-ba wa DO-ko des-ka",
+      "pt": "出租车站在哪里？",
+      "tts": "タクシー乗り場はどこですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b08-n04",
+      "bloco": "capsula",
+      "pt": "你最常要找的地方有两个名字：toire，还有更礼貌一点的 otearai。哪个都能找到它，而且这也是你在最急的时候最有可能脱口而出的那个词。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "トイレ",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p05",
+      "promptPt": "你在一家咖啡馆里，最里面有三扇没有标记的门。问一下柜台的人。现在开口说。",
+      "audioKey": "fr-b08-t05",
+      "es": "トイレはどこですか？",
+      "pinyin": "TOH-i-re wa DO-ko des-ka",
+      "pt": "洗手间在哪里？",
+      "tts": "トイレはどこですか？"
+    },
+    {
+      "consulta": [
+        "transporte/placas"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b08-p06",
+      "promptPt": "对方已经指了方向。现在用三个音节确认一下，这是走两分钟能到，还是得坐公交。现在开口说。",
+      "audioKey": "fr-b08-t06",
+      "es": "遠いですか？",
+      "pinyin": "TOH-i des-ka",
+      "pt": "远吗？",
+      "tts": "遠いですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b08-r03",
+      "es": "いいえ、歩いて五分です。",
+      "pt": "不远，走路五分钟。",
+      "tts": "いいえ、歩いて五分です。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "入口",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p07",
+      "promptPt": "你已经绕着博物馆的这一侧走了一圈，看到的每扇门都写着仅限团体。现在开口说。",
+      "audioKey": "fr-b08-t07",
+      "es": "入口はどこですか？",
+      "pinyin": "i-ri-GUCHI wa DO-ko des-ka",
+      "pt": "入口在哪里？",
+      "tts": "入口はどこですか？"
+    },
+    {
+      "consulta": [
+        "transporte/placas",
+        "reparo/apontar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "地図",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b08-p08",
+      "promptPt": "在博物馆售票处，你的手机没电了，柜台后面有一叠折好的纸。现在开口说。",
+      "audioKey": "fr-b08-t08",
+      "es": "地図はありますか？",
+      "pinyin": "CHI-zu wa a-ri-MAS-ka",
+      "pt": "有地图吗？",
+      "tts": "地図はありますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b08-n05",
+      "pt": "当回答来得太快时，你有一句话可以让对方再放慢速度，把整个答案再给你一遍。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SUMIMASEN",
+      "encaixe": "もう一度お願いします",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b08-p09",
+      "promptPt": "整段回答两秒钟就说完了，从你身边飘过去。再问一遍。现在开口说。",
+      "audioKey": "fr-b08-t09",
+      "es": "すみません、もう一度お願いします。",
+      "pinyin": "soo-mee-ma-SEN, MOH i-chi-do o-ne-gai-shi-mass",
+      "pt": "不好意思，请再说一遍。",
+      "tts": "すみません、もう一度お願いします。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b08-s01",
+      "es": "駅はどこですか？ 出口はどこですか？ こっちですか？ 遠いですか？",
+      "pinyin": "E-ki wa DO-ko des-ka · de-GUCHI wa DO-ko des-ka · KOT-chi des-ka · TOH-i des-ka",
+      "pt": "跟读这一对：先问地点，再把答案压缩变小。",
+      "tts": "駅はどこですか？ 出口はどこですか？ こっちですか？ 遠いですか？",
+      "molde": "DOKO-DESU-KA"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b08-n06",
+      "bloco": "recap",
+      "pt": "B08 完成。这个句型找到了车站、出口、出租车站、洗手间和入口——两个追问句把答案变得便于携带。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "先问大的，再问小的",
+    "secoes": [
+      {
+        "titulo": "Wa doko desu ka 加地点",
+        "corpo": "一个结尾，你只需要选地点。用短版 doko desu ka 而不是更长的 dochira deshou ka，原因和用 te mo ii desu ka 而不是敬语版一样：短版才是压力之下真正能脱口而出的那句，长版则是人们说到一半就放弃的那句。",
+        "exemplos": [
+          {
+            "es": "出口はどこですか？",
+            "pt": "出口在哪里？"
+          },
+          {
+            "es": "タクシー乗り場はどこですか？",
+            "pt": "出租车站在哪里？"
+          }
+        ]
+      },
+      {
+        "titulo": "一个地方，两个名字",
+        "corpo": "洗手间有两个名字——toire，日常用语，还有 otearai，稍微礼貌一点。哪个词套进这个句型都能找到它，而这也是你最急的时候最可能问出口的那个问题，所以值得在用到之前就先备好。"
+      },
+      {
+        "titulo": "让答案对上你能接住的大小",
+        "corpo": "一个开放式问题会换来一个开放式答案，而且语速飞快。所以紧接着追问一句封闭式的：kocchi desu ka，手指着方向；再问 tooi desu ka。这两句都只能得到是、否或一个手势的回答——而一个手势，是你完全不用听懂周围任何一个词就能照着做的答案。"
+      },
+      {
+        "titulo": "值得抓住的三个词",
+        "corpo": "日语里的指路语基本围绕一小撮词：migi、hidari、massugu——右、左、一直走——再加上表示第几个路口的 hitotsume 和 futatsume。句子里其他部分都是垫话。听懂五个词而不是三十个词，正是把一段快速回答变成能用的信息的全部秘诀。"
+      }
+    ]
+  },
+  "slot": "B08",
+  "permissao": "你可以听不懂答案。用更小的形式再问一遍，不是第一次尝试失败——这是这个技巧的后半部分，你面前的人只会指指方向而已。",
+  "permissaoAudioKey": "fr-b08-n03",
+  "espelho": "任何在自己国家给人指过路的人，都见过对方听到第三条指示时眼神开始发直，然后自己说，算了，就那边。这种反应在任何语言里都存在；你只是提前安排它更早发生。",
+  "fichasCulturais": [
+    {
+      "sinal": "你问一个地方在哪里，对方没有只是指一指方向——而是直接走起来，招手示意你跟上。",
+      "suaLeitura": "我给他们添麻烦了，现在他们觉得非得护送这个无助的游客不可。",
+      "oQueEAli": "在日本，把一个迷路的陌生人带一段路，甚至直接带到门口，是一种常见的礼貌，而不是不耐烦的表现。有人判断光指方向不够，干脆直接带你去，这是在提供帮助，不是在抱怨麻烦。",
+      "oQueVoceFaz": "跟着走一小段，分别的时候真诚道谢——一句清楚的 doumo arigatou gozaimasu，再配一个小小的鞠躬。",
+      "oQueMelhora": "你能真正到达目的地，而不是只拿到半截指示；你也会把这个举动读作善意，而不是自己造成的负担。",
+      "ondeNaoVale": "不要指望或依赖这一点——很多人就只是指指方向，尤其是他们正忙的时候，那也是一个完整的答案。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b08-n01"
+      ]
+    },
+    {
+      "sinal": "你问一个地方在哪里，得到的是三十个词飞快地砸过来，里面还有你从没听过的街道名和地标名。",
+      "suaLeitura": "我的日语不够用，应该别再问了，直接用手机吧。",
+      "oQueEAli": "指路的人会把整条路线都告诉你，因为这正是你的问题问出来的内容。答案的长度是问题本身的属性，不是对你口音的评判。",
+      "oQueVoceFaz": "抓住开头两三个词，然后把问题收窄：指着方向说 kocchi desu ka，接着问 tooi desu ka。",
+      "oQueMelhora": "你得到的是一个手势和一个是，而不是一整段话，带着能在下一个路口还记得住的东西离开这场对话。",
+      "ondeNaoVale": "如果那个地方确实需要走一整条路线而不是一个方向——好几个转弯、要换乘——这个方法就不够用了。这时候老实的做法是请对方在你的地图上标出来，或者写下地名。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b08-n03"
+      ]
+    }
+  ]
+}

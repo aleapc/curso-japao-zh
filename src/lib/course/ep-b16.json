@@ -1,0 +1,336 @@
+{
+  "id": "b16",
+  "nivel": "basico",
+  "numero": 16,
+  "parte": "B16",
+  "titulo": "「探しています」——让前台的人也一起帮你找",
+  "subtitulo": "更高的楼层、更安静的一侧、更晚的退房时间——办理入住时开口很便宜，行李打开之后再开口就贵了",
+  "cena": "前台一手拿着你的护照，屏幕上是房间列表，还没决定把哪间空房分给你。",
+  "moldura": "ganha",
+  "frasePiso": "东西，加上「を探しています」。三个词，寻找就不再只是你一个人的事了。",
+  "moldes": [],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b16-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "入住登记是整趟旅程里最便宜的一分钟。现在问是举手之劳，明天问就要大费周章。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b16-n02",
+      "bloco": "molde",
+      "pt": "框架是这样的：东西，然后加上「探しています」。就算你不确定这里有没有，这句话照样管用。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b16-t01",
+      "es": "もっと静かな部屋を探しています。",
+      "pinyin": "mot-to shi-ZU-ka na he-YA o sa-ga-shi-te i-MAS",
+      "pt": "我想找一间更安静的房间。",
+      "tts": "もっと静かな部屋を探しています。"
+    },
+    {
+      "consulta": [
+        "quarto/checkin",
+        "quarto/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "もっと静かな部屋",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b16-p01",
+      "promptPt": "就在前台，钥匙还没从抽屉里拿出来。那堵墙的另一侧就是电梯井。说出你想要的。现在开口说。",
+      "audioKey": "fr-b16-t01",
+      "es": "もっと静かな部屋を探しています。",
+      "pinyin": "mot-to shi-ZU-ka na he-YA o sa-ga-shi-te i-MAS",
+      "pt": "我想找一间更安静的房间。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b16-r01",
+      "es": "かしこまりました。上の階に、静かなお部屋がございます。",
+      "pt": "好的，我们在更高的楼层有一间更安静的房间。",
+      "tts": "かしこまりました。上の階に、静かなお部屋がございます。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b16-n03",
+      "bloco": "corpo",
+      "pt": "楼层更高、远离街道的那一侧才是安静的一侧——而这正是你真正想要的。"
+    },
+    {
+      "consulta": [
+        "quarto/pedir",
+        "quarto/checkin"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "上の階の部屋",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b16-p02",
+      "promptPt": "还在前台。楼下的街道是公交线路，窗户又很薄。问问看更高的楼层是不是还有空房。现在开口说。",
+      "audioKey": "fr-b16-t02",
+      "es": "上の階の部屋はありますか？",
+      "pinyin": "u-e no KA-i no he-YA wa a-ri-MAS ka",
+      "pt": "有更高楼层的房间吗？",
+      "tts": "上の階の部屋はありますか？"
+    },
+    {
+      "consulta": [
+        "quarto/mala",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "ここに荷物を置い",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b16-p03",
+      "promptPt": "现在是上午十一点，房间要到下午三点才能入住。你想把手空出来。开口问。现在开口说。",
+      "audioKey": "fr-b16-t03",
+      "es": "ここに荷物を置いてもいいですか？",
+      "pinyin": "ko-ko ni ni-MO-tsu o oi-te mo II des ka",
+      "pt": "可以把行李寄放在这里吗？",
+      "tts": "ここに荷物を置いてもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b16-r02",
+      "es": "はい、フロントでお預かりします。番号札をお渡しします。",
+      "pt": "好的，我们会放在前台保管，我给您一个号码牌。",
+      "tts": "はい、フロントでお預かりします。番号札をお渡しします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b16-n04",
+      "bloco": "capsula",
+      "pt": "同一个框架，换了个柜台。当你知道这里确实有这样东西时，就换成「ありますか」来问。"
+    },
+    {
+      "consulta": [
+        "quarto/pedir",
+        "chegar/conexao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "Wi‑Fi",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b16-p04",
+      "promptPt": "你的流量快用完了，桌上也没有写着密码的卡片。开口问。现在开口说。",
+      "audioKey": "fr-b16-t04",
+      "es": "Wi‑Fiはありますか？",
+      "pinyin": "WAI-fai wa a-ri-MAS ka",
+      "pt": "有Wi-Fi吗？",
+      "tts": "ワイファイはありますか？"
+    },
+    {
+      "consulta": [
+        "quarto/pedir",
+        "cidade/onde"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "朝食会場",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b16-p05",
+      "promptPt": "早上七点半，一楼，三扇没有标示的门，其中一扇飘出咖啡的香味。现在开口说。",
+      "audioKey": "fr-b16-t05",
+      "es": "朝食会場を探しています。",
+      "pinyin": "choo-shoku KAI-joo o sa-ga-shi-te i-MAS",
+      "pt": "我在找早餐厅。",
+      "tts": "朝食会場を探しています。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b16-n05",
+      "pt": "上楼之后这个框架依然管用，走廊里推着清洁车的人多半都能帮你解决。"
+    },
+    {
+      "consulta": [
+        "quarto/pedir",
+        "reparo/permissao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "TE-MO-II",
+      "encaixe": "もう一枚毛布をもらっ",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b16-p06",
+      "promptPt": "楼上的走廊里，客房清洁车停在隔壁门口。房间比你预想的要冷。现在开口说。",
+      "audioKey": "fr-b16-t06",
+      "es": "もう一枚、毛布をもらってもいいですか？",
+      "pinyin": "moo i-chi-MAI, moo-fu o mo-rat-te mo II des ka",
+      "pt": "可以再给我一条毯子吗？",
+      "tts": "もう一枚、毛布をもらってもいいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b16-r03",
+      "es": "すぐにお持ちします。",
+      "pt": "我马上给您送过去。",
+      "tts": "すぐにお持ちします。"
+    },
+    {
+      "consulta": [
+        "quarto/checkout",
+        "quarto/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "ARIMASU-KA",
+      "encaixe": "レイトチェックアウト",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b16-p07",
+      "promptPt": "回到前台。你的火车是六点，房卡上写的退房时间是十一点。问问最后一个早上的安排。现在开口说。",
+      "audioKey": "fr-b16-t07",
+      "es": "レイトチェックアウトはありますか？",
+      "pinyin": "REI-to chek-ku-au-to wa a-ri-MAS ka",
+      "pt": "可以延迟退房吗？",
+      "tts": "レイトチェックアウトはありますか？"
+    },
+    {
+      "consulta": [
+        "cidade/onde",
+        "pagar/dinheiro"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "ATM",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b16-p08",
+      "promptPt": "在酒店外面的街上，问正在给隔壁店铺上锁的人。你口袋里只有几个硬币。现在开口说。",
+      "audioKey": "fr-b16-t08",
+      "es": "ATMを探しています。",
+      "pinyin": "ee-tee-EE-moo o sa-ga-shi-te i-MAS",
+      "pt": "我在找取款机。",
+      "tts": "エーティーエムを探しています。"
+    },
+    {
+      "consulta": [
+        "quarto/pedir",
+        "chegar/conexao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "SAGASHITE-IMASU",
+      "encaixe": "携帯を充電するコンセント",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b16-p09",
+      "promptPt": "回到房间。你能找到的唯一插座在床后面，而床又推不动。现在开口说。",
+      "audioKey": "fr-b16-t09",
+      "es": "携帯を充電するコンセントを探しています。",
+      "pinyin": "kei-tai o joo-DEN su-ru KON-sen-to o sa-ga-shi-te i-MAS",
+      "pt": "我在找给手机充电的插座。",
+      "tts": "携帯を充電するコンセントを探しています。"
+    },
+    {
+      "consulta": [
+        "conversa/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b16-p10",
+      "promptPt": "他帮你换了房、给行李挂了牌、还找到了插座。好好道个谢，收个尾。现在开口说。",
+      "audioKey": "fr-b16-t10",
+      "es": "本当にありがとうございます。助かりました。",
+      "pinyin": "hon-TOU ni a-ri-ga-toh go-za-i-mas. ta-su-ka-ri-MA-shi-ta",
+      "pt": "真的太感谢了，帮了我大忙。",
+      "tts": "本当にありがとうございます。助かりました。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b16-s01",
+      "es": "もっと静かな部屋を探しています。朝食会場を探しています。ATMを探しています。",
+      "pinyin": "mot-to shi-ZU-ka na he-YA o sa-ga-shi-te i-MAS. choo-shoku KAI-joo o sa-ga-shi-te i-MAS. ee-tee-EE-moo o sa-ga-shi-te i-MAS",
+      "pt": "跟读同一句话，用在三次不同的寻找里。",
+      "tts": "もっと静かな部屋を探しています。朝食会場を探しています。エーティーエムを探しています。",
+      "molde": "SAGASHITE-IMASU"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b16-n06",
+      "bloco": "recap",
+      "pt": "B16完成。「探しています」打开了前台、走廊和街道——同一句话，三种不同的寻找。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "三个词，把寻找交给别人来帮忙",
+    "secoes": [
+      {
+        "titulo": "东西，加上「探しています」",
+        "corpo": "保留句尾，只改变你要找的那样东西。这是用在你还不确定这栋楼里有没有这样东西时的框架——而入住第一天的大多数时候都是这种情况。",
+        "exemplos": [
+          {
+            "es": "もっと静かな部屋を探しています。",
+            "pt": "我想找一间更安静的房间。"
+          },
+          {
+            "es": "ATMを探しています。",
+            "pt": "我在找取款机。"
+          }
+        ]
+      },
+      {
+        "titulo": "为什么用「探しています」而不是「どこですか」",
+        "corpo": "「どこですか」问的是你已经确定存在的地方——比如「出口」「駅」。「探しています」打开的则是一场可能一无所获的寻找，正是这个区别，让对方愿意把这个问题接过去，而不是随手一指就转身走开。"
+      },
+      {
+        "titulo": "更高的楼层与安静的一侧",
+        "corpo": "噪音在低楼层、面向街道的房间最严重。如果这一部分你只记得住一个请求，那就记住更高楼层、远离马路——这是在噪音发生之前就先解决噪音的办法，而在办理入住时，这对前台来说只是屏幕上还开着的界面上多点一下而已。"
+      },
+      {
+        "titulo": "要在入住时问，而不是退房时才问",
+        "corpo": "更高的楼层、安静的一侧、延迟退房，这三件事都是由你站在那里时还开着的那个屏幕决定的。一旦钥匙到了你手里，同样这三个请求就都需要附上理由，而理由永远是同一个：你已经入住的那间房。"
+      }
+    ]
+  },
+  "slot": "B16",
+  "permissao": "你完全可以在看到房间之前先塑造它的样子。在办理入住时要求特定楼层或更安静的一侧，是柜台前再普通不过的请求，对方回答你只需要点一下鼠标。",
+  "permissaoAudioKey": "fr-b16-n01",
+  "espelho": "任何被安排到靠近厨房门那张桌子的人，都懂这种感觉：更好的位置本来是有的，三秒钟就被分配掉了，没人问过你想要什么，因为你没有说出口。酒店的运作方式一模一样。",
+  "fichasCulturais": [
+    {
+      "sinal": "你在前台提出一个要求，得到的只是一句简短的「申し訳ございません、できません」，没有任何解释。",
+      "suaLeitura": "他不想帮我，再追问下去会显得不礼貌。",
+      "oQueEAli": "在日本的前台，这种简短的回答通常反映的是当下房间列表的状态——哪些房间打扫好了、哪些留给今晚的入住客人——而不是针对这个请求或提出请求的人。房间列表会随着一天的推移而变化，答案也会跟着变，拒绝之前加上的那句道歉是真诚的礼貌，不是敷衍打发。",
+      "oQueVoceFaz": "先接受这个否定的答复，然后换一个时间点再问同一件事：今天傍晚、明天、打扫结束之后。「探しています」这句话原封不动地照样管用。",
+      "oQueMelhora": "你能从六点开始住进安静的房间，而不是彻底落空——而这本来就是一直摆在那里的选项。",
+      "ondeNaoVale": "但如果同样的答案已经来了两次，身后又排着队，那就不适用了——第三次追问会显得你不肯接受答案，还会消耗掉你在最后一个早上会用得上的好感。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b16-n03"
+      ]
+    },
+    {
+      "sinal": "你在前台一开口就用英语。整段对话高效又准确，但明显透着小心翼翼，你期待中的那种热络感却没有出现。",
+      "suaLeitura": "他大概不太想应付外国人。",
+      "oQueEAli": "你感受到的那种拘谨，通常来自工作人员对自己英语水平的把握，以及日本前台本身正式的说话方式，而不是对你有什么排斥。这里的礼貌本来就偏冷静、精确，简短而谨慎的对话是常态，并不代表冷淡。",
+      "oQueVoceFaz": "先用「こんにちは」或「すみません」开场，让这句话先落地，再提出你的请求，然后用你会的任何语言说出你需要什么——开头那几个日语词能让整段对话都暖起来。",
+      "oQueMelhora": "同样的对话会变得更热络，而那些会一点英语的工作人员，在这样的开场之后也更愿意主动用英语跟你交流。",
+      "ondeNaoVale": "这说的是语言差距和说话方式的问题，不是任何人对游客的真实感受，也不能解释每一次简短的对话——有时候刚上完一个长班的人，只是单纯累了而已。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-b16-n02"
+      ]
+    }
+  ]
+}

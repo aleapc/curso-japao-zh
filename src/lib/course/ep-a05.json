@@ -1,0 +1,353 @@
+{
+  "id": "a05",
+  "nivel": "avancado",
+  "numero": 33,
+  "parte": "A05",
+  "titulo": "另一种语言",
+  "subtitulo": "在请求之前先说一句すみません，英语通常自己就会出现——几个礼貌用语撑起了这整部分",
+  "cena": "你在柜台一开口就直接提出请求，对方回了一个平淡的词，出发前听到的那整套说法似乎在一秒半之内就得到了印证。",
+  "moldura": "ganha",
+  "frasePiso": "先开场，再提问。开场那句すみません在这里起的作用，比任何词汇量都大。",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-ef-epi-2025",
+      "afirmacao": "关于日本英语水平，唯一一个还算能用的粗略指标是EF英语熟练度指数，日本多年来一直处于'低熟练度'区间，在东亚排名中接近垫底。EF自己说明这是一项针对自我选择的应试者的在线调查，而不是具有统计效度的人口抽样，这会使结果产生偏差。它只能支撑一个说法——日本整体英语水平有限、分布不均——但不能支撑关于日本人说英语比例的任何断言，也不能用来预测你眼前这个人。",
+      "fonte": "EF EPI: Japão na faixa «low proficiency» há anos; ressalva da própria EF: «an online survey rather than a statistically valid sampling of the population»",
+      "ano": 2026,
+      "revisarAte": "2027-08-04",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-a05-n03",
+        "fr-a05-n04"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a05-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "你听人说过这里的人不会跟你说英语。没有任何东西能量化这件事。没有调查，没有研究，什么都没有。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n02",
+      "bloco": "corpo",
+      "pt": "真正存在的是一个排名、发布者自己贴上的警示标签，还有一个开场的动作。顺序就是这样。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a05-n03",
+      "bloco": "capsula",
+      "pt": "EF的指数把日本放在低熟练度区间，在东亚排名中接近垫底，数据来自自愿在线测试的人。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n04",
+      "pt": "这些人是自己报名参加测试的，EF自己也白纸黑字写明了这一点。所以它只能支撑一幅粗略的全国图景，永远不能用来算出任何人群的比例。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-r01",
+      "receptivo": true,
+      "acao": "你走上前就直接提出请求。那句平淡的招呼语是在等待整个流程开始，而不是一扇被关上的门。",
+      "es": "いらっしゃいませ。",
+      "pt": "欢迎光临。",
+      "tts": "いらっしゃいませ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a05-n05",
+      "pt": "目前能给出的最好解释是仪式，而不是态度。すみません在你踏入别人的注意力之前，先打开了一个小小的空间。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n06",
+      "pt": "没有它就直接提出请求，就像进门不敲门。这是对这里开场方式的一种解读，不是一个经过测量的结论。"
+    },
+    {
+      "consulta": [
+        "chegar/entrar",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p01",
+      "promptPt": "你需要向柜台后的陌生人请求点什么。先做开场，再提出请求。现在开口说。",
+      "audioKey": "fr-a05-t01",
+      "es": "すみません、ちょっとよろしいですか？",
+      "pinyin": "soo-mee-ma-SEN, chot-to yo-ro-shee des-ka",
+      "pt": "不好意思，方便打扰一下吗？",
+      "tts": "すみません、ちょっとよろしいですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-r02",
+      "receptivo": true,
+      "acao": "还是同一个人，只是晚了四个词。变的不是他们，是顺序。",
+      "es": "はい、いらっしゃいませ。どうぞ。",
+      "pt": "好的，欢迎光临。请说。",
+      "tts": "はい、いらっしゃいませ。どうぞ。"
+    },
+    {
+      "consulta": [
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a05-p02",
+      "promptPt": "你已经打过招呼了，现在需要用另一种语言。问一下，句尾语调上扬。现在开口说。",
+      "audioKey": "fr-a05-t02",
+      "es": "英語、話せますか？",
+      "pinyin": "EE-go, ha-na-se-mas-ka",
+      "pt": "你会说英语吗？",
+      "tts": "英語、話せますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a05-r03",
+      "receptivo": true,
+      "acao": "一个附带条件的是。放慢速度，你就有答案了。",
+      "es": "少しなら。ゆっくりお願いします。",
+      "pt": "会一点点。请说慢一点。",
+      "tts": "少しなら。ゆっくりお願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-r04",
+      "receptivo": true,
+      "acao": "答案往往是换一个人来。等上十秒钟，通常就能解决问题。",
+      "es": "私はちょっと…でも、あの子が話せます。呼んできますね。",
+      "pt": "我不太行……不过那个女孩会。我去叫她过来。",
+      "tts": "私はちょっと…でも、あの子が話せます。呼んできますね。"
+    },
+    {
+      "consulta": [
+        "reparo/ingles",
+        "simpatia/puxar-conversa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p03",
+      "promptPt": "抢先说出来，别等对方不得不客套地夸你的口音。现在开口说。",
+      "audioKey": "fr-a05-t03",
+      "es": "日本語が下手ですみません。",
+      "pinyin": "ni-HON-go ga he-TA de soo-mee-ma-sen",
+      "pt": "抱歉，我的日语不太好。",
+      "tts": "日本語が下手ですみません。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a05-r05",
+      "receptivo": true,
+      "acao": "不要反驳。接受这句鼓励，继续说下去。",
+      "es": "いえいえ、大丈夫ですよ。続けてください、わかりますから。",
+      "pt": "哪里哪里。继续说吧，我听得懂。",
+      "tts": "いえいえ、大丈夫ですよ。続けてください、わかりますから。"
+    },
+    {
+      "consulta": [
+        "reparo/ingles"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a05-p04",
+      "promptPt": "对方为了帮你切换成了英语，而你更想继续用另一种语言。主动提出来。现在开口说。",
+      "audioKey": "fr-a05-t04",
+      "es": "よければ、日本語で大丈夫です。",
+      "pinyin": "yo-ke-re-ba, ni-HON-go de dai-JOH-bu des",
+      "pt": "如果可以的话，用日语就行。",
+      "tts": "よければ、日本語で大丈夫です。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-a05-n07",
+      "pt": "几个词撑起了这整部分：すみません、ありがとう、お願いします、ごめんなさい、失礼します。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer",
+        "chegar/sair"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p05",
+      "promptPt": "你带着想要的东西准备离开店铺。按这个房间惯常的方式收尾。现在开口说。",
+      "audioKey": "fr-a05-t05",
+      "es": "ありがとうございました。失礼します。",
+      "pinyin": "a-ri-ga-TOH go-za-i-mash-ta · shee-tsu-REI shee-mas",
+      "pt": "非常感谢。告辞了。",
+      "tts": "ありがとうございました。失礼します。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-r06",
+      "receptivo": true,
+      "acao": "连续两句收尾语。收尾也是一个流程，你的可以比对方的短一些。",
+      "es": "ありがとうございました。またお越しくださいませ。",
+      "pt": "非常感谢。欢迎再次光临。",
+      "tts": "ありがとうございました。またお越しくださいませ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n08",
+      "pt": "还有一件常被误认成另一种语言的事：其实是同一种日语，只是说得很快，中间部分被吞掉了。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-a05-r07",
+      "receptivo": true,
+      "acao": "里面没有任何新东西。わかんない就是わからない，聞いて就是聞いてみて，あっち就是那个方向。",
+      "es": "わかんないなあ。あっちの人に聞いてみて。",
+      "pt": "不知道啊。去问问那边那个人吧。",
+      "tts": "わかんないなあ。あっちの人に聞いてみて。"
+    },
+    {
+      "consulta": [
+        "reparo/devagar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p06",
+      "promptPt": "刚才那句话全速说出来，你只抓住了两个词。请对方再说一遍，慢一点。现在开口说。",
+      "audioKey": "fr-a05-t06",
+      "es": "もう少しゆっくりお願いできますか？",
+      "pinyin": "moh su-ko-shee yook-KOO-ri o-ne-gai de-kee-mas-ka",
+      "pt": "能再说慢一点吗？",
+      "tts": "もう少しゆっくりお願いできますか？"
+    },
+    {
+      "consulta": [
+        "reparo/como-se-diz"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-a05-p07",
+      "promptPt": "你手里拿着一样东西，脑子里却想不出对应的词。指着它问一下。现在开口说。",
+      "audioKey": "fr-a05-t07",
+      "es": "これ、日本語で何て言いますか？",
+      "pinyin": "ko-re, ni-HON-go de NAN-te ee-mas-ka",
+      "pt": "这个用日语怎么说？",
+      "tts": "これ、日本語で何て言いますか？"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-a05-p08",
+      "promptPt": "有人刚花了五分钟特意放慢速度跟你说话。为他们实际做的这件事道谢。现在开口说。",
+      "audioKey": "fr-a05-t08",
+      "es": "ご親切に、ありがとうございます。",
+      "pinyin": "go-SHIN-se-tsu ni, a-ri-ga-TOH go-za-i-mas",
+      "pt": "谢谢你这么体贴。",
+      "tts": "ご親切に、ありがとうございます。"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-a05-s01",
+      "es": "すみません、ちょっとよろしいですか？ 英語、話せますか？ ありがとうございました。",
+      "pinyin": "soo-mee-ma-SEN chot-to yo-ro-shee des-ka · EE-go ha-na-se-mas-ka · a-ri-ga-TOH go-za-i-mash-ta",
+      "pt": "跟读整个流程本身：开场，然后是问题，然后是收尾。",
+      "tts": "すみません、ちょっとよろしいですか？ 英語、話せますか？ ありがとうございました。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-a05-n09",
+      "bloco": "recap",
+      "pt": "A05完成。没有任何数据能证明有人在拒绝你。先开场，再提问，剩下的靠几个词撑起来。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "流程、指数和礼貌用语",
+    "secoes": [
+      {
+        "titulo": "这个数字能说明什么，不能说明什么",
+        "corpo": "EF英语熟练度指数把日本放在低熟练度区间，在东亚排名中接近垫底，数据来自自愿在线测试的人。EF自己写明了这个警示：应试者是自己报名的，所以这是一项针对自我选择人群的调查，而不是对人口的有效抽样，结果会有偏差。这让它只能用来支撑一句话——日本整体英语水平有限、分布不均——却不能用来支撑任何关于说英语人口比例的说法，也不能用来判断你眼前这个人。",
+        "exemplos": [
+          {
+            "es": "英語、話せますか？",
+            "pt": "你会说英语吗？"
+          },
+          {
+            "es": "少しなら。ゆっくりお願いします。",
+            "pt": "会一点点。请说慢一点。"
+          }
+        ]
+      },
+      {
+        "titulo": "作为一种假设提出的仪式性解读",
+        "corpo": "没有任何研究能证明存在一个不对游客说英语的决定，这门课也不会主张有这样的决定。真正存在的，是这里开场的一般形式：すみません能引起注意，为打扰道个歉，并在你踏入陌生人的注意力之前先打开一个小空间。按这个思路理解，没有开场就直接提出请求，就像进门不敲门，回来的那种平淡语气，其实是在回应缺失的这一步，而不是在回应你这个人。这只是对这里开场方式的一种解读，不是一个经过测量的结论，应该轻轻地拿在手上，别太较真。"
+      },
+      {
+        "titulo": "那几个礼貌用语",
+        "corpo": "すみません、ありがとうございます、お願いします、ごめんなさい、失礼します。它们不是词汇，而是整场交流发生的框架。平实地按正确的顺序说出来，比一句语法正确却没有这些词包裹的句子管用得多，而这整部分内容，就装在第一个和最后一个词之间。"
+      },
+      {
+        "titulo": "语速快的日语不是另一种语言",
+        "corpo": "わかんない代替わからない，てる代替ている，あっち代替あちら，助词到处脱落。词本身还在；消失的是中间那些小部分，剩下的就靠语速来完成。当一句话听起来像是你从没学过的东西时，很可能它其实是你学过的东西——只是被以很快的速度说了出来。もう少しゆっくりお願いできますか就是全部的修复办法，问出这句话是很正常的事，不用觉得不好意思。"
+      }
+    ]
+  },
+  "slot": "A05",
+  "permissao": "你被允许大声用日语请求对方说英语，不用为这趟旅行道歉。すみません，然后英語話せますか，就是一个完整而且完全正常的请求——开场白不是在考你的密码，它只是这场交流的前半部分。",
+  "permissaoAudioKey": "fr-a05-n05",
+  "espelho": "任何在工作中被一个直接从句子中间开始说话的陌生人搭话过的人，都明白这部分描述的那种小小的摩擦感，也明白这跟用的是哪种语言毫无关系。先有一个开场白再被搭话，不是这个国家独有的要求——只是在这里更显眼而已。",
+  "fichasCulturais": [
+    {
+      "sinal": "你在柜台一开口就直接提出请求，得到的回应是一个平淡的词，或者几乎没什么反应。",
+      "suaLeitura": "他们决定不跟我说英语，正如我事先被警告的那样。",
+      "oQueEAli": "没有任何数据能证明存在这样一个决定；这种说法是一种刻板印象，这门课不会重复它。目前最站得住脚的解释和顺序有关：すみません会在你进入陌生人的注意力之前先打开一个小空间，所以没有它就直接提出请求，就像进门不敲门。那份冷淡回应的其实是缺失的这一步，而不是语言本身。这只是对这里开场方式的一种解读，不是一个经过测量的发现。",
+      "oQueVoceFaz": "说一句すみません，等半秒钟，然后再提出请求——需要的话可以用英语问。",
+      "oQueMelhora": "同一个人往往就能说出英语，或者会去叫一个会说英语的同事过来。你不再把一个顺序上的失误读成对你个人的排斥。",
+      "ondeNaoVale": "不是任何地方、任何时候都适用。在机场柜台、大酒店，或者专门面向国际游客的场所，开场白虽然还是会被期待，但影响不大；而且确实有不少人完全不会英语，这种情况下，再怎么开场也变不出英语来。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-a05-n05",
+        "fr-a05-n06"
+      ]
+    },
+    {
+      "sinal": "你看到日本在世界英语排名中排名靠后，就据此安排了你这一周的行程。",
+      "suaLeitura": "这个排名大致能告诉我，下一个我遇到的人有多大概率会说英语。",
+      "oQueEAli": "并不能。EF把日本放在低熟练度区间，数据来自自我选择的在线应试者——EF自己明确说明这个样本不具代表性，所以结果是有偏差的。这个排名只能算是一幅粗略的全国图景的证据，跟任何一个具体的柜台都没有关系。",
+      "oQueVoceFaz": "把它当作背景信息就好，然后去问，而不是去假设——不管往哪个方向假设都一样。开场之后问一句英語話せますか，两秒钟就能解决问题。",
+      "oQueMelhora": "你不会再对两种结果都感到意外，而正是这种意外感让最初几次交流显得难以预料。",
+      "ondeNaoVale": "这个排名不能被细分。它说明不了乡村和城市、年长者和年轻人、这个行业和那个行业之间的差别，把它当成可以细分的东西去用，正是EF警示过的那种错误。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-a05-n03",
+        "fr-a05-n04"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "id": "i04",
+  "nivel": "intermediario",
+  "numero": 22,
+  "parte": "I04",
+  "titulo": "点一杯酒的名字，还有那盘你没点的小菜",
+  "subtitulo": "居酒屋的时段、随座位一起端上来的 otoshi，以及那句能让他们盼着你再来的告别话",
+  "cena": "晚上八点半，居酒屋里满座又喧闹，同桌有人刚转过头来问你喝什么。",
+  "moldura": "ganha",
+  "frasePiso": "大声说出一杯酒的名字，你就真正加入了这个夜晚，而不是站在旁边看。",
+  "decisao": "onde me sento e o que peço primeiro num izakaya, o que é aquele pratinho que chega sem pedir, e como saio da mesa deixando a porta aberta",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-i04-otoshi",
+      "afirmacao": "在大多数居酒屋，你一坐下就会端上来一盘你没点的小菜——お通し（otoshi，也叫つきだし tsukidashi）。这既不是失误，也不是免费小食：它相当于一种座位费或桌位费，通常每人几百日元，无论你吃不吃都会算进账单。这是一种约定俗成的做法，只要是店家的一贯惯例，通常被认为是合法的。对游客来说，一个有用的理解方式是：おとおし是坐下的代价，就像任何地方的餐桌都自带椅子的成本一样。",
+      "fonte": "お通し／突き出し — cobrança de assento costumeira em izakaya no Japão (prática consuetudinária; alvo recorrente de dúvida de consumidor, geralmente lícita quando é praxe da casa)",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-i04-n02",
+        "fr-i04-n03"
+      ]
+    },
+    {
+      "id": "fr-i04-genkin",
+      "afirmacao": "无现金支付在日本发展得很快，但很多小型、传统的居酒屋仍然只收现金，贴出「現金のみ」（只收现金）的告示是很常见的事。没有任何普遍性的规定强迫小商家必须接受刷卡，而分摊账单（割り勘 warikan）是日常的常态，而不是例外。实际的推论是：晚上出门带够现金，并且预期是在离开时在收银台结账，而不是在桌上结账。",
+      "fonte": "現金のみ (somente dinheiro) frequente em izakaya pequenos; 割り勘 (rateio) como norma social; pagamento no caixa na saída",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-i04-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i04-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "整个夜晚开始于大声说出的一杯酒的名字，结束于一句话。这两部分今晚都能学会。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i04-r01",
+      "receptivo": true,
+      "acao": "这是开场白。用一杯酒来回答，不要只是笑一笑。",
+      "es": "何か飲みますか？",
+      "pt": "要喝点什么吗？",
+      "tts": "何か飲みますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i04-n02",
+      "pt": "一盘你没点的小菜端上来了。那就是 otoshi，座位费：不是礼物，也不是失误。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i04-t01",
+      "es": "生ビールをお願いします。",
+      "pinyin": "NA-ma BII-ru o o-ne-gai-shi-MAS",
+      "pt": "请给我一杯生啤。",
+      "tts": "生ビールをお願いします。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida",
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i04-p01",
+      "promptPt": "店员抬起头等着你说话。点这里每个人晚上开场都会点的那样东西。现在开口说。",
+      "audioKey": "fr-i04-t01",
+      "es": "生ビールをお願いします。",
+      "pinyin": "NA-ma BII-ru o o-ne-gai-shi-MAS",
+      "pt": "请给我一杯生啤。",
+      "tts": "生ビールをお願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i04-n03",
+      "bloco": "corpo",
+      "pt": "Otoshi 每人几百日元，无论你吃不吃都会算进账单。这是合法的惯例：座位的价格。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i04-r02",
+      "es": "カウンター席もありますよ。",
+      "pt": "如果你喜欢的话，吧台座位也有空位哦。",
+      "tts": "カウンター席もありますよ。"
+    },
+    {
+      "consulta": [
+        "mesa/mesa"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i04-p02",
+      "promptPt": "比起吧台，你更想坐在桌位。问问有没有空的桌位。现在开口说。",
+      "audioKey": "fr-i04-t02",
+      "es": "テーブル席は空いていますか？",
+      "pinyin": "TEH-bu-ru se-ki wa a-i-te-i-mas-ka",
+      "pt": "有空的桌位吗？",
+      "tts": "テーブル席は空いていますか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i04-n04",
+      "bloco": "capsula",
+      "pt": "Nama 指的是生啤。Toriaezu nama——先来杯生啤——是大家一边翻菜单一边点的那种最普通的开场点单。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i04-p03",
+      "promptPt": "你们两个人，一个喝啤酒一个喝红酒。一次性把两样都点了。现在开口说。",
+      "audioKey": "fr-i04-t03",
+      "es": "生ビールを二つと、赤ワインを一つお願いします。",
+      "pinyin": "NA-ma BII-ru o fu-TA-tsu to, a-ka-WA-in o hi-TO-tsu o-ne-gai-shi-MAS",
+      "pt": "请给我两杯生啤和一杯红酒。",
+      "tts": "生ビールを二つと、赤ワインを一つお願いします。"
+    },
+    {
+      "consulta": [
+        "mesa/bebida",
+        "chegar/balcao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i04-p04",
+      "promptPt": "杯子都空了，店员正好看向你。要求再来一样的东西。现在开口说。",
+      "audioKey": "fr-i04-t04",
+      "es": "同じものをお願いします。",
+      "pinyin": "o-NA-ji mo-no o o-ne-gai-shi-MAS",
+      "pt": "请再来一样的。",
+      "tts": "同じものをお願いします。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i04-n05",
+      "pt": "在这里刷卡不是有保证的事。很多小居酒屋只收现金，通常是在离开时去收银台结账，而不是在桌上结账。"
+    },
+    {
+      "consulta": [
+        "pagar/cartao"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i04-p05",
+      "promptPt": "这是家小店，哪都看不到刷卡标志，你口袋里除了卡几乎没别的。在第二轮之前先确认一下。现在开口说。",
+      "audioKey": "fr-i04-t05",
+      "es": "カードは使えますか？",
+      "pinyin": "KAH-do wa tsu-ka-e-mas-ka",
+      "pt": "可以刷卡吗？",
+      "tts": "カードは使えますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i04-r03",
+      "receptivo": true,
+      "acao": "只收现金。这不是轻视你——打算在收银台用日元付款吧。",
+      "es": "すみません、現金のみなんです。",
+      "pt": "不好意思，我们只收现金。",
+      "tts": "すみません、現金のみなんです。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-i04-n06",
+      "pt": "Koko wa watashi ga 意思是这一顿我请客。早点说出来，事情就定下来了，没人会去数账，不过分摊付款也一样很正常。"
+    },
+    {
+      "consulta": [
+        "pagar/rachar",
+        "simpatia/brindar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i04-p06",
+      "promptPt": "他们已经付过两次账了，现在又有人在伸手拿钱包。趁别人还没抢先，把这次揽下来。现在开口说。",
+      "audioKey": "fr-i04-t06",
+      "es": "ここは私が払います。",
+      "pinyin": "ko-KO wa wa-TA-shi ga ha-ra-i-mas",
+      "pt": "这一顿我请。",
+      "tts": "ここは私が払います。"
+    },
+    {
+      "consulta": [
+        "pagar/rachar"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i04-p07",
+      "promptPt": "四个人，四份不同的点单，店员在收银台前只有一台机器。告诉他们你想怎么结账。现在开口说。",
+      "audioKey": "fr-i04-t07",
+      "es": "別々でお願いします。",
+      "pinyin": "be-TSU-be-tsu de o-ne-gai-shi-MAS",
+      "pt": "请分开算。",
+      "tts": "別々でお願いします。"
+    },
+    {
+      "consulta": [
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i04-p08",
+      "promptPt": "已经过了三轮酒，还没人报出一个数字。在伸手拿任何东西之前先问总额。现在开口说。",
+      "audioKey": "fr-i04-t08",
+      "es": "全部でいくらですか？",
+      "pinyin": "ZEN-bu de i-ku-ra des-ka",
+      "pt": "一共多少钱？",
+      "tts": "全部でいくらですか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i04-r04",
+      "es": "いいから、最後は僕が出しますよ。",
+      "pt": "别客气了，最后这一轮我来付。",
+      "tts": "いいから、最後は僕が出しますよ。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i04-n07",
+      "pt": "离开也是一个独立的环节。你说要走了，感谢这一晚，然后带着热络的气氛离开这张桌子。"
+    },
+    {
+      "consulta": [
+        "chegar/sair",
+        "simpatia/agradecer"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-i04-p09",
+      "promptPt": "已经很晚了，你明天还要早起。站起身，热络地把这一桌收个尾。现在开口说。",
+      "audioKey": "fr-i04-t09",
+      "es": "そろそろ失礼します。今日はありがとうございました。",
+      "pinyin": "so-ro-so-ro shi-TSU-rei shi-mas. KYOH wa a-ri-ga-toh go-za-i-MASH-ta",
+      "pt": "我先告辞了。今天谢谢大家。",
+      "tts": "そろそろ失礼します。今日はありがとうございました。"
+    },
+    {
+      "consulta": [
+        "simpatia/agradecer",
+        "chegar/sair"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-i04-p10",
+      "promptPt": "你已经在门口，身后那桌人还在热闹着。回头留下最后一句。现在开口说。",
+      "audioKey": "fr-i04-t10",
+      "es": "お疲れ様でした！",
+      "pinyin": "o-tsu-ka-re-sa-ma-DESH-ta",
+      "pt": "辛苦啦，晚安！",
+      "tts": "お疲れ様でした！"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-i04-r05",
+      "es": "また来てくださいね！",
+      "pt": "记得再来啊！",
+      "tts": "また来てくださいね！"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-i04-s01",
+      "es": "生ビールをお願いします。ここは私が払います。そろそろ失礼します。",
+      "pinyin": "NA-ma BII-ru o o-ne-gai-shi-MAS. ko-KO wa wa-TA-shi ga ha-ra-i-mas. so-ro-so-ro shi-TSU-rei shi-mas",
+      "pt": "跟读一晚上的三个动作：点单、付款、离开。",
+      "tts": "生ビールをお願いします。ここは私が払います。そろそろ失礼します。"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-i04-n08",
+      "bloco": "recap",
+      "pt": "I04 完成。点了一杯酒的名字，弄懂了 otoshi，结清了账，还留下一句让人盼着你再来的告别。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "座位、这一轮，以及离场的方式",
+    "secoes": [
+      {
+        "titulo": "Otoshi 就是座位本身",
+        "corpo": "在大多数居酒屋，你一坐下就会端上来一盘小菜，也就是 otoshi，它按人头收费，通常是几百日元，无论你吃不吃都会算进账单。这是店家一贯的做法，不是失误，也不是骗局；可以把它想成是一种能吃的入场费。提前知道它会来，账单上那一行原本会让人意外的费用就变成了你早就预料到的数字。",
+        "exemplos": [
+          {
+            "es": "生ビールをお願いします。",
+            "pt": "请给我一杯生啤。"
+          },
+          {
+            "es": "全部でいくらですか？",
+            "pt": "一共多少钱？"
+          }
+        ]
+      },
+      {
+        "titulo": "Toriaezu nama",
+        "corpo": "先来一杯生啤是大家一边翻看菜单一边点的标准开场点单；没人指望你能一下子把所有东西都想好。先点一杯生啤能给你争取到细看菜单的时间，而这也是这张桌子上说出的最普通不过的一句话。"
+      },
+      {
+        "titulo": "现金与分摊付款",
+        "corpo": "无现金支付确实普及了不少，但很多小型居酒屋依然只收现金，贴出「現金のみ」的告示很常见，并不是针对谁。分摊账单——warikan——是日常的默认做法，而付款通常是在离开时去收银台完成的。晚上出门带够日元，这两个习惯就都不会让你措手不及。"
+      },
+      {
+        "titulo": "要请客还是分摊，都要说出口",
+        "corpo": "Koko wa watashi ga 最好在大家还没伸手掏钱包之前早点说出来。说得太晚，就会变成一场关于谁欠谁多少的算账，而这正是整晚里谁都不想经历的部分。如果打算分摊，在收银台说一句 betsubetsu de，就能利落地帮所有人把账结清。"
+      }
+    ]
+  },
+  "slot": "I04",
+  "permissao": "你完全可以坐在吧台前点一杯生啤。站着或坐在吧台前喝一杯 nama，是这条街上最普通不过的事，没人会把它读成小气，随后端上来的 otoshi 是座位的价格，不是专门坑游客的把戏。",
+  "permissaoAudioKey": "fr-i04-n03",
+  "espelho": "任何人只要见过朋友一整晚默默为所有人埋单，然后事后在马路边尴尬地想要凑钱找补，就懂为什么付款这件事要早点、大声地说清楚。这种直觉是完全可以搬过来用的——只是换了一套说法。",
+  "fichasCulturais": [
+    {
+      "sinal": "你坐下后，一盘你从没点过的小菜被放在你面前，账单上之后还多出了一笔这道菜的费用。",
+      "suaLeitura": "他们偷偷给游客加了一道菜，然后向我收了一份我没要求的东西的钱。",
+      "oQueEAli": "那道菜就是 otoshi，是居酒屋座位费的可食用形式。这是惯例，通常每人几百日元，适用于房间里的每一个人，不只是针对你。这是坐下来的成本，就像任何地方的餐桌都自带椅子的成本一样。",
+      "oQueVoceFaz": "提前预料到它会来，把每人几百日元算进这一晚的预算里，吃不吃都无所谓——费用是一样的。如果想知道具体数字，可以在点单时问一句。",
+      "oQueMelhora": "账单上原本让人意外的一行，变成了你早就预料到的数字，otoshi 也就不再读起来像一场骗局。",
+      "ondeNaoVale": "并不是所有地方都收这笔钱——很多连锁店和午餐店铺不收，而如果一家酒吧加了一大笔说不清来源的费用、又没有 otoshi 的惯例，那就是另一回事了。如果数字看起来不对劲，就开口问。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i04-n03"
+      ]
+    },
+    {
+      "sinal": "你拿着卡走到收银台，却被告知这家店只收现金。",
+      "suaLeitura": "这在一个这么现代化的国家不可能是真的，或者他们是在针对我。",
+      "oQueEAli": "没有任何普遍规定强迫小商家必须接受刷卡，很多传统居酒屋自己选择只收现金。「現金のみ」的告示是常见且合法的，用现金分摊账单是社会默认的做法，而不是一种强加。",
+      "oQueVoceFaz": "整晚出门带够日元，如果在意的话，坐下之前先问一句 kaado wa tsukaemasu ka，并预期是在离开时去收银台付款。",
+      "oQueMelhora": "你会为这类店铺专门留一些现金作为缓冲，也不再把贴出的政策解读为针对个人的拒绝。",
+      "ondeNaoVale": "这并不是说刷卡从来行不通——连锁店、酒店和市中心的酒吧越来越多接受刷卡，也接受交通卡（IC卡）支付。这只是提醒你要带现金，而不是让你觉得卡完全没用。",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "fr-i04-n05"
+      ]
+    }
+  ]
+}

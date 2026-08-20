@@ -1,0 +1,356 @@
+{
+  "id": "b09",
+  "nivel": "basico",
+  "numero": 9,
+  "parte": "B09",
+  "titulo": "车票，还有这趟车是不是还需要一张特急券",
+  "subtitulo": "在 JR 上，一趟快车需要两张票，不是一张——而游客坐的偏偏就是这种最容易踩坑的车",
+  "cena": "票在手里，前面一排检票口不知道认不认这张票，离发车还有四分钟。",
+  "moldura": "ganha",
+  "frasePiso": "上车之前一句话就能问清楚，而且很短：tokkyuuken wa irimasu ka？",
+  "moldes": [],
+  "fatosDatados": [
+    {
+      "id": "fr-fim-compostagem",
+      "afirmacao": "乘坐 JR 的新干线或特急（とっきゅう）列车需要两张票，不是一张：一张基本乘车券（乗車券），加一张特急券（特急料金）。普通的各站停车和快速列车只需要乘车券，或者刷一下 IC 卡就行。在检票口，这两张票经常一起插进去，然后一起吐出来。这一点最容易让游客栽跟头，因为他们最想坐的快车，恰恰就是需要第二张票的那种。",
+      "fonte": "JR: Shinkansen e trens tokkyuu (limited express) exigem dois bilhetes — 乗車券 (fare) + 特急券 (surcharge). Trens locais/rápidos: só a tarifa, ou toque de cartão IC. No portão, os dois bilhetes entram juntos.",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b09-n02"
+      ]
+    },
+    {
+      "id": "fr-multa-validacao",
+      "afirmacao": "如果你到出站闸机时车费不够——坐过了票面覆盖的区间，或者 IC 卡余额不足——闸机就是不会开。这不是罚款：你可以在闸机前的精算机（标着「乗り越し精算」）或者窗口补差价，然后就能通过。诚实的少付被当作补款处理，而不是处罚，这一点和欧洲那种当场罚款完全不同。",
+      "fonte": "Portão de saída não abre com tarifa insuficiente; acerta-se a diferença no 精算機 (norikoshi seisan) ou no guichê antes da saída. Subpagamento honesto = acerto, não multa.",
+      "ano": 2026,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b09-n03"
+      ]
+    },
+    {
+      "id": "fr-paris-fim-carnet",
+      "afirmacao": "特急或新干线的车厢分为自由席和指定席：只付基本特急料金就能坐自由席，指定席多付一点钱，能保证有座位。Japan Rail Pass 在2023年10月涨价，从那以后，持有者要坐最快的「希望号」和「瑞穗号」，必须另外补差价——光靠 Pass 本身还是坐不了。",
+      "fonte": "Limited express/Shinkansen: carros 自由席 (não reservado) e 指定席 (reservado). Japan Rail Pass subiu de preço em out/2023; desde então, Nozomi e Mizuho exigem suplemento pago à parte, não cobertos só pelo Pass.",
+      "ano": 2025,
+      "revisarAte": "2027-08-05",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "fr-b09-n05"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b09-n01",
+      "gesto": 1,
+      "bloco": "aquecimento",
+      "pt": "买票是简单的部分。变数在于一张票够不够用，还是这趟车需要第二张。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b09-t01",
+      "es": "特急券は要りますか？",
+      "pinyin": "tok-KYOH-ken wa i-ri-mass-ka",
+      "pt": "我需要特急券吗？",
+      "tts": "特急券は要りますか？"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p01",
+      "promptPt": "你手里有一张基本车票，站台上这趟是快车。上车之前问一下检票口的工作人员。现在开口说。",
+      "audioKey": "fr-b09-t01",
+      "es": "特急券は要りますか？",
+      "pinyin": "tok-KYOH-ken wa i-ri-mass-ka",
+      "pt": "我需要特急券吗？",
+      "tts": "特急券は要りますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b09-r01",
+      "receptivo": true,
+      "es": "新幹線は要ります。でも普通電車なら要りませんよ。",
+      "pt": "新干线需要。但如果是普通电车就不需要。",
+      "tts": "新幹線は要ります。でも普通電車なら要りませんよ。",
+      "acao": "听清楚的是车种，不是一条通用规则。新干线和特急需要第二张票；普通车和快速车不需要。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b09-n02",
+      "bloco": "corpo",
+      "pt": "在 JR 上，新干线或特急需要两张票：基本车票加特急券。普通车或快速车只需要基本车票或 IC 卡。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b09-n03",
+      "pt": "如果出站口打不开，你不是被罚款了——是少付了钱。在出站口之前的补票机上把差额补齐就行。"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete",
+        "transporte/plataforma"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "精算機",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b09-p02",
+      "promptPt": "你走到出站口，闸门没有打开——你的 IC 卡余额不够了。找到能解决这个问题的机器。现在开口说。",
+      "audioKey": "fr-b09-t02",
+      "es": "精算機はどこですか？",
+      "pinyin": "sei-SAN-ki wa DO-ko des-ka",
+      "pt": "补票机在哪里？",
+      "tts": "精算機はどこですか？"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p03",
+      "promptPt": "在售票窗口。一位乘客，你想让屏幕上显示的目的地是京都。只说目的地，加上礼貌用语就够了。现在开口说。",
+      "audioKey": "fr-b09-t03",
+      "es": "京都まで一枚お願いします。",
+      "pinyin": "KYOH-to made i-chi-mai o-ne-gai-shi-mass",
+      "pt": "请给我一张到京都的票。",
+      "tts": "京都まで一枚お願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b09-r02",
+      "receptivo": true,
+      "es": "十二番線、十四時三十五分発です。",
+      "pt": "十二号站台，十四点三十五分发车。",
+      "tts": "十二番線、十四時三十五分発です。",
+      "acao": "Bansen 指的是站台。抓住数字和时间，把周围的句子放掉。"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b09-n04",
+      "bloco": "capsula",
+      "pt": "时间用的是二十四小时制。Juuyoji sanjuugofun 是下午两点三十五分。"
+    },
+    {
+      "consulta": [
+        "transporte/plataforma"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "十二番線",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b09-p04",
+      "promptPt": "你有站台号，但大厅的指示牌从九号直接跳到十五号。现在开口说。",
+      "audioKey": "fr-b09-t04",
+      "es": "十二番線はどこですか？",
+      "pinyin": "JOO-ni-ban-sen wa DO-ko des-ka",
+      "pt": "十二号站台在哪里？",
+      "tts": "十二番線はどこですか？"
+    },
+    {
+      "consulta": [
+        "transporte/qual-trem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p05",
+      "promptPt": "同一站台停着两趟车，显示屏上两趟都没显示。向车门旁的人确认一下。现在开口说。",
+      "audioKey": "fr-b09-t05",
+      "es": "この電車は京都に行きますか？",
+      "pinyin": "ko-no den-sha wa KYOH-to ni i-ki-mass-ka",
+      "pt": "这趟电车去京都吗？",
+      "tts": "この電車は京都に行きますか？"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b09-r03",
+      "es": "はい、でも新大阪で乗り換えです。",
+      "pt": "去，不过要在新大阪换乘。",
+      "tts": "はい、でも新大阪で乗り換えです。"
+    },
+    {
+      "consulta": [
+        "transporte/qual-trem"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b09-p06",
+      "promptPt": "刚才那句话里，你听到一个没预料到的站名。把它变成一个是或否的问题。现在开口说。",
+      "audioKey": "fr-b09-t06",
+      "es": "乗り換えが必要ですか？",
+      "pinyin": "no-ri-ka-e ga hi-tsu-YOH des-ka",
+      "pt": "我需要换乘吗？",
+      "tts": "乗り換えが必要ですか？"
+    },
+    {
+      "tipo": "intro",
+      "voz": "guide_en_us_m",
+      "audioKey": "fr-b09-n05",
+      "pt": "在快车上，车厢分为自由席和指定席。只买特急券的话你坐的是自由席；指定席贵一点，但能确保有座位。"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "みどりの窓口",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p07",
+      "promptPt": "大厅里的机器全都排着长队，屏幕上的字你从这里也看不清。你想找的是有人工服务的 JR 窗口。现在开口说。",
+      "audioKey": "fr-b09-t07",
+      "es": "みどりの窓口はどこですか？",
+      "pinyin": "mi-do-ri no ma-DO-gu-chi wa DO-ko des-ka",
+      "pt": "售票窗口在哪里？",
+      "tts": "みどりの窓口はどこですか？"
+    },
+    {
+      "consulta": [
+        "transporte/bilhete",
+        "pagar/pedir"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "promptVoz": "guide_en_us_f",
+      "promptAudioKey": "fr-b09-p08",
+      "promptPt": "在日本的第一个早晨，接下来还有十天的行程，你宁愿刷一张卡也不想每个闸机都塞纸片进去。现在开口说。",
+      "audioKey": "fr-b09-t08",
+      "es": "ウェルカムスイカをお願いします。",
+      "pinyin": "we-ru-ka-mu-SU-i-ka o o-ne-gai-shi-mass",
+      "pt": "请给我一张 Welcome Suica。",
+      "tts": "ウェルカムスイカをお願いします。"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "target_fr_m",
+      "audioKey": "fr-b09-r04",
+      "es": "切符を拝見します。",
+      "pt": "请出示一下车票。",
+      "tts": "切符を拝見します。",
+      "receptivo": true,
+      "acao": "在被要求之前就把票或卡准备在手边，递过去，不用多解释什么。"
+    },
+    {
+      "consulta": [
+        "transporte/placas"
+      ],
+      "tipo": "responde",
+      "voz": "target_fr_f",
+      "molde": "DOKO-DESU-KA",
+      "encaixe": "出口",
+      "promptVoz": "guide_en_us_m",
+      "promptAudioKey": "fr-b09-p09",
+      "promptPt": "你下车了，在地下，走廊分成四个方向。现在开口说。",
+      "audioKey": "fr-b09-t09",
+      "es": "出口はどこですか？",
+      "pinyin": "de-GUCHI wa DO-ko des-ka",
+      "pt": "出口在哪里？",
+      "tts": "出口はどこですか？"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "target_fr_f",
+      "audioKey": "fr-b09-s01",
+      "es": "特急券は要りますか？ 精算機はどこですか？ この電車は京都に行きますか？ 乗り換えが必要ですか？",
+      "pinyin": "tok-KYOH-ken wa i-ri-mass-ka · sei-SAN-ki wa DO-ko des-ka · ko-no den-sha wa KYOH-to ni i-ki-mass-ka · no-ri-ka-e ga hi-tsu-YOH des-ka",
+      "pt": "跟读这四句能在发车之前把站台问清楚的问题。",
+      "tts": "特急券は要りますか？ 精算機はどこですか？ この電車は京都に行きますか？ 乗り換えが必要ですか？"
+    },
+    {
+      "tipo": "recap",
+      "voz": "guide_en_us_f",
+      "audioKey": "fr-b09-n06",
+      "bloco": "recap",
+      "pt": "B09 完成。特急券、补票机、站台、这趟车和换乘——四分钟，五个问题。"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "一张票，还是两张",
+    "secoes": [
+      {
+        "titulo": "两张票的制度",
+        "corpo": "在 JR 上，快车要的是两张票，不是一张：一张覆盖里程的基本车票，加上一张新干线或特急专用的加价券。普通车和快速车只需要基本车票，或者刷一下 IC 卡。在检票口，基本车票和特急券通常一起插进去，两张都会退回来——记得都拿好。"
+      },
+      {
+        "titulo": "打不开的闸门，和能解决它的机器",
+        "corpo": "如果出站口的闸门不开，通常的原因是老老实实地少付了钱——你坐过了车票能覆盖的距离，或者 IC 卡余额不够了。这不是罚款。你去补票机，标着 norikoshi seisan，或者闸门旁边的窗口，补上差额，就能通过。用这种方式补差价是常见且预期之内的事，不会因此被罚款。",
+        "exemplos": [
+          {
+            "es": "特急券は要りますか？",
+            "pt": "我需要特急券吗？"
+          },
+          {
+            "es": "精算機はどこですか？",
+            "pt": "补票机在哪里？"
+          }
+        ]
+      },
+      {
+        "titulo": "指定席、自由席和铁路周游券",
+        "corpo": "特急或新干线的车厢分为自由席（jiyuuseki）和指定席（shiteiseki）。只买了基本车票和特急券，你坐的是自由席，先到先得；指定席贵一点，但能确保有座，在繁忙时段很值得。日本铁路周游券（Japan Rail Pass）在 2023 年 10 月涨价了，从那以后，持有周游券的乘客要坐最快的希望号（Nozomi）和瑞穗号（Mizuho），必须另外付一笔补差价——周游券本身不覆盖这两种车。"
+      },
+      {
+        "titulo": "数字，只用耳朵听",
+        "corpo": "你不需要自己说出站台号或时间——你需要的是听懂它们。Bansen 指的是站台。时间用的是二十四小时制：juuyoji 是下午两点，juuhachiji 是晚上六点。听清数字和 bansen 这个词，忽略广播里其余的部分，就是全部的技巧。"
+      }
+    ]
+  },
+  "slot": "B09",
+  "permissao": "问一句要不要买特急券，不是没做功课的表现——答案确实取决于这趟车，工作人员一整天都在回答这个问题。上车前花几句话，是你在日本能买到的最划算的东西。",
+  "espelho": "世界上任何一个铁路系统都有这样的关卡——会打开的闸门、要刷的卡、没人事先提醒你的加价。这里唯一陌生的地方在于，快车需要第二张票，而普通车不需要。",
+  "permissaoAudioKey": "fr-b09-n01",
+  "fichasCulturais": [
+    {
+      "sinal": "有人告诉你什么都刷 Suica 就行，你试着刷卡进新干线站台，闸门却拒绝了你。",
+      "suaLeitura": "卡坏了，或者我哪里做错了。",
+      "oQueEAli": "像 Suica 这样的 IC 卡覆盖普通的市内车、普通车和快速车，进站刷一下、出站刷一下就是全部流程。新干线和特急走的是另一套票务系统——一张基本车票加一张特急券——单纯刷 IC 卡默认打不开那道闸门。",
+      "oQueVoceFaz": "坐快车之前先问一句 tokkyuuken wa irimasu ka，然后在机器上或者人工窗口（midori no madoguchi）买好票。",
+      "oQueMelhora": "你不会再把只适用于市内车的规则，错误地套用到城际快车上，闸门也就不再让你意外了。",
+      "ondeNaoVale": "不适用于普通车和快速车，那里的确只需要刷 IC 卡——在那种车上找纸质车票只会白白浪费时间。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b09-n02",
+        "fr-b09-n03"
+      ]
+    },
+    {
+      "sinal": "你在特急上坐了一个空位，半路来了一个人，手里拿着写着正是这个座位号的票。",
+      "suaLeitura": "他们想抢我的座位，或者这趟车超卖了。",
+      "oQueEAli": "车厢分为指定席和自由席。指定席属于预订它的人，自由席才是先到先坐。如果你坐进了没有预订的指定席车厢，拿票的人有座位权，解决方法就是移到自由席车厢去。",
+      "oQueVoceFaz": "除非你确实预订了座位，否则要找 jiyuuseki（自由席）车厢——车厢类型在站台和车门上都有标示。如果你想在繁忙时段确保有座，就在窗口预订一个。",
+      "oQueMelhora": "你不会再把一张有效的预订当成有人抢你的座位，也清楚哪些车厢是不用预订就能坐的。",
+      "ondeNaoVale": "不适用于普通车，那里根本没有指定席——每个座位都是先到先得，这套规则完全不适用。",
+      "evidencia": "FATO",
+      "audioKeys": [
+        "fr-b09-n05"
+      ]
+    }
+  ]
+}
