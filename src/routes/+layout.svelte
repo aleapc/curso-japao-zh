@@ -61,7 +61,7 @@
     <div class="flex items-center justify-between gap-2">
       <a href="{base}/" class="flex items-baseline gap-1.5">
         <span class="text-lg font-extrabold text-terracota">Sumimasen!</span>
-        <span class="hidden text-xs font-medium text-carvao/50 sm:inline">· Japan survival Japanese</span>
+        <span class="hidden text-xs font-medium text-carvao/50 sm:inline">· 日本旅行生存日语</span>
       </a>
       <div class="flex items-center gap-1">
         {#each PROFILES as p}
