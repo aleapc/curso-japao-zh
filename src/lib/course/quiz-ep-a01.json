@@ -1,44 +1,44 @@
 {
   "id": "q-a01",
   "nivel": "avancado",
-  "titulo": "Quiz — When it is not to you",
-  "subtitulo": "Five questions about what disappears and what is left",
+  "titulo": "测验 — 不是对你说话时",
+  "subtitulo": "五道题，关于消失的部分和留下的部分",
   "introAudioKey": "fr-a01-q-i",
-  "introPt": "Two people settle a plan at full speed, and a traveller catches the shape of it.",
-  "cenario": "A counter with a queue, and two friends deciding what happens next.",
+  "introPt": "两个人以全速定下一个计划，一个游客抓住了它的大致形状。",
+  "cenario": "一个排着队的柜台，两个朋友在决定接下来做什么。",
   "dialogo": [
     {
       "audioKey": "fr-a01-q01",
       "voz": "target_fr_f",
       "es": "さあ、わかんないなあ。もう遅いし。",
-      "pt": "Hmm, dunno. It's already late.",
+      "pt": "嗯，不知道。已经很晚了。",
       "tts": "さあ、わかんないなあ。もう遅いし。"
     },
     {
       "audioKey": "fr-a01-q02",
       "voz": "target_fr_m",
       "es": "そろそろ行かなきゃ。八時過ぎたら何もないよ。",
-      "pt": "We've got to go soon. After eight there's nothing left.",
+      "pt": "我们差不多该走了。八点之后就什么都没有了。",
       "tts": "そろそろ行かなきゃ。八時過ぎたら何もないよ。"
     },
     {
       "audioKey": "fr-a01-q03",
       "voz": "target_fr_f",
       "es": "まあ、じゃあ行こっか。それで決まりね。",
-      "pt": "Well, shall we go then. That's settled.",
+      "pt": "好吧，那我们走吧。就这么定了。",
       "tts": "まあ、じゃあ行こっか。それで決まりね。"
     },
     {
       "audioKey": "fr-a01-q04",
       "voz": "target_fr_m",
       "es": "すみません、わかりませんでした。もっとゆっくりお願いします。",
-      "pt": "Sorry, I didn't understand. More slowly, please.",
+      "pt": "抱歉，我没听懂。请说慢一点。",
       "tts": "すみません、わかりませんでした。もっとゆっくりお願いします。"
     }
   ],
   "perguntas": [
     {
-      "pergunta": "You hear wakannai. What was said?",
+      "pergunta": "你听到わかんない。说的是什么？",
       "opcoes": [
         "大丈夫です",
         "わからない",
@@ -46,51 +46,51 @@
         "探してる"
       ],
       "correta": 1,
-      "explica": "Wakaranai loses its polite masen, then contracts to wakannai. Three sizes of one sentence, all ordinary."
+      "explica": "わからない失去了礼貌的ません，然后缩成わかんない。同一句话的三种大小，都是日常说法。"
     },
     {
-      "pergunta": "Someone says sorosoro ikanakya. What has just happened?",
+      "pergunta": "有人说そろそろ行かなきゃ。刚才发生了什么？",
       "opcoes": [
-        "A question was asked",
-        "An apology was made",
-        "A decision to leave, now",
-        "A price was given"
+        "提出了一个问题",
+        "道了个歉",
+        "决定现在就走",
+        "报了个价"
       ],
       "correta": 2,
-      "explica": "Ikanakya is ikanakereba naranai worn down in speech. If it is aimed at your table, stand up."
+      "explica": "行かなきゃ是行かなければならない在口语中磨损后的样子。如果这是冲你这一桌说的，就站起来。"
     },
     {
-      "pergunta": "What job does de at the front of a turn do?",
+      "pergunta": "轮到发言开头的で起什么作用？",
       "opcoes": [
-        "It apologises",
-        "It introduces the consequence, usually the decision",
-        "It asks for repetition",
-        "It means suddenly and nothing else"
+        "表示道歉",
+        "引出结果，通常是决定",
+        "请求重复",
+        "只表示突然，别无其他"
       ],
       "correta": 1,
-      "explica": "Tune your ear to it: the useful half of the sentence tends to come right after."
+      "explica": "把耳朵调到这个词上：句子里有用的那一半往往紧跟在它后面。"
     },
     {
-      "pergunta": "Sore de kimari lands at the end of the exchange. What does it tell you?",
+      "pergunta": "それで決まり出现在对话的结尾。它在告诉你什么？",
       "opcoes": [
-        "Something is about to be explained",
-        "Somebody disagreed",
-        "That is settled — the rest is politeness",
-        "A question is coming"
+        "接下来要解释什么",
+        "有人不同意",
+        "这事定了——剩下的只是客套",
+        "接下来要提问"
       ],
       "correta": 2,
-      "explica": "Sore de kimari marks the end of the part you needed."
+      "explica": "それで決まり标志着你需要听的那部分已经结束了。"
     },
     {
-      "pergunta": "Should you start saying wakannai and miteru yourself?",
+      "pergunta": "你自己应该开始说わかんない和みてる吗？",
       "opcoes": [
-        "Yes, it shows you are fluent",
-        "No — recognise it, produce the full form",
-        "Only with people your own age",
-        "Only in Kansai"
+        "应该，这样显得流利",
+        "不该——听懂就好，自己说要用完整形式",
+        "只跟同龄人这样说",
+        "只在关西这样说"
       ],
       "correta": 1,
-      "explica": "This module is receptive on purpose. In a visitor's mouth it reads as an impression of Japanese rather than as Japanese."
+      "explica": "这个模块是故意设计成只听不说的。从游客嘴里说出来，听起来像是在模仿日语，而不是真的在说日语。"
     }
   ]
 }

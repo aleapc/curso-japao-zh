@@ -3,11 +3,11 @@
   "nivel": "avancado",
   "numero": 30,
   "parte": "A02",
-  "titulo": "What they laugh at, and the one joke that is yours to make",
-  "subtitulo": "The teasing rhythm runs on a tsukkomi that sounds sharp and means warmth, the regional rivalry belongs to people who earned it, and the joke that always lands is the one about yourself",
-  "cena": "Everyone at the table has just laughed at a flat correction someone threw at someone else, and you cannot tell whether anyone was actually offended.",
+  "titulo": "他们笑什么，以及唯一一个属于你的笑话",
+  "subtitulo": "调侃的节奏靠的是听起来尖锐、实则代表亲近的つっこみ，地域之争属于那些有资格谈论它的人，而永远管用的笑话是拿自己开涮的那一个",
+  "cena": "桌上所有人刚刚都对某人甩给另一个人的一句平淡吐槽笑了起来，而你分辨不出到底有没有人真的被冒犯了。",
   "moldura": "ganha",
-  "frasePiso": "Laugh at yourself, never at Japan, and stay out of the Tokyo-versus-Osaka argument. Self-deprecation works everywhere; the rest is borrowed.",
+  "frasePiso": "拿自己开涮，绝不拿日本开涮，也别卷入东京对大阪的争论。自嘲在哪里都管用；其余的都是借来的。",
   "moldes": [],
   "steps": [
     {
@@ -16,39 +16,39 @@
       "audioKey": "fr-a02-n01",
       "gesto": 1,
       "bloco": "aquecimento",
-      "pt": "Humour is the last thing a language hands you and the first thing that misfires. This part is mostly listening."
+      "pt": "幽默是一门语言最后才会交给你的东西，也是最容易出岔子的东西。这一部分主要是听。"
     },
     {
       "tipo": "intro",
       "voz": "guide_en_us_m",
       "audioKey": "fr-a02-n02",
       "bloco": "corpo",
-      "pt": "The rhythm that dominates is the tsukkomi: a flat, sharp-sounding correction thrown at a friend. It sounds like a jab and means closeness."
+      "pt": "主导这里的节奏是つっこみ：一句听起来平淡尖锐、甩给朋友的吐槽。听起来像是在挑刺，实际意思是亲近。"
     },
     {
       "tipo": "ouvir",
       "voz": "target_fr_m",
       "audioKey": "fr-a02-r01",
       "receptivo": true,
-      "acao": "Delivered flat and fast, this is a tease, not a telling-off. Nobody is being scolded here.",
+      "acao": "语气平淡、语速很快，这是调侃，不是训斥。没有人在这里挨骂。",
       "es": "はいはい、すごいすごい。よく言うわ。",
-      "pt": "Yeah yeah, amazing, amazing. Listen to you.",
+      "pt": "好啦好啦，厉害厉害。你听听你自己说的。",
       "tts": "はいはい、すごいすごい。よく言うわ。"
     },
     {
       "tipo": "intro",
       "voz": "guide_en_us_f",
       "audioKey": "fr-a02-n03",
-      "pt": "Sugoi, honto, saikou — said with no lift at all, they can mean the reverse. Listen to the flatness, not the word."
+      "pt": "すごい、ほんと、最高——完全没有上扬语调地说出来，意思可能正好相反。听的是那种平淡，而不是词本身。"
     },
     {
       "tipo": "ouvir",
       "voz": "target_fr_f",
       "audioKey": "fr-a02-r02",
       "receptivo": true,
-      "acao": "A flat, drawn-out hee is polite doubt, not agreement. Do not take it as a yes.",
+      "acao": "拖长、平淡的一声へえ是礼貌的怀疑，不是赞同。别把它当成一个是。",
       "es": "へえ、そうなんだ。ふーん。",
-      "pt": "Ohh, is that so. Hmm.",
+      "pt": "哦，是这样啊。嗯。",
       "tts": "へえ、そうなんだ。ふーん。"
     },
     {
@@ -56,48 +56,48 @@
       "voz": "guide_en_us_m",
       "audioKey": "fr-a02-n04",
       "bloco": "capsula",
-      "pt": "Second: the tease between people with history. It sounds far harder than it is meant, and it closes with a laugh."
+      "pt": "第二点：有交情的人之间的调侃。听起来比实际意思要狠得多，而且总是以一个笑收尾。"
     },
     {
       "tipo": "ouvir",
       "voz": "target_fr_m",
       "audioKey": "fr-a02-r03",
       "receptivo": true,
-      "acao": "Nante ne closes the tease. It is the signal that none of it was meant, and it arrives fast.",
+      "acao": "なんてね收住这场调侃。它是一个信号，表示刚才说的都不是真心的，而且来得很快。",
       "es": "もう、何言ってんの！…なんてね、冗談冗談。",
-      "pt": "Oh come on, what are you saying! ...just kidding, kidding.",
+      "pt": "哎呀，你在说什么呢！……开玩笑的，开玩笑。",
       "tts": "もう、何言ってんの！…なんてね、冗談冗談。"
     },
     {
       "tipo": "intro",
       "voz": "guide_en_us_f",
       "audioKey": "fr-a02-n05",
-      "pt": "Nante ne, joudan joudan, uso uso — three ways of saying that was a joke. All three mean closeness, not distance."
+      "pt": "なんてね、冗談冗談、うそうそ——三种表示那是个玩笑的说法。三个都代表亲近，不是疏远。"
     },
     {
       "tipo": "ouvir",
       "voz": "target_fr_f",
       "audioKey": "fr-a02-r04",
       "receptivo": true,
-      "acao": "A story being told between people who share the reference. You are the audience, never the teller.",
+      "acao": "这是有着共同背景的人之间讲的一个段子。你是听众，永远不是讲述者。",
       "es": "ちょっと聞いてや、昨日な、面白いことあってん。",
-      "pt": "Hey listen, yesterday, something funny happened.",
+      "pt": "喂，听我说，昨天啊，发生了件好笑的事。",
       "tts": "ちょっと聞いてや、昨日な、面白いことあってん。"
     },
     {
       "tipo": "intro",
       "voz": "guide_en_us_m",
       "audioKey": "fr-a02-n06",
-      "pt": "That kind of bit belongs to the people who share the reference. A visitor performing one is not joining in — it lands as a verdict."
+      "pt": "这种段子属于那些有共同背景的人。一个游客去表演这种段子并不是加入其中——听起来更像是在下判断。"
     },
     {
       "tipo": "ouvir",
       "voz": "target_fr_m",
       "audioKey": "fr-a02-r05",
       "receptivo": true,
-      "acao": "That is somebody's long-running argument about their own country's regions. Laugh, and take no side.",
+      "acao": "这是某人关于自己国家地域的一场老争论。笑就好，别站队。",
       "es": "まあ、東京と大阪はな、もう別もんやから。",
-      "pt": "Well, Tokyo and Osaka, they're just two different worlds.",
+      "pt": "唉，东京和大阪啊，根本就是两个不同的世界。",
       "tts": "まあ、東京と大阪はな、もう別もんやから。"
     },
     {
@@ -108,24 +108,24 @@
       "voz": "target_fr_f",
       "promptVoz": "guide_en_us_f",
       "promptAudioKey": "fr-a02-p01",
-      "promptPt": "The table has turned to you for a verdict on their own regional argument. Decline it, cheerfully. Speak now.",
+      "promptPt": "桌上的人转过来想让你对他们自己的地域之争下个判断。开开心心地拒绝。现在开口说。",
       "audioKey": "fr-a02-x01",
       "es": "いやあ、そこはノーコメントで！",
       "pinyin": "ee-YAA, so-ko wa NOH-ko-men-to de",
-      "pt": "Ha, on that one, no comment!",
+      "pt": "哈，这个问题我不予置评！",
       "tts": "いやあ、そこはノーコメントで！"
     },
     {
       "tipo": "intro",
       "voz": "guide_en_us_f",
       "audioKey": "fr-a02-n07",
-      "pt": "That line is worth memorising. It gets a laugh, it costs nothing, and it keeps you out of every old regional argument."
+      "pt": "这句话值得背下来。它能引来一笑，不用付出任何代价，还能让你避开所有陈年的地域之争。"
     },
     {
       "tipo": "intro",
       "voz": "guide_en_us_m",
       "audioKey": "fr-a02-n08",
-      "pt": "So what is yours? Make yourself the subject: your Japanese, your chopsticks, the ramen you have eaten every single day."
+      "pt": "那属于你的笑话是什么？把自己当成话题：你的日语，你用筷子的样子，你天天都在吃的拉面。"
     },
     {
       "consulta": [
@@ -136,11 +136,11 @@
       "voz": "target_fr_f",
       "promptVoz": "guide_en_us_m",
       "promptAudioKey": "fr-a02-p02",
-      "promptPt": "Get in first about your own Japanese, before anyone else has to be polite about it. Speak now.",
+      "promptPt": "抢先自己提一句你的日语，别等别人不得不客套。现在开口说。",
       "audioKey": "fr-a02-x02",
       "es": "私の日本語、下手ですみません。",
       "pinyin": "wa-ta-shi no ni-HON-go, he-TA de soo-mee-ma-sen",
-      "pt": "My Japanese is terrible, sorry.",
+      "pt": "我的日语很差，不好意思。",
       "tts": "私の日本語、下手ですみません。"
     },
     {
@@ -148,9 +148,9 @@
       "voz": "target_fr_m",
       "audioKey": "fr-a02-r06",
       "receptivo": true,
-      "acao": "The reassurance is quick and warm. Accept it; do not argue with a compliment.",
+      "acao": "对方的宽慰又快又温暖。接受它就好；不要跟一句夸奖较真。",
       "es": "いやいや、日本語お上手ですよ。",
-      "pt": "Not at all, your Japanese is very good.",
+      "pt": "哪里哪里，你的日语很好。",
       "tts": "いやいや、日本語お上手ですよ。"
     },
     {
@@ -161,11 +161,11 @@
       "voz": "target_fr_f",
       "promptVoz": "guide_en_us_f",
       "promptAudioKey": "fr-a02-p03",
-      "promptPt": "Confess, proudly, what you have eaten every single day of this trip. Speak now.",
+      "promptPt": "自豪地坦白你这趟旅行每天都在吃什么。现在开口说。",
       "audioKey": "fr-a02-x03",
       "es": "毎日ラーメンを食べました。後悔してません。",
       "pinyin": "mai-nichi RAA-men o ta-be-MASH-ta · koh-kai shee-te-ma-sen",
-      "pt": "I've eaten ramen every day. I regret nothing.",
+      "pt": "我每天都在吃拉面。我一点都不后悔。",
       "tts": "毎日ラーメンを食べました。後悔してません。"
     },
     {
@@ -173,9 +173,9 @@
       "voz": "target_fr_f",
       "audioKey": "fr-a02-r07",
       "receptivo": true,
-      "acao": "A joke aimed straight at you. Agreement lands far better than a defence.",
+      "acao": "一个直接冲你来的玩笑。顺着承认远比辩解管用。",
       "es": "餃子も毎回頼んでたでしょ？正直に！",
-      "pt": "And you ordered gyoza every time too, didn't you? Confess!",
+      "pt": "而且你每次还都点了饺子，对吧？老实交代！",
       "tts": "餃子も毎回頼んでたでしょ？正直に！"
     },
     {
@@ -186,18 +186,18 @@
       "voz": "target_fr_f",
       "promptVoz": "guide_en_us_m",
       "promptAudioKey": "fr-a02-p04",
-      "promptPt": "Own it instead of explaining yourself, and raise the number. Speak now.",
+      "promptPt": "承认下来，别去解释，还要把数字往上抬。现在开口说。",
       "audioKey": "fr-a02-x04",
       "es": "はい、犯人です。二杯食べました。",
       "pinyin": "HAI, han-nin des · ni-HAI ta-be-MASH-ta",
-      "pt": "Guilty as charged. I had two bowls.",
+      "pt": "认罪了。我吃了两碗。",
       "tts": "はい、犯人です。二杯食べました。"
     },
     {
       "tipo": "intro",
       "voz": "guide_en_us_f",
       "audioKey": "fr-a02-n09",
-      "pt": "That is the whole move. Being teased and agreeing cheerfully is how a table stops handling you carefully."
+      "pt": "这就是全部的诀窍。被调侃时开开心心地承认下来，一桌人才会不再对你小心翼翼。"
     },
     {
       "consulta": [
@@ -207,11 +207,11 @@
       "voz": "target_fr_f",
       "promptVoz": "guide_en_us_f",
       "promptAudioKey": "fr-a02-p05",
-      "promptPt": "You got there half a beat late, but you got there. Show it without explaining it. Speak now.",
+      "promptPt": "你慢了半拍才反应过来，但总算反应过来了。表现出来，不用解释。现在开口说。",
       "audioKey": "fr-a02-x05",
       "es": "あ、からかってますね！",
       "pinyin": "a, ka-ra-kat-te-mas ne",
-      "pt": "Ah, you're teasing me!",
+      "pt": "啊，你在逗我呢！",
       "tts": "あ、からかってますね！"
     },
     {
@@ -222,11 +222,11 @@
       "voz": "target_fr_f",
       "promptVoz": "guide_en_us_m",
       "promptAudioKey": "fr-a02-p06",
-      "promptPt": "Name the joke out loud and admit how long it took you. It always gets a laugh. Speak now.",
+      "promptPt": "大声说出这是个玩笑，承认自己花了多久才反应过来。这总能引来一笑。现在开口说。",
       "audioKey": "fr-a02-x06",
       "es": "今の、冗談ですね。三秒かかりました。",
       "pinyin": "ee-ma no, joh-dan des ne · san-byoo ka-ka-ri-MASH-ta",
-      "pt": "That was a joke. It took me three seconds.",
+      "pt": "刚才那是个玩笑。我花了三秒才反应过来。",
       "tts": "今の、冗談ですね。三秒かかりました。"
     },
     {
@@ -238,11 +238,11 @@
       "voz": "target_fr_f",
       "promptVoz": "guide_en_us_f",
       "promptAudioKey": "fr-a02-p07",
-      "promptPt": "Everyone laughed and you have no idea why. Ask, instead of doing the polite laugh. Speak now.",
+      "promptPt": "大家都笑了，而你完全不知道为什么。问出来，别去陪笑。现在开口说。",
       "audioKey": "fr-a02-x07",
       "es": "今の冗談、わからなかったです。教えてください。",
       "pinyin": "ee-ma no joh-dan, wa-ka-ra-na-kat-ta des · o-shee-e-te ku-da-sai",
-      "pt": "I didn't get that joke. Explain it to me?",
+      "pt": "刚才那个笑话我没懂。能给我解释一下吗？",
       "tts": "今の冗談、わからなかったです。教えてください。"
     },
     {
@@ -254,11 +254,11 @@
       "voz": "target_fr_f",
       "promptVoz": "guide_en_us_m",
       "promptAudioKey": "fr-a02-p08",
-      "promptPt": "Somebody teased you and you liked it. Say so and hand them the point. Speak now.",
+      "promptPt": "有人调侃了你，而你很喜欢。说出来，把这一分让给对方。现在开口说。",
       "audioKey": "fr-a02-x08",
       "es": "笑わせてくれますね。そのとおりです。",
       "pinyin": "wa-ra-wa-se-te ku-re-mas ne · so-no toh-ri des",
-      "pt": "You make me laugh. You're right.",
+      "pt": "你总能把我逗笑。你说得对。",
       "tts": "笑わせてくれますね。そのとおりです。"
     },
     {
@@ -267,7 +267,7 @@
       "audioKey": "fr-a02-s01",
       "es": "私の日本語、下手ですみません。はい、犯人です。二杯食べました。そこはノーコメントで！",
       "pinyin": "wa-ta-shi no ni-HON-go he-TA de soo-mee-ma-sen · HAI han-nin des ni-HAI ta-be-MASH-ta · so-ko wa NOH-ko-men-to de",
-      "pt": "Shadow the three that cover it: laugh at yourself, own the tease, decline the argument.",
+      "pt": "跟读这三句，涵盖了全部要点：拿自己开涮、坦然接受调侃、拒绝卷入争论。",
       "tts": "私の日本語、下手ですみません。はい、犯人です。二杯食べました。そこはノーコメントで！"
     },
     {
@@ -275,52 +275,52 @@
       "voz": "guide_en_us_m",
       "audioKey": "fr-a02-n10",
       "bloco": "recap",
-      "pt": "A02 done. Flat can mean inverted, the teasing is theirs, the regional argument is theirs, and the joke about you is yours."
+      "pt": "A02完成。平淡的语气可能代表相反的意思，调侃是他们的，地域之争是他们的，而关于你自己的笑话才是你的。"
     }
   ],
   "aprofundar": {
-    "titulo": "Receptive humour, and the one line that is yours",
+    "titulo": "只需听懂的幽默，和唯一属于你的一句话",
     "secoes": [
       {
-        "titulo": "The tsukkomi rhythm",
-        "corpo": "A lot of casual joking here runs on the two-person comic rhythm of manzai: one person says something off, and the other throws back a flat, sharp correction — the tsukkomi. In friendly talk it sounds like a jab and functions as warmth. Because nothing in the delivery marks it as play, it is invisible to an ear still working on vocabulary, which is why it sits here rather than in the basic module. The reliable tell is that the room laughs and nobody flinches.",
+        "titulo": "つっこみ的节奏",
+        "corpo": "这里很多随意的玩笑靠的是漫才那种两人对话的喜剧节奏：一个人说出点不对劲的话，另一个人甩回一句平淡而尖锐的吐槽——つっこみ。在朋友间的闲聊里，这听起来像是挑刺，实际功能是表达亲近。因为语气本身没有任何标记表明这是在玩笑，一个还在啃词汇的耳朵根本听不出来，这也是为什么它被放在这里而不是基础模块。一个靠谱的判断标准是：满屋子人都笑了，却没有一个人露出不悦。",
         "exemplos": [
           {
             "es": "はいはい、すごいすごい。",
-            "pt": "Yeah yeah, amazing, amazing."
+            "pt": "好啦好啦，厉害厉害。"
           },
           {
             "es": "へえ、そうなんだ。ふーん。",
-            "pt": "Ohh, is that so. Hmm."
+            "pt": "哦，是这样啊。嗯。"
           }
         ]
       },
       {
-        "titulo": "The tease, and who is allowed one",
-        "corpo": "Teasing between people with a shared history sounds sharp, and its closing signal is fast and explicit: nante ne, joudan joudan, uso uso. The licence to make one is earned rather than shared with the room — you are being included in the laughter, not in the permission. Being teased back, a few days later, is the sign the permission has arrived. Until then you are the audience, and that is a comfortable place to be."
+        "titulo": "调侃，以及谁有资格调侃",
+        "corpo": "有交情的人之间的调侃听起来很尖锐，收尾的信号又快又明确：なんてね、冗談冗談、うそうそ。开这种玩笑的资格是挣来的，不是在场所有人都自动拥有的——你被邀请进了笑声里，但没有被邀请进那份资格里。几天后如果轮到别人来调侃你，这就是资格已经到手的信号。在那之前，你是听众，而这是个很自在的位置。"
       },
       {
-        "titulo": "The rivalries that are not yours",
-        "corpo": "Tokyo against Osaka, Kanto against Kansai, the capital against everywhere else — these run constantly, and all of them are internal. A visitor repeating one is not participating in a shared game; it reads as an outsider passing judgement on a family argument. Listening is free; retelling is not. The same goes for any joke that takes Japan itself as its target: theirs to make, not yours."
+        "titulo": "不属于你的那些恩怨",
+        "corpo": "东京对大阪、关东对关西、首都对其他所有地方——这些争论一直存在，而且全部是内部事务。一个游客去复述其中一个，不是在加入一场共同的游戏，听起来更像是一个外人在评判别人家的家事。听是免费的；复述不是。任何以日本本身为目标的笑话也是同样的道理：那是他们自己才能开的玩笑，不是你的。"
       },
       {
-        "titulo": "Soko wa noo-komento de",
-        "corpo": "Learn this one by heart. It means roughly on that one, I'm staying out of it, and it is said lightly, with a small laugh. It gets you a laugh and it gets you out of every conversation where somebody wants a foreigner to settle an argument about their own country. Nothing you could say instead buys as much, and self-deprecation — your Japanese, your chopsticks, your daily ramen — is the one joke that lands everywhere."
+        "titulo": "そこはノーコメントで",
+        "corpo": "把这句话背下来。它的大致意思是这个问题我不掺和，说的时候语气很轻，还带着一丝笑意。它既能给你带来一个笑声，又能让你脱身于所有那些有人想让一个外国人来裁定他们本国事务争论的场合。没有别的说法能换来这么多好处，而自嘲——你的日语、你用筷子的样子、你天天吃的拉面——是唯一一个走到哪里都管用的笑话。"
       }
     ]
   },
   "slot": "A02",
-  "permissao": "You are allowed to miss the joke and to say so out loud. Ima no joudan, wakaranakatta desu is a perfectly good sentence half a beat late, and asking what was funny is received far better than the polite laugh, which gives you away anyway.",
+  "permissao": "你被允许没听懂笑话，也被允许大声说出来。今の冗談、わかりませんでした就算慢了半拍也完全是一句好用的话，而问一句刚才哪里好笑，比礼貌性地陪笑受欢迎得多——反正陪笑也瞒不过去。",
   "permissaoAudioKey": "fr-a02-n01",
-  "espelho": "Anyone who has laughed a half-second behind a group in their own language knows the small panic in this part. Humour is where fluency is really measured, in every language, which is exactly why nobody expects you to be quick at it in your third week.",
+  "espelho": "任何在自己的母语里比一群人晚半秒才笑出来的人，都明白这部分里那种小小的慌张。幽默才是真正衡量流利程度的地方，在任何语言里都是如此，这正是为什么没有人指望你在第三周就能反应迅速。",
   "fichasCulturais": [
     {
-      "sinal": "Someone throws a flat, sharp-sounding line at a friend, and the table laughs instead of going quiet.",
-      "suaLeitura": "That was an insult, and I missed why everyone found it acceptable.",
-      "oQueEAli": "It was a tsukkomi — the flat correction half of the manzai rhythm — used here as warmth between people who know each other. Delivered level and fast, it sounds like a jab and functions as closeness, and nothing else in the delivery marks the switch.",
-      "oQueVoceFaz": "Check the room before the words. If the line drew a laugh and no flinch, read it as play aimed between friends, not as conflict.",
-      "oQueMelhora": "You stop bracing for an argument that is not happening, which is most of what makes a lively table feel unreadable in the first days.",
-      "ondeNaoVale": "Not at a counter or with someone you have just met — this register lives between people with history, and a stranger saying something positive to you is very likely just being positive.",
+      "sinal": "有人对朋友甩出一句听起来平淡尖锐的话，桌上的人却笑了起来，而不是安静下来。",
+      "suaLeitura": "那是句侮辱的话，我没搞懂为什么大家都觉得可以接受。",
+      "oQueEAli": "那是つっこみ——漫才节奏里负责平淡吐槽的那一半——在这里被熟人之间用来表达亲近。语气平淡、语速又快，听起来像是在挑刺，实际功能是拉近距离，而语气里没有任何其他标记能提示这个转变。",
+      "oQueVoceFaz": "先看房间里的反应，再去纠结那句话本身。如果那句话引来了笑声，而没有人露出不悦，就把它理解成朋友之间的玩笑，而不是冲突。",
+      "oQueMelhora": "你不再为一场根本不存在的争吵绷紧神经，而这正是最初几天里让一桌热闹的人显得难以读懂的主要原因。",
+      "ondeNaoVale": "但在柜台或面对刚认识的人时不适用——这种语域只存在于有交情的人之间，一个陌生人对你说好话，很可能就只是单纯的好话。",
       "evidencia": "CONSENSO",
       "audioKeys": [
         "fr-a02-n02",
@@ -328,12 +328,12 @@
       ]
     },
     {
-      "sinal": "The table starts an argument about their own regions — Tokyo against Osaka, the capital against the rest — and then turns to you for an opinion.",
-      "suaLeitura": "I am being invited in, and having a view would show I have been paying attention.",
-      "oQueEAli": "The argument is old, it predates you, and everyone at the table has standing in it that you do not. Being asked is hospitality, and it does not come with a requirement to answer.",
-      "oQueVoceFaz": "Say soko wa noo-komento de, with a small laugh. Then ask one of them what they think, which is the thing they actually wanted.",
-      "oQueMelhora": "You stay a guest rather than becoming a position, and the conversation carries on around you instead of pausing to place you.",
-      "ondeNaoVale": "Not a rule of silence about the country — praising a specific place you liked is welcome and costs nothing. What you are declining is the comparison, not the topic.",
+      "sinal": "桌上的人开始争论起自己国家的地域问题——东京对大阪，首都对其他地方——然后转过来想听你的意见。",
+      "suaLeitura": "我被邀请加入了，表达一个看法能显示出我一直在认真关注。",
+      "oQueEAli": "这场争论由来已久，早在你出现之前就存在，桌上每个人在这件事上都有你没有的立场资格。被问到是一种待客之道，并不附带非答不可的要求。",
+      "oQueVoceFaz": "带着一丝笑意说そこはノーコメントで。然后反问其中一个人他怎么想，那才是他们真正想要的。",
+      "oQueMelhora": "你依然是客人，而不是变成争论中的一个立场，对话会围着你继续下去，而不是停下来给你定位。",
+      "ondeNaoVale": "这不是要你对这个国家保持沉默——夸奖你喜欢的某个具体地方是受欢迎的，也不用付出任何代价。你拒绝的是比较，不是话题本身。",
       "evidencia": "CONSENSO",
       "audioKeys": [
         "fr-a02-n07"
